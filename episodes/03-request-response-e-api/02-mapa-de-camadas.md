@@ -1,14 +1,14 @@
-# Mapa do dialogo (para mostrar na tela / base do thumbnail)
+# Mapa do diálogo (para mostrar na tela / base do thumbnail)
 
-Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferramentas, só o fluxo do request e response.
+Este é o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferramentas, só o fluxo do request e response.
 
-## O dialogo (versao texto)
+## O diálogo (versão texto)
 
 ```
   NAVEGADOR (front-end)
        |
        |  REQUEST
-       |  - metodo: GET (pedir) ou POST (enviar)
+       |  - método: GET (pedir) ou POST (enviar)
        |  - endpoint: /api/produtos (a porta)
        |
        v
@@ -34,10 +34,10 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferra
 ```
   +------------------+     +------------------+     +------------------+
   |  FRONT-END       |     |  API             |     |  BANCO           |
-  |  (navegador)     |     |  (balcao)        |     |  (almoxarifado)  |
+  |  (navegador)     |     |  (balcão)        |     |  (almoxarifado)  |
   |                  |     |                  |     |                  |
   |  - manda request |---->|  - atende        |---->|  - guarda dados  |
-  |  - le response   |<----|  - processa      |<----|  - devolve dado  |
+  |  - lê response   |<----|  - processa      |<----|  - devolve dado  |
   |                  |     |  - devolve JSON  |     |                  |
   +------------------+     +------------------+     +------------------+
         |                         |                         |
@@ -51,10 +51,10 @@ O front nunca fala direto com o banco. A seta do front para na API.
 ## A conversa completa (um pedido inteiro)
 
 ```
-  1. USUARIO clica ou digita URL
+  1. USUÁRIO clica ou digita URL
                 |
   2. NAVEGADOR monta REQUEST
-     - metodo: GET ou POST
+     - método: GET ou POST
      - endpoint: a URL da porta
                 |
   3. SERVIDOR recebe o request
@@ -68,21 +68,21 @@ O front nunca fala direto com o banco. A seta do front para na API.
      - com STATUS CODE honesto
                 |
   5. NAVEGADOR recebe o response
-     - le o JSON
+     - lê o JSON
      - confere o status code
      - renderiza na tela (ou mostra erro)
 ```
 
 ## Como usar no vídeo
 
-- Desenhar o dialogo (navegador -> servidor -> navegador) no início do ATO 1, sem explicar tudo.
+- Desenhar o diálogo (navegador -> servidor -> navegador) no início do ATO 1, sem explicar tudo.
 - Voltar ao mapa no final de cada ato, destacando o que já foi coberto.
-- No ATO 3, mostrar a fronteira: tres blocos separados (front, API, banco) com a seta do front parando na API.
+- No ATO 3, mostrar a fronteira: três blocos separados (front, API, banco) com a seta do front parando na API.
 
-## Versao para thumbnail
+## Versão para thumbnail
 
 Texto curto sobre o diagrama:
-- Título sobre a imagem: "O que acontece quando você CLICA?" ou "Request e Response: a conversa invisivel"
+- Título sobre a imagem: "O que acontece quando você CLICA?" ou "Request e Response: a conversa invisível"
 - Setas: navegador -> servidor -> navegador
 - Destacar: "GET / POST", "JSON", "200 ou 404?"
 - Sem palavras densas; só o fluxo do pedido e da resposta.

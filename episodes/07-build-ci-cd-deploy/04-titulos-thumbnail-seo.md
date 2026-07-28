@@ -4,8 +4,8 @@
 
 1. "O que acontece DEPOIS do commit? (build, CI/CD e deploy explicados)"
 2. "Build, CI/CD e Deploy: o que realmente acontece quando o código vai ao ar"
-3. "Vibe coder precisa saber: o cano entre o commit e o usuario"
-4. "Por que o deploy quebra? Build, testes e o caminho ate o ar"
+3. "Vibe coder precisa saber: o cano entre o commit e o usuário"
+4. "Por que o deploy quebra? Build, testes e o caminho até o ar"
 5. "Do commit ao ar: o ciclo completo de um deploy (fechamento da temporada)"
 
 **Recomendado:** #1 ou #5. #1 tem pergunta forte e claridade. #5 sinaliza fechamento da temporada e atrai quem assistiu aos anteriores.
@@ -14,17 +14,17 @@
 
 ### Conceito
 
-Tres blocos em fila, representando o cano:
+Três blocos em fila, representando o cano:
 
 - Esquerda: notebook com código e a palavra "COMMIT"
-- Centro: tres portas em fila, cada uma com uma etiqueta: "BUILD", "CI/CD", "DEPLOY". A porta do meio (CI/CD) com luz verde/vermelha
+- Centro: três portas em fila, cada uma com uma etiqueta: "BUILD", "CI/CD", "DEPLOY". A porta do meio (CI/CD) com luz verde/vermelha
 - Direita: tela de celular ou navegador com o site no ar e a palavra "AR"
 
 Texto sobre a imagem: "O que acontece DEPOIS do commit?" ou "Indo ao ar"
 
 ### Cores
 
-Fundo escuro (preto ou azul escuro). Setas em amarelo ou verde-limao para destacar a jornada. As portas do centro em cores distintas (uma verde, uma vermelha) para sugerir o verde/vermelho do CI. Evitar poluiçao visual.
+Fundo escuro (preto ou azul escuro). Setas em amarelo ou verde-limão para destacar a jornada. As portas do centro em cores distintas (uma verde, uma vermelha) para sugerir o verde/vermelho do CI. Evitar poluição visual.
 
 ### Alternativa (fechamento de temporada)
 
@@ -39,7 +39,7 @@ Incluir discreto, em um canto, algo como "Final da temporada" ou "Ep 07/07", par
 - continuous deployment
 - pipeline
 - vibe coding
-- programacao com IA
+- programação com IA
 - desenvolvimento de software
 - rollback
 - ambientes dev staging prod
@@ -47,19 +47,19 @@ Incluir discreto, em um canto, algo como "Final da temporada" ou "Ep 07/07", par
 
 ## Descrição
 
-"No episodio 01 da série, eu mostrei que existe build, CI/CD e deploy. Nos cinco episodios seguintes fomos fundo em cada camada. Agora chegamos na última: o que realmente acontece quando o código vai para o ar?
+"No episódio 01 da série, eu mostrei que existe build, CI/CD e deploy. Nos cinco episódios seguintes fomos fundo em cada camada. Agora chegamos na última: o que realmente acontece quando o código vai para o ar?
 
-Este e o vídeo final da temporada. Abro a camada que ficou por último no mapa: o cano que transforma, valida e publica o código. E no fim, revisito o mapa completo, com cada camada explicada pelos sete vídeos da série.
+Este é o vídeo final da temporada. Abro a camada que ficou por último no mapa: o cano que transforma, valida e publica o código. E no fim, revisito o mapa completo, com cada camada explicada pelos sete vídeos da série.
 
 Para quem usa IA para programar (vibe coders) e já se deparou com 'build failed' ou 'CI vermelho' sem entender o que estava acontecendo.
 
-Indice (clique nos timestamps):
+Índice (clique nos timestamps):
 0:00 Abertura
 1:30 ATO 1 - O build e por que ele quebra
 8:00 ATO 2 - O cano: CI e CD
-17:30 ATO 3 - Quando algo da errado e o fechamento da temporada
+17:30 ATO 3 - Quando algo dá errado e o fechamento da temporada
 24:00 Encerramento
 
-Glossario completo da temporada: [link do repo]
+Glossário completo da temporada: [link do repo]
 
 #build #cicd #deploy #vibecoding #ia"
