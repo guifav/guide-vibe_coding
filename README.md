@@ -1,6 +1,6 @@
 # Guide - Vibe Coding (ia-aplicada)
 
-Material de apoio à treinamentos aplicados pelo Guilherme Favaron sobre **vibe coding**: programar com IA com compreensão real do que está acontecendo, não aprovação do trabalho que a IA realiza por confiança.
+Material de apoio aos treinamentos aplicados pelo Guilherme Favaron sobre **vibe coding**: programar com IA com compreensão real do que está acontecendo, não aprovação do trabalho que a IA realiza por confiança.
 
 Cada vídeo é uma pasta em `episodes/` com o kit completo: conceito, roteiro, mapa visual, glossário, títulos/thumbnail/SEO e cortes para Shorts.
 
