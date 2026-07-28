@@ -6,7 +6,7 @@ Cada vídeo vira uma pasta em `episodes/` com o kit completo: conceito, roteiro,
 
 ## Temporada 1 — As camadas entre o código e o ar
 
-O episódio 01 desenha o mapa inteiro. Os episódios 02 a 07 fazem o zoom em cada camada, na mesma ordem da jornada que o episódio 01 conta. Cada um é autocontido, mas a ordem faz sentido se assistir na sequência.
+O episódio 01 desenha o mapa inteiro e nomeia duas jornadas: o fluxo de publicação (do código ao ar) e o fluxo de uso (do navegador ao banco). Os episódios 02 a 07 fazem o zoom em cada camada, na ordem do fluxo de uso. Cada um é autocontido, mas a ordem faz sentido se assistir na sequência.
 
 | # | Episódio | Camada | Pasta |
 |---|---|---|---|
@@ -30,7 +30,9 @@ O episódio 01 desenha o mapa inteiro. Os episódios 02 a 07 fazem o zoom em cad
 
 ## Princípios
 
-- Narrativa linear, didática, sem jargão desnecessário
+- Narrativa didática, sem jargão desnecessário
 - Cada termo técnico é traduzido em 1 frase antes de continuar
 - Conceito só entra se responde "o que quebra se isso faltar"
+- Sem afirmações absolutas: descrever configurações comuns, não regras universais
+- Identidade anônima: zero menções a empresas ou produtos reais no conteúdo público
 - Saída replicável: glossário cresce a cada vídeo
