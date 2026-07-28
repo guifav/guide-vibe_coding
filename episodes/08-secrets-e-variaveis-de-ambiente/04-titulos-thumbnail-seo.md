@@ -27,7 +27,7 @@ Fundo escuro (preto/azul escuro). A chave em amarelo, o alerta em vermelho. Uma 
 - variáveis de ambiente
 - secrets
 - chave de API
-- dotenv
+- arquivo .env
 - gitignore
 - segurança
 - vibe coding
@@ -54,4 +54,4 @@ Para quem usa IA para programar (vibe coders) e conecta serviços externos sem p
 
 Glossário completo: [link do repo]
 
-#segredos #dotenv #vibecoding #ia"
+#segredos #env #vibecoding #ia"

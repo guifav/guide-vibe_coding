@@ -50,7 +50,7 @@ Regra de ouro em cima do diagrama: **no código, só o nome. O valor, nunca.**
 
 ```
   VAZOU?
-    1. REVOGAR a chave no painel do serviço (trocar a fechadura)
+    1. REVOGAR a chave no painel do serviço (ele troca a fechadura dele)
     2. Chave NOVA no lugar certo (.env local / painel em prod)
     3. VERIFICAR uso: chamadas estranhas? cobranças?
 

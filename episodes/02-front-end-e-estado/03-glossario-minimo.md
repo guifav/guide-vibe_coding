@@ -18,11 +18,13 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 - **Estado (state)** - a memória da página enquanto ela esta aberta
 - **Variável** - caixinha com nome para guardar um valor que pode mudar
 - **Componente** - um pedaco reutilizavel da tela (botao, lista, formulario)
-- **Hook** - forma organizada de guardar o estado de um componente
+- **Hook** - nome que alguns frameworks dao a forma organizada de guardar o estado de um componente
 - **Store (estado global)** - lugar central onde estado compartilhado entre componentes mora
 - **Evento** - aviso de que o usuario fez algo (clicou, digitou, arrastou)
 - **Re-render** - o código (ou o framework) atualizar o DOM quando o estado muda; o navegador repinta o resultado
 - **Reatividade** - a tela se atualizar sozinha quando o estado muda (trabalho do framework, não do navegador)
+- **Framework** - kit de estrutura pronta (componentes, re-render, convencoes) sobre o qual o seu front roda
+- **Sessão** - memória que o servidor guarda sobre você entre requests (tema do ep05)
 
 ## Os estados que a IA esquece
 

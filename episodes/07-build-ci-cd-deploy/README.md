@@ -10,11 +10,11 @@
 
 | Arquivo | O que e |
 |---|---|
-| `00-conceito-do-vídeo.md` | Tese, público, 3 atos, tom |
+| `00-conceito-do-video.md` | Tese, público, 3 atos, tom |
 | `01-roteiro-completo.md` | Roteiro falado linear com timestamps (o coração) |
 | `02-mapa-de-camadas.md` | Visual do cano build/CI/CD/deploy + revisão do mapa da temporada |
 | `03-glossario-minimo.md` | Só os termos que aparecem no roteiro, 1 linha cada |
-| `04-títulos-thumbnail-seo.md` | Títulos, thumbnail, tags |
+| `04-titulos-thumbnail-seo.md` | Títulos, thumbnail, tags |
 | `05-shorts-cortes.md` | 5 cortes curtos, cada um isola uma etapa do cano (inclui rollback não-trivial) |
 
 **Principios do canal aplicados**

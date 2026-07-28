@@ -34,6 +34,8 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 - **Banco de dados** - o almoxarifado; memória de longo prazo que o servidor consulta
 - **Camadas** - separacao de responsabilidades: front mostra, API atende, banco guarda
 
+- **Parsear** - ler um texto estruturado (como JSON) e transformar em dado que o código usa
+
 ---
 
 ## Perguntas-chave para usar com IA

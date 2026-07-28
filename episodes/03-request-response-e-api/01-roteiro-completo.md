@@ -14,7 +14,7 @@
 
 "No episodio 01 eu contei a história de um deploy, ate ele ir ao ar. No episodio passado, a gente entrou na primeira camada, o navegador. Agora quero abrir uma das camadas mais importantes: o dialogo entre o navegador e o servidor."
 
-"Tudo que acontece na web e uma conversa de duas partes. O navegador pede. O servidor responde. Neste vídeo eu vou contar essa conversa inteira. E no caminho você vai entender por que a IA as vezes inventa coisas que não existem."
+"Praticamente tudo que acontece na web e uma conversa de duas partes. O navegador pede. O servidor responde. Neste vídeo eu vou contar essa conversa inteira. E no caminho você vai entender por que a IA as vezes inventa coisas que não existem."
 
 ### Mostrar
 
@@ -51,7 +51,7 @@ No diagrama, animar a seta do navegador para o servidor com a palavra "REQUEST".
 
 "Dois metodos cobrem 90% do que acontece na web. GET e POST."
 
-"GET e pedir. Quando você abre uma página, carrega uma lista, ve um produto, o navegador manda um GET. Ele esta dizendo: 'me da isso'. Só isso. Não muda nada no servidor. Só pede."
+"GET e pedir. Quando você abre uma página, carrega uma lista, ve um produto, o navegador manda um GET. Ele esta dizendo: 'me da isso'. Só isso. Pela convenção, não muda nada no servidor. Só pede."
 
 "POST e enviar. Quando você preenche um formulario, cria uma conta, adiciona um item no carrinho, o navegador manda um POST. Ele esta dizendo: 'aqui estão dados, faz algo com isso'."
 
@@ -180,7 +180,7 @@ Dois exemplos:
 
 "O status code e a forma honesta do servidor falar o que aconteceu. 200 e sucesso. 404 e 'não achei'. 401 e 'não te conheco'. 403 e 'te conheco, mas não pode'. 500 e 'deu ruim no meu lado'."
 
-"O problema mais comum na web e o crash silencioso. O servidor quebra, mas em vez de devolver um 500 honesto, devolve algo vazio ou uma resposta generica. O front não sabe o que aconteceu. A tela fica parada, sem mensagem."
+"Um dos problemas mais comuns da web e o crash silencioso. O servidor quebra, mas em vez de devolver um 500 honesto, devolve algo vazio ou uma resposta generica. O front não sabe o que aconteceu. A tela fica parada, sem mensagem."
 
 ### Mostrar
 
@@ -264,7 +264,7 @@ Mostrar o diagrama completo com as tres camadas destacadas: front, API, banco.
 
 ### Na camera
 
-"Tudo que acontece na web e uma conversa de duas partes. Request e response. O navegador pede com um metodo (GET ou POST), bate num endpoint, e recebe de volta um JSON dentro de um contrato, com um status code honesto."
+"Praticamente tudo que acontece na web e uma conversa de duas partes. Request e response. O navegador pede com um metodo (GET ou POST), bate num endpoint, e recebe de volta um JSON dentro de um contrato, com um status code honesto."
 
 "O front não sabe do banco. Só conversa com a API. Essa fronteira e o que mantem o sistema são."
 

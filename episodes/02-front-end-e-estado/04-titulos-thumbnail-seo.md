@@ -49,7 +49,6 @@ Fundo escuro (preto ou azul escuro). O ciclo em amarelo ou verde-limao. Os cinco
 - reatividade
 - vibe coding
 - programacao com IA
-- React (se quiser puxar busca de framework)
 - iniciantes
 - ciclo de render
 - ia aplicada
@@ -65,7 +64,7 @@ Indice (clique nos timestamps):
 0:45 ATO 1 - O navegador monta a página (arquivos, DOM, render)
 6:00 ATO 2 - Estado e o ciclo de re-render (evento, estado, tela)
 12:00 ATO 3 - Os 5 estados que a IA esquece
-17:00 Quando o estado precisa ir para o servidor (ponte para o ep. 03)
+16:30 Quando o estado precisa ir para o servidor (ponte para o ep. 03)
 
 Glossario completo: [link do repo]
 

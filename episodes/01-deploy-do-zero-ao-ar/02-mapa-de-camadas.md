@@ -51,7 +51,8 @@ O que acontece quando alguém acessa a URL já publicada.
   |  - verifica AUTH              |
   |    (autenticação: quem e você)|
   |    (autorização: o que pode)  |
-  |  - devolve a RESPOSTA (JSON)  |
+  |  - devolve a RESPOSTA         |
+  |    (a página, ou um JSON)     |
   +-------------------------------+
                 |
                 v

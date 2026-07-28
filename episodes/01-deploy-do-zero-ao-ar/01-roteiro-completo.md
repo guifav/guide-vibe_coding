@@ -99,7 +99,7 @@ No diagrama, o servidor aparece como outra máquina, separada do computador de c
 
 "O servidor recebe, processa, e devolve uma resposta. Essa resposta pode ser a página pronta para renderizar, ou pode ser um dado (uma lista de produtos, por exemplo) que o navegador vai montar na tela."
 
-"Dois termos que aparecem juntos: request (pedido) e response (resposta). Tudo que acontece na web e uma conversa dessas."
+"Dois termos que aparecem juntos: request (pedido) e response (resposta). Praticamente tudo que acontece na web e uma conversa dessas."
 
 ### Cena 3 - API (5:45-7:00)
 
@@ -179,7 +179,7 @@ Mostrar o mapa com servidor, API, banco e auth destacados.
 
 "CI/CD e um cano automatizado. Toda vez que você manda código novo para o repo, ele passa por esse cano: roda lint (verifica estilo), roda testes, roda build. Se tudo verde, pode ir para o ar. Se algo vermelho, bloqueia."
 
-"CI significa Continuous Integration. CD significa Continuous Deployment. O detalhe não importa agora. O que importa: e um portao automatico que impede código quebrado de chegar no ar."
+"CI significa Continuous Integration. CD tem duas leituras, Continuous Delivery ou Continuous Deployment (o ep07 abre essa diferença). O detalhe não importa agora. O que importa: e um portao automatico que impede código quebrado de chegar no ar."
 
 "Quando a IA fala em 'CI vermelho', 'CI verde', 'pipeline', 'teste falhou', ela esta falando desse cano."
 
@@ -229,7 +229,7 @@ Mostrar o mapa completo com o fluxo de publicação: código, git, build, CI/CD,
 
 "O usuario digita meuapp.com no navegador. O DNS traduz esse nome no endereço do servidor."
 
-"O navegador manda um request para uma entrada da API. O servidor recebe, executa a lógica correspondente, consulta o banco se precisar, verifica auth se for o caso, e devolve uma response."
+"O navegador manda o primeiro request pedindo a própria página. Depois, de dentro da página, os pedidos de dado batem nas entradas da API. Em cada request o servidor recebe, executa a lógica correspondente, consulta o banco se precisar, verifica auth se for o caso, e devolve uma response."
 
 "O navegador recebe a resposta e renderiza a página. Se a página tem estado, ela pode mudar sem recarregar, mas isso e o próximo vídeo."
 

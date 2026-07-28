@@ -47,7 +47,8 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferra
                 v
   +-------------------------------------------+
   |  RE-RENDER: a tela atualiza               |
-  |  (o navegador re-pinta a parte que mudou) |
+  |  (o código atualiza o DOM;                |
+  |   o navegador repinta o que mudou)        |
   +-------------------------------------------+
                 |
                 v

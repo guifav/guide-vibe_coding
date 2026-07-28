@@ -142,7 +142,7 @@ O diagrama "Onde o estado mora" do arquivo 02, com quatro blocos: variável loca
 
 "Primeira categoria: variável local. Uma variável e uma caixinha com um nome. Você coloca um valor dentro, e pode ler ou trocar. O contador que acabamos de ver e uma variável local. Ela mora na página, e some quando a página fecha."
 
-"Segunda categoria: hook. Em frameworks modernos de front-end, o estado de um pedaco da tela e organizado numa estrutura chamada hook. Hook e só um nome chique para uma forma organizada de guardar o estado de um componente. Componente, por sua vez, e um pedaco reutilizavel da tela, tipo um botao ou uma lista."
+"Segunda categoria: estado de componente. Componente e um pedaco reutilizavel da tela, tipo um botao ou uma lista. Em alguns frameworks, a forma organizada de guardar o estado de um componente se chama hook; outros frameworks usam outros nomes para a mesma ideia. Hook e só um nome chique para isso."
 
 "Terceira categoria: store, ou estado global. Quando varias partes da tela precisam ler o mesmo valor, tipo quem e o usuario logado ou o que tem no carrinho, você não espalha isso em variáveis soltas. Você coloca num lugar central, chamado store. Store e a prateleira compartilhada da página."
 
@@ -316,7 +316,7 @@ Mostrar o mapa completo do ciclo, agora com os 5 estados em volta dele. Dizer: "
 
 "O ciclo se repete: evento, estado, re-render. Evento, estado, re-render. Quando você entende isso, você para de tratar a tela como uma coisa só e comeca a enxergar as tres partes."
 
-"E quando a IA gerar uma tela que mostra dados, cobre os cinco estados. Loading, empty, error, partial, stale. Ela vai ter tratado só o caminho feliz."
+"E quando a IA gerar uma tela que mostra dados, cobre os cinco estados. Loading, empty, error, partial, stale. Ela provavelmente tratou só o caminho feliz."
 
 ### Call to action
 

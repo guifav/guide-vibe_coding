@@ -54,7 +54,7 @@ Tres situações lado a lado, cada uma com um X: servidor reiniciou (memória su
 
 ### Mostrar
 
-Uma tabela simples com duas colunas: "memória da página (morre)" e "memória do servidor (dura)". Exemplos lado a lado.
+Uma tabela simples com duas colunas: "memória da página (morre)" e "banco (dura)". Exemplos lado a lado.
 
 ### Falar
 
@@ -114,9 +114,9 @@ Diagrama: servidor -> seta com "query" -> banco -> seta com "resultado" -> servi
 
 ### Falar
 
-"No banco relacional a query costuma ser escrita numa linguagem chamada SQL. Mas o detalhe não importa agora. O que importa: query e a pergunta, resultado e a resposta."
+"No banco relacional a query costuma ser escrita numa linguagem chamada SQL. Mas o detalhe não importa agora. O que importa: query e a pergunta, resultado e a resposta. E query não e só leitura: também grava, altera e apaga. A query de leitura e o select."
 
-"Quando a IA fala em 'query', 'select', 'buscar', 'filtrar', ela esta falando de uma pergunta ao banco. Se ela montar a query errada, o banco responde errado sem reclamar. Ele não sabe o que você quis dizer."
+"Quando a IA fala em 'query', 'select', 'buscar', 'filtrar', ela esta falando de uma pergunta ao banco. Query invalida, o banco reclama na hora. Mas query valida perguntando a coisa errada, o banco responde errado sem reclamar. Ele não sabe o que você quis dizer."
 
 ### Cena 3 - Schema: a estrutura dos dados (8:15-12:00)
 
@@ -202,7 +202,7 @@ Linha do tempo: schema v1 -> migracao -> schema v2. código novo espera schema v
 
 "Aqui e onde a IA mais engana. Ela sugere adicionar uma coluna no código, criar uma nova tabela, mudar um campo. Mas ela as vezes ignora a migracao. Ela escreve o código como se o banco já estivesse atualizado."
 
-"Resultado: você sobe o código, e na hora de gravar o dado, o banco reclama que a coluna não existe. Ou pior, ele não reclama e o dado some."
+"Resultado: você sobe o código, e na hora de gravar o dado, o banco reclama que a coluna não existe. Ou pior: a aplicação ignora o erro que o banco devolveu, e o dado some sem aviso."
 
 "Quando a IA sugerir mexer na estrutura de dados, pergunte sempre: isso precisa de migracao? Ela já gerou? Quem vai rodar?"
 

@@ -20,20 +20,22 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 ## No servidor
 
 - **Servidor** - outro computador, sempre ligado, que responde a pedidos
+- **IP** - o endereço numérico de uma maquina na rede; o DNS traduz nome em IP
 - **Request** - pedido que o navegador manda para o servidor
 - **Response** - resposta que o servidor devolve
 - **API** - o balcao de atendimento do servidor; contrato de pedido/resposta
-- **Endpoint** - uma porta especifica da API (ex: /api/clusters)
+- **Endpoint** - uma porta especifica da API (ex: /api/produtos)
 - **JSON** - formato de texto organizado para dados trafegarem
 - **Banco de dados** - memória de longo prazo do servidor
 - **Autenticação** - identifica quem e você (o login)
 - **Autorização** - decide o que você pode fazer, depois de autenticado
 - **Auth** - nome coletivo que costuma cobrir autenticação e autorização juntas
-- **Token** - cracha que o servidor da depois do login; cada request carrega
+- **Token** - cracha que o servidor da depois do login; em muitos projetos, cada request o carrega
 
 ## Indo ao ar
 
 - **Build** - transformação do código em algo servivel (cozinha); em projetos simples pode não existir
+- **Framework** - kit de estrutura pronta sobre o qual o seu código roda
 - **CI/CD** - cano automatizado que testa o código antes de publicar
 - **Lint** - verificador de estilo do código dentro do CI
 - **Deploy** - ato de colocar a nova versao no servidor na nuvem

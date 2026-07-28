@@ -32,7 +32,8 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 - **RBAC (Role-Based Access Control)** - nome técnico para permissao por papel
 - **Permissao por recurso** - pergunta "esse item e seu?" em vez de "qual seu papel?"
 - **Admin** - papel que pode tudo: ver, editar, apagar, gerenciar
-- **403 (Forbidden)** - código HTTP que significa "você esta autenticado, mas não autorizado"
+- **403 (Forbidden)** - código HTTP do "não pode": o servidor nega esse acesso (o 401 e o "não sei quem você e", falta login)
+- **Middleware** - código que roda antes de cada request; no auth, o porteiro que verifica o cracha
 
 ## O ciclo
 

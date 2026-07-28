@@ -59,7 +59,7 @@ O fluxo que conecta o seu computador à main do repo:
                   o deploy não vê
 
   MERGE DIRETO NA MAIN: sem PR, sem review
-                        sinal de amadorismo em projeto serio
+                        em time, costuma ser sinal de alerta
                         código sem segundo par de olhos
 ```
 

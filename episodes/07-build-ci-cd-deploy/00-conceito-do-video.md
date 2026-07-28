@@ -6,7 +6,7 @@ No episódio 01 vimos que existe build, CI/CD e deploy. Vimos que eles moram na 
 
 O código que o usuario recebe passa por um cano antes de chegar la. Entre o que você escreve e o que vai ao ar existe um cano: o build transforma, o CI valida, o CD publica, o ambiente recebe, o deploy troca de versao. Cada etapa desse cano pode quebrar, pode bloquear, pode salvar. Quem programa com IA e não enxerga o cano fica refem da mensagem de erro que aparece na tela, sem saber onde o problema mora.
 
-Este vídeo também e o fechamento da temporada. No fim, voltamos ao mapa do episódio 01, agora com cada camada explicada pelos sete vídeos da série. O espectador que assistiu tudo sai com o mapa completo na cabeça.
+Este vídeo também e o fechamento da temporada. No fim, voltamos ao mapa do episódio 01, agora com cada camada explicada ao longo da série. O espectador que assistiu tudo sai com o mapa completo na cabeça.
 
 ## Por que esse formato funciona
 

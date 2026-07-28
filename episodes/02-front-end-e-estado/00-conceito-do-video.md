@@ -25,7 +25,7 @@ O objetivo deste vídeo e fazer o espectador enxergar tres coisas: o que o naveg
 
 Direto, sem jargao desnecessario. Cada termo técnico que aparece e imediatamente traduzido em uma frase. Didático, acessível. Gui falando para camera ou com tela mostrando um diagrama simples ou uma página rodando.
 
-Sem favoritismo de framework. React, Vue, Svelte aparecem como exemplos pontuais, nunca como recomendação.
+Sem favoritismo de framework. Nenhum framework e nomeado no vídeo; os conceitos valem para qualquer um.
 
 ## Estrutura em 3 atos
 

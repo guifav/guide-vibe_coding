@@ -28,7 +28,7 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta. Este glo
 
 ## Ambientes
 
-- **Ambiente** - servidor (ou conjunto) com um proposito especifico no ciclo
+- **Ambiente** - um lugar onde o código roda, com um proposito especifico no ciclo
 - **Local** - seu computador; só você ve
 - **Dev** - servidor compartilhado de teste; quebra a vontade
 - **Staging** - ensaio; copia o mais proxima possivel do real
@@ -75,7 +75,7 @@ Termos dos episodios anteriores, para consulta.
 - **HTML / CSS / JavaScript** - o que aparece / como aparece / o que acontece (ep02)
 - **Estado (state)** - memória da página enquanto esta aberta (ep02)
 - **Variável** - nome para guardar um valor que pode mudar (ep02)
-- **Servidor** - outro computador, sempre ligado, responde a pedidos (ep03)
+- **Servidor** - outro computador, sempre ligado, responde a pedidos (ep01)
 - **Request / Response** - pedido que vai / resposta que volta (ep03)
 - **API** - balcao de atendimento do servidor; contrato de pedido/resposta (ep03)
 - **Endpoint** - uma porta especifica da API (ep03)

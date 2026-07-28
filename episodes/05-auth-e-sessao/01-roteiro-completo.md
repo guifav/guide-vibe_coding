@@ -14,6 +14,8 @@
 
 "Se você usa IA para programar, a IA vai sugerir bibliotecas de auth, vai falar em token, em sessao, em JWT. Mas para você confiar, para você saber quando ela esta certa e quando ela esta te colocando em risco, você precisa enxergar o que acontece por tras."
 
+"Se você viu o episodio 03, lembra do 401 e do 403 na tabela de status codes. Hoje você ve de onde os dois nascem."
+
 "Neste vídeo vou contar a história de um login, do visitante anônimo ate o logoff. Cada conceito aparece no momento em que ele se torna necessário."
 
 ### Mostrar
@@ -120,7 +122,7 @@ Dois requests seguidos. O servidor responde igual, sem ligar um ao outro. "Quem 
 
 "Sessao e a memória que mora no servidor. Funciona assim: você faz login, o servidor cria uma sessao para você, guarda essa sessao na memória dele ou no banco, e te da um identificador dessa sessao."
 
-"Esse identificador se chama session ID. Session ID e só um número ou texto longo que aponta para a sessao guardada no servidor."
+"Esse identificador se chama session ID. Session ID e só um texto longo e aleatorio que aponta para a sessao guardada no servidor."
 
 "A partir dai, cada request seu carrega esse session ID. O servidor recebe o request, le o session ID, vai na memória dele, descobre que e você, e responde como se você tivesse acabado de fazer login."
 
@@ -138,7 +140,7 @@ Diagrama: login -> servidor cria sessao (memória do servidor) -> devolve sessio
 
 ### Falar
 
-"Tem um outro modelo, mais moderno, chamado token. A diferença fundamental e onde a memória mora."
+"Tem um outro modelo, chamado token. A diferença fundamental e onde a memória mora."
 
 "No token, depois do login o servidor não guarda sessao nenhuma. Em vez disso, ele te da um cracha. Um texto longo, codificado, que carrega dentro dele a informação de quem e você."
 
@@ -247,7 +249,7 @@ Dois usuarios, cada um com seus itens. User A tenta editar item do user B. Bloqu
 
 "Aqui o ponto mais importante para quem programa com IA. Auth e a camada que mais sofre com sugestoes de 'simplificação'."
 
-"A IA vai te dizer: 'para simplificar, vamos remover essa verificação de permissao'. Ou: 'vamos desativar o token temporariamente para testar'. Ou: 'esse middleware de auth esta bloqueando, vou comentar'."
+"A IA vai te dizer: 'para simplificar, vamos remover essa verificação de permissao'. Ou: 'vamos desativar o token temporariamente para testar'. Ou: 'esse middleware de auth esta bloqueando, vou comentar'. Middleware, aqui, e o porteiro do servidor: o código que roda antes de cada request para verificar o cracha."
 
 "Cada uma dessas frases e um sinal de perigo. Quando você remove auth, você abre o servidor para o mundo. O que era protegido vira público. O que era restrito a você vira restrito a ninguém."
 
@@ -267,7 +269,7 @@ Tela com um diff de código. Uma linha de verificação de permissao sendo remov
 
 "Tres coisas que podem dar errado depois do login."
 
-"Primeiro: logoff. Logoff e o ato de encerrar a sessao ou invalidar o token. Se o servidor não trata logoff direito, o cracha continua valendo mesmo depois de você sair."
+"Primeiro: logoff. Logoff e o ato de encerrar a sessao ou invalidar o token. Se o servidor não trata logoff direito, o cracha continua valendo mesmo depois de você sair. E tem um detalhe do modelo token: como o servidor não guarda nada, o logoff muitas vezes e só jogar o cracha fora do lado do cliente. O servidor não tem uma lista do que anulou. E exatamente por isso que a expiracao importa tanto."
 
 "Segundo: expiracao. Token e sessao tem prazo de validade. Se não expira, vale para sempre. Um cracha que não expira e um risco: se alguém roubar, usa para sempre."
 

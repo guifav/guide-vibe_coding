@@ -26,7 +26,7 @@ Cada corte isola um conceito do versionamento, com gancho para o vídeo completo
 
 ## Short 3 - Pull request: por que não joga direto na main?
 
-**Gancho:** "Em projeto serio, ninguém joga código direto na main. Por quê?"
+**Gancho:** "Em time, em projeto serio, quase ninguém joga código direto na main. Por quê?"
 
 **Corpo:** porque existe um portao. Pull request, ou PR, e o pedido formal de merge. Você diz: tenho uma branch pronta, olha o que mudei, posso juntar? Alguém revisa, comenta, aprova. Só depois o merge acontece. PR e o portao entre 'eu fiz' e 'isso esta na main'.
 

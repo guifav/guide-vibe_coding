@@ -27,7 +27,7 @@ Direto, sem jargao desnecessario. Cada termo técnico que aparece e imediatament
 ## Estrutura em 3 atos
 
 **ATO 1 - O problema e a foto (commit + repo)**
-Onde tudo comeca. O problema de voltar no tempo sem rede de seguranca. O commit como foto do código. A anatomia de cada foto (mensagem, autor, data, imutavel). E o repository, o lugar onde as fotos ficam guardadas, com o GitHub como o repo na nuvem.
+Onde tudo comeca. O problema de voltar no tempo sem rede de seguranca. O commit como foto do código. A anatomia de cada foto (mensagem, autor, data, imutavel). E o repository, o lugar onde as fotos ficam guardadas, com uma plataforma de repositório como o repo na nuvem.
 
 **ATO 2 - Trabalhando em paralelo (branch + merge + conflito)**
 Ninguém quer estragar o original enquanto testa algo. A branch e a linha paralela. A main e a principal. O merge junta de volta. E o conflito, quando duas pessoas mexem no mesmo arquivo e a máquina não decide sozinha.

@@ -8,7 +8,7 @@ Cada corte isola uma camada, com gancho para o vídeo completo.
 
 **Gancho (0-3s):** "Você clica num botao e a tela muda. Sem recarregar. Como?"
 
-**Corpo:** estado e a memória da página enquanto ela esta aberta. Variável e a caixinha com nome. O navegador le a variável e renderiza. (Este tema e aprofundado no ep02; no ep01 e só um gancho.)
+**Corpo:** estado e a memória da página enquanto ela esta aberta. E por isso que a tela muda sem recarregar: a página guarda valores e redesenha o que depende deles. (Este tema e aprofundado no ep02; no ep01 e só um gancho.)
 
 **CTA:** "No vídeo completo eu conto todas as camadas entre o código e o ar. Link na descrição."
 

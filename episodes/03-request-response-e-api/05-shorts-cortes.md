@@ -8,7 +8,7 @@ Cada corte isola um conceito do dialogo request/response, com gancho para o víd
 
 **Gancho (0-3s):** "Você clica e a tela muda. Mas o que viajou entre o clique e a resposta?"
 
-**Corpo:** tudo na web e uma conversa de duas partes. O navegador manda um pedido (request). O servidor processa e devolve uma resposta (response). Isso acontece toda vez que você abre um site, clica num botao, carrega uma lista. Tudo e request e response.
+**Corpo:** quase tudo na web e uma conversa de duas partes. O navegador manda um pedido (request). O servidor processa e devolve uma resposta (response). Isso acontece toda vez que você abre um site, clica num botao, carrega uma lista. No fundo, e request e response.
 
 **CTA:** "No vídeo completo eu abro essa conversa inteira, ate o JSON. Link na descrição."
 

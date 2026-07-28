@@ -42,7 +42,7 @@ Lado a lado: o arquivo de código fonte (com indentacao, comentarios, nomes long
 
 ### Falar
 
-"Dependendo do projeto, o build pode fazer varias coisas. Nem todo build faz tudo isso: tem projeto que só traduz a sintaxe, tem projeto que faz tudo junto. Mas vale conhecer o que pode acontecer dentro dele, para quando a IA falar o nome você saber do que se trata."
+"Dependendo do projeto, o build pode fazer varias coisas. Nem todo build faz tudo isso: tem projeto que só traduz a sintaxe, tem projeto que faz tudo junto. Mas vale conhecer o que pode acontecer dentro dele, para quando a IA falar o nome você saber do que se trata. Os nomes que você vai ouvir: compile (traduz), minify (reduz), bundle (junta), tree-shake (remove o que ninguém usa)."
 
 "Ele pode traduzir a sintaxe. Pegar código escrito em uma linguagem que o humano gosta e transformar em uma versao que a máquina executa. E como traduzir de um idioma para outro."
 
@@ -108,7 +108,7 @@ Diagrama do cano: commit -> [lint] -> [testes] -> [build] -> [pronto para deploy
 
 "Segundo: testes. Teste e um pedaco de código que verifica se outro pedaco de código faz o que deveria. Você escreve: 'se eu passar X, espero Y'. O cano roda todos os testes. Se algum falha, vermelho. Teste não garante que o código esta certo, mas garante que os comportamentos que você prometeu continuam funcionando."
 
-"Terceiro: o build. Sim, o mesmo build do ATO 1. O CI também roda o build, porque se o build não passa na máquina do cano, e um sinal forte de problema. Mas atenção: o CI não replica o ambiente de produção por completo. O que passa lá pode quebrar aqui. Mesmo assim, e a melhor porta que temos antes do ar."
+"Terceiro: o build. Sim, o mesmo build do ATO 1. O CI também roda o build, porque se o build não passa na máquina do cano, e um sinal forte de problema. Mas atenção: o CI não replica o ambiente de produção por completo. O que passa no CI ainda pode quebrar em produção. Mesmo assim, e a melhor porta que temos antes do ar."
 
 ### Mostrar
 
@@ -126,7 +126,7 @@ O diagrama do cano de novo, agora com as tres etiquetas explicadas: lint (estilo
 
 "CD pode significar duas coisas parecidas que vale distinguir, já que este e o episódio profundo. Continuous Delivery prepara uma versao publicável e para: o código passa em tudo, fica pronto, mas exige um humano apertar o botao de publicar. Continuous Deployment vai além: depois do CI verde, publica em produção automaticamente, sem decisão humana. Delivery prepara com portao humano; Deployment publica sozinho. Na prática os dois se chamam CD. O que importa e saber que existe essa fronteira de automação."
 
-"Ou seja: você da um push, o cano roda sozinho, e se tudo verde, o código vai para o ar sem nenhum humano apertar botao."
+"No modo Deployment: você da um push, o cano roda sozinho, e se tudo verde, o código vai para o ar sem nenhum humano apertar botao."
 
 "Em times mais conservadores, o CD para antes de publicar e espera um humano aprovar. Em times mais soltos, publica direto. Cada equipe escolhe o nível de confianca."
 
@@ -138,7 +138,7 @@ O diagrama do cano estendido: commit -> lint -> testes -> build -> [CD: publica 
 
 ### Falar
 
-"O código não vai direto para o ar. Ele passa por ambientes. Ambiente e um servidor, ou um conjunto de servidores, com um proposito."
+"O código não vai direto para o ar. Ele passa por ambientes. Ambiente e um lugar onde o código roda, com um proposito."
 
 "Quatro ambientes que você vai encontrar."
 
@@ -164,7 +164,7 @@ Quatro caixas em linha: local, dev, staging, prod. Cada uma com uma cor. Local e
 
 "Quando o código chega em prod, como ele entra? Tem varios jeitos. Você não precisa saber todos. Precisa conhecer dois, que são os que importam para a conversa sobre risco."
 
-"Primeiro: blue-green. Você sobe a versao nova em um servidor paralelo, ao lado da antiga. Testa. Quando tem confianca, troca o trafego de uma vez: todo mundo que chega agora vai para a nova. A antiga fica la, pronta para voltar se der problema."
+"Primeiro: blue-green. Você sobe a versao nova em um servidor paralelo, ao lado da antiga. Testa. Quando tem confianca, troca o trafego de uma vez: todo mundo que chega agora vai para a nova. A antiga fica la, pronta para voltar se der problema. Ninguém ve janela de indisponibilidade: e o tal do zero downtime."
 
 "Segundo: canary. Você libera a versao nova para uma pequena parcela dos usuarios primeiro. Cinco por cento, dez por cento. Se nada quebra, vai aumentando ate cem. Se quebra, só poucos perceberam e você volta rápido."
 
@@ -198,7 +198,7 @@ Mostrar o cano completo: commit -> push -> CI (lint, testes, build) -> CD -> amb
 
 "Mas aqui e onde mora o detalhe que quase ninguém te conta: rollback do código só é seguro quando o banco, a API e a versao anterior continuam compatíveis."
 
-"Exemplo. A versao nova mudou o esquema do banco de dados, criando uma coluna nova. O código novo gravou dado nessa coluna. Você faz rollback para o código antigo. O código antigo não conhece aquela coluna. Ele pode quebrar, ou simplesmente ignorar dado importante. Em vez de resolver o incidente, você acabou de criar um segundo."
+"Exemplo. A versao nova mudou o schema do banco de dados, criando uma coluna nova. O código novo gravou dado nessa coluna. Você faz rollback para o código antigo. O código antigo não conhece aquela coluna. Ele pode quebrar, ou simplesmente ignorar dado importante. Em vez de resolver o incidente, você acabou de criar um segundo."
 
 "Ou então a versao nova mudou o formato de resposta da API. Outros sistemas que dependem dela já se adaptaram. Você volta o código. Agora a API fala um idioma que ninguém mais espera. Rollback de código não desfaz mudança de dado. Ele só troca de versao."
 
@@ -248,7 +248,7 @@ O diagrama do cano completo, agora em uma linha só, com todas as etapas e setas
 
 ### Falar
 
-"Esse vídeo fecha a temporada. No episodio 01 eu desenhei um mapa com todas as camadas entre o código e o ar. Hoje, sete episodios depois, cada uma dessas camadas já foi aberta."
+"Esse vídeo fecha a temporada. No episodio 01 eu desenhei um mapa com todas as camadas entre o código e o ar. Hoje, seis episodios depois, cada uma dessas camadas já foi aberta."
 
 Mostrar o mapa do episodio 01 na tela, completo.
 
@@ -276,7 +276,7 @@ Apontar para cada camada a medida que fala:
 
 ### Na camera
 
-"Essa foi a primeira temporada. Sete vídeos, cada um aprofundando uma camada do mapa."
+"Essa foi a primeira temporada. Sete vídeos: o primeiro desenhou o mapa, os outros seis aprofundaram as camadas."
 
 "Se você assistiu tudo, parabens. Você saiu de 'a IA escreve e eu aprovo sem ler' para 'a IA escreve e eu sei em qual camada isso mora'. Isso muda tudo."
 

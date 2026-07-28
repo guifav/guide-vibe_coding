@@ -121,11 +121,11 @@ No diagrama, a linha principal (main) e uma linha secundaria (branch) saindo del
 
 "A linha principal tem um nome especial: main. Antigamente se chamava master, você ainda vai ver esse nome por ai. Hoje o padrao e main."
 
-"Main e a versao oficial do projeto. E o que esta em produção, e o que o deploy usa. Ninguém mexe direto na main em projetos serios."
+"Main e a versao oficial do projeto. E o que esta em produção, e o que o deploy usa. Em time, na maioria dos projetos serios, ninguém mexe direto na main."
 
 "O fluxo e: você cria uma branch a partir da main, faz seus commits nessa branch, e a main continua limpa, intacta, enquanto você trabalha."
 
-"Uma branch e um ponteiro. O git e esperto: ele só guarda o que mudou entre a branch e a main, evitando duplicar tudo."
+"Uma branch e um ponteiro com nome. Criar branch não copia o projeto: e só um ponteiro novo apontando para uma foto que ja existe. Por isso e instantaneo e não duplica nada."
 
 ### Mostrar
 
@@ -183,7 +183,7 @@ Mostrar o mapa com branch, main, merge e conflito destacados.
 
 ### Falar
 
-"Em um projeto profissional, você não faz merge direto na main. Nunca. Você abre um pedido formal para alguém revisar antes. Esse pedido se chama pull request, ou PR."
+"Em um projeto profissional em time, você não faz merge direto na main. Você abre um pedido formal para alguém revisar antes. Esse pedido se chama pull request, ou PR."
 
 "PR e exatamente isso: um pedido. Você diz 'tenho uma branch pronta, olha aqui o que mudei, posso juntar na main?'."
 
@@ -209,7 +209,7 @@ Interface de um PR na plataforma de repositório: título, descrição, lista de
 
 "Só depois que o review passa, o merge acontece. O PR e o portao entre 'eu fiz' e 'isso esta na main'."
 
-"Em projetos open source serios, todo código entra por PR. Ninguém, nem o criador do projeto, joga direto na main. E cultura."
+"Em muitos projetos open source serios, todo código entra por PR: nem o criador do projeto joga direto na main. E cultura."
 
 ### Falar
 

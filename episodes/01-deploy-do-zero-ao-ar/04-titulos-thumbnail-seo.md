@@ -52,7 +52,7 @@ Indice (clique nos timestamps):
 3:30 ATO 2 - As camadas do servidor (servidor, API, banco, auth)
 9:30 ATO 3 - Indo ao ar (build, CI/CD, deploy, domínio)
 14:30 A volta final: o fluxo de uso (o que acontece quando alguém acessa)
-16:00 Como usar isso com IA
+15:30 Como usar isso com IA
 
 Glossario completo: [link do repo]
 

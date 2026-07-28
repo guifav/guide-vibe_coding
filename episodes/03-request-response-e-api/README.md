@@ -13,7 +13,7 @@
 
 | Arquivo | O que e |
 |---|---|
-| `00-conceito-do-vídeo.md` | Tese, público, 3 atos, tom |
+| `00-conceito-do-video.md` | Tese, público, 3 atos, tom |
 | `01-roteiro-completo.md` | Roteiro falado linear com timestamps (o coração) |
 | `02-mapa-de-camadas.md` | Visual do dialogo request/response para mostrar na tela |
 | `03-glossario-minimo.md` | Só os termos que aparecem no roteiro, 1 linha cada |
@@ -21,6 +21,6 @@
 | `05-shorts-cortes.md` | 4 cortes curtos, cada um isola um conceito |
 
 **Principios do canal aplicados**
-- Didática por analogia operacional: cada conceito vira analogia do mundo fisico (balcao, carta, almoxarifado)
+- Didática por analogia operacional: cada conceito vira analogia do mundo fisico (balcao, caixa eletronico, almoxarifado)
 - Conceito só entra se responde "o que quebra se isso faltar"
 - Termina com a pergunta-chave que o espectador faz para a IA: "qual e o contrato real dessa API?"

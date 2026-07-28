@@ -18,7 +18,7 @@ Cada corte isola um conceito, com gancho para o vídeo completo.
 
 **Gancho:** "Você clica num botao e a tela muda. Sem recarregar. Como?"
 
-**Corpo:** a página tem memória. Chama estado. Estado e a diferença entre uma página morta e uma página viva. Onde mora? Variável local para coisas simples. Hook para o estado de um componente. Store para estado compartilhado entre componentes. Quando o estado muda, o navegador repinta a parte da tela que depende dele.
+**Corpo:** a página tem memória. Chama estado. Estado e a diferença entre uma página morta e uma página viva. Onde mora? Variável local para coisas simples. Estado de componente (que alguns frameworks chamam de hook). Store para estado compartilhado entre componentes. Quando o estado muda, o código atualiza o DOM e o navegador repinta a parte que depende dele.
 
 **CTA:** "O ciclo completo (evento, estado, re-render) ta no vídeo principal."
 
@@ -28,7 +28,7 @@ Cada corte isola um conceito, com gancho para o vídeo completo.
 
 **Gancho:** "Toda vez que você interage com a página, o mesmo ciclo acontece. Tres passos."
 
-**Corpo:** primeiro, evento. Você clica, digita, arrasta. O navegador dispara um aviso. Segundo, estado muda. O código atualiza o valor guardado. Terceiro, re-render. O navegador repinta a tela. Isso se repete toda vez. Evento, estado, re-render. Isso e reatividade: a tela se atualizar sozinha quando o estado muda.
+**Corpo:** primeiro, evento. Você clica, digita, arrasta. O navegador dispara um aviso. Segundo, estado muda. O código atualiza o valor guardado. Terceiro, re-render. O código atualiza o DOM e o navegador repinta a tela. Isso se repete toda vez. Evento, estado, re-render. Isso e reatividade: a tela se atualizar sozinha quando o estado muda.
 
 **CTA:** "Quer entender o front-end sem jargao? Vídeo completo no canal."
 

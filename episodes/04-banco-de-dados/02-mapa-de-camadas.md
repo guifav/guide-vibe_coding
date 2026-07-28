@@ -11,7 +11,7 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferra
   +-------------------------------+
   |  NAVEGADOR (front)            |  <- estado da página (morre ao fechar)
   |  - variáveis locais           |
-  |  - memória de sessao          |
+  |  - memória enquanto a aba vive|
   +-------------------------------+
                 |
                 | request com dado
