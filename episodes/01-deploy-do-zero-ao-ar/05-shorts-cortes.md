@@ -16,7 +16,7 @@ Cada corte isola uma camada, com gancho para o vídeo completo.
 
 ## Short 2 - Servidor: por que seu computador não serve seu site?
 
-**Gancho:** "Seu computador não e um bom servidor. Por quê?"
+**Gancho:** "Seu computador e um servidor ruim. Por quê?"
 
 **Corpo:** computador de casa desliga, troca IP, fica atras de roteador. E possível expor um computador doméstico, mas e instável e exige configuração e segurança. Servidor e outro computador, sempre ligado, respondendo a pedidos. Request vai, response volta.
 
@@ -26,7 +26,7 @@ Cada corte isola uma camada, com gancho para o vídeo completo.
 
 ## Short 3 - API: o balcao do servidor
 
-**Gancho:** "API não e tecnologia. E um balcao."
+**Gancho:** "API e um balcao. Entenda por quê."
 
 **Corpo:** navegador bate no balcao e pede algo. Servidor busca e devolve. Endpoint e uma porta do balcao. JSON e o formato da resposta.
 
@@ -36,8 +36,8 @@ Cada corte isola uma camada, com gancho para o vídeo completo.
 
 ## Short 4 - Deploy: o ato de publicar
 
-**Gancho:** "Deploy não e só apertar um botao. E a última camada."
+**Gancho:** "Deploy e a última camada. Tem todo um caminho atras dele."
 
 **Corpo:** build transforma código em algo servivel. CI/CD testa antes. Deploy coloca no servidor na nuvem. Domínio aponta para la. Usuario digita e o ciclo acontece.
 
-**CTA:** "A jornada completa do zero ao ar ta no vídeo principal."
+**CTA:** "A história completa do deploy ta no vídeo principal."

@@ -4,13 +4,13 @@
 
 Tudo que acontece na web e uma conversa entre duas partes: o navegador pede, o servidor responde. Parece simples. Mas a maioria das pessoas que programa com IA hoje não enxerga essa conversa. Para a IA, tudo e "chama a API e pronto". Para quem decide, falta entender o que esta sendo pedido, o que esta sendo devolvido, e por que as vezes a IA inventa um contrato que não existe.
 
-Este vídeo conta a história de um pedido. Do momento em que o navegador dispara um request ate o momento em que a resposta chega e vira tela. Não e curso de HTTP. E a narrativa de um dialogo: cada conceito surge da necessidade do passo anterior.
+Este vídeo conta a história de um pedido, ate a resposta chegar e virar tela. E a narrativa de um dialogo: cada conceito surge da necessidade do passo anterior.
 
-O objetivo não e ensinar protocolo. E fazer o espectador enxergar a conversa. Quando ele enxerga, ele para de aceitar "a IA disse que a API devolve isso" e comeca a perguntar: "qual e o contrato real? Qual status code voltou? O front deveria saber disso?".
+O objetivo e fazer o espectador enxergar a conversa. Quando ele enxerga, ele para de aceitar "a IA disse que a API devolve isso" e comeca a perguntar: "qual e o contrato real? Qual status code voltou? O front deveria saber disso?".
 
 ## Por que esse formato funciona
 
-- Linear: o espectador acompanha um pedido do início ao fim, porque cada conceito surge da necessidade do passo anterior.
+- Linear: o espectador acompanha um pedido ate o fim, porque cada conceito surge da necessidade do passo anterior.
 - Arquitetural: o mapa mental que fica e o de dialogo (pede / responde / contrato / status), não uma lista de codigos HTTP memorizada.
 - Superficial de proposito: cada conceito e apresentado com uma analogia e uma consequencia. Aprofundar fica para vídeos futuros.
 
@@ -41,7 +41,7 @@ O front não deveria saber nada do banco. Só conversa com a API. Essa separacao
 - PUT, PATCH, DELETE e outros metodos alem de GET e POST
 - Autenticação profunda (token, JWT, sessao) - fica para episodio próprio
 - REST vs GraphQL vs RPC - comparacao de estilos de API
-- Documentacao de API (Swagger, OpenAPI) - ferramenta, não conceito
+- Documentacao de API (Swagger, OpenAPI) - ferramenta
 - Webhooks, Server-Sent Events, WebSocket - outros modelos de conversa
 
 Esses viram vídeos da série, um por tema. Este vídeo e o dialogo básico.

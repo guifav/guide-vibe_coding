@@ -45,7 +45,7 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta. Este glo
 ## Quando algo da errado
 
 - **Incidente** - quebra em prod com impacto real no usuario
-- **Post-mortem** - conversa estruturada depois do incidente resolvido; entender, não culpar
+- **Post-mortem** - conversa estruturada depois do incidente resolvido; foco em entender
 - **Zero downtime** - deploy em que nenhum usuario percebe a troca
 
 ---

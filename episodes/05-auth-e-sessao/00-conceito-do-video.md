@@ -6,11 +6,11 @@ A maioria das pessoas que programa com IA hoje não enxerga a diferença entre "
 
 Este vídeo conta a história de um login, do visitante anônimo ate o logoff, em ordem cronologica. Não e curso de cada protocolo de seguranca. E a narrativa de uma jornada: você chega como estranho, o servidor te reconhece, te da um cracha, e a partir dai cada pedido seu carrega esse cracha ate ele expirar ou ser revogado.
 
-O objetivo não e ensinar a implementar auth. E fazer o espectador enxergar as duas perguntas que toda camada de auth responde: "quem e você?" e "você pode fazer isso?". Quando ele enxerga, ele para de aceitar quando a IA sugere "simplificar" auth e comeca a perguntar "que pergunta essa mudança para de responder?".
+O objetivo e fazer o espectador enxergar as duas perguntas que toda camada de auth responde: "quem e você?" e "você pode fazer isso?". Quando ele enxerga, ele para de aceitar quando a IA sugere "simplificar" auth e comeca a perguntar "que pergunta essa mudança para de responder?".
 
 ## Por que esse formato funciona
 
-- Linear: o espectador acompanha do início ao fim sem se perder, porque cada conceito surge da necessidade do passo anterior.
+- Linear: o espectador acompanha o vídeo inteiro sem se perder, porque cada conceito surge da necessidade do passo anterior.
 - Arquitetural: o mapa mental que fica e o de fluxo de identidade (visitante -> login -> sessao -> token -> permissao -> logoff), não uma lista de bibliotecas.
 - Superficial de proposito: cada conceito e apresentado com uma analogia e uma consequencia. Aprofundar fica para vídeos futuros da série.
 
@@ -22,12 +22,12 @@ O objetivo não e ensinar a implementar auth. E fazer o espectador enxergar as d
 
 ## Tom
 
-Direto, sem jargao desnecessario. Cada termo técnico que aparece e imediatamente traduzido em uma frase. Didático, não academico. Gui falando para camera ou com tela mostrando um diagrama simples.
+Direto, sem jargao desnecessario. Cada termo técnico que aparece e imediatamente traduzido em uma frase. Didático. Gui falando para camera ou com tela mostrando um diagrama simples.
 
 ## Estrutura em 3 atos
 
 **ATO 1 - O problema e o login (sem auth, qualquer um ve tudo)**
-O mundo sem auth: qualquer pessoa pede qualquer coisa e o servidor obedece. Por que isso não funciona. O que muda quando você faz login: de visitante para conhecido. O servidor agora tem um nome para você.
+O mundo sem auth: qualquer pessoa pede qualquer coisa e o servidor obedece. Por que isso não funciona. O que muda quando você faz login: você vira conhecido. O servidor agora tem um nome para você.
 
 **ATO 2 - Como o servidor lembra de você (sessao e token)**
 HTTP não tem memória. Cada request e um estranho batendo na porta. Sessao e como o servidor cria uma memória entre requests. Token e o cracha que o servidor te da depois do login, e que cada request carrega para o servidor saber quem bateu.

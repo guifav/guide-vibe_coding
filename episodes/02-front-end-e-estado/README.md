@@ -1,6 +1,6 @@
 # YouTube ia-aplicada - Front-end e Estado (vídeo simples, arquitetural)
 
-**Eixo:** zoom na camada que o episodio 01 apresentou de leve. O navegador. Onde o vibe coder toca primeiro, onde a IA mais escreve código, e onde mais coisas quebram sem ninguém perceber. Não e comparacao de frameworks. Não e curso de CSS. E o mapa mental da camada do navegador: o que ela monta, por que muda, onde guarda a memória, e quais estados a IA costuma esquecer.
+**Eixo:** zoom na camada que o episodio 01 apresentou de leve. O navegador. Onde o vibe coder toca primeiro, onde a IA mais escreve código, e onde mais coisas quebram sem ninguém perceber. E o mapa mental da camada do navegador: o que ela monta, por que muda, onde guarda a memória, e quais estados a IA costuma esquecer.
 
 **Público:** quem esta começando com desenvolvimento / vibe coders / pessoas que usam IA para programar e querem entender o que acontece dentro do navegador quando o site abre.
 

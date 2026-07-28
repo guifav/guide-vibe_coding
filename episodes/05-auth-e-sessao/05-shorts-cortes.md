@@ -10,7 +10,7 @@ Cada corte isola um conceito, com gancho para o vídeo completo.
 
 **Corpo:** HTTP não tem memória, cada request e um estranho. Sessao e a memória no servidor: ele guarda, te da um session ID, você leva no cookie. Token e o cracha no cliente: carrega dentro quem e você, o servidor não guarda nada. Analogia: sessao e guarda-volumes, token e cracha no pescoco.
 
-**CTA:** "No vídeo completo eu conto todas as camadas de auth, do login ao logoff. Link na descrição."
+**CTA:** "No vídeo completo eu conto todas as camadas de auth, ate o logoff. Link na descrição."
 
 ---
 
@@ -38,6 +38,6 @@ Cada corte isola um conceito, com gancho para o vídeo completo.
 
 **Gancho:** "Se alguém roubar seu token, essa pessoa se passa por você. E o servidor não percebe."
 
-**Corpo:** token e um cracha. Se e interceptado, quem tem o cracha e obedecido como se fosse você. Por isso token tem expiracao (prazo de validade). Por isso logoff existe (para invalidar o cracha). Auth não e só o login, e um ciclo: login no começo, logoff e expiracao no fim.
+**Corpo:** token e um cracha. Se e interceptado, quem tem o cracha e obedecido como se fosse você. Por isso token tem expiracao (prazo de validade). Por isso logoff existe (para invalidar o cracha). Auth e um ciclo: login no começo, logoff e expiracao no fim.
 
 **CTA:** "O ciclo completo de auth ta no vídeo principal."

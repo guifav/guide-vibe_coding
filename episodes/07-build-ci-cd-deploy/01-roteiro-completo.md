@@ -10,7 +10,7 @@
 
 ### Na camera
 
-"No episodio 01 desta série, eu contei a história de um deploy, do zero ao ar. Mostrei que entre o código e o site existe um servidor, um banco, auth, e no fim existe uma coisa chamada build, CI/CD e deploy. Mas eu só mostrei o nome."
+"No episodio 01 desta série, eu contei a história de um deploy indo ao ar. Mostrei que entre o código e o site existe um servidor, um banco, auth, e no fim existe uma coisa chamada build, CI/CD e deploy. Mas eu só mostrei o nome."
 
 "Nos cinco episodios seguintes fomos fundo em cada camada. Front-end, API, banco, auth, git. Agora chegamos na última. O que realmente acontece quando o código vai para o ar?"
 
@@ -30,7 +30,7 @@ O mapa do episodio 01 (arquivo 02 do ep01) com todas as camadas em cor clara. Di
 
 "No episodio 01 eu disse que build e a cozinha do restaurante. Você entrega ingredientes crus, o build cozinha, e o servidor só serve o prato pronto. Agora vamos abrir a porta dessa cozinha."
 
-"O código que você escreve no seu computador não e o código que vai para o servidor. Ele precisa ser transformado. O build e essa transformação."
+"O código que vai para o servidor passa por uma transformação. O build e essa transformação."
 
 "Transformar por que? Porque o navegador e o servidor não leem o código da mesma forma que você escreve. Você escreve de um jeito facil para humanos lerem e modificarem. O build reescreve para um jeito facil para a máquina executar, otimizar e enviar pela rede."
 
@@ -64,13 +64,13 @@ Diagrama simples: varios arquivos a esquerda, uma seta com a palavra BUILD, e um
 
 "Primeiro: sintaxe invalida. Sintaxe e a gramatica do código. Você abriu um parentese e não fechou. Faltou um ponto e virgula. A máquina não entende e para."
 
-"Segundo: erro de tipo. Tipo e a categoria de um valor. Um número não e um texto. Uma data não e um número. Se o código tenta fazer algo que não faz sentido para o tipo, o build reclama."
+"Segundo: erro de tipo. Tipo e a categoria de um valor. Numero, texto, data são tipos diferentes. Se o código tenta fazer algo que não faz sentido para o tipo, o build reclama."
 
 "Terceiro: dependencia faltando. Dependencia e um pedaco de código de outra pessoa que o seu código precisa para funcionar. Se você usa mas não declarou, ou declarou uma versao errada, o build não encontra e quebra."
 
 ### Mostrar
 
-Uma tela de terminal com uma mensagem de erro de build. Sem precisar ler o erro. Só mostrar: texto vermelho, a palavra "error", a build parou. Dizer: "essa e a cara de build quebrado. A IA vai te mostrar isso muitas vezes. O importante e saber ler o motivo, não decore o nome da ferramenta."
+Uma tela de terminal com uma mensagem de erro de build. Sem precisar ler o erro. Só mostrar: texto vermelho, a palavra "error", a build parou. Dizer: "essa e a cara de build quebrado. A IA vai te mostrar isso muitas vezes. O importante e saber ler o motivo do erro."
 
 ### Falar
 
@@ -108,7 +108,7 @@ Diagrama do cano: commit -> [lint] -> [testes] -> [build] -> [pronto para deploy
 
 "Segundo: testes. Teste e um pedaco de código que verifica se outro pedaco de código faz o que deveria. Você escreve: 'se eu passar X, espero Y'. O cano roda todos os testes. Se algum falha, vermelho. Teste não garante que o código esta certo, mas garante que os comportamentos que você prometeu continuam funcionando."
 
-"Terceiro: o build. Sim, o mesmo build do ATO 1. O CI também roda o build, porque se o build não passa na máquina do cano, e um sinal forte de problema. Mas atenção: o CI não replica o ambiente de produção perfeitamente. O que passa lá pode quebrar aqui. Mesmo assim, e a melhor porta que temos antes do ar."
+"Terceiro: o build. Sim, o mesmo build do ATO 1. O CI também roda o build, porque se o build não passa na máquina do cano, e um sinal forte de problema. Mas atenção: o CI não replica o ambiente de produção por completo. O que passa lá pode quebrar aqui. Mesmo assim, e a melhor porta que temos antes do ar."
 
 ### Mostrar
 
@@ -202,7 +202,7 @@ Mostrar o cano completo: commit -> push -> CI (lint, testes, build) -> CD -> amb
 
 "Ou então a versao nova mudou o formato de resposta da API. Outros sistemas que dependem dela já se adaptaram. Você volta o código. Agora a API fala um idioma que ninguém mais espera. Rollback de código não desfaz mudança de dado. Ele só troca de versao."
 
-"Então antes de puxar o rollback, pergunte: essa versao nova mexeu em schema de banco ou quebrou compatibilidade de API? Se sim, voltar o código pode piorar o incidente, não resolver. Nesses casos o caminho costuma ser avançar, não voltar: corrigir a frente e fazer um novo deploy."
+"Então antes de puxar o rollback, pergunte: essa versao nova mexeu em schema de banco ou quebrou compatibilidade de API? Se sim, voltar o código pode piorar o incidente. Nesses casos o caminho costuma ser avançar: corrigir a frente e fazer um novo deploy."
 
 "Por isso blue-green e canary existem. Não e só para evitar problemas. E para voltar rápido quando o problema acontece. E principalmente, e para voltar de um jeito que não arraste o banco junto."
 
@@ -214,9 +214,9 @@ Diagrama: versao nova no ar -> problema detectado -> seta de "rollback" -> versa
 
 ### Falar
 
-"Quando algo da errado em prod e afeta o usuario, chamamos de incidente. Incidente não e só um bug qualquer. E uma quebra com impacto real: gente não consegue logar, não consegue comprar, não consegue acessar."
+"Quando algo da errado em prod e afeta o usuario, chamamos de incidente. Incidente e uma quebra com impacto real: gente não consegue logar, não consegue comprar, não consegue acessar."
 
-"Depois que o incidente foi controlado, o time senta e faz o que se chama post-mortem. Post-mortem e uma conversa estruturada depois do problema resolvido. Não e para procurar culpado. E para entender o que aconteceu, por que aconteceu, e o que mudar para não repetir."
+"Depois que o incidente foi controlado, o time senta e faz o que se chama post-mortem. Post-mortem e uma conversa estruturada depois do problema resolvido. E para entender o que aconteceu, por que aconteceu, e o que mudar para evitar repetir."
 
 "As perguntas classicas do post-mortem: o que aconteceu? Como detectamos? Como resolvemos? O que vamos mudar para evitar?"
 
@@ -228,7 +228,7 @@ Diagrama: versao nova no ar -> problema detectado -> seta de "rollback" -> versa
 
 ### Falar
 
-"Vamos resumir o ciclo inteiro, do commit ate o usuario perceber."
+"Vamos resumir o ciclo inteiro, ate o usuario perceber."
 
 "Você escreve código no seu computador. Da um commit, que e a foto do código no tempo. Da um push, que manda essa foto para o repo na nuvem."
 
@@ -276,7 +276,7 @@ Apontar para cada camada a medida que fala:
 
 ### Na camera
 
-"Essa foi a primeira temporada. Sete vídeos, do mapa ao profundo em cada camada."
+"Essa foi a primeira temporada. Sete vídeos, cada um aprofundando uma camada do mapa."
 
 "Se você assistiu tudo, parabens. Você saiu de 'a IA escreve e eu aprovo sem ler' para 'a IA escreve e eu sei em qual camada isso mora'. Isso muda tudo."
 

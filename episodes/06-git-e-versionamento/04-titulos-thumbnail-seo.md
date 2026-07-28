@@ -6,7 +6,7 @@
 2. "Git para vibe coders: a rede de seguranca antes do deploy"
 3. "Commit, branch, PR, merge: o fluxo que protege seu código"
 4. "Por que o deploy usa o REPO e não o seu computador?"
-5. "Versionamento sem jargao: do commit ao pull request"
+5. "Versionamento sem jargao: ate o pull request"
 
 **Recomendado:** #1 ou #2. Claros, com provocacao, sugerem que existe um padrao que o espectador não conhecia.
 

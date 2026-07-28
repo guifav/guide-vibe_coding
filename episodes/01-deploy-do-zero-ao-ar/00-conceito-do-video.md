@@ -4,16 +4,16 @@
 
 A maioria das pessoas que programa com IA hoje não enxerga o que acontece entre o código que ela escreve e o site que abre no navegador. Para a IA, tudo e "texto que vira site". Para quem decide, falta o mapa.
 
-Este vídeo conta duas histórias que andam juntas, mas que precisam ser nomeadas como duas, não uma. A primeira e o fluxo de publicação: do código no computador ate ele chegar ao ar (código -> git -> build -> deploy). A segunda e o fluxo de uso: o que acontece quando alguém acessa a URL pronta (navegador -> domínio -> servidor -> API -> banco -> resposta -> navegador). O fluxo de publicação e a linha principal do vídeo. O fluxo de uso e a volta final de ~90 segundos, no encerramento.
+Este vídeo conta duas histórias que andam juntas, mas que precisam ser nomeadas como duas, distintas uma da outra. A primeira e o fluxo de publicação: como o código chega ao ar (código -> git -> build -> deploy). A segunda e o fluxo de uso: o que acontece quando alguém acessa a URL pronta (navegador -> domínio -> servidor -> API -> banco -> resposta -> navegador). O fluxo de publicação e a linha principal do vídeo. O fluxo de uso e a volta final de ~90 segundos, no encerramento.
 
-Não e curso de cada tecnologia. E a narrativa de duas jornadas: você publica código para que ele viva em um servidor, e depois alguém acessa e dispara o ciclo de uso. Em cada passo uma camada nova aparece com um trabalho especifico.
+E a narrativa de duas jornadas: você publica código para que ele viva em um servidor, e depois alguém acessa e dispara o ciclo de uso. Em cada passo uma camada nova aparece com um trabalho especifico.
 
-O objetivo não e ensinar a programar. E fazer o espectador enxergar as camadas e saber distinguir em qual das duas jornadas uma mudança se encaixa. Quando ele enxerga, ele para de aceitar a IA cegamente e comeca a perguntar "essa mudança mora em qual camada? e afeta a publicação ou o uso?".
+O objetivo e fazer o espectador enxergar as camadas e saber distinguir em qual das duas jornadas uma mudança se encaixa. Quando ele enxerga, ele para de aceitar a IA cegamente e comeca a perguntar "essa mudança mora em qual camada? e afeta a publicação ou o uso?".
 
 ## Por que esse formato funciona
 
-- Duas jornadas nomeadas: o espectador não confunde o fluxo de publicação (como o código chega ao ar) com o fluxo de uso (o que acontece quando alguém acessa). São caminhos distintos, percorridos em momentos distintos do vídeo.
-- Arquitetural: o mapa mental que fica e o de camadas (front / servidor / banco / deploy), não uma lista de ferramentas.
+- Duas jornadas nomeadas: o espectador distingue o fluxo de publicação (como o código chega ao ar) do fluxo de uso (o que acontece quando alguém acessa). São caminhos distintos, percorridos em momentos distintos do vídeo.
+- Arquitetural: o mapa mental que fica e o de camadas (front / servidor / banco / deploy), um mapa de camadas.
 - Superficial de proposito: cada camada e apresentada com uma analogia e uma consequencia. Aprofundar fica para vídeos futuros da série.
 
 ## Público
@@ -24,7 +24,7 @@ O objetivo não e ensinar a programar. E fazer o espectador enxergar as camadas 
 
 ## Tom
 
-Direto, sem jargao desnecessario. Cada termo técnico que aparece e imediatamente traduzido em uma frase. Didático, não academico. Gui falando para camera ou com tela mostrando um diagrama simples.
+Direto, sem jargao desnecessario. Cada termo técnico que aparece e imediatamente traduzido em uma frase. Didático, acessível. Gui falando para camera ou com tela mostrando um diagrama simples.
 
 ## Estrutura em 3 atos
 

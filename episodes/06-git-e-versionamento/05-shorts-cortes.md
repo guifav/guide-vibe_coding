@@ -40,4 +40,4 @@ Cada corte isola um conceito do versionamento, com gancho para o vídeo completo
 
 **Corpo:** seu computador e só de você. Se o deploy dependesse dele, o site cairia toda vez que você desligasse. O repo e a linha do tempo única do projeto. Quando o deploy roda, ele pega a main do repo. Por isso push e obrigatório: enquanto o código só esta no seu computador, para o resto do mundo ele não existe.
 
-**CTA:** "A rede de seguranca inteira, do commit ao merge, ta no vídeo principal."
+**CTA:** "A rede de seguranca inteira, ate o merge, ta no vídeo principal."

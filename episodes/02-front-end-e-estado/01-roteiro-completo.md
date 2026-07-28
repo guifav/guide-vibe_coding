@@ -10,7 +10,7 @@
 
 ### Na camera
 
-"No vídeo anterior eu contei a história de um deploy, do zero ao ar. Mostrei varias camadas: front, servidor, banco, deploy. Mas passei rápido por cada uma."
+"No vídeo anterior eu contei a história de um deploy: o site no ar. Mostrei varias camadas: front, servidor, banco, deploy. Mas passei rápido por cada uma."
 
 "Hoje a gente entra dentro da primeira. A camada do navegador. A camada que você toca primeiro quando abre o site. A camada onde a IA mais escreve código, e onde mais coisas quebram sem ninguém perceber."
 
@@ -30,7 +30,7 @@ Diagrama do mapa do episodio 01, com a camada "navegador" destacada (piscando ou
 
 "Você digita um endereço. Aperta enter. O que acontece?"
 
-"O navegador manda um pedido para o servidor. O servidor responde com arquivos. Arquivos de texto. Nada de mágica."
+"O navegador manda um pedido para o servidor. O servidor responde com arquivos. Arquivos de texto. Direto assim."
 
 "Esses arquivos são principalmente tres. Você já viu eles no vídeo anterior, mas hoje a gente olha com atencao."
 
@@ -88,11 +88,11 @@ Tela dividida em tres colunas, ou tres blocos: HTML / CSS / JS, cada um com uma 
 
 "Quando a IA fala em 'mudar o estilo', ela mexe no CSS. Quando fala em 'adicionar um botao', mexe no HTML. Quando fala em 'quando clicar faz isso', mexe no JavaScript. São camadas diferentes dentro do navegador."
 
-### Cena 4 - A página não e estática (5:15-6:00)
+### Cena 4 - A página e dinamica (5:15-6:00)
 
 ### Falar
 
-"E aqui que a coisa fica interessante. O DOM não e uma foto. Ele muda."
+"E aqui que a coisa fica interessante. O DOM e vivo. Ele muda."
 
 "Você clica num botao e ele muda de cor. Digita num campo e o texto aparece em outro lugar. Marca uma opcao e outra parte da tela reage."
 
@@ -190,7 +190,7 @@ O contador de novo. Clicar no botao e destacar as tres etapas visualmente: (1) e
 
 ### Fechamento do ATO 2
 
-Mostrar o ciclo completo novamente. Dizer: "isso cobre o caminho feliz. Mas a página real não e só caminho feliz. E no próximo ato que a coisa costuma quebrar."
+Mostrar o ciclo completo novamente. Dizer: "isso cobre o caminho feliz. A página real tem muito mais. E no próximo ato que a coisa costuma quebrar."
 
 ---
 
@@ -204,7 +204,7 @@ Mostrar o ciclo completo novamente. Dizer: "isso cobre o caminho feliz. Mas a p�
 
 "Isso e o caminho feliz. O dado chegou, a lista esta cheia, tudo funciona."
 
-"Só que a vida real não e assim. Tela que mostra dados tem varios momentos. E a IA costuma tratar só um deles."
+"Só que a vida real tem varios momentos. Tela que mostra dados tem varios estados. E a IA costuma tratar só um deles."
 
 ### Mostrar
 
@@ -312,7 +312,7 @@ Mostrar o mapa completo do ciclo, agora com os 5 estados em volta dele. Dizer: "
 
 ### Na camera
 
-"O front-end não e só desenho de tela. E um mecanismo. O navegador monta uma árvore, o DOM, a partir dos arquivos. Essa árvore muda porque existe estado. E o estado muda porque o usuario interage."
+"O front-end e um mecanismo. O navegador monta uma árvore, o DOM, a partir dos arquivos. Essa árvore muda porque existe estado. E o estado muda porque o usuario interage."
 
 "O ciclo se repete: evento, estado, re-render. Evento, estado, re-render. Quando você entende isso, você para de tratar a tela como uma coisa só e comeca a enxergar as tres partes."
 

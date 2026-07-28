@@ -6,7 +6,7 @@ A maioria das pessoas que programa com IA hoje não distingue entre "a página l
 
 Este vídeo conta por que o banco de dados existe, o que ele guarda de verdade, e o que quebra quando se ignora ele. A narrativa e linear: comeca na memória não confiável do servidor, descobre que dados precisam sobreviver, encontra os tipos de banco, aprende a perguntar (query), define a estrutura (schema), e alerta para o que da errado quando a estrutura muda (migracao).
 
-O objetivo não e ensinar SQL nem comparar motores. E fazer o espectador enxergar o banco como uma camada com responsabilidades claras. Quando ele enxerga, ele para de aceitar que a IA "crie tabelas" sem contexto e comeca a perguntar "essa mudança toca o schema? precisa de migracao?".
+O objetivo e fazer o espectador enxergar o banco como uma camada com responsabilidades claras. Quando ele enxerga, ele para de aceitar que a IA "crie tabelas" sem contexto e comeca a perguntar "essa mudança toca o schema? precisa de migracao?".
 
 ## Por que esse formato funciona
 

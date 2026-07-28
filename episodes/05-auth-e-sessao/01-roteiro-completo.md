@@ -14,7 +14,7 @@
 
 "Se você usa IA para programar, a IA vai sugerir bibliotecas de auth, vai falar em token, em sessao, em JWT. Mas para você confiar, para você saber quando ela esta certa e quando ela esta te colocando em risco, você precisa enxergar o que acontece por tras."
 
-"Neste vídeo não vou ensinar a implementar auth. Vou contar a história de um login, do visitante anônimo ate o logoff. Cada conceito aparece no momento em que ele se torna necessário."
+"Neste vídeo vou contar a história de um login, do visitante anônimo ate o logoff. Cada conceito aparece no momento em que ele se torna necessário."
 
 ### Mostrar
 
@@ -68,7 +68,7 @@ No diagrama, o visitante anônimo vira um usuario com nome. Aparece uma seta: lo
 
 ### Falar
 
-"A senha não e segredo para o servidor por ser segredo. Ela e a prova de que você e quem diz ser."
+"A senha e a prova de que você e quem diz ser para o servidor."
 
 "Pense assim: o servidor já conhece você. Ele tem seu email e uma versao embaralhada da sua senha guardada. Quando você digita a senha no login, o servidor embaralha o que você digitou e compara. Se bate, e você."
 
@@ -173,7 +173,7 @@ Diagrama: login -> servidor gera token (carrega dentro a identidade) -> token va
 
 Mostrar o mapa com login, sessao e token destacados.
 
-"Agora o servidor sabe quem e você e lembra entre requests. Mas saber quem e você não e suficiente. Falta a pergunta mais importante: o que você pode fazer? Isso e o próximo ato."
+"Agora o servidor sabe quem e você e lembra entre requests. Saber quem e você e só o começo. Falta a pergunta mais importante: o que você pode fazer? Isso e o próximo ato."
 
 ---
 
@@ -225,7 +225,7 @@ Tabela simples: admin | user | guest, com X e check para cada acao.
 
 ### Falar
 
-"O segundo jeito e por recurso. Aqui a pergunta não e qual e seu papel, e sim: esse item e seu?"
+"O segundo jeito e por recurso. Aqui a pergunta e só essa: esse item e seu?"
 
 "Exemplo: você e user. Você pode editar seus proprios comentarios. Mas não pode editar o comentario de outro user, mesmo ele sendo user também."
 
@@ -257,7 +257,7 @@ Tela com um diff de código. Uma linha de verificação de permissao sendo remov
 
 "A regra que fica: se a IA sugerir remover, comentar ou simplificar qualquer coisa que toca auth, pergunte antes de aceitar. Pergunte: 'o que para de ser verificado se eu remover isso?'. Se a resposta for 'nada' ou 'só um detalhe', desconfie."
 
-"Auth não e lugar de simplificação. E lugar de explicitar. Cada verificação que existe, existe porque sem ela alguém consegue fazer algo que não deve."
+"Auth e lugar de explicitar. Cada verificação que existe, existe porque sem ela alguém consegue fazer algo que não deve."
 
 ### Cena 5 - Logoff, expiracao, token roubado (15:45-16:30)
 
@@ -269,7 +269,7 @@ Tela com um diff de código. Uma linha de verificação de permissao sendo remov
 
 "Segundo: expiracao. Token e sessao tem prazo de validade. Se não expira, vale para sempre. Um cracha que não expira e um risco: se alguém roubar, usa para sempre."
 
-"Terceiro: token roubado. Se alguém intercepta seu token ou seu session ID, essa pessoa se passa por você. O servidor não sabe que não e você. Ele le o cracha e obedece."
+"Terceiro: token roubado. Se alguém intercepta seu token ou seu session ID, essa pessoa se passa por você. O servidor le o cracha e obedece como se fosse você."
 
 ### Mostrar
 
@@ -283,7 +283,7 @@ Tres cenas rapidas: logoff (cracha destruido), expiracao (cracha com data riscad
 
 Mostrar o mapa completo: visitante, login, usuario, sessao, token, autenticação, autorização, permissoes, logoff, expiracao.
 
-"Essa e a história. De um estranho batendo na porta do servidor ate um usuario com permissoes, carregando um cracha, ate o logoff. Cada conceito responde uma pergunta especifica."
+"Essa e a história. Um estranho bate na porta do servidor, vira um usuario com permissoes, carrega um cracha, ate o logoff. Cada conceito responde uma pergunta especifica."
 
 ---
 

@@ -10,7 +10,7 @@ Cada corte isola uma etapa do cano, com gancho para o vídeo completo.
 
 **Corpo:** o build pode fazer varias coisas, dependendo do projeto. Ele traduz a sintaxe para a máquina. Reduz o tamanho dos arquivos, tirando espacos e encurtando nomes. Remove o que não usa e junta os arquivos em poucos. O resultado e um arquivo otimizado, pronto para servir. Nem todo build faz tudo isso, mas vale conhecer o que pode acontecer. Quando a IA fala "build failed", a transformação não terminou. Leia o erro.
 
-**CTA:** "No vídeo completo eu abro o cano inteiro, do commit ao ar. Link na descrição."
+**CTA:** "No vídeo completo eu abro o cano inteiro, ate o ar. Link na descrição."
 
 ---
 
@@ -30,7 +30,7 @@ Cada corte isola uma etapa do cano, com gancho para o vídeo completo.
 
 **Corpo:** quatro ambientes. Local e o seu PC, só você ve. Dev e compartilhado, quebra a vontade. Staging e o ensaio, copia do real. Prod e o ar, o que o usuario acessa. Cada ambiente tem um proposito. Pular etapas e onde mora o risco.
 
-**CTA:** "O ciclo completo do commit ao ar ta no vídeo principal."
+**CTA:** "O ciclo completo ate o ar ta no vídeo principal."
 
 ---
 
@@ -46,7 +46,7 @@ Cada corte isola uma etapa do cano, com gancho para o vídeo completo.
 
 ## Short 5 - Rollback que piora o incidente (schema e API)
 
-**Gancho:** "Rollback não é mágico. Em alguns casos ele piora o problema em vez de resolver."
+**Gancho:** "Rollback exige cuidado. Em alguns casos ele piora o problema em vez de resolver."
 
 **Corpo:** rollback do código só é seguro quando o banco, a API e a versao anterior continuam compatíveis. Se o deploy criou uma coluna nova no banco e o código novo gravou dado la, voltar para o código antigo pode quebrar ou ignorar dado importante. Se mudou o formato de resposta da API, outros sistemas já se adaptaram, e voltar cria um segundo incidente. Nesses casos o caminho e avançar, não voltar: corrigir a frente e fazer novo deploy.
 

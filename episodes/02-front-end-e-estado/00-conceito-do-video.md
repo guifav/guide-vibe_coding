@@ -4,14 +4,14 @@
 
 No episodio 01, o front-end apareceu como uma camada entre tantas outras. Uma linha no mapa. Neste vídeo, a gente entra dentro dela.
 
-O navegador não e só uma janela que mostra sites. Ele e uma fabrica: recebe arquivos de texto (HTML, CSS, JavaScript), monta uma estrutura viva por baixo da tela, e mantem essa estrutura sincronizada com o que o usuario faz. Quando o vibe coder pede algo para a IA e a tela muda sem recarregar, existe um mecanismo operando. Quem não enxerga esse mecanismo aceita o resultado sem saber onde mora o risco.
+O navegador e uma fabrica: recebe arquivos de texto (HTML, CSS, JavaScript), monta uma estrutura viva por baixo da tela, e mantem essa estrutura sincronizada com o que o usuario faz. Quando o vibe coder pede algo para a IA e a tela muda sem recarregar, existe um mecanismo operando. Quem não enxerga esse mecanismo aceita o resultado sem saber onde mora o risco.
 
-O objetivo deste vídeo não e ensinar a programar front-end. E fazer o espectador enxergar tres coisas: o que o navegador monta quando abre um site, onde a memória da página mora enquanto ela esta aberta, e quais estados a IA costuma esquecer quando gera código. Quando ele enxerga isso, ele para de aceitar telas que "funcionam no caminho feliz" e comeca a perguntar "e quando o dado não chega?".
+O objetivo deste vídeo e fazer o espectador enxergar tres coisas: o que o navegador monta quando abre um site, onde a memória da página mora enquanto ela esta aberta, e quais estados a IA costuma esquecer quando gera código. Quando ele enxerga isso, ele para de aceitar telas que "funcionam no caminho feliz" e comeca a perguntar "e quando o dado não chega?".
 
 ## Por que esse formato funciona
 
 - Linear: cada conceito surge da necessidade do anterior. O DOM nasce porque o navegador precisa de uma estrutura. O estado nasce porque a estrutura precisa mudar. Os estados esquecidos nascem porque a IA só programa o caminho que da certo.
-- Arquitetural, não técnico: o mapa mental que fica e o do ciclo (evento, estado, re-render), não uma lista de funções de React ou Vue.
+- Arquitetural: o mapa mental que fica e o do ciclo (evento, estado, re-render), um mapa de ciclo.
 - Superficial de proposito nos nomes de ferramenta: o vídeo fala em "variável, hook, store" como categorias, sem se prender a um framework. Aprofundar em um fica para quem escolher uma stack.
 - Continua a série: o episodio 01 deu o mapa. Este da o zoom na primeira camada. O próximo (servidor) continua de onde este termina.
 
@@ -23,7 +23,7 @@ O objetivo deste vídeo não e ensinar a programar front-end. E fazer o espectad
 
 ## Tom
 
-Direto, sem jargao desnecessario. Cada termo técnico que aparece e imediatamente traduzido em uma frase. Didático, não academico. Gui falando para camera ou com tela mostrando um diagrama simples ou uma página rodando.
+Direto, sem jargao desnecessario. Cada termo técnico que aparece e imediatamente traduzido em uma frase. Didático, acessível. Gui falando para camera ou com tela mostrando um diagrama simples ou uma página rodando.
 
 Sem favoritismo de framework. React, Vue, Svelte aparecem como exemplos pontuais, nunca como recomendação.
 
@@ -33,7 +33,7 @@ Sem favoritismo de framework. React, Vue, Svelte aparecem como exemplos pontuais
 O que acontece quando você abre um site. O navegador baixa arquivos de texto e constroi uma estrutura interna chamada DOM. HTML vira estrutura, CSS vira aparencia, JavaScript vira comportamento. O navegador pinta pixels na tela. Sem isso, o próximo ato não faz sentido.
 
 **ATO 2 - A página vive: estado e o ciclo de re-render (6:00 aprox ate 12:00)**
-A página não e estática. Ela muda sem recarregar porque existe uma memória: o estado. Onde o estado mora (variável, hook, store), como ele muda, e o ciclo que se repete: usuario interage, estado muda, tela re-renderiza. Isso e reatividade, e e o coração do front-end moderno.
+A página e dinamica. Ela muda sem recarregar porque existe uma memória: o estado. Onde o estado mora (variável, hook, store), como ele muda, e o ciclo que se repete: usuario interage, estado muda, tela re-renderiza. Isso e reatividade, e e o coração do front-end moderno.
 
 **ATO 3 - Os estados que a IA esquece (12:00 aprox ate 17:00)**
 A IA entrega o caminho feliz: o dado chegou, a lista esta cheia, o botao funciona. Mas toda página real tem momentos em que o dado não chegou, a lista esta vazia, a chamada deu erro. Loading, empty, error, partial, stale. E o momento em que o estado precisa sair do navegador e ir para o servidor, porque la ele sobrevive entre sessoes. Ponte para o episodio 03.

@@ -6,12 +6,12 @@ A maioria das pessoas que programa com IA hoje não tem rede de seguranca. Ela e
 
 Este vídeo conta a história do versionamento: por que ele existe, como funciona, e por que o deploy (o topico do episodio 01) nunca usa o código do seu computador e sim o código que esta guardado no repo, na nuvem.
 
-O objetivo não e ensinar a decorar comandos git. E fazer o espectador enxergar a rede de seguranca por tras de qualquer projeto serio: fotos no tempo, linhas paralelas, e um pedido formal antes de qualquer mudança chegar na versao principal. Quando ele enxerga isso, ele entende por que "jogar direto na main" e sinal de amadorismo e por que um PR existe.
+O objetivo e fazer o espectador enxergar a rede de seguranca por tras de qualquer projeto serio: fotos no tempo, linhas paralelas, e um pedido formal antes de qualquer mudança chegar na versao principal. Quando ele enxerga isso, ele entende por que "jogar direto na main" e sinal de amadorismo e por que um PR existe.
 
 ## Por que esse formato funciona
 
-- Linear: o espectador acompanha do início ao fim sem se perder, porque cada conceito surge da necessidade do passo anterior. O commit nasce do problema de voltar no tempo. A branch nasce do medo de estragar o original. O PR nasce do risco de juntar sem revisar.
-- Arquitetural: o mapa mental que fica e o de uma linha do tempo com ramais, não uma lista de comandos. O espectador sai sabendo desenhar o fluxo, não digitar git.
+- Linear: o espectador acompanha o vídeo inteiro sem se perder, porque cada conceito surge da necessidade do passo anterior. O commit nasce do problema de voltar no tempo. A branch nasce do medo de estragar o original. O PR nasce do risco de juntar sem revisar.
+- Arquitetural: o mapa mental que fica e o de uma linha do tempo com ramais. O espectador sai sabendo desenhar o fluxo.
 - Superficial de proposito: cada conceito e apresentado com uma analogia e uma consequencia. Aprofundar comandos especificos fica para vídeos futuros da série.
 
 ## Público
@@ -22,7 +22,7 @@ O objetivo não e ensinar a decorar comandos git. E fazer o espectador enxergar 
 
 ## Tom
 
-Direto, sem jargao desnecessario. Cada termo técnico que aparece e imediatamente traduzido em uma frase. Didático, não academico. Gui falando para camera ou com tela mostrando um diagrama simples de linha do tempo.
+Direto, sem jargao desnecessario. Cada termo técnico que aparece e imediatamente traduzido em uma frase. Didático. Gui falando para camera ou com tela mostrando um diagrama simples de linha do tempo.
 
 ## Estrutura em 3 atos
 

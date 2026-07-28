@@ -20,7 +20,7 @@ Tres blocos em fila, representando o cano:
 - Centro: tres portas em fila, cada uma com uma etiqueta: "BUILD", "CI/CD", "DEPLOY". A porta do meio (CI/CD) com luz verde/vermelha
 - Direita: tela de celular ou navegador com o site no ar e a palavra "AR"
 
-Texto sobre a imagem: "O que acontece DEPOIS do commit?" ou "De COMMIT a AR"
+Texto sobre a imagem: "O que acontece DEPOIS do commit?" ou "Indo ao ar"
 
 ### Cores
 

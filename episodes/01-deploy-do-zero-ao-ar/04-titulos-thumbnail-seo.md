@@ -6,7 +6,7 @@
 2. "Como um app chega na internet? A jornada do deploy, explicada simples"
 3. "Vibe coder precisa saber: as camadas entre seu código e o ar"
 4. "Mapa arquitetural para quem programa com IA (sem jargao)"
-5. "Do commit ao deploy: como um site chega na internet"
+5. "Como um site chega na internet: o deploy explicado"
 
 **Recomendado:** #1 ou #5. Claros, com pergunta, sugerem jornada.
 
@@ -42,7 +42,7 @@ Fundo escuro (preto/azul escuro). Setas em amarelo ou verde-limao para destacar 
 
 ## Descrição
 
-"Você escreve código. Aperta um botao. E de repente tem um site no ar. Mas o que acontece entre o código e o site? Neste vídeo, a história de um deploy, do zero ao ar, explicada camada por camada.
+"Você escreve código. Aperta um botao. E de repente tem um site no ar. Mas o que acontece entre o código e o site? Neste vídeo, a história de um deploy, a publicação no ar, explicada camada por camada.
 
 Para quem usa IA para programar (vibe coders) e quer entender o mapa sem se afogar em jargao.
 

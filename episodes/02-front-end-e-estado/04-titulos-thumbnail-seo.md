@@ -56,7 +56,7 @@ Fundo escuro (preto ou azul escuro). O ciclo em amarelo ou verde-limao. Os cinco
 
 ## Descrição
 
-"O navegador não e só uma janela que mostra sites. Ele e uma fabrica: recebe arquivos, monta uma estrutura viva, e mantem tudo sincronizado com o que você faz. Neste vídeo, o zoom na camada do navegador que o episodio 01 apresentou de leve.
+"O navegador e uma fabrica: recebe arquivos, monta uma estrutura viva, e mantem tudo sincronizado com o que você faz. Neste vídeo, o zoom na camada do navegador que o episodio 01 apresentou de leve.
 
 Para quem usa IA para programar (vibe coders) e quer entender o que acontece dentro do front-end, sem se afogar em jargao de framework.
 

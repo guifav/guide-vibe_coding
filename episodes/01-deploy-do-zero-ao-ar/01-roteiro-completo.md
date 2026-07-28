@@ -15,7 +15,7 @@
 
 "Se você usa IA para programar, a IA escreve texto e diz que esta pronto. Mas para você confiar, para você saber quando ela esta certa e quando ela esta errada, você precisa enxergar as camadas que existem no meio."
 
-"Neste vídeo não vou ensinar a programar. Vou contar duas histórias que andam juntas. A primeira e como o código sai do seu computador e chega ao ar: o fluxo de publicação. A segunda e o que acontece quando alguém acessa a URL pronta: o fluxo de uso. Cada camada aparece no momento em que ela se torna necessária."
+"Neste vídeo vou contar duas histórias que andam juntas. A primeira e como o código sai do seu computador e chega ao ar: o fluxo de publicação. A segunda e o que acontece quando alguém acessa a URL pronta: o fluxo de uso. Cada camada aparece no momento em que ela se torna necessária."
 
 ### Mostrar
 
@@ -47,7 +47,7 @@ Um arquivo de código simples aberto. Sem framework. Sem dependencia. Só um arq
 
 ### Gancho para o próximo vídeo (2:00-2:15)
 
-"Essa página não e estática. Ela muda sem recarregar: você clica e algo reage. A página tem uma memória própria enquanto esta aberta. Como isso funciona, com estado e variáveis, e o assunto do próximo vídeo da série. Aqui, o que importa e que o código que monta a página mora no seu computador."
+"Essa página e dinamica. Ela muda sem recarregar: você clica e algo reage. A página tem uma memória própria enquanto esta aberta. Como isso funciona, com estado e variáveis, e o assunto do próximo vídeo da série. Aqui, o que importa e que o código que monta a página mora no seu computador."
 
 ### Cena 2 - Por que git (2:15-3:30)
 
@@ -67,7 +67,7 @@ Um `git log` simples, mostrando commits como fotos no tempo. Ou só o conceito d
 
 "Termo que vai aparecer muito: commit. Commit e o momento de tirar uma foto. Branch e a linha paralela. Merge e juntar de volta."
 
-"Para o deploy, o que importa: na configuração mais comum, o código que vai para o ar não e o código no seu computador. E o código que esta no repo na nuvem, na versao principal. Existem fluxos diferentes, mas esse e o padrão que você vai encontrar na maioria dos projetos."
+"Para o deploy, o que importa: na configuração mais comum, o código que vai para o ar e o código que esta no repo na nuvem, na versao principal. Existem fluxos diferentes, mas esse e o padrão que você vai encontrar na maioria dos projetos."
 
 ### Fechamento do ATO 1
 
@@ -81,7 +81,7 @@ Mostrar o mapa de camadas com as partes do ATO 1 destacadas: código e git. Dize
 
 ### Falar
 
-"O computador da sua casa não e um bom lugar para servir um site. Ele desliga, troca de IP, fica atras de um roteador."
+"Para servir um site, você precisa de um servidor. O computador da sua casa desliga, troca de IP, fica atras de um roteador."
 
 "E possível expor um computador doméstico para a internet, mas e instável e exige configuração e cuidado com segurança. Para algo que precisa estar sempre acessivel, o comum e usar um servidor."
 
@@ -109,7 +109,7 @@ No diagrama, o servidor aparece como outra máquina, separada do computador de c
 
 "Pense na API como o balcao de atendimento do servidor. O navegador bate no balcao e pede: 'quero a lista de produtos'. O servidor executa a lógica correspondente, busca, e devolve."
 
-"API não e tecnologia especifica. E um contrato: qual pedido eu aceito, qual resposta eu devolvo. Quando a IA fala em 'chamar a API' ou 'endpoint', ela esta falando de uma dessas portas."
+"API e um contrato: qual pedido eu aceito, qual resposta eu devolvo. Quando a IA fala em 'chamar a API' ou 'endpoint', ela esta falando de uma dessas portas."
 
 ### Mostrar
 
@@ -125,7 +125,7 @@ Um diagrama simples: navegador -> seta com "request" -> servidor -> seta com "re
 
 "Banco de dados e a memória de longo prazo do servidor. La moram os usuarios, os produtos, os pedidos, tudo que precisa sobreviver entre um request e outro."
 
-"Tem varios tipos. O importante agora não e saber qual. E saber que existe um lugar separado, com dados estruturados, e que o servidor consulta antes de responder."
+"Tem varios tipos. O importante agora e saber que existe um lugar separado, com dados estruturados, e que o servidor consulta antes de responder."
 
 ### Mostrar
 
@@ -151,7 +151,7 @@ No diagrama, o banco aparece conectado ao servidor. Seta: servidor consulta banc
 
 Mostrar o mapa com servidor, API, banco e auth destacados.
 
-"Tudo isso esta no lado do servidor. O navegador não enxerga banco, não enxerga auth diretamente. Ele manda request e recebe response. O resto acontece atrás."
+"Tudo isso esta no lado do servidor. O navegador só vê a resposta da API. Banco e auth ficam no servidor. Ele manda request e recebe response. O resto acontece atrás."
 
 ---
 
@@ -215,7 +215,7 @@ Diagrama do pipeline: commit -> lint -> testes -> build -> deploy. Cores: verde/
 
 Mostrar o mapa completo com o fluxo de publicação: código, git, build, CI/CD, deploy, domínio.
 
-"Essa e a primeira jornada: de um arquivo no seu computador ate uma URL publicada. Mas publicar e so metade. Falta ver o que acontece quando alguém de fato acessa essa URL."
+"Essa e a primeira jornada: a URL publicada no ar. Mas publicar e so metade. Falta ver o que acontece quando alguém de fato acessa essa URL."
 
 ---
 

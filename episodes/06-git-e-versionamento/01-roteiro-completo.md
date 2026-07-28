@@ -14,7 +14,7 @@
 
 "Se você usa IA para programar, a IA escreve e reescreve sem parar. Cada iteracao pode ter quebrado algo que funcionava. Sem rede de seguranca, você esta andando na corda bamba sem rede."
 
-"Neste vídeo não vou ensinar a decorar comandos git. Vou contar a história do versionamento: por que ele existe, como funciona, e por que o deploy nunca usa o código do seu computador."
+"Neste vídeo vou contar a história do versionamento: por que ele existe, como funciona, e por que o deploy nunca usa o código do seu computador."
 
 ### Mostrar
 
@@ -32,7 +32,7 @@ Diagrama de uma linha do tempo com pontos (commits) e um ramal (branch) saindo d
 
 "Funciona para um arquivo. Para um projeto inteiro, vira um caos. Você não lembra o que mudou entre a versao 2 e a versao 3. Você apaga sem querer uma versao boa achando que era a velha. E quando algo quebra, você não faz ideia de quando quebrou."
 
-"O problema não e só guardar versoes. E saber, para cada mudança, o que mudou, quem mudou, quando, e por que."
+"O problema e saber, para cada mudança, o que mudou, quem mudou, quando, e por que."
 
 ### Mostrar
 
@@ -125,7 +125,7 @@ No diagrama, a linha principal (main) e uma linha secundaria (branch) saindo del
 
 "O fluxo e: você cria uma branch a partir da main, faz seus commits nessa branch, e a main continua limpa, intacta, enquanto você trabalha."
 
-"Uma branch não e uma copia fisica do código. E um ponteiro. O git e esperto: ele só guarda o que mudou entre a branch e a main, não duplica tudo."
+"Uma branch e um ponteiro. O git e esperto: ele só guarda o que mudou entre a branch e a main, evitando duplicar tudo."
 
 ### Mostrar
 
@@ -165,7 +165,7 @@ Um arquivo com marcadores de conflito: `<<<<<<<`, `=======`, `>>>>>>>`. Mostrand
 
 "Resolver conflito e manual. Você abre o arquivo, le as duas versoes, decide qual manter (ou junta as duas), apaga as marcas, e segue. Não tem atalho automatico confiavel."
 
-"Por isso que comunicação no time importa. Se duas pessoas vao mexer no mesmo arquivo, combinem antes. Conflito bem resolvido e coisa de humano, não de ferramenta."
+"Por isso que comunicação no time importa. Se duas pessoas vao mexer no mesmo arquivo, combinem antes. Conflito bem resolvido e coisa de humano."
 
 "Quando a IA sugerir um merge e falar 'conflito', preste atencao. Não aceite resolvido sem você olhar. Conflito mal resolvido e uma das formas mais comuns de introduzir bug silencioso."
 

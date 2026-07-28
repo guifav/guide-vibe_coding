@@ -12,7 +12,7 @@
 
 "Você cria uma conta num site, fecha a aba, desliga o computador. Volta no dia seguinte. A conta ainda esta la. Ou então você confirma um pedido, abre em outro celular, e ele aparece. Como o servidor lembrou?"
 
-"A resposta não e magia. E banco de dados. Mas a maioria das pessoas que programa com IA hoje não distingue entre 'a página lembrou' e 'o dado sobreviveu'. Para a IA, tudo e variável."
+"A resposta e banco de dados. Mas a maioria das pessoas que programa com IA hoje não distingue entre 'a página lembrou' e 'o dado sobreviveu'. Para a IA, tudo e variável."
 
 "Neste vídeo vou contar por que o banco existe, o que ele guarda de verdade, e o que quebra quando você ou a IA ignoram ele. Sem SQL, sem comparacao de motores. Só o mapa."
 
@@ -98,7 +98,7 @@ Tres retangulos lado a lado, cada um com um icone simples: tabela (relacional), 
 
 ### Falar
 
-"O importante aqui não e decorar tipo. E saber que existem familias diferentes, e que quando a IA fala em 'banco relacional', 'banco de documentos', 'banco chave-valor', ela esta falando de um desses tres grupos."
+"O importante aqui e saber que existem familias diferentes, e que quando a IA fala em 'banco relacional', 'banco de documentos', 'banco chave-valor', ela esta falando de um desses tres grupos."
 
 ### Cena 2 - Query: como o servidor pede algo ao banco (6:45-8:15)
 
@@ -126,7 +126,7 @@ Diagrama: servidor -> seta com "query" -> banco -> seta com "resultado" -> servi
 
 "Schema e a estrutura dos dados. Em bancos relacionais, o schema são tabelas e colunas: na tabela de usuarios, por exemplo, coluna nome e texto, coluna email e texto, coluna data de nascimento e data, coluna ativo e verdadeiro ou falso."
 
-"Em bancos de documentos, o schema não e uma tabela rigida. E um formato esperado: o documento deveria ter esses campos, com esses tipos. A ideia e a mesma: existe uma estrutura esperada para o dado entrar."
+"Em bancos de documentos, o schema e um formato esperado: o documento deveria ter esses campos, com esses tipos. A ideia e a mesma: existe uma estrutura esperada para o dado entrar."
 
 ### Mostrar
 
@@ -230,7 +230,7 @@ Mostrar o mapa completo: memória não confiável, dado persistente, tipos de ba
 
 ### Na camera
 
-"Para programar com IA sem ser enganado, você não precisa saber SQL nem escolher o banco perfeito. Precisa saber que o banco existe, o que ele guarda, e o que quebra quando se ignora a estrutura."
+"Para programar com IA sem ser enganado, você só precisa saber que o banco existe, o que ele guarda, e o que quebra quando se ignora a estrutura."
 
 "Quando a IA sugerir uma mudança que toca dados, pergunte: isso mora no front ou no banco? Precisa de query? Mexe no schema? Tem migracao?"
 

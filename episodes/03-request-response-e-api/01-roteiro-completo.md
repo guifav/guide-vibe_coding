@@ -12,9 +12,9 @@
 
 "Você abre um site. Clica num botao. E alguma coisa acontece. Mas o que exatamente viajou entre o seu clique e a resposta que apareceu na tela?"
 
-"No episodio passado eu contei a história de um deploy, do zero ao ar. Agora quero abrir uma das camadas mais importantes: o dialogo entre o navegador e o servidor."
+"No episodio passado eu contei a história de um deploy, ate ele ir ao ar. Agora quero abrir uma das camadas mais importantes: o dialogo entre o navegador e o servidor."
 
-"Tudo que acontece na web e uma conversa de duas partes. O navegador pede. O servidor responde. Neste vídeo eu vou contar essa conversa do início ao fim. E no caminho você vai entender por que a IA as vezes inventa coisas que não existem."
+"Tudo que acontece na web e uma conversa de duas partes. O navegador pede. O servidor responde. Neste vídeo eu vou contar essa conversa inteira. E no caminho você vai entender por que a IA as vezes inventa coisas que não existem."
 
 ### Mostrar
 
@@ -110,7 +110,7 @@ Mostrar o diagrama com request, metodo (GET/POST) e endpoint destacados.
 
 "Mas o que vem dentro da resposta? Dados. E esses dados viajam em um formato chamado JSON."
 
-"JSON não e nada misterioso. E texto organizado. Com chaves para agrupar e listas para sequencias. Facil para o computador ler, facil para o humano entender."
+"JSON e texto organizado. Com chaves para agrupar e listas para sequencias. Facil para o computador ler, facil para o humano entender."
 
 Exemplo na tela:
 
@@ -156,7 +156,7 @@ Dois exemplos:
 
 "Você pede para ela fazer o front consumir uma API. Ela escreve o código esperando que o servidor devolva `{ título, descrição }`. Mas o servidor nunca disse que devolve isso. A IA chutou. E quando o código roda, a tela fica vazia."
 
-"Por isso a primeira pergunta ao trabalhar com API não e 'como eu chamo'. E 'qual e o contrato'. O que o servidor realmente devolve?"
+"Por isso a primeira pergunta ao trabalhar com API e 'qual e o contrato'. O que o servidor realmente devolve?"
 
 "Quando a IA sugerir consumir uma API, pergunte: 'você viu o contrato real, ou você esta chutando os campos?'."
 
@@ -180,7 +180,7 @@ Dois exemplos:
 
 "O status code e a forma honesta do servidor falar o que aconteceu. 200 e sucesso. 404 e 'não achei'. 401 e 'não te conheco'. 403 e 'te conheco, mas não pode'. 500 e 'deu ruim no meu lado'."
 
-"O problema mais comum na web não e o erro. E o crash silencioso. O servidor quebra, mas em vez de devolver um 500 honesto, devolve algo vazio ou uma resposta generica. O front não sabe o que aconteceu. A tela fica parada, sem mensagem."
+"O problema mais comum na web e o crash silencioso. O servidor quebra, mas em vez de devolver um 500 honesto, devolve algo vazio ou uma resposta generica. O front não sabe o que aconteceu. A tela fica parada, sem mensagem."
 
 ### Mostrar
 

@@ -10,7 +10,7 @@ Cada corte isola um conceito do dialogo request/response, com gancho para o víd
 
 **Corpo:** tudo na web e uma conversa de duas partes. O navegador manda um pedido (request). O servidor processa e devolve uma resposta (response). Isso acontece toda vez que você abre um site, clica num botao, carrega uma lista. Tudo e request e response.
 
-**CTA:** "No vídeo completo eu abro essa conversa inteira, do request ao JSON. Link na descrição."
+**CTA:** "No vídeo completo eu abro essa conversa inteira, ate o JSON. Link na descrição."
 
 ---
 
@@ -28,7 +28,7 @@ Cada corte isola um conceito do dialogo request/response, com gancho para o víd
 
 **Gancho:** "404 não significa 'quebrou'. Significa 'não achei'. São coisas diferentes."
 
-**Corpo:** o servidor devolve um código de status que diz, honestamente, o que aconteceu. 200 e sucesso. 404 e "não achei". 401 e "não te conheco". 403 e "não pode". 500 e "quebrou no meu lado". O pior não e o erro. E o crash silencioso, quando o servidor quebra e devolve nada.
+**Corpo:** o servidor devolve um código de status que diz, honestamente, o que aconteceu. 200 e sucesso. 404 e "não achei". 401 e "não te conheco". 403 e "não pode". 500 e "quebrou no meu lado". O pior e o crash silencioso, quando o servidor quebra e devolve nada.
 
 **CTA:** "Os 5 status codes que cobrem 95% dos casos, explicados no vídeo completo."
 

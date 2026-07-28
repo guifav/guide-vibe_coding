@@ -48,7 +48,7 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferra
 
 O front nunca fala direto com o banco. A seta do front para na API.
 
-## A conversa completa (um pedido, do início ao fim)
+## A conversa completa (um pedido inteiro)
 
 ```
   1. USUARIO clica ou digita URL

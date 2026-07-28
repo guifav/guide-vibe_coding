@@ -5,7 +5,7 @@
 1. "Quem e você? O que pode fazer? (auth e sessao explicadas do zero)"
 2. "Como o servidor sabe quem e você? Login, sessao e token, simples"
 3. "Vibe coder precisa saber: a diferença entre autenticação e autorização"
-4. "Auth explicada sem jargao: do login ao logoff, o mapa completo"
+4. "Auth explicada sem jargao: o mapa completo, ate o logoff"
 5. "Por que a IA sempre quer 'simplificar' auth (e por que e perigoso)"
 
 **Recomendado:** #1 ou #5. O primeiro e claro e didático, com pergunta. O quinto tem gancho forte para quem programa com IA e já passou por isso.
