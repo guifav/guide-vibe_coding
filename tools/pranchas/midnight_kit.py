@@ -18,17 +18,27 @@ Fixa o que NÃO pode variar:
 
 A METÁFORA de cada prancha é bespoke (ver gerar_epNN.py).
 
+PNG: preferimos rsvg-convert (brew install librsvg); o cairosvg fica como
+fallback, mas quebra as ligaduras fi/fl do itálico nas legendas.
+
 Uso:
     python3 gerar_ep01.py   (a partir de tools/pranchas/)
 """
 
 import os
+import shutil
+import subprocess
 from xml.sax.saxutils import escape
 
 try:
     import cairosvg
 except ImportError:
     cairosvg = None
+
+# rsvg-convert (librsvg/Pango/HarfBuzz) resolve as ligaduras fi/fl do itálico,
+# que o cairosvg quebra ("f ica", "conf lito"); por isso é o rasterizador
+# preferido quando presente no sistema.
+RSVG = shutil.which("rsvg-convert")
 
 # ---- Midnight Grid (fixo) ----
 BG = "#000000"
@@ -82,12 +92,18 @@ def export(body_svg, path, defs="", width=W, height=H):
     base = os.path.splitext(path)[0]
     with open(base + ".svg", "w", encoding="utf-8") as f:
         f.write(svg)
+    if RSVG:
+        subprocess.run([RSVG, "-w", str(width), "-h", str(height),
+                        "-o", base + ".png"],
+                       input=svg.encode("utf-8"), check=True)
+        print(f"[ok] {base}.png  (rsvg)")
+        return
     if cairosvg is None:
-        print(f"[svg] {base}.svg  (cairosvg ausente: PNG não gerado)")
+        print(f"[svg] {base}.svg  (rsvg-convert e cairosvg ausentes: PNG não gerado)")
         return
     cairosvg.svg2png(bytestring=svg.encode("utf-8"), write_to=base + ".png",
                      output_width=width, output_height=height)
-    print(f"[ok] {base}.png")
+    print(f"[ok] {base}.png  (cairosvg: ligaduras do itálico podem quebrar)")
 
 
 # ---- Primitivas ----

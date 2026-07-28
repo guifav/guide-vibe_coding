@@ -17,7 +17,7 @@ from midnight_kit import (W, H, INK, SECONDARY, MUTED, BORDER, ACCENT,
 
 OUT = "../../episodes/08-secrets-e-variaveis-de-ambiente/pranchas"
 KICKER = "EP 08 · Secrets e variáveis de ambiente"
-N = 11
+N = 12
 
 # Placeholder único e obviamente falso — nunca valor plausível
 FAKE = "chave_exemplo_nao_usar"
@@ -346,9 +346,39 @@ def p09_tres_armadilhas():
 
 
 # ---------------------------------------------------------------- 10
-def p10_protocolo_emergencia():
-    """ATO 3: revogar → trocar → verificar."""
+def p10_como_pedir_certo():
+    """ATO 3: os três prompts prontos que resolvem quase tudo."""
     b = header(KICKER, fig(10))
+    b += title(W / 2, 230, "Três pedidos que resolvem quase tudo")
+    b += caps(W / 2, 310, "prompts prontos para copiar", 22, ACCENT,
+              anchor="middle")
+
+    prompts = [
+        ("1", "“use variável de ambiente, não escreva o valor no código”",
+         "ela sabe fazer, só precisa do comando"),
+        ("2", "“crie o .env.example e garanta que o .env está no .gitignore”",
+         "uma frase, e a estrutura fica certa"),
+        ("3", "“nunca cole a chave real no chat: use placeholder”",
+         "preencha o valor você mesmo, direto no .env"),
+    ]
+    y0, hc, vgap = 370, 150, 36
+    b += glow(W / 2, y0 + hc / 2, 300, "g1")
+    for i, (num, prompt, nota) in enumerate(prompts):
+        y = y0 + i * (hc + vgap)
+        b += card(210, y, 1500, hc)
+        b += txt(300, y + 92, num, 52, SECONDARY, anchor="middle",
+                 weight="800")
+        b += txt(380, y + 72, prompt, 29, INK, weight="600")
+        b += txt(380, y + 116, nota, 22, SECONDARY)
+
+    b += caption(W / 2, 990, "A IA faz certo se você pedir certo.")
+    export(b, f"{OUT}/10-como-pedir-certo", defs=glow_def("g1"))
+
+
+# ---------------------------------------------------------------- 11
+def p11_protocolo_emergencia():
+    """ATO 3: revogar → trocar → verificar."""
+    b = header(KICKER, fig(11))
     b += title(W / 2, 230, "Vazou? Protocolo de emergência")
     steps = [
         ("1", "revogar", "cancela a chave", "no painel do serviço"),
@@ -376,13 +406,13 @@ def p10_protocolo_emergencia():
              anchor="middle", weight="600")
     b += caption(W / 2, 950,
                  "Rotacionar não é uma das opções. É a única.")
-    export(b, f"{OUT}/10-protocolo-emergencia", defs=glow_def("g1"))
+    export(b, f"{OUT}/11-protocolo-emergencia", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 11
-def p11_regra_de_ouro():
+# ---------------------------------------------------------------- 12
+def p12_regra_de_ouro():
     """Encerramento: regra de ouro + mapa código vs ambiente."""
-    b = header(KICKER, fig(11))
+    b = header(KICKER, fig(12))
     b += title(W / 2, 230, "No código, só o nome. O valor, nunca.")
 
     wc, hc, gap = 720, 380, 100
@@ -415,7 +445,7 @@ def p11_regra_de_ouro():
 
     b += caption(W / 2, 950,
                  "Os dois nunca viajam juntos.")
-    export(b, f"{OUT}/11-regra-de-ouro", defs=glow_def("g1"))
+    export(b, f"{OUT}/12-regra-de-ouro", defs=glow_def("g1"))
 
 
 if __name__ == "__main__":
@@ -428,5 +458,6 @@ if __name__ == "__main__":
     p07_env_gitignore()
     p08_producao_painel()
     p09_tres_armadilhas()
-    p10_protocolo_emergencia()
-    p11_regra_de_ouro()
+    p10_como_pedir_certo()
+    p11_protocolo_emergencia()
+    p12_regra_de_ouro()

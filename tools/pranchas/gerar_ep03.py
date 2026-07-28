@@ -14,7 +14,7 @@ from midnight_kit import (W, H, INK, SECONDARY, MUTED, BORDER, ACCENT,
 
 OUT = "../../episodes/03-request-response-e-api/pranchas"
 KICKER = "EP 03 · Request, response e API"
-N = 12
+N = 13
 
 
 def fig(n):
@@ -78,7 +78,7 @@ def p02_get_vs_post():
              anchor="middle")
     b += txt(x1 + wc / 2, y0 + 396, "manda dados que mudam algo", 24, MUTED,
              anchor="middle")
-    b += txt(W / 2, 862, "Existem outros — PUT, PATCH, DELETE — mas esses dois cobrem 90% da web.",
+    b += txt(W / 2, 862, "Existem outros (PUT, PATCH, DELETE), mas esses dois cobrem 90% da web.",
              28, SECONDARY, anchor="middle")
     b += caption(W / 2, 950,
                  "Se a IA diz “fazer um GET”, ela está dizendo o tipo do pedido.")
@@ -174,7 +174,7 @@ def p05_contrato():
     b += txt(x1 + 70, y0 + 312, "front procura título, não acha", 27, SECONDARY)
     b += xmark(x1 + 92, y0 + 388, 18, ST_RESTRICTED, 4)
     b += txt(x1 + 140, y0 + 398, "tela em branco", 30, INK, weight="700")
-    b += txt(W / 2, 866, "Contrato: o combinado entre front e servidor — o que eu peço, e o que recebo.",
+    b += txt(W / 2, 866, "Contrato: o combinado entre front e servidor. O que eu peço, e o que recebo.",
              28, SECONDARY, anchor="middle")
     b += caption(W / 2, 950, "Se um lado muda o combinado, o outro quebra.")
     export(b, f"{OUT}/05-contrato", defs=glow_def("g1"))
@@ -205,7 +205,7 @@ def p06_contrato_inventado():
     b += xmark(960, y0 + 130, 34, ST_RESTRICTED, 5)
     b += caps(960, y0 + 228, "não bate", 22, ST_RESTRICTED, anchor="middle")
     b += caps(W / 2, 812, "a IA chutou os campos", 24, ACCENT, anchor="middle")
-    b += txt(W / 2, 866, "O código roda sem acusar erro — e a tela fica vazia.",
+    b += txt(W / 2, 866, "O código roda sem acusar erro. E a tela fica vazia.",
              28, SECONDARY, anchor="middle")
     b += caption(W / 2, 950,
                  "Pergunte: “você viu o contrato real, ou está chutando os campos?”")
@@ -221,9 +221,9 @@ def p07_status_codes():
               18, ACCENT)
     rows = [("200", "ok", "deu certo, aqui está a resposta", ST_OPEN),
             ("404", "not found", "não achei o que você pediu", ST_GUIDED),
-            ("401", "unauthorized", "você não está logado — não sei quem você é", ST_GUIDED),
+            ("401", "unauthorized", "você não está logado: não sei quem você é", ST_GUIDED),
             ("403", "forbidden", "sei quem você é, mas você não pode acessar isso", ST_GUIDED),
-            ("500", "server error", "quebrou lá dentro — não foi culpa sua", ST_RESTRICTED)]
+            ("500", "server error", "quebrou lá dentro: não foi culpa sua", ST_RESTRICTED)]
     y0, rh, step = 360, 88, 102
     b += glow(960, y0 + rh / 2, 260, "g1")
     for i, (code, nome, desc, color) in enumerate(rows):
@@ -238,9 +238,46 @@ def p07_status_codes():
 
 
 # ---------------------------------------------------------------- 08
-def p08_crash_silencioso():
-    """ATO 2: crash honesto (500) vs crash silencioso (resposta vazia)."""
+def p08_401_vs_403():
+    """ATO 2: o par de status mais confundido, em dois painéis."""
     b = header(KICKER, fig(8))
+    b += title(W / 2, 230, "401 e 403: portas fechadas diferentes")
+    wc, hc, gap = 700, 420, 120
+    x0 = (W - 2 * wc - gap) / 2
+    y0 = 340
+    b += glow(x0 + wc / 2, y0 + hc / 2, 300, "g1")
+
+    b += card(x0, y0, wc, hc)
+    b += txt(x0 + wc / 2, y0 + 110, "401", 72, ST_GUIDED, anchor="middle",
+             weight="800")
+    b += caps(x0 + wc / 2, y0 + 160, "unauthorized", 20, SECONDARY,
+              anchor="middle")
+    b += txt(x0 + wc / 2, y0 + 250, "“não te conheço”", 36, INK,
+             anchor="middle", weight="700")
+    b += txt(x0 + wc / 2, y0 + 330, "falta login: quem é você?", 25,
+             SECONDARY, anchor="middle")
+
+    x1 = x0 + wc + gap
+    b += card(x1, y0, wc, hc)
+    b += txt(x1 + wc / 2, y0 + 110, "403", 72, ST_GUIDED, anchor="middle",
+             weight="800")
+    b += caps(x1 + wc / 2, y0 + 160, "forbidden", 20, SECONDARY,
+              anchor="middle")
+    b += txt(x1 + wc / 2, y0 + 250, "“te conheço, e não pode”", 36, INK,
+             anchor="middle", weight="700")
+    b += txt(x1 + wc / 2, y0 + 330, "logado, sem permissão para isso", 25,
+             SECONDARY, anchor="middle")
+
+    b += caps(W / 2, 850, "a porta fechou pelo motivo certo?", 22, ACCENT,
+              anchor="middle")
+    b += caption(W / 2, 950, "401 pede login. 403 pede permissão.")
+    export(b, f"{OUT}/08-401-vs-403", defs=glow_def("g1"))
+
+
+# ---------------------------------------------------------------- 09
+def p09_crash_silencioso():
+    """ATO 2: crash honesto (500) vs crash silencioso (resposta vazia)."""
+    b = header(KICKER, fig(9))
     b += title(W / 2, 230, "Crash honesto, crash silencioso")
     wc, hc, gap = 350, 130, 55
     x0 = (W - 4 * wc - 3 * gap) / 2
@@ -277,13 +314,13 @@ def p08_crash_silencioso():
              28, SECONDARY, anchor="middle")
     b += caption(W / 2, 950,
                  "O pior erro não é o 500. É a resposta que não diz nada.")
-    export(b, f"{OUT}/08-crash-silencioso", defs=glow_def("g1"))
+    export(b, f"{OUT}/09-crash-silencioso", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 09
-def p09_fronteira():
+# ---------------------------------------------------------------- 10
+def p10_fronteira():
     """ATO 3: a fronteira — front, API (balcão), banco (almoxarifado)."""
-    b = header(KICKER, fig(9))
+    b = header(KICKER, fig(10))
     b += title(W / 2, 230, "A fronteira: o front não vê o banco")
     y0 = 370
     b += card(150, y0, 430, 300, "front · o cliente")
@@ -315,13 +352,13 @@ def p09_fronteira():
     b += caps(958, 862, "o front não fala direto com o banco", 20, MUTED,
               anchor="middle")
     b += caption(W / 2, 950, "Você pede no balcão. Não entra no almoxarifado.")
-    export(b, f"{OUT}/09-fronteira-front-api-banco", defs=glow_def("g1"))
+    export(b, f"{OUT}/10-fronteira-front-api-banco", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 10
-def p10_camadas():
+# ---------------------------------------------------------------- 11
+def p11_camadas():
     """ATO 3: camadas — cada uma com um trabalho."""
-    b = header(KICKER, fig(10))
+    b = header(KICKER, fig(11))
     b += title(W / 2, 230, "Camadas: cada uma com um trabalho")
     cols = [("front", "mostra", "telas, botões, interação"),
             ("api", "atende e processa", "recebe, executa, responde"),
@@ -341,13 +378,13 @@ def p10_camadas():
               ACCENT, anchor="middle")
     b += caption(W / 2, 950,
                  "Cada camada tem um trabalho. A fronteira mantém o sistema são.")
-    export(b, f"{OUT}/10-camadas", defs=glow_def("g1"))
+    export(b, f"{OUT}/11-camadas", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 11
-def p11_tres_armadilhas():
+# ---------------------------------------------------------------- 12
+def p12_tres_armadilhas():
     """ATO 3: as três armadilhas clássicas da IA com API."""
-    b = header(KICKER, fig(11))
+    b = header(KICKER, fig(12))
     b += title(W / 2, 230, "As três armadilhas da IA com API")
     dados = [("inventar contrato",
               ["espera campos que o servidor", "nunca confirmou"],
@@ -377,13 +414,13 @@ def p11_tres_armadilhas():
                      italic=True)
     b += caption(W / 2, 950,
                  "Três perguntas, um crivo. Faça-as toda vez que a IA mexer com API.")
-    export(b, f"{OUT}/11-tres-armadilhas", defs=glow_def("g1"))
+    export(b, f"{OUT}/12-tres-armadilhas", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 12
-def p12_conversa_completa():
+# ---------------------------------------------------------------- 13
+def p13_conversa_completa():
     """Encerramento: a conversa inteira, do clique à tela."""
-    b = header(KICKER, fig(12))
+    b = header(KICKER, fig(13))
     b += title(W / 2, 230, "A conversa inteira, do clique à tela")
     steps = [("você clica", "ou digita a URL"),
              ("request parte", "método + endpoint"),
@@ -405,11 +442,11 @@ def p12_conversa_completa():
         if i < 4:
             b += arrow(x + wc + 5, y0 + 95, x + wc + gap - 5, y0 + 95,
                        SECONDARY, 2.5)
-    b += txt(W / 2, 750, "Esse ciclo é a conversa inteira — e ela acontece a cada clique.",
+    b += txt(W / 2, 750, "Esse ciclo é a conversa inteira. E ela acontece a cada clique.",
              28, SECONDARY, anchor="middle")
     b += caption(W / 2, 950,
                  "O front pede. A API atende. O banco guarda. Cada um no seu lugar.")
-    export(b, f"{OUT}/12-conversa-completa", defs=glow_def("g1"))
+    export(b, f"{OUT}/13-conversa-completa", defs=glow_def("g1"))
 
 
 if __name__ == "__main__":
@@ -420,8 +457,9 @@ if __name__ == "__main__":
     p05_contrato()
     p06_contrato_inventado()
     p07_status_codes()
-    p08_crash_silencioso()
-    p09_fronteira()
-    p10_camadas()
-    p11_tres_armadilhas()
-    p12_conversa_completa()
+    p08_401_vs_403()
+    p09_crash_silencioso()
+    p10_fronteira()
+    p11_camadas()
+    p12_tres_armadilhas()
+    p13_conversa_completa()
