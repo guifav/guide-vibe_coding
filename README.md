@@ -4,11 +4,19 @@ Material de apoio dos vídeos do canal **ia-aplicada** sobre vibe coding: progra
 
 Cada vídeo vira uma pasta em `episodes/` com o kit completo: conceito, roteiro, mapa visual, glossário, títulos/thumbnail/SEO e cortes para Shorts.
 
-## Episódios
+## Temporada 1 — As camadas entre o código e o ar
 
-| # | Episódio | Pasta |
-|---|---|---|
-| 01 | Deploy do Zero ao Ar | [`episodes/01-deploy-do-zero-ao-ar/`](./episodes/01-deploy-do-zero-ao-ar/) |
+O episódio 01 desenha o mapa inteiro. Os episódios 02 a 07 fazem o zoom em cada camada, na mesma ordem da jornada que o episódio 01 conta. Cada um é autocontido, mas a ordem faz sentido se assistir na sequência.
+
+| # | Episódio | Camada | Pasta |
+|---|---|---|---|
+| 01 | Deploy do Zero ao Ar | Mapa completo | [`01-deploy-do-zero-ao-ar/`](./episodes/01-deploy-do-zero-ao-ar/) |
+| 02 | Front-end e Estado | Navegador | [`02-front-end-e-estado/`](./episodes/02-front-end-e-estado/) |
+| 03 | Request, Response e API | Navegador ↔ Servidor | [`03-request-response-e-api/`](./episodes/03-request-response-e-api/) |
+| 04 | Banco de Dados | Servidor ↔ Dados | [`04-banco-de-dados/`](./episodes/04-banco-de-dados/) |
+| 05 | Auth e Sessão | Quem é você | [`05-auth-e-sessao/`](./episodes/05-auth-e-sessao/) |
+| 06 | Git e Versionamento | Rede de segurança | [`06-git-e-versionamento/`](./episodes/06-git-e-versionamento/) |
+| 07 | Build, CI/CD e Deploy | Indo ao ar (profundo) | [`07-build-ci-cd-deploy/`](./episodes/07-build-ci-cd-deploy/) |
 
 ## Estrutura de cada episódio
 
