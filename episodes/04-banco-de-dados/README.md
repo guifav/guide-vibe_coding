@@ -18,7 +18,7 @@
 | `05-shorts-cortes.md` | 4 cortes curtos, cada um isola uma camada |
 
 **Principios do canal aplicados**
-- Didatica por analogia operacional: o banco vira analogia do mundo fisico (arquivo morto, planilha, armario)
+- Didatica por analogia operacional: o banco vira analogia do mundo fisico (carrinho de compras, memoria do navegador)
 - Conceito so entra se responde "o que quebra se isso faltar"
 - Termina com repo publico + glossario que cresce por video (saida replicavel)
 - Alerta pratico para vibe coders: a IA as vezes ignora schema e migracao, e isso quebra silenciosamente

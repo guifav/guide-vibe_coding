@@ -22,7 +22,6 @@ So os termos que aparecem no roteiro. Um por linha, traducao direta.
 
 - **Query** - pergunta estruturada que o servidor faz ao banco
 - **Select** - tipo de query que busca dados (ler)
-- **Insert / Update / Delete** - queries que gravam ou alteram dados (escrever)
 - **Resultado (result set)** - o que o banco devolve depois de uma query
 
 ## Estrutura do dado

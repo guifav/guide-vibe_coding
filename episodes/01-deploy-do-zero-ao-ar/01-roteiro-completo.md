@@ -133,7 +133,7 @@ No diagrama, o servidor aparece como outra maquina, separada do computador de ca
 
 "Para o servidor saber o que fazer com o pedido, ele precisa de uma porta de entrada organizada. Isso e a API."
 
-"Pense na API como o balcao de atendimento do servidor. Voce bate no balcao e pede: 'quero a lista de clusters'. O servidor vai atrás, busca, e devolve."
+"Pense na API como o balcao de atendimento do servidor. Voce bate no balcao e pede: 'quero a lista de produtos'. O servidor vai atrás, busca, e devolve."
 
 "API nao e tecnologia especifica. E um contrato: qual pedido eu aceito, qual resposta eu devolvo. Quando a IA fala em 'chamar a API' ou 'endpoint', ela esta falando de uma dessas portas."
 
@@ -229,7 +229,7 @@ Diagrama do pipeline: commit -> lint -> testes -> build -> deploy. Cores: verde/
 
 "Pense no DNS como uma lista telefonica. Voce nao decora o numero, voce procura pelo nome."
 
-"Quando voc. deploya, voce precisa garantir que o dominio aponta para o servidor certo. Se o deploy mudou o servidor, o DNS precisa ser atualizado."
+"Quando voce deploya, voce precisa garantir que o dominio aponta para o servidor certo. Se o deploy mudou o servidor, o DNS precisa ser atualizado."
 
 ### Fechamento do ATO 3
 

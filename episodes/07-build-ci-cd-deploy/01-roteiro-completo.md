@@ -12,7 +12,7 @@
 
 "No episodio 01 desta serie, eu contei a historia de um deploy, do zero ao ar. Mostrei que entre o codigo e o site existe um servidor, um banco, auth, e no fim existe uma coisa chamada build, CI/CD e deploy. Mas eu so mostrei o nome."
 
-"Nos seis episodios seguintes fomos fundo em cada camada. Front-end, API, banco, auth, git. Agora chegamos na ultima. O que realmente acontece quando o codigo vai para o ar?"
+"Nos cinco episodios seguintes fomos fundo em cada camada. Front-end, API, banco, auth, git. Agora chegamos na ultima. O que realmente acontece quando o codigo vai para o ar?"
 
 "Este e o ultimo video da temporada. Vou abrir a camada final, a que eu so mostrei por cima no episodio 01, e no fim vou voltar ao mapa completo. Se voce assistiu a serie toda, vai sair com o mapa inteiro na cabeca. Se caiu neste video agora, tambem da para acompanhar."
 

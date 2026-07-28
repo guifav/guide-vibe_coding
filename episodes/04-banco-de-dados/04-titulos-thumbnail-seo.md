@@ -2,7 +2,7 @@
 
 ## Titulos (escolher um)
 
-1. "Por que o servidor ESCREQUE tudo? Banco de dados explicado do zero"
+1. "Por que o servidor ESQUECE tudo? Banco de dados explicado do zero"
 2. "Onde o dado sobrevive entre requests? (banco de dados para vibe coders)"
 3. "Banco de dados: por que existe, o que guarda e o que quebra"
 4. "Vibe coder precisa saber: a diferenca entre front e banco"

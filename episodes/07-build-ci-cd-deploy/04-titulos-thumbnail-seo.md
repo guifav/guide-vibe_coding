@@ -47,7 +47,7 @@ Incluir discreto, em um canto, algo como "Final da temporada" ou "Ep 07/07", par
 
 ## Descricao
 
-"No episodio 01 da serie, eu mostrei que existe build, CI/CD e deploy. Nos seis episodios seguintes fomos fundo em cada camada. Agora chegamos na ultima: o que realmente acontece quando o codigo vai para o ar?
+"No episodio 01 da serie, eu mostrei que existe build, CI/CD e deploy. Nos cinco episodios seguintes fomos fundo em cada camada. Agora chegamos na ultima: o que realmente acontece quando o codigo vai para o ar?
 
 Este e o video final da temporada. Abro a camada que ficou por ultimo no mapa: o cano que transforma, valida e publica o codigo. E no fim, revisito o mapa completo, com cada camada explicada pelos sete videos da serie.
 

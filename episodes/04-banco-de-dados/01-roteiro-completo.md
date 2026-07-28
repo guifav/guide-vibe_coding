@@ -186,7 +186,7 @@ Quatro icones simples com as palavras: duplicado, inconsistente, perdido, concor
 
 "Tem um erro que vejo bastante em quem programa com IA: guardar dado de negocio no navegador."
 
-"Pessoa cria um painel de KPI e salva os numeros no front, numa variavel, num armazenamento local do navegador. Acha que resolveu. Mas: se a pessoa limpar o navegador, perdeu. Se abrir em outro computador, nao ve. Se outra pessoa precisar ver, nao tem como."
+"Pessoa cria um painel de KPI (indicador de desempenho do negocio) e salva os numeros no front, numa variavel, num armazenamento local do navegador. Acha que resolveu. Mas: se a pessoa limpar o navegador, perdeu. Se abrir em outro computador, nao ve. Se outra pessoa precisar ver, nao tem como."
 
 ### Mostrar
 
