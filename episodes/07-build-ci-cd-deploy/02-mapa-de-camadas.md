@@ -34,8 +34,9 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episo
               v
   +-----------------------+
   | BUILD                 |  verde/vermelho (transformação)
-  | compile / minify /    |
-  | tree-shake / bundle   |
+  | traduz sintaxe /     |
+  | reduz tamanho /      |
+  | remove e junta       |
   +-----------------------+
               |
               v  (CI verde = segue; vermelho = PARA)
@@ -55,7 +56,6 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episo
               v
   +-----------------------+
   | DEPLOY em prod        |
-  | tudo-de-uma-vez /     |
   | blue-green / canary   |
   +-----------------------+
               |
@@ -94,10 +94,6 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episo
 ## Estratégias de deploy
 
 ```
-  TUDO-DE-UMA-VEZ
-    [antiga] some -> [nova] entra
-    (pode ter pausa perceptivel)
-
   BLUE-GREEN
     [blue: antiga]  [green: nova]
        trafego ----->  (paralelo, testa, depois troca)
@@ -106,6 +102,25 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episo
   CANARY
     [nova] recebe 5% -> 10% -> 50% -> 100%
     (se quebrar, poucos perceberam)
+```
+
+## Quando rollback NÃO resolve (atenção)
+
+```
+  Rollback do código só é seguro quando banco, API e
+  versão anterior continuam compatíveis.
+
+  Se o deploy mudou SCHEMA do banco:
+    código novo gravou dado na coluna nova
+    rollback p/ código antigo -> não conhece a coluna
+    pode quebrar ou ignorar dado -> segundo incidente
+
+  Se o deploy quebrou COMPATIBILIDADE de API:
+    outros sistemas já se adaptaram à resposta nova
+    rollback p/ versão antiga -> idioma que ninguém espera
+
+  Nesses casos: avançar, não voltar.
+  Corrigir a frente e fazer novo deploy.
 ```
 
 ## Mapa da temporada revisitado (mostrar no fechamento)

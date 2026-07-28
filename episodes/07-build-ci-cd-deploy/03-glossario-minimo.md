@@ -7,10 +7,10 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta. Este glo
 ## Build
 
 - **Build** - transformação do código em algo servivel (cozinha do restaurante)
-- **Compile** - traduzir código de uma linguagem para outra que a máquina executa
-- **Minify** - remover espacos, comentarios e encurtar nomes para o arquivo ficar menor
-- **Tree-shake** - remover código importado mas não usado (sacode a árvore, folhas mortas caem)
-- **Bundle** - juntar varios arquivos em um só, ou em poucos, para menos viagens na rede
+- **Compile** - traduzir código de uma linguagem para outra que a máquina executa (possibilidade, nem todo build faz)
+- **Minify** - remover espacos, comentarios e encurtar nomes para o arquivo ficar menor (possibilidade)
+- **Tree-shake** - remover código importado mas não usado (sacode a árvore, folhas mortas caem) (possibilidade)
+- **Bundle** - juntar varios arquivos em um só, ou em poucos, para menos viagens na rede (possibilidade)
 - **Sintaxe** - a gramatica do código; abriu parentese tem que fechar
 - **Tipo (type)** - categoria de um valor (número, texto, data); operações invalidas para o tipo quebram
 - **Dependencia** - pedaco de código de outra pessoa que o seu precisa para funcionar
@@ -18,7 +18,9 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta. Este glo
 ## CI/CD
 
 - **CI (Continuous Integration)** - cano que roda sozinho toda vez que código entra no repo
-- **CD (Continuous Deployment/Delivery)** - continuacao do cano que publica depois do CI verde
+- **Continuous Delivery** - prepara uma versao publicável e para; exige humano apertar o botao de publicar
+- **Continuous Deployment** - depois do CI verde, publica em produção automaticamente, sem decisão humana
+- **CD** - nome genérico para o cano que continua depois do CI; pode ser Delivery ou Deployment
 - **Lint** - verificador de estilo do código (indentacao, nomes, padrao do time)
 - **Teste** - pedaco de código que verifica se outro pedaco faz o que deveria
 - **Pipeline** - outro nome para o cano; a sequência de etapas automatizadas
@@ -36,7 +38,7 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta. Este glo
 
 - **Deploy** - ato de colocar a nova versao no servidor em prod
 - **Rollback** - desfazer o deploy; colocar de volta a versao anterior
-- **Tudo-de-uma-vez (all-at-once)** - derruba a antiga, sobe a nova; pode ter pausa
+- **Rollback seguro** - só vale quando banco, API e versao anterior continuam compatíveis
 - **Blue-green** - sobe nova em paralelo, testa, troca o trafego de uma vez
 - **Canary** - libera a nova para poucos usuarios primeiro, aumenta gradativamente
 
@@ -56,11 +58,13 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta. Este glo
 
 ## Pergunta-chave para usar com IA
 
-Quando a IA sugerir um deploy ou uma mudança que vai ao ar, pergunte:
+Quando a IA sugerir um deploy ou uma mudança que vai ao ar, pergunte duas coisas:
 
-"Se isso der errado em prod, conseguimos voltar rápido? Tem rollback? Qual estratégia de deploy?"
+1. "Se isso der errado em prod, conseguimos voltar rápido? Tem rollback? Qual estratégia de deploy?"
 
-A resposta diz o tamanho do risco.
+2. "Essa mudança mexe em schema de banco ou quebra compatibilidade de API? Se sim, rollback de código não resolve."
+
+As duas respostas juntas dizem o tamanho do risco.
 
 ---
 

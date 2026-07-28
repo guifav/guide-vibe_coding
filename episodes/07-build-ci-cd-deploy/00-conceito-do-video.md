@@ -27,13 +27,13 @@ Direto, sem jargao desnecessario. Cada termo técnico que aparece e imediatament
 ## Estrutura em 3 atos
 
 **ATO 1 - O build e por que ele quebra (transformação do código)**
-O que o build realmente faz: minify, tree-shake, compile, bundle. Cada um explicado no conceito, não na ferramenta. Por que build quebra: dependencia faltando, erro de tipo, sintaxe invalida. O build e a cozinha do restaurante que vimos no episódio 01, agora com a porta aberta.
+O que o build realmente faz: dependendo do projeto, pode traduzir a sintaxe, reduzir arquivos, remover partes não usadas e organizar módulos para publicação. Apresentado como possibilidades, não como regras, porque nem todo build faz tudo. Por que build quebra: dependencia faltando, erro de tipo, sintaxe invalida. O build e a cozinha do restaurante que vimos no episódio 01, agora com a porta aberta.
 
 **ATO 2 - O cano: CI e CD (validar e publicar automaticamente)**
-CI como portao automatico que roda toda vez que código entra no repo: lint, testes, build, cada etapa verde ou vermelho. Se vermelho, bloqueia. CD como a continuacao: depois do CI verde, publica automaticamente. Ambientes: local, dev, staging, prod. Estratégias de deploy: tudo-de-uma-vez, blue-green, canary. O ciclo completo: commit, push, CI, CD, ambiente, usuario percebe.
+CI como portao automatico que roda toda vez que código entra no repo: lint, testes, build, cada etapa verde ou vermelho. Se vermelho, bloqueia, mas com a ressalva de que o CI não replica o ambiente de produção perfeitamente. CD como a continuacao: depois do CI verde, publica. Aqui o episódio distingue Continuous Delivery (prepara versão publicável com portão humano) de Continuous Deployment (publica automaticamente sem decisão humana). Ambientes: local, dev, staging, prod. Estratégias de deploy: blue-green, canary. O ciclo completo: commit, push, CI, CD, ambiente, usuario percebe.
 
 **ATO 3 - Quando algo da errado e o fechamento da temporada**
-Rollback, incidente, post-mortem. O que acontece quando o ar cai e como se volta atras. Depois, fechamento da temporada: o mapa do episódio 01 revisitado por completo, agora com cada camada explicada pelos sete vídeos da série.
+Rollback, e principalmente quando o rollback não é trivial: se o deploy alterou schema do banco ou quebrou compatibilidade de API, voltar apenas o código pode piorar o incidente. Incidente, post-mortem. Depois, fechamento da temporada: o mapa do episódio 01 revisitado por completo, agora com cada camada explicada pelos sete vídeos da série.
 
 ## O que Não entra neste vídeo
 

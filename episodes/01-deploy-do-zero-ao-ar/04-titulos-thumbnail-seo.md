@@ -48,10 +48,11 @@ Para quem usa IA para programar (vibe coders) e quer entender o mapa sem se afog
 
 Indice (clique nos timestamps):
 0:00 O que acontece entre o código e o site?
-0:45 ATO 1 - No seu computador (código, estado, variáveis, git)
-5:30 ATO 2 - Saindo do computador (servidor, API, banco, auth)
-11:30 ATO 3 - Indo ao ar (build, CI/CD, deploy, domínio)
-16:30 Como usar isso com IA
+0:45 ATO 1 - No seu computador (código, git)
+3:30 ATO 2 - As camadas do servidor (servidor, API, banco, auth)
+9:30 ATO 3 - Indo ao ar (build, CI/CD, deploy, domínio)
+14:30 A volta final: o fluxo de uso (o que acontece quando alguém acessa)
+16:00 Como usar isso com IA
 
 Glossario completo: [link do repo]
 

@@ -17,9 +17,10 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferra
                 | request com dado
                 v
   +-------------------------------+
-  |  SERVIDOR (amnesico)          |  <- esquece entre requests
-  |  - recebe o pedido            |
-  |  - decide o que fazer         |
+  |  SERVIDOR (memória não      |  <- memória não confiável:
+  |   confiável)                |     pode reiniciar, rodar em
+  |  - recebe o pedido          |     várias cópias, não
+  |  - decide o que fazer       |     compartilha entre elas
   +-------------------------------+
                 |
                 | query
@@ -69,7 +70,8 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferra
        tabela usuarios: nome, email, telefone
 
   SE o código novo espera v2 mas o banco ainda ta em v1 -> ERRO
-  SE ninguém rodou a migracao -> código quebra em silêncio
+  SE ninguém rodou a migracao -> o banco reclama que a coluna não existe
+  SE a aplicação ignorar o erro -> o dado some sem aviso ao usuário
 ```
 
 ## Tipos de banco (no conceito)

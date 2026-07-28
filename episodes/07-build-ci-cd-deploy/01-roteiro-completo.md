@@ -42,19 +42,17 @@ Lado a lado: o arquivo de código fonte (com indentacao, comentarios, nomes long
 
 ### Falar
 
-"O build faz varias coisas ao mesmo tempo. Não preciso que você decore os nomes. Preciso que você saiba o que cada uma faz, para quando a IA falar o nome você saber do que se trata."
+"Dependendo do projeto, o build pode fazer varias coisas. Nem todo build faz tudo isso: tem projeto que só traduz a sintaxe, tem projeto que faz tudo junto. Mas vale conhecer o que pode acontecer dentro dele, para quando a IA falar o nome você saber do que se trata."
 
-"Primeiro: compile. Compile e pegar código escrito em uma linguagem que o humano gosta e transformar em uma versao que a máquina executa. E como traduzir de um idioma para outro."
+"Ele pode traduzir a sintaxe. Pegar código escrito em uma linguagem que o humano gosta e transformar em uma versao que a máquina executa. E como traduzir de um idioma para outro."
 
-"Segundo: minify. Minify e remover tudo que o computador não precisa para executar. Espacos, quebras de linha, comentarios, nomes longos de variáveis viram nomes curtos. O arquivo fica menor e viaja mais rápido pela rede."
+"Pode também reduzir o tamanho dos arquivos: remover espacos, comentarios e encurtar nomes, para o arquivo viajar mais rápido pela rede."
 
-"Terceiro: tree-shake. Tree-shake e remover código que você escreveu ou importou mas não usa. Imagine uma árvore: você sacode e as folhas mortas caem. O que fica e só o que o app realmente precisa."
-
-"Quarto: bundle. Bundle e juntar varios arquivos em um só, ou em poucos. Em vez do navegador baixar cinquenta arquivos separados, baixa um. Menos viagens, mais rápido."
+"E pode remover o que não usa e juntar os arquivos. Código que você importou mas não chamou sai fora. Varios arquivos viram um só, ou em poucos. Menos viagens pela rede, mais rápido."
 
 ### Mostrar
 
-Diagrama simples: varios arquivos a esquerda, uma seta com a palavra BUILD, e um arquivo só, compactado, a direita. Quatro etiquetas na seta: compile, minify, tree-shake, bundle.
+Diagrama simples: varios arquivos a esquerda, uma seta com a palavra BUILD, e um arquivo só, compactado, a direita. Tres etiquetas na seta: traduz sintaxe, reduz tamanho, remove e junta.
 
 ### Cena 3 - Por que build quebra (5:30-8:00)
 
@@ -110,7 +108,7 @@ Diagrama do cano: commit -> [lint] -> [testes] -> [build] -> [pronto para deploy
 
 "Segundo: testes. Teste e um pedaco de código que verifica se outro pedaco de código faz o que deveria. Você escreve: 'se eu passar X, espero Y'. O cano roda todos os testes. Se algum falha, vermelho. Teste não garante que o código esta certo, mas garante que os comportamentos que você prometeu continuam funcionando."
 
-"Terceiro: o build. Sim, o mesmo build do ATO 1. O CI também roda o build, porque se o build não passa na máquina do cano, ele não vai passar em lugar nenhum."
+"Terceiro: o build. Sim, o mesmo build do ATO 1. O CI também roda o build, porque se o build não passa na máquina do cano, e um sinal forte de problema. Mas atenção: o CI não replica o ambiente de produção perfeitamente. O que passa lá pode quebrar aqui. Mesmo assim, e a melhor porta que temos antes do ar."
 
 ### Mostrar
 
@@ -126,7 +124,7 @@ O diagrama do cano de novo, agora com as tres etiquetas explicadas: lint (estilo
 
 "CI para no 'pronto para deploy'. Quem publica? Em times modernos, outra parte do cano, chamada CD."
 
-"CD significa Continuous Deployment, ou Continuous Delivery, dependendo de quem fala. O detalhe não importa agora. O que importa: e a continuacao do cano. Depois que o CI da verde, o CD pega o código e publica no servidor, automaticamente."
+"CD pode significar duas coisas parecidas que vale distinguir, já que este e o episódio profundo. Continuous Delivery prepara uma versao publicável e para: o código passa em tudo, fica pronto, mas exige um humano apertar o botao de publicar. Continuous Deployment vai além: depois do CI verde, publica em produção automaticamente, sem decisão humana. Delivery prepara com portao humano; Deployment publica sozinho. Na prática os dois se chamam CD. O que importa e saber que existe essa fronteira de automação."
 
 "Ou seja: você da um push, o cano roda sozinho, e se tudo verde, o código vai para o ar sem nenhum humano apertar botao."
 
@@ -164,19 +162,17 @@ Quatro caixas em linha: local, dev, staging, prod. Cada uma com uma cor. Local e
 
 ### Falar
 
-"Quando o código chega em prod, como ele entra? Tem varios jeitos. Você não precisa saber todos. Precisa conhecer tres."
+"Quando o código chega em prod, como ele entra? Tem varios jeitos. Você não precisa saber todos. Precisa conhecer dois, que são os que importam para a conversa sobre risco."
 
-"Primeiro: tudo-de-uma-vez. E o mais simples. Derruba a versao antiga, sobe a nova. O usuario pode perceber uma pausa, uma indisponibilidade de alguns segundos. Em sites pequenos, tudo bem. Em sites grandes, não da."
+"Primeiro: blue-green. Você sobe a versao nova em um servidor paralelo, ao lado da antiga. Testa. Quando tem confianca, troca o trafego de uma vez: todo mundo que chega agora vai para a nova. A antiga fica la, pronta para voltar se der problema."
 
-"Segundo: blue-green. Você sobe a versao nova em um servidor paralelo, ao lado da antiga. Testa. Quando tem confianca, troca o trafego de uma vez: todo mundo que chega agora vai para a nova. A antiga fica la, pronta para voltar se der problema."
+"Segundo: canary. Você libera a versao nova para uma pequena parcela dos usuarios primeiro. Cinco por cento, dez por cento. Se nada quebra, vai aumentando ate cem. Se quebra, só poucos perceberam e você volta rápido."
 
-"Terceiro: canary. Você libera a versao nova para uma pequena parcela dos usuarios primeiro. Cinco por cento, dez por cento. Se nada quebra, vai aumentando ate cem. Se quebra, só poucos perceberam e você volta rápido."
+"Existe também o tudo-de-uma-vez, que derruba a antiga e sobe a nova sem paralelo. Mas ele não te da rede de seguranca nenhuma, então vou pular ele aqui. O que interessa e entender que estratégia existe justamente para reduzir o risco de publicar."
 
 ### Mostrar
 
-Tres mini-diagramas lado a lado.
-
-Tudo-de-uma-vez: uma caixa antiga some, outra nova aparece.
+Dois mini-diagramas lado a lado.
 
 Blue-green: duas caixas lado a lado, uma seta de "troca" apontando para a nova.
 
@@ -198,9 +194,17 @@ Mostrar o cano completo: commit -> push -> CI (lint, testes, build) -> CD -> amb
 
 "O primeiro movimento e voltar atras. Isso se chama rollback. Rollback e desfazer o deploy, colocar de volta a versao anterior, a que estava funcionando."
 
-"Se você deployou com blue-green, e facil: aponta o trafego de volta para o servidor antigo, que ainda esta la. Se deployou tudo-de-uma-vez, precisa re-deployar a versao anterior, e isso pode levar alguns minutos."
+"Se você deployou com blue-green, e facil: aponta o trafego de volta para o servidor antigo, que ainda esta la. Sem estratégia de paralelo, precisa re-deployar a versao anterior, e isso pode levar alguns minutos."
 
-"Por isso blue-green e canary existem. Não e só para evitar problemas. E para voltar rápido quando o problema acontece."
+"Mas aqui e onde mora o detalhe que quase ninguém te conta: rollback do código só é seguro quando o banco, a API e a versao anterior continuam compatíveis."
+
+"Exemplo. A versao nova mudou o esquema do banco de dados, criando uma coluna nova. O código novo gravou dado nessa coluna. Você faz rollback para o código antigo. O código antigo não conhece aquela coluna. Ele pode quebrar, ou simplesmente ignorar dado importante. Em vez de resolver o incidente, você acabou de criar um segundo."
+
+"Ou então a versao nova mudou o formato de resposta da API. Outros sistemas que dependem dela já se adaptaram. Você volta o código. Agora a API fala um idioma que ninguém mais espera. Rollback de código não desfaz mudança de dado. Ele só troca de versao."
+
+"Então antes de puxar o rollback, pergunte: essa versao nova mexeu em schema de banco ou quebrou compatibilidade de API? Se sim, voltar o código pode piorar o incidente, não resolver. Nesses casos o caminho costuma ser avançar, não voltar: corrigir a frente e fazer um novo deploy."
+
+"Por isso blue-green e canary existem. Não e só para evitar problemas. E para voltar rápido quando o problema acontece. E principalmente, e para voltar de um jeito que não arraste o banco junto."
 
 ### Mostrar
 
@@ -218,7 +222,7 @@ Diagrama: versao nova no ar -> problema detectado -> seta de "rollback" -> versa
 
 ### Falar
 
-"Quando a IA sugerir um deploy grande, uma mudança que mexe em varias camadas, pergunte: se isso der errado em prod, conseguimos voltar rápido? Tem rollback? Tem blue-green? A resposta diz o tamanho do risco."
+"Quando a IA sugerir um deploy grande, uma mudança que mexe em varias camadas, pergunte duas coisas. Primeiro: se isso der errado em prod, conseguimos voltar rápido? Tem rollback? Tem blue-green? Segunda, a mais importante: essa mudança mexe em schema de banco ou quebra compatibilidade de API? Se sim, rollback de código não resolve. As duas respostas juntas dizem o tamanho do risco."
 
 ### Cena 3 - O ciclo completo, resumido (20:30-22:00)
 
@@ -230,7 +234,7 @@ Diagrama: versao nova no ar -> problema detectado -> seta de "rollback" -> versa
 
 "O repo dispara o CI. O CI roda lint, testes e build. Se tudo verde, segue. Se algo vermelho, para."
 
-"Depois do CI verde, o CD entra. Publica em dev, depois em staging. Em prod, publica com a estratégia escolhida: tudo-de-uma-vez, blue-green ou canary."
+"Depois do CI verde, o CD entra. Publica em dev, depois em staging. Em prod, publica com a estratégia escolhida: blue-green ou canary."
 
 "O novo código esta no ar. O usuario acessa o site e percebe algo diferente: um botao novo, uma tela nova, uma correcao. Ele não viu nenhum dos passos. Só viu o resultado."
 

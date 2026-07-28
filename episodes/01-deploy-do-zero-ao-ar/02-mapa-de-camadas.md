@@ -2,7 +2,37 @@
 
 Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferramentas, só camadas e o fluxo.
 
-## O mapa (versao texto)
+O vídeo percorre duas jornadas distintas. Este mapa mostra as duas, separadas para não confundir.
+
+## Jornada 1: fluxo de publicação (a linha principal do vídeo)
+
+Como o código sai do computador e chega ao ar.
+
+```
+  1. Código no seu computador
+       (HTML, CSS, JS)
+                |
+  2. GIT / REPO
+       (versionamento, commit, branch)
+                |
+  3. BUILD (em muitos projetos; em projetos simples pode ir direto)
+       (transforma o código em algo servivel)
+                |
+  4. CI/CD
+       (testa antes de publicar, automatizado)
+                |
+  5. DEPLOY
+       (sobe para a nuvem / servidor)
+                |
+  6. Domínio aponta para o servidor
+       (DNS, URL; costuma continuar apontando para o mesmo serviço)
+                |
+  7. NO AR
+```
+
+## Jornada 2: fluxo de uso (a volta final, ~90s no encerramento)
+
+O que acontece quando alguém acessa a URL já publicada.
 
 ```
   Você DIGITA UM Endereço NO NAVEGADOR
@@ -16,9 +46,11 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferra
   +-------------------------------+
   |  SERVIDOR (sempre ligado)     |  <- outro computador, respondendo
   |  - recebe o pedido (REQUEST)  |
-  |  - chama a API (lógica)       |
+  |  - executa a lógica (API)     |
   |  - consulta o BANCO (dados)   |
-  |  - verifica AUTH (quem e você)|
+  |  - verifica AUTH              |
+  |    (autenticação: quem e você)|
+  |    (autorização: o que pode)  |
   |  - devolve a RESPOSTA (JSON)  |
   +-------------------------------+
                 |
@@ -26,44 +58,20 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferra
   +-------------------------------+
   |  NAVEGADOR (renderiza)        |  <- transforma a resposta em tela
   |  - FRONT-END (HTML/CSS/JS)    |
-  |  - ESTADO da página           |
   +-------------------------------+
                 |
                 v
   Você VE A Página NA TELA
-```
-
-## O caminho de volta (deploy, contado na ordem inversa)
-
-O deploy e a história de colocar esse servidor no ar:
-
-```
-  1. Código no seu computador
-       (HTML, CSS, JS, estado, variáveis)
-                |
-  2. GIT / REPO
-       (versionamento, commit, branch)
-                |
-  3. BUILD
-       (transforma o código em algo servivel)
-                |
-  4. CI/CD
-       (testa antes de publicar, automatizado)
-                |
-  5. DEPLOY
-       (sobe para a nuvem / servidor)
-                |
-  6. Domínio aponta para o servidor
-       (DNS, URL)
-                |
-  7. NO AR: alguém acessa e o ciclo acima acontece
+       (a página pode ter estado; isso e o ep02)
 ```
 
 ## Como usar no vídeo
 
-- Desenhar esse mapa na tela (ou em um slide simples) no início do ATO 1, sem explicar tudo.
+- Desenhar o mapa na tela (ou em um slide simples) no início do ATO 1, mostrando as duas jornadas em cor clara, sem explicar tudo.
+- O fluxo de publicação e percorrido nos atos 1, 2 e 3.
+- O fluxo de uso e percorrido uma única vez, no encerramento (~90s), como a "volta final".
 - Voltar ao mapa no final de cada ato, destacando as camadas que já foram cobertas.
-- No fim do vídeo, o mapa completo esta desenhado e o espectador ve a jornada inteira.
+- No fim do vídeo, o mapa completo esta desenhado e o espectador ve as duas jornadas inteiras.
 
 ## Versao para thumbnail
 

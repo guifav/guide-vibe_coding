@@ -1,8 +1,9 @@
 # Roteiro completo - Deploy do Zero ao Ar
 
-**Duracao alvo:** 15-20 min
+**Duracao alvo:** 16-18 min
 **Formato:** Gui falando para camera, alternando com diagrama simples na tela
 **Regra pedagogica:** cada termo técnico e traduzido em 1 frase antes de continuar. Nenhum termo fica sem tradução.
+**Estrutura:** duas jornadas distintas. O fluxo de publicação (código -> git -> build -> deploy) e a linha principal, percorrida nos atos 1 e 3. O fluxo de uso (navegador -> domínio -> servidor -> API -> banco -> resposta -> navegador) e a volta final de ~90 segundos, no encerramento.
 
 ---
 
@@ -14,17 +15,17 @@
 
 "Se você usa IA para programar, a IA escreve texto e diz que esta pronto. Mas para você confiar, para você saber quando ela esta certa e quando ela esta errada, você precisa enxergar as camadas que existem no meio."
 
-"Neste vídeo não vou ensinar a programar. Vou contar a história de um deploy, do zero ao ar. Cada camada aparece no momento em que ela se torna necessária na jornada."
+"Neste vídeo não vou ensinar a programar. Vou contar duas histórias que andam juntas. A primeira e como o código sai do seu computador e chega ao ar: o fluxo de publicação. A segunda e o que acontece quando alguém acessa a URL pronta: o fluxo de uso. Cada camada aparece no momento em que ela se torna necessária."
 
 ### Mostrar
 
-Diagrama do mapa (arquivo 02) com todas as camadas em cor clara. Só mostrar, sem explicar. Dizer: "esse mapa vai ganhando vida aos poucos. No fim você vai enxergar ele inteiro."
+Diagrama do mapa (arquivo 02) com as duas jornadas em cor clara. Só mostrar, sem explicar. Dizer: "esses dois caminhos vão ganhando vida aos poucos. No fim você vai enxergar eles inteiros."
 
 ---
 
-## ATO 1 - No seu computador (0:45-5:30)
+## ATO 1 - No seu computador (0:45-3:30)
 
-### Cena 1 - O código (0:45-2:00)
+### Cena 1 - O código (0:45-2:15)
 
 ### Falar
 
@@ -44,38 +45,11 @@ Um arquivo de código simples aberto. Sem framework. Sem dependencia. Só um arq
 - CSS: como aparece (cor, tamanho, posição)
 - JavaScript: o que acontece (clicou, mudou, calculou)
 
-### Cena 2 - A página e o estado (2:00-3:30)
+### Gancho para o próximo vídeo (2:00-2:15)
 
-### Falar
+"Essa página não e estática. Ela muda sem recarregar: você clica e algo reage. A página tem uma memória própria enquanto esta aberta. Como isso funciona, com estado e variáveis, e o assunto do próximo vídeo da série. Aqui, o que importa e que o código que monta a página mora no seu computador."
 
-"Quando o navegador abre esses arquivos, ele monta uma página. Mas a página não e estática. Ela muda sem recarregar."
-
-"Isso e o que chamamos de estado. Estado e a memória da página enquanto ela esta aberta."
-
-Exemplos:
-- Você clica num botao e ele muda de cor
-- Você digita num campo e o texto aparece em outro lugar
-- Você marca uma opcao e outra parte da tela reage
-
-"Estado e a diferença entre uma página morta e uma página viva."
-
-### Mostrar
-
-Um clique mudando algo na tela sem recarregar. Sem código denso. Só o efeito visivel.
-
-### Cena 3 - Variáveis (3:30-4:30)
-
-### Falar
-
-"Para a página lembrar das coisas, ela precisa de nomes para guardar valores. Isso são variáveis."
-
-"Uma variável e uma caixinha com um nome. Você coloca algo dentro, e depois pode ler ou trocar."
-
-Exemplo: `contador = 0`. Clicou: `contador = 1`. Mais um clique: `contador = 2`.
-
-"Quando a IA fala em 'variável', ela esta dizendo: dei um nome para um valor que pode mudar."
-
-### Cena 4 - Por que git (4:30-5:30)
+### Cena 2 - Por que git (2:15-3:30)
 
 ### Falar
 
@@ -93,31 +67,31 @@ Um `git log` simples, mostrando commits como fotos no tempo. Ou só o conceito d
 
 "Termo que vai aparecer muito: commit. Commit e o momento de tirar uma foto. Branch e a linha paralela. Merge e juntar de volta."
 
-"Para o deploy, o que importa: o código que vai para o ar não e o código no seu computador. E o código que esta no repo, na nuvem, na versao principal."
+"Para o deploy, o que importa: na configuração mais comum, o código que vai para o ar não e o código no seu computador. E o código que esta no repo na nuvem, na versao principal. Existem fluxos diferentes, mas esse e o padrão que você vai encontrar na maioria dos projetos."
 
 ### Fechamento do ATO 1
 
-Mostrar o mapa de camadas com as partes do ATO 1 destacadas: código, estado, variáveis, git. Dizer: "isso tudo acontece dentro do seu computador. Agora o passo seguinte e fazer isso sair de la."
+Mostrar o mapa de camadas com as partes do ATO 1 destacadas: código e git. Dizer: "isso tudo acontece dentro do seu computador. Agora o passo seguinte e entender as camadas que vivem do outro lado, no servidor."
 
 ---
 
-## ATO 2 - Saindo do seu computador (5:30-11:30)
+## ATO 2 - Saindo do seu computador (3:30-9:30)
 
-### Cena 1 - Por que precisa de servidor (5:30-6:45)
+### Cena 1 - Por que precisa de servidor (3:30-4:45)
 
 ### Falar
 
-"O computador da sua casa não e acessivel pelo mundo. Ele desliga, troca de IP, fica atras de um roteador. Ninguém de fora consegue chegar nele."
+"O computador da sua casa não e um bom lugar para servir um site. Ele desliga, troca de IP, fica atras de um roteador."
 
-"Para que o mundo alcance seu código, ele precisa morar em um computador que esta sempre ligado, sempre conectado, sempre pronto para responder. Isso e o servidor."
+"E possível expor um computador doméstico para a internet, mas e instável e exige configuração e cuidado com segurança. Para algo que precisa estar sempre acessivel, o comum e usar um servidor."
 
-"Servidor não e nada mistico. E outro computador. As vezes um computador otimizado para ficar ligado 24 horas e responder rapidinho a muitos pedidos ao mesmo tempo."
+"Servidor e outro computador, otimizado para ficar ligado 24 horas e responder rapidinho a muitos pedidos ao mesmo tempo."
 
 ### Mostrar
 
 No diagrama, o servidor aparece como outra máquina, separada do computador de casa. Setinha: o código viaja do computador para o servidor.
 
-### Cena 2 - O pedido e a resposta (request e response) (6:45-7:45)
+### Cena 2 - O pedido e a resposta (request e response) (4:45-5:45)
 
 ### Falar
 
@@ -127,13 +101,13 @@ No diagrama, o servidor aparece como outra máquina, separada do computador de c
 
 "Dois termos que aparecem juntos: request (pedido) e response (resposta). Tudo que acontece na web e uma conversa dessas."
 
-### Cena 3 - API (7:45-9:00)
+### Cena 3 - API (5:45-7:00)
 
 ### Falar
 
 "Para o servidor saber o que fazer com o pedido, ele precisa de uma porta de entrada organizada. Isso e a API."
 
-"Pense na API como o balcao de atendimento do servidor. Você bate no balcao e pede: 'quero a lista de produtos'. O servidor vai atrás, busca, e devolve."
+"Pense na API como o balcao de atendimento do servidor. O navegador bate no balcao e pede: 'quero a lista de produtos'. O servidor executa a lógica correspondente, busca, e devolve."
 
 "API não e tecnologia especifica. E um contrato: qual pedido eu aceito, qual resposta eu devolvo. Quando a IA fala em 'chamar a API' ou 'endpoint', ela esta falando de uma dessas portas."
 
@@ -143,7 +117,7 @@ Um diagrama simples: navegador -> seta com "request" -> servidor -> seta com "re
 
 "Dado que viaja na resposta costuma vir em um formato chamado JSON. JSON e só texto organizado com chaves e listas, facil para o computador ler."
 
-### Cena 4 - Banco de dados (9:00-10:15)
+### Cena 4 - Banco de dados (7:00-8:15)
 
 ### Falar
 
@@ -157,17 +131,21 @@ Um diagrama simples: navegador -> seta com "request" -> servidor -> seta com "re
 
 No diagrama, o banco aparece conectado ao servidor. Seta: servidor consulta banco -> banco devolve dado.
 
-### Cena 5 - Auth (10:15-11:30)
+### Cena 5 - Auth: autenticação e autorização (8:15-9:30)
 
 ### Falar
 
 "Se qualquer pessoa pode pedir qualquer coisa para o servidor, e óbvio que precisa de controle. Nem todo pedido e legitimo. Nem todo mundo pode ver tudo."
 
-"Auth e a camada que responde duas perguntas: quem e você? e você pode fazer isso?"
+"Aqui existem duas coisas distintas, que costumam vir juntas sob o nome de auth."
 
-"Depois que você se loga, o servidor te da um token, tipo um crachá. A partir dai, cada request carrega esse cracha, e o servidor sabe quem esta pedindo."
+"A primeira e autenticação: responder quem e você. E o login. O servidor te da um token, tipo um crachá, que prova quem você e."
 
-"Quando a IA fala em 'auth', em 'token', em 'permissao', ela esta lidando com essa camada. Se ela propoe remover auth, perigo. Se ela propoe mexer nela sem você entender o impacto, pergunte."
+"A segunda e autorização: decidir o que você pode fazer. Mesmo autenticado, você não pode tudo. Um usuario comum não apaga o banco; um administrador pode."
+
+"A partir do login, cada request carrega esse cracha, e o servidor sabe quem esta pedindo e o que essa pessoa tem permissao de fazer."
+
+"Quando a IA fala em 'auth', em 'token', em 'permissao', ela pode estar lidando com qualquer um dos dois. Se ela propoe remover auth, perigo. Se ela propoe mexer nela sem você entender o impacto, pergunte."
 
 ### Fechamento do ATO 2
 
@@ -177,21 +155,23 @@ Mostrar o mapa com servidor, API, banco e auth destacados.
 
 ---
 
-## ATO 3 - Indo ao ar (11:30-16:30)
+## ATO 3 - Indo ao ar (9:30-14:30)
 
-### Cena 1 - Build (11:30-12:30)
+### Cena 1 - Build (9:30-10:30)
 
 ### Falar
 
-"O código que você escreve no computador não e exatamente o código que vai para o servidor. Ele precisa ser transformado."
+"Em muitos projetos, o código que você escreve não vai direto para o servidor. Ele passa por uma transformação primeiro."
 
 "Esse processo se chama build. O build pega seu código, otimiza, junta arquivos, remove coisas que não precisa, e gera uma versao final pronta para servir."
 
 "Pense no build como a cozinha de um restaurante. Você tem os ingredientes crus (seu código). O build cozinha, prato fica pronto, e o servidor só serve."
 
+"Importante: nem todo projeto precisa de build. Projetos simples, com arquivos estáticos, podem ir direto para o servidor. Mas na maioria dos projetos com framework, o build faz parte do caminho."
+
 "Para a IA: quando ela fala em 'build quebrado' ou 'build passou', ela esta dizendo se a transformação do seu código em algo servivel funcionou."
 
-### Cena 2 - CI/CD (12:30-13:45)
+### Cena 2 - CI/CD (10:30-11:45)
 
 ### Falar
 
@@ -207,7 +187,7 @@ Mostrar o mapa com servidor, API, banco e auth destacados.
 
 Diagrama do pipeline: commit -> lint -> testes -> build -> deploy. Cores: verde/vermelho nos passos.
 
-### Cena 3 - Deploy (13:45-14:45)
+### Cena 3 - Deploy (11:45-12:45)
 
 ### Falar
 
@@ -219,7 +199,7 @@ Diagrama do pipeline: commit -> lint -> testes -> build -> deploy. Cores: verde/
 
 "Algumas equipes fazem deploy com zero downtime (ninguém percebe a troca). Outras precisam derrubar o servidor por alguns segundos. Para o vídeo, o que importa: deploy e a publicação."
 
-### Cena 4 - Domínio e DNS (14:45-16:30)
+### Cena 4 - Domínio e DNS (12:45-14:30)
 
 ### Falar
 
@@ -229,23 +209,37 @@ Diagrama do pipeline: commit -> lint -> testes -> build -> deploy. Cores: verde/
 
 "Pense no DNS como uma lista telefonica. Você não decora o número, você procura pelo nome."
 
-"Quando você deploya, você precisa garantir que o domínio aponta para o servidor certo. Se o deploy mudou o servidor, o DNS precisa ser atualizado."
+"Na maioria dos deploys, o endereço continua apontando para o mesmo serviço e nada muda no DNS. Atualizar o DNS e uma exceção: so e necessaria quando o servidor de destino realmente muda, o que não acontece no dia a dia de um deploy comum."
 
 ### Fechamento do ATO 3
 
-Mostrar o mapa completo, agora com todas as camadas: código, estado, variáveis, git, servidor, API, banco, auth, build, CI/CD, deploy, domínio.
+Mostrar o mapa completo com o fluxo de publicação: código, git, build, CI/CD, deploy, domínio.
 
-"Essa e a história. De um arquivo no seu computador ate uma URL que alguém digita do outro lado do mundo."
+"Essa e a primeira jornada: de um arquivo no seu computador ate uma URL publicada. Mas publicar e so metade. Falta ver o que acontece quando alguém de fato acessa essa URL."
 
 ---
 
-## ENCERRAMENTO (16:30-18:00)
+## ENCERRAMENTO - A volta final: o fluxo de uso (14:30-16:00)
 
 ### Na camera
 
-"Para programar com IA sem ser enganado, você não precisa saber cada detalhe de cada camada. Precisa saber que elas existem, e qual delas você esta tocando."
+"Agora que o deploy terminou, vamos percorrer a segunda jornada: o fluxo de uso. O que acontece quando alguém digita a URL e o site abre."
 
-"Quando a IA sugerir uma mudança, pergunte: isso mora no front? No servidor? No banco? Mexe em auth? Tem deploy?"
+### Falar (percorrendo o fluxo de uso, ~90 segundos)
+
+"O usuario digita meuapp.com no navegador. O DNS traduz esse nome no endereço do servidor."
+
+"O navegador manda um request para uma entrada da API. O servidor recebe, executa a lógica correspondente, consulta o banco se precisar, verifica auth se for o caso, e devolve uma response."
+
+"O navegador recebe a resposta e renderiza a página. Se a página tem estado, ela pode mudar sem recarregar, mas isso e o próximo vídeo."
+
+"Esse ciclo request -> processa -> response -> renderiza acontece a cada interação. Cada clique pode ser uma nova conversa com o servidor."
+
+### Fechamento
+
+"Para programar com IA sem ser enganado, você não precisa saber cada detalhe de cada camada. Precisa saber que elas existem, e em qual das duas jornadas você esta tocando."
+
+"Quando a IA sugerir uma mudança, pergunte: isso mora no front? No servidor? No banco? Mexe em auth? Tem deploy? E essa mudança afeta o fluxo de publicação ou o fluxo de uso?"
 
 "Se você não soube responder, pergunte para ela mesma: 'em qual camada essa mudança mora?'. A resposta te da o contexto do risco."
 

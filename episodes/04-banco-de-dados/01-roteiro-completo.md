@@ -10,7 +10,7 @@
 
 ### Na camera
 
-"Você abre um site, adiciona um produto no carrinho, fecha a aba. Volta no dia seguinte. O carrinho ainda esta la. Como o servidor lembrou?"
+"Você cria uma conta num site, fecha a aba, desliga o computador. Volta no dia seguinte. A conta ainda esta la. Ou então você confirma um pedido, abre em outro celular, e ele aparece. Como o servidor lembrou?"
 
 "A resposta não e magia. E banco de dados. Mas a maioria das pessoas que programa com IA hoje não distingue entre 'a página lembrou' e 'o dado sobreviveu'. Para a IA, tudo e variável."
 
@@ -24,23 +24,23 @@ Diagrama do mapa (arquivo 02) com as camadas em cor clara. Só mostrar, sem expl
 
 ## ATO 1 - A necessidade (0:45-6:00)
 
-### Cena 1 - O servidor esquece (0:45-2:00)
+### Cena 1 - O servidor não confia na própria memória (0:45-2:00)
 
 ### Falar
 
-"No episodio anterior a gente viu que o servidor recebe um pedido, processa e devolve uma resposta. Mas tem um detalhe que muita gente esquece: depois que ele responde, ele esquece."
+"No episodio anterior a gente viu que o servidor recebe um pedido, processa e devolve uma resposta. Mas tem um detalhe importante sobre o que ele lembra."
 
-"O servidor, por natureza, e amnesico. Cada request e uma conversa isolada. Quando termina, o servidor não lembra de você."
+"O servidor até pode guardar coisas em memória, igual um programa qualquer. Mas essa memória não e confiável. O processo pode reiniciar a qualquer momento. Pode rodar em varias cópias ao mesmo tempo, cada uma com a sua memória separada. E um usuário atendido por uma cópia não e visto pelas outras."
 
-"Isso não e defeito. E assim que ele funciona para conseguir atender milhares de pedidos ao mesmo tempo sem explodir de informação."
+"Por isso dizemos que a memória do servidor não serve para guardar dado importante. Ela dura enquanto o processo ta no ar e ninguém mexeu."
 
 ### Mostrar
 
-Dois retangulos lado a lado: "REQUEST 1" e "REQUEST 2". Uma setinha entre eles com a palavra "esquece".
+Tres situações lado a lado, cada uma com um X: servidor reiniciou (memória sumiu), duas cópias do servidor rodando (memórias diferentes), usuário atendido pela cópia B não aparece na cópia A.
 
 ### Falar
 
-"Mas óbvio que alguns dados precisam sobreviver. Se você criou conta, o servidor precisa lembrar no dia seguinte. Se fez um pedido, a loja precisa guardar. Se a IA disse que salvou, mas o servidor esquece, o dado sumiu."
+"Mas óbvio que alguns dados precisam sobreviver. Se você criou conta, o servidor precisa lembrar no dia seguinte, mesmo depois de reiniciar. Se fez um pedido, a loja precisa guardar. Se a IA disse que salvou mas só ficou na memória do processo, o dado sumiu no primeiro reinício."
 
 "E para isso que existe o banco de dados."
 
@@ -58,7 +58,7 @@ Uma tabela simples com duas colunas: "memória da página (morre)" e "memória d
 
 ### Falar
 
-"Termo que vai aparecer: dado persistente. Persistente quer dizer que sobrevive entre requests, entre sessoes, entre reinicios. O banco e onde mora o dado persistente."
+"Termo que vai aparecer: dado persistente. Persistente quer dizer que sobrevive entre requests, entre sessoes, entre reinicios, e que aparece igual para qualquer cópia do servidor. O banco e onde mora o dado persistente."
 
 ### Cena 3 - Dado estruturado vs memória da página (3:30-6:00)
 
@@ -80,41 +80,27 @@ Dois caminhos lado a lado. Caminho A: clica -> variável muda no front -> tela a
 
 ### Fechamento do ATO 1
 
-Mostrar o mapa de camadas com as partes do ATO 1 destacadas: memória volatil do servidor, dado persistente, front vs banco. Dizer: "agora que a gente sabe por que o banco existe, vamos entender como ele funciona por dentro."
+Mostrar o mapa de camadas com as partes do ATO 1 destacadas: memória não confiável do servidor, dado persistente, front vs banco. Dizer: "agora que a gente sabe por que o banco existe, vamos entender como ele funciona por dentro."
 
 ---
 
 ## ATO 2 - Como funciona (6:00-12:00)
 
-### Cena 1 - Tipos de banco no conceito (6:00-8:30)
+### Cena 1 - Tipos de banco no conceito (6:00-6:45)
 
 ### Falar
 
-"Existem varios tipos de banco, mas você não precisa saber todos. Vou te dar tres para ter o mapa mental."
+"Existem varios tipos de banco, mas você não precisa saber todos para programar com IA. O mapa mental cabe em tres familias: tabelas com linhas e colunas (relacional), blocos de texto estruturado soltos como JSON (documento), e um dicionario gigante de chave e valor. Isso e o bastante para entender o que a IA esta sugerindo."
 
 ### Mostrar
 
-Tres retangulos lado a lado, cada um com um icone simples: tabela (relacional), documento (JSON), chave-valor.
+Tres retangulos lado a lado, cada um com um icone simples: tabela (relacional), documento (JSON), chave-valor. Sem nomes de produto.
 
 ### Falar
 
-"Primeiro: relacional. O banco relacional guarda dados em tabelas, com linhas e colunas, igual uma planilha. As tabelas se relacionam: uma tabela de pedidos aponta para uma tabela de clientes. E o tipo mais comum."
+"O importante aqui não e decorar tipo. E saber que existem familias diferentes, e que quando a IA fala em 'banco relacional', 'banco de documentos', 'banco chave-valor', ela esta falando de um desses tres grupos."
 
-"Segundo: documento. O banco de documentos guarda dados em blocos de texto estruturado, parecido com JSON. Cada registro e um documento solto, sem tabela rigida. Bom quando o formato muda muito."
-
-"Terceiro: chave-valor. O banco chave-valor funciona como um dicionario gigante: você da uma chave, ele devolve um valor. Simples, rápido, sem estrutura complexa."
-
-### Traduzir
-
-- Relacional: tabelas com linhas, colunas e relacoes entre elas
-- Documento: registros soltos em formato de texto estruturado, sem tabela rigida
-- Chave-valor: dicionario gigante, entra chave sai valor
-
-### Falar
-
-"O importante agora não e escolher. E saber que existem familias diferentes, e que quando a IA fala em 'banco relacional', 'banco relacional', 'banco de documentos', 'banco chave-valor', ela esta falando de um desses tres grupos."
-
-### Cena 2 - Query: como o servidor pede algo ao banco (8:30-10:00)
+### Cena 2 - Query: como o servidor pede algo ao banco (6:45-8:15)
 
 ### Falar
 
@@ -132,21 +118,23 @@ Diagrama: servidor -> seta com "query" -> banco -> seta com "resultado" -> servi
 
 "Quando a IA fala em 'query', 'select', 'buscar', 'filtrar', ela esta falando de uma pergunta ao banco. Se ela montar a query errada, o banco responde errado sem reclamar. Ele não sabe o que você quis dizer."
 
-### Cena 3 - Schema: a estrutura dos dados (10:00-12:00)
+### Cena 3 - Schema: a estrutura dos dados (8:15-12:00)
 
 ### Falar
 
 "O banco não guarda qualquer coisa de qualquer jeito. Ele tem estrutura. Essa estrutura se chama schema."
 
-"Schema e a definicao do que cada coluna significa. Na tabela de usuarios, por exemplo: coluna nome e texto, coluna email e texto, coluna data de nascimento e data, coluna ativo e verdadeiro ou falso."
+"Schema e a estrutura dos dados. Em bancos relacionais, o schema são tabelas e colunas: na tabela de usuarios, por exemplo, coluna nome e texto, coluna email e texto, coluna data de nascimento e data, coluna ativo e verdadeiro ou falso."
+
+"Em bancos de documentos, o schema não e uma tabela rigida. E um formato esperado: o documento deveria ter esses campos, com esses tipos. A ideia e a mesma: existe uma estrutura esperada para o dado entrar."
 
 ### Mostrar
 
-Uma tabela desenhada com cabecalhos: nome | email | nascimento | ativo. Cada coluna com o tipo ao lado.
+Duas representações lado a lado: à esquerda uma tabela (relacional) com cabecalhos nome | email | nascimento | ativo e o tipo ao lado de cada coluna; à direita um documento JSON (documento) com os mesmos campos indicados como formato esperado.
 
 ### Falar
 
-"O schema e o contrato do banco. Ele diz o que pode entrar e o que não pode. Se você tentar gravar uma data numa coluna de texto, o banco reclama."
+"O schema e o contrato do banco. Ele diz o que pode entrar e o que não pode. No relacional, se você tentar gravar uma data numa coluna de texto, o banco reclama. No de documentos, a verificação pode ser mais flexível, mas o princípio se mantém: existe um formato esperado."
 
 "Isso e bom. Protege o dado. Mas também e onde mora o perigo com IA. Vamos ver no próximo ato."
 
@@ -164,7 +152,7 @@ Mostrar o mapa com tipos, query e schema destacados. Dizer: "essa e a anatomia d
 
 "Banco resolve muita coisa, mas introduz riscos novos. Vou listar os quatro mais comuns."
 
-"Primeiro: duplicado. O mesmo usuario gravado duas vezes. O mesmo pedido registrado em duplicata. Acontece quando o servidor grava sem checar se já existe."
+"Primeiro: duplicado. O mesmo usuario gravado duas vezes. O mesmo pedido registrado em duplicata. Acontece quando o servidor grava sem uma proteção real. Atenção: só checar se já existe antes de gravar não resolve. Se dois pedidos chegarem ao mesmo tempo, os dois checam, os dois não encontram, e os dois gravam. A proteção de verdade vem de uma restrição de unicidade no banco ou de uma operação desenhada para não repetir (idempotente)."
 
 "Segundo: inconsistente. O cliente mudou o email num lugar, mas o outro lugar ainda tem o antigo. Dado certo aqui, errado ali. O banco ficou descoordenado."
 
@@ -178,7 +166,7 @@ Quatro icones simples com as palavras: duplicado, inconsistente, perdido, concor
 
 ### Falar
 
-"Nenhum desses erros da tela azul. Eles acontecem em silêncio. Por isso o banco precisa de disciplina: checar antes de gravar, confirmar a gravacao, tratar concorrência."
+"Esses erros normalmente geram uma resposta de erro do banco. O problema e que o silêncio aparece quando a aplicação ignora ou trata mal esse erro. O banco fala; o código que não escuta. Por isso o banco precisa de disciplina: validar a entrada, confirmar a gravacao, tratar concorrência."
 
 ### Cena 2 - Por que o front não e banco (13:30-15:00)
 
@@ -230,7 +218,11 @@ Linha do tempo: schema v1 -> migracao -> schema v2. código novo espera schema v
 
 ### Fechamento do ATO 3
 
-Mostrar o mapa completo: memória volatil, dado persistente, tipos de banco, query, schema, migracao, riscos.
+Mostrar o mapa completo: memória não confiável, dado persistente, tipos de banco, query, schema, migracao, riscos.
+
+### Falar
+
+"Resumindo as três proteções que importam na prática. Primeira: validar a entrada antes de gravar, para o dado chegar limpo. Segunda: confirmar a gravação, para não assumir que salvou só porque o servidor respondeu. Terceira: migrar com segurança, para mudar a estrutura sem quebrar o que já existe."
 
 ---
 

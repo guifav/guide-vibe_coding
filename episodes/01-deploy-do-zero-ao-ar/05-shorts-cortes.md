@@ -8,7 +8,7 @@ Cada corte isola uma camada, com gancho para o vídeo completo.
 
 **Gancho (0-3s):** "Você clica num botao e a tela muda. Sem recarregar. Como?"
 
-**Corpo:** estado e a memória da página enquanto ela esta aberta. Variável e a caixinha com nome. O navegador le a variável e renderiza.
+**Corpo:** estado e a memória da página enquanto ela esta aberta. Variável e a caixinha com nome. O navegador le a variável e renderiza. (Este tema e aprofundado no ep02; no ep01 e só um gancho.)
 
 **CTA:** "No vídeo completo eu conto todas as camadas entre o código e o ar. Link na descrição."
 
@@ -16,9 +16,9 @@ Cada corte isola uma camada, com gancho para o vídeo completo.
 
 ## Short 2 - Servidor: por que seu computador não serve seu site?
 
-**Gancho:** "Seu computador não pode ser seu servidor. Por quê?"
+**Gancho:** "Seu computador não e um bom servidor. Por quê?"
 
-**Corpo:** computador de casa desliga, troca IP, fica atras de roteador. Servidor e outro computador, sempre ligado, respondendo a pedidos. Request vai, response volta.
+**Corpo:** computador de casa desliga, troca IP, fica atras de roteador. E possível expor um computador doméstico, mas e instável e exige configuração e segurança. Servidor e outro computador, sempre ligado, respondendo a pedidos. Request vai, response volta.
 
 **CTA:** "A história completa do deploy ta no canal."
 

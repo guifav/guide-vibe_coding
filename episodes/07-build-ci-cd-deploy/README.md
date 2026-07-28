@@ -15,7 +15,7 @@
 | `02-mapa-de-camadas.md` | Visual do cano build/CI/CD/deploy + revisão do mapa da temporada |
 | `03-glossario-minimo.md` | Só os termos que aparecem no roteiro, 1 linha cada |
 | `04-títulos-thumbnail-seo.md` | Títulos, thumbnail, tags |
-| `05-shorts-cortes.md` | 4 cortes curtos, cada um isola uma etapa do cano |
+| `05-shorts-cortes.md` | 5 cortes curtos, cada um isola uma etapa do cano (inclui rollback não-trivial) |
 
 **Principios do canal aplicados**
 - Didática por analogia operacional: build como cozinha, CI/CD como portao automatico, ambientes como ensaio antes do show

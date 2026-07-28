@@ -7,15 +7,15 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 ## Memória e persistencia
 
 - **Estado da página (state)** - memória do front enquanto a aba esta aberta; morre ao fechar
-- **Memória volatil do servidor** - servidor esquece entre requests por natureza
-- **Dado persistente** - dado que sobrevive entre requests, sessoes e reinicios
+- **Memória não confiável do servidor** - o processo até guarda em memória, mas pode reiniciar, rodar em varias cópias, e não compartilha estado entre elas
+- **Dado persistente** - dado que sobrevive entre requests, sessoes, reinicios, e aparece igual para qualquer cópia do servidor
 - **Banco de dados** - lugar separado, com dados estruturados, que o servidor consulta
 
 ## Tipos de banco
 
-- **Relacional** - tabelas com linhas, colunas e relacoes entre elas (ex: banco relacional, banco relacional)
-- **Documento** - registros soltos em formato de texto estruturado, sem tabela rigida (ex: banco de documentos)
-- **Chave-valor** - dicionario gigante: entra chave, sai valor (ex: banco chave-valor, banco chave-valor)
+- **Relacional** - tabelas com linhas, colunas e relacoes entre elas
+- **Documento** - registros soltos em formato de texto estruturado, sem tabela rigida
+- **Chave-valor** - dicionario gigante: entra chave, sai valor
 - **SQL** - linguagem usada para escrever queries em bancos relacionais
 
 ## Como o servidor fala com o banco
@@ -26,7 +26,7 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 
 ## Estrutura do dado
 
-- **Schema** - definicao do que cada coluna significa; o contrato do banco
+- **Schema** - a estrutura dos dados; em bancos relacionais são tabelas e colunas; em bancos de documentos e um formato esperado de campos e tipos
 - **Tabela** - estrutura de linhas e colunas no banco relacional
 - **Coluna** - campo individual dentro de uma tabela (ex: nome, email)
 - **Tipo** - o formato aceito na coluna (texto, número, data, booleano)
@@ -38,10 +38,12 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 
 ## Riscos comuns
 
-- **Duplicado** - mesmo dado gravado duas vezes por falta de checagem
+- **Duplicado** - mesmo dado gravado duas vezes; checar antes de gravar não resolve sob concorrência
 - **Inconsistente** - dado certo num lugar, errado em outro
 - **Perdido** - servidor disse que gravou mas o dado não chegou ao banco
 - **Concorrência** - dois usuarios editam o mesmo dado ao mesmo tempo e um sobrescreve o outro
+- **Idempotente** - operação desenhada para, se repetida, não gerar efeito extra; protege contra duplicidade
+- **Restrição de unicidade** - regra no banco que impede gravar dois registros com o mesmo valor num campo (ex: email)
 
 ---
 

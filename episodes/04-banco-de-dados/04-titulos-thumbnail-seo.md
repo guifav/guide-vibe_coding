@@ -2,7 +2,7 @@
 
 ## Títulos (escolher um)
 
-1. "Por que o servidor ESQUECE tudo? Banco de dados explicado do zero"
+1. "Por que o servidor NÃO guarda seu dado? Banco de dados explicado do zero"
 2. "Onde o dado sobrevive entre requests? (banco de dados para vibe coders)"
 3. "Banco de dados: por que existe, o que guarda e o que quebra"
 4. "Vibe coder precisa saber: a diferença entre front e banco"
@@ -16,7 +16,7 @@
 
 Tres blocos visuais em sequência:
 - Esquerda: navegador com uma variável piscando (estado da página) e um X ao lado (morre)
-- Centro: servidor como uma máquina amnesica, com uma seta para frente
+- Centro: servidor com uma memória rachada (não confiável), com uma seta para frente
 - Direita: banco de dados como um armario ou cofre, com a palavra "persistente" em destaque
 
 Texto sobre a imagem: "ONDE O DADO SOBREVIVE?" ou "FRONT não e BANCO"
@@ -42,13 +42,13 @@ Fundo escuro (preto ou azul escuro). O bloco do banco em verde ou dourado para d
 
 ## Descrição
 
-"Você abre um site, fecha a aba, volta no dia seguinte e o dado ainda la. Como o servidor lembrou? Neste vídeo, a história do banco de dados: por que existe, o que guarda, e o que quebra quando a IA ignora a estrutura.
+"Você cria uma conta num site, fecha a aba, volta no dia seguinte. A conta ainda la. Como o servidor lembrou? Neste vídeo, a história do banco de dados: por que existe, o que guarda, e o que quebra quando a IA ignora a estrutura.
 
 Para quem usa IA para programar (vibe coders) e quer entender onde o dado mora de verdade, sem se afogar em SQL.
 
 Indice (clique nos timestamps):
 0:00 Onde o dado sobrevive entre requests?
-0:45 ATO 1 - A necessidade (memória volatil, dado persistente, front vs banco)
+0:45 ATO 1 - A necessidade (memória não confiável, dado persistente, front vs banco)
 6:00 ATO 2 - Como funciona (tipos, query, schema)
 12:00 ATO 3 - O que da errado (duplicado, inconsistente, perdido, migracao)
 18:00 Como usar isso com IA

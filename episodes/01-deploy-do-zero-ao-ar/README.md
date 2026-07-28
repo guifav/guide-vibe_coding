@@ -1,6 +1,6 @@
 # YouTube ia-aplicada - Deploy do Zero ao Ar (vídeo simples, arquitetural)
 
-**Eixo:** narrativa única linear. A história de um deploy, do código no seu computador ate algo vivo na internet. Cada camada (front, estado, servidor, API, banco, auth, build, CI/CD, domínio) explicada no momento em que aparece na jornada.
+**Eixo:** duas jornadas distintas e nomeadas. O fluxo de publicação (código -> git -> build -> deploy) e a linha principal. O fluxo de uso (navegador -> domínio -> servidor -> API -> banco -> resposta -> navegador) e a volta final de ~90 segundos no encerramento. Cada camada (front, servidor, API, banco, auth, build, CI/CD, domínio) explicada no momento em que aparece na jornada correspondente.
 
 **Não e:** checklist de processo, decodificacao de jargao denso, curso técnico profundo. E o oposto do kit "Vibe Coder Alfabetizado" (que era denso). Aqui e mapa simples, contado como história.
 
