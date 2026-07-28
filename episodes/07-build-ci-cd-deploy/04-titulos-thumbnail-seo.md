@@ -1,9 +1,9 @@
-# Titulos, thumbnail, SEO
+# Títulos, thumbnail, SEO
 
-## Titulos (escolher um)
+## Títulos (escolher um)
 
 1. "O que acontece DEPOIS do commit? (build, CI/CD e deploy explicados)"
-2. "Build, CI/CD e Deploy: o que realmente acontece quando o codigo vai ao ar"
+2. "Build, CI/CD e Deploy: o que realmente acontece quando o código vai ao ar"
 3. "Vibe coder precisa saber: o cano entre o commit e o usuario"
 4. "Por que o deploy quebra? Build, testes e o caminho ate o ar"
 5. "Do commit ao ar: o ciclo completo de um deploy (fechamento da temporada)"
@@ -16,7 +16,7 @@
 
 Tres blocos em fila, representando o cano:
 
-- Esquerda: notebook com codigo e a palavra "COMMIT"
+- Esquerda: notebook com código e a palavra "COMMIT"
 - Centro: tres portas em fila, cada uma com uma etiqueta: "BUILD", "CI/CD", "DEPLOY". A porta do meio (CI/CD) com luz verde/vermelha
 - Direita: tela de celular ou navegador com o site no ar e a palavra "AR"
 
@@ -28,7 +28,7 @@ Fundo escuro (preto ou azul escuro). Setas em amarelo ou verde-limao para destac
 
 ### Alternativa (fechamento de temporada)
 
-Incluir discreto, em um canto, algo como "Final da temporada" ou "Ep 07/07", para atrair quem acompanhou a serie.
+Incluir discreto, em um canto, algo como "Final da temporada" ou "Ep 07/07", para atrair quem acompanhou a série.
 
 ## Tags (10-12)
 
@@ -45,13 +45,13 @@ Incluir discreto, em um canto, algo como "Final da temporada" ou "Ep 07/07", par
 - ambientes dev staging prod
 - ia aplicada
 
-## Descricao
+## Descrição
 
-"No episodio 01 da serie, eu mostrei que existe build, CI/CD e deploy. Nos cinco episodios seguintes fomos fundo em cada camada. Agora chegamos na ultima: o que realmente acontece quando o codigo vai para o ar?
+"No episodio 01 da série, eu mostrei que existe build, CI/CD e deploy. Nos cinco episodios seguintes fomos fundo em cada camada. Agora chegamos na última: o que realmente acontece quando o código vai para o ar?
 
-Este e o video final da temporada. Abro a camada que ficou por ultimo no mapa: o cano que transforma, valida e publica o codigo. E no fim, revisito o mapa completo, com cada camada explicada pelos sete videos da serie.
+Este e o vídeo final da temporada. Abro a camada que ficou por último no mapa: o cano que transforma, valida e publica o código. E no fim, revisito o mapa completo, com cada camada explicada pelos sete vídeos da série.
 
-Para quem usa IA para programar (vibe coders) e ja se deparou com 'build failed' ou 'CI vermelho' sem entender o que estava acontecendo.
+Para quem usa IA para programar (vibe coders) e já se deparou com 'build failed' ou 'CI vermelho' sem entender o que estava acontecendo.
 
 Indice (clique nos timestamps):
 0:00 Abertura

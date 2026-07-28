@@ -1,17 +1,17 @@
-# Glossario minimo (aparece na descricao do YouTube)
+# Glossario minimo (aparece na descrição do YouTube)
 
-So os termos que aparecem no roteiro. Um por linha, traducao direta.
+Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 
 ---
 
-## A rede de seguranca basica
+## A rede de seguranca básica
 
-- **Git** - sistema de versionamento; tira fotos do codigo no tempo
-- **Commit** - o ato de tirar uma foto do codigo em um momento especifico
+- **Git** - sistema de versionamento; tira fotos do código no tempo
+- **Commit** - o ato de tirar uma foto do código em um momento especifico
 - **Mensagem do commit** - o que mudou, escrito em uma frase
-- **Imutavel** - depois de tirada, a foto nao muda; fica ruim, tira outra
-- **Repo (repositorio)** - onde as fotos do codigo ficam guardadas (ex: GitHub)
-- **GitHub** - plataforma de repo na nuvem (tem tambem GitLab, Bitbucket)
+- **Imutavel** - depois de tirada, a foto não muda; fica ruim, tira outra
+- **Repo (repositorio)** - onde as fotos do código ficam guardadas (ex: repositório na nuvem)
+- **repositório na nuvem** - plataforma de repo na nuvem (tem também repositório na nuvem, repositório na nuvem)
 
 ## Trabalhando em paralelo
 
@@ -19,38 +19,38 @@ So os termos que aparecem no roteiro. Um por linha, traducao direta.
 - **Main** - a linha principal, a versao oficial do projeto (antigamente: master)
 - **Master** - nome antigo da main, ainda aparece em projetos velhos
 - **Merge** - juntar a branch de volta na linha principal
-- **Conflito** - quando duas pessoas mexem no mesmo lugar; o git nao decide sozinho
-- **Diff** - a diferenca entre duas versões, linha por linha
+- **Conflito** - quando duas pessoas mexem no mesmo lugar; o git não decide sozinho
+- **Diff** - a diferença entre duas versões, linha por linha
 
 ## O fluxo profissional
 
 - **Push** - mandar a branch do computador para o repo na nuvem
-- **Pull request (PR)** - pedido formal de merge, com revisao antes
-- **Review** - o ato de alguem olhar o codigo do PR antes de aprovar
+- **Pull request (PR)** - pedido formal de merge, com revisão antes
+- **Review** - o ato de alguém olhar o código do PR antes de aprovar
 - **Fluxo completo** - branch nova, commit, push, PR, review, merge
 
 ## Por que o deploy usa o repo
 
-- **Linha do tempo unica** - a main do repo e o ponto de verdade do projeto
+- **Linha do tempo única** - a main do repo e o ponto de verdade do projeto
 - **Colaborativo** - varias pessoas em branches diferentes convergem no repo
-- **Deploy** - pega a main do repo, nao o codigo do seu computador
+- **Deploy** - pega a main do repo, não o código do seu computador
 
 ---
 
 ## Pergunta-chave para usar com IA
 
-Quando a IA sugerir uma mudanca no codigo, pergunte:
+Quando a IA sugerir uma mudança no código, pergunte:
 
-"Essa mudanca vai entrar por PR ou direto na main?"
+"Essa mudança vai entrar por PR ou direto na main?"
 
 Se for direto na main, em projeto serio, pergunte por que.
 
-As opcoes do fluxo sao:
+As opcoes do fluxo são:
 - Branch nova a partir da main
 - Commits na branch
 - Push para o repo
 - Pull request com diff
-- Review de alguem
+- Review de alguém
 - Merge na main
 
-A resposta diz se a mudanca vai passar pela rede de seguranca ou se vai entrar pela porta dos fundos.
+A resposta diz se a mudança vai passar pela rede de seguranca ou se vai entrar pela porta dos fundos.

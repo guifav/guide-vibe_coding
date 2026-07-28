@@ -1,6 +1,6 @@
-# Glossario minimo (aparece na descricao do YouTube)
+# Glossario minimo (aparece na descrição do YouTube)
 
-So os termos que aparecem no roteiro. Um por linha, traducao direta.
+Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 
 ---
 
@@ -8,47 +8,47 @@ So os termos que aparecem no roteiro. Um por linha, traducao direta.
 
 - **Visitante (guest)** - quem chega ao site sem se identificar
 - **Usuario (user)** - quem fez login e tem um nome para o servidor
-- **Login** - o ato de se identificar e provar quem e voce
-- **Senha** - a prova de que voce e quem diz ser
+- **Login** - o ato de se identificar e provar quem e você
+- **Senha** - a prova de que você e quem diz ser
 - **Hash** - embaralhamento sem volta; o servidor guarda o hash da senha, nunca a senha
 
-## Memoria entre requests
+## Memória entre requests
 
-- **Sessao** - a memoria que mora no servidor; ele guarda e te da um identificador
+- **Sessao** - a memória que mora no servidor; ele guarda e te da um identificador
 - **Session ID** - identificador da sessao; viaja entre navegador e servidor via cookie
 - **Cookie** - pedaco de texto que o navegador guarda e envia a cada request
-- **Token** - cracha que o servidor da depois do login; carrega dentro quem e voce
+- **Token** - cracha que o servidor da depois do login; carrega dentro quem e você
 - **JWT (JSON Web Token)** - um formato especifico de token, muito comum
 
 ## As duas perguntas
 
-- **Autenticacao** - responde "quem e voce?" (login, senha, token de identidade)
-- **Autorizacao** - responde "o que voce pode fazer?" (vem depois da autenticacao)
+- **Autenticação** - responde "quem e você?" (login, senha, token de identidade)
+- **Autorização** - responde "o que você pode fazer?" (vem depois da autenticação)
 
 ## Permissoes
 
 - **Papel (role)** - grupo com um conjunto de permissoes (admin, user, guest)
-- **RBAC (Role-Based Access Control)** - nome tecnico para permissao por papel
+- **RBAC (Role-Based Access Control)** - nome técnico para permissao por papel
 - **Permissao por recurso** - pergunta "esse item e seu?" em vez de "qual seu papel?"
 - **Admin** - papel que pode tudo: ver, editar, apagar, gerenciar
-- **403 (Forbidden)** - codigo HTTP que significa "voce esta autenticado, mas nao autorizado"
+- **403 (Forbidden)** - código HTTP que significa "você esta autenticado, mas não autorizado"
 
 ## O ciclo
 
 - **Logoff (logout)** - o ato de encerrar a sessao ou invalidar o token
 - **Expiracao** - prazo de validade do token ou sessao; sem ela, vale para sempre
-- **Token roubado** - se alguem intercepta seu token, se passa por voce
+- **Token roubado** - se alguém intercepta seu token, se passa por você
 
 ---
 
 ## Pergunta-chave para usar com IA
 
-Quando a IA sugerir uma mudanca em codigo de auth, pergunte:
+Quando a IA sugerir uma mudança em código de auth, pergunte:
 
-"Que pergunta essa verificacao responde: quem e voce, ou o que voce pode fazer?"
+"Que pergunta essa verificação responde: quem e você, ou o que você pode fazer?"
 
-As opcoes sao:
-- Autenticacao (identidade, login, token valido)
-- Autorizacao (papel, recurso, permissao)
+As opcoes são:
+- Autenticação (identidade, login, token valido)
+- Autorização (papel, recurso, permissao)
 
 A resposta diz o tamanho do risco de remover ou simplificar aquela linha.

@@ -1,24 +1,24 @@
 # Mapa de camadas (para mostrar na tela / base do thumbnail)
 
-Este e o diagrama que Gui desenha ou mostra durante o video. O foco deste episodio e o cano build/CI/CD/deploy, mas no fechamento voltamos ao mapa inteiro da temporada.
+Este e o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episodio e o cano build/CI/CD/deploy, mas no fechamento voltamos ao mapa inteiro da temporada.
 
 ## O cano (versao texto)
 
 ```
   SEU COMPUTADOR
   +-----------------------+
-  | CODIGO FONTE          |
-  | (o que voce escreve)  |
+  | Código FONTE          |
+  | (o que você escreve)  |
   +-----------------------+
               |
               v  (commit + push)
   +-----------------------+
-  | REPO (nuvem)          |  <- GitHub, GitLab, etc
+  | REPO (nuvem)          |  <- repositório na nuvem, repositório na nuvem, etc
   +-----------------------+
               |
               v  (dispara o cano)
   ==================================================
-  CANO CI/CD  (roda sozinho, toda vez que entra codigo)
+  CANO CI/CD  (roda sozinho, toda vez que entra código)
   ==================================================
               |
               v
@@ -33,7 +33,7 @@ Este e o diagrama que Gui desenha ou mostra durante o video. O foco deste episod
               |
               v
   +-----------------------+
-  | BUILD                 |  verde/vermelho (transformacao)
+  | BUILD                 |  verde/vermelho (transformação)
   | compile / minify /    |
   | tree-shake / bundle   |
   +-----------------------+
@@ -70,28 +70,28 @@ Este e o diagrama que Gui desenha ou mostra durante o video. O foco deste episod
 ```
   commit -> [lint]   VERDE
          -> [testes] VERMELHO  <-- PARA AQUI
-         -> [build]  (nao roda)
-         -> [deploy] (nao roda)
+         -> [build]  (não roda)
+         -> [deploy] (não roda)
 
-  Resultado: codigo bloqueado, alguem conserta.
+  Resultado: código bloqueado, alguém conserta.
 ```
 
 ## Os ambientes
 
 ```
-  LOCAL (seu PC)     -> so voce ve
+  LOCAL (seu PC)     -> só você ve
        |
        v
-  DEV (compartilhado) -> time joga codigo junto, quebra a vontade
+  DEV (compartilhado) -> time joga código junto, quebra a vontade
        |
        v
   STAGING (ensaio)    -> copia do real, ensaia o deploy
        |
        v
-  PROD (o ar)         -> usuario acessa, nao se mexe sem cuidado
+  PROD (o ar)         -> usuario acessa, não se mexe sem cuidado
 ```
 
-## Estrategias de deploy
+## Estratégias de deploy
 
 ```
   TUDO-DE-UMA-VEZ
@@ -111,33 +111,33 @@ Este e o diagrama que Gui desenha ou mostra durante o video. O foco deste episod
 ## Mapa da temporada revisitado (mostrar no fechamento)
 
 ```
-  EPISODIO 01: o mapa inteiro (visao geral)
+  EPISODIO 01: o mapa inteiro (visão geral)
        |
        +-- 02: FRONT-END E ESTADO      (navegador, HTML/CSS/JS, estado)
        |
        +-- 03: REQUEST, RESPONSE, API  (ponte navegador <-> servidor)
        |
-       +-- 04: BANCO DE DADOS          (memoria de longo prazo)
+       +-- 04: BANCO DE DADOS          (memória de longo prazo)
        |
-       +-- 05: AUTH E SESSAO           (quem e voce, o que pode)
+       +-- 05: AUTH E SESSAO           (quem e você, o que pode)
        |
        +-- 06: GIT E VERSIONAMENTO     (rede de seguranca, voltar no tempo)
        |
-       +-- 07: BUILD, CI/CD, DEPLOY    (o cano que leva ao ar) <-- voce esta aqui
+       +-- 07: BUILD, CI/CD, DEPLOY    (o cano que leva ao ar) <-- você esta aqui
 ```
 
-## Como usar no video
+## Como usar no vídeo
 
-- Mostrar o cano no inicio do ATO 1, so a estrutura, sem explicar cada etapa.
+- Mostrar o cano no início do ATO 1, só a estrutura, sem explicar cada etapa.
 - Voltar ao cano no fim de cada cena do ATO 2, destacando a etapa que acabou de ser explicada.
-- Mostrar os ambientes e as estrategias como blocos separados, visuais, dentro do ATO 2.
-- No ATO 3, mostrar o cano completo em uma linha so, depois transicionar para o mapa da temporada revisitado.
+- Mostrar os ambientes e as estratégias como blocos separados, visuais, dentro do ATO 2.
+- No ATO 3, mostrar o cano completo em uma linha só, depois transicionar para o mapa da temporada revisitado.
 - O mapa da temporada e o fechamento visual: cada camada listada com o episódio que a explicou.
 
 ## Versao para thumbnail
 
 Texto curto sobre o diagrama:
-- Titulo sobre a imagem: "O que acontece DEPOIS do commit?"
+- Título sobre a imagem: "O que acontece DEPOIS do commit?"
 - Setas: commit -> cano -> ar
 - Destacar as palavras "build", "CI/CD", "deploy" como as tres portas
-- Sem ferramentas especificas, so conceitos
+- Sem ferramentas especificas, só conceitos

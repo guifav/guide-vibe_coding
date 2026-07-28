@@ -1,14 +1,14 @@
-# Titulos, thumbnail, SEO
+# Títulos, thumbnail, SEO
 
-## Titulos (escolher um)
+## Títulos (escolher um)
 
-1. "Por que NINGUEM joga direto na MAIN? (git explicado do zero)"
+1. "Por que Ninguém joga direto na MAIN? (git explicado do zero)"
 2. "Git para vibe coders: a rede de seguranca antes do deploy"
-3. "Commit, branch, PR, merge: o fluxo que protege seu codigo"
-4. "Por que o deploy usa o REPO e nao o seu computador?"
+3. "Commit, branch, PR, merge: o fluxo que protege seu código"
+4. "Por que o deploy usa o REPO e não o seu computador?"
 5. "Versionamento sem jargao: do commit ao pull request"
 
-**Recomendado:** #1 ou #2. Claros, com provocacao, sugerem que existe um padrao que o espectador nao conhecia.
+**Recomendado:** #1 ou #2. Claros, com provocacao, sugerem que existe um padrao que o espectador não conhecia.
 
 ## Thumbnail
 
@@ -30,7 +30,7 @@ Fundo escuro (preto ou azul-escuro). Main em branco. Branches em cores vivas (am
 
 - git
 - versionamento
-- github
+- repositório na nuvem
 - pull request
 - branch
 - commit
@@ -41,13 +41,13 @@ Fundo escuro (preto ou azul-escuro). Main em branco. Branches em cores vivas (am
 - iniciantes
 - ia aplicada
 
-## Descricao
+## Descrição
 
-"Voce mudou 500 linhas, quebrou algo, como volta? Sem git, a resposta e caos: versao_final_v2_agora_vai.txt. Com git, a resposta e uma rede de seguranca: fotos no tempo, linhas paralelas e um portao de revisao antes do merge.
+"Você mudou 500 linhas, quebrou algo, como volta? Sem git, a resposta e caos: versao_final_v2_agora_vai.txt. Com git, a resposta e uma rede de seguranca: fotos no tempo, linhas paralelas e um portao de revisão antes do merge.
 
-Neste video, a historia do versionamento, do problema de voltar no tempo ate o fluxo profissional completo: branch nova, commit, push, PR, review, merge.
+Neste vídeo, a história do versionamento, do problema de voltar no tempo ate o fluxo profissional completo: branch nova, commit, push, PR, review, merge.
 
-Para quem usa IA para programar (vibe coders) e quer entender por que o deploy nunca usa o codigo do seu computador.
+Para quem usa IA para programar (vibe coders) e quer entender por que o deploy nunca usa o código do seu computador.
 
 Indice (clique nos timestamps):
 0:00 O problema: como volta no tempo?
@@ -58,4 +58,4 @@ Indice (clique nos timestamps):
 
 Glossario completo: [link do repo]
 
-#git #versionamento #github #vibecoding #ia"
+#git #versionamento #repositório na nuvem #vibecoding #ia"

@@ -1,6 +1,6 @@
 # Mapa de camadas (para mostrar na tela / base do thumbnail)
 
-Este e o diagrama que Gui desenha ou mostra durante o video. Simples, sem ferramentas, so o ciclo do front-end e os estados que a IA esquece.
+Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferramentas, só o ciclo do front-end e os estados que a IA esquece.
 
 ## O mapa principal: o ciclo do front-end (versao texto)
 
@@ -18,13 +18,13 @@ Este e o diagrama que Gui desenha ou mostra durante o video. Simples, sem ferram
                 v
   +-------------------------------------------+
   |  NAVEGADOR MONTA O DOM                    |
-  |  (arvore de elementos, viva na memoria)   |
+  |  (árvore de elementos, viva na memória)   |
   +-------------------------------------------+
                 |
                 v
   +-------------------------------------------+
   |  RENDER: o navegador pinta os pixels      |
-  |  O usuario VE a pagina na tela            |
+  |  O usuario VE a página na tela            |
   +-------------------------------------------+
                 |
                 v
@@ -41,7 +41,7 @@ Este e o diagrama que Gui desenha ou mostra durante o video. Simples, sem ferram
                 v
   +-------------------------------------------+
   |  ESTADO muda                              |
-  |  (variavel / hook / store atualiza valor) |
+  |  (variável / hook / store atualiza valor) |
   +-------------------------------------------+
                 |
                 v
@@ -64,7 +64,7 @@ Mostrar depois do ATO 3, como checklist visual:
   +------------+    +------------+
   |  LOADING   |    |   EMPTY    |
   |  carregou? |    |  veio nada |
-  |  ainda nao |    |            |
+  |  ainda não |    |            |
   +------------+    +------------+
 
   +------------+    +------------+
@@ -76,7 +76,7 @@ Mostrar depois do ATO 3, como checklist visual:
   +------------+
   |   STALE    |
   |  veio, mas |
-  |  ja velho  |
+  |  já velho  |
   +------------+
 ```
 
@@ -84,7 +84,7 @@ Mostrar depois do ATO 3, como checklist visual:
 
 ```
   +-----------------------+
-  |  VARIAVEL LOCAL       |  <- some quando a tela fecha
+  |  Variável LOCAL       |  <- some quando a tela fecha
   |  (ex: contador)       |
   +-----------------------+
   +-----------------------+
@@ -103,15 +103,15 @@ Mostrar depois do ATO 3, como checklist visual:
   +-----------------------+
 ```
 
-## Como usar no video
+## Como usar no vídeo
 
-- Mostrar o ciclo principal no inicio do ATO 2, sem explicar tudo. Dizer: "esse ciclo se repete toda vez que voce interage com a pagina".
+- Mostrar o ciclo principal no início do ATO 2, sem explicar tudo. Dizer: "esse ciclo se repete toda vez que você interage com a página".
 - Voltar ao ciclo no ATO 3, agora destacando os 5 estados que a IA esquece.
-- Mostrar "onde o estado mora" no momento em que falar de variavel, hook e store.
+- Mostrar "onde o estado mora" no momento em que falar de variável, hook e store.
 
 ## Versao para thumbnail
 
 Texto curto sobre o diagrama:
-- Titulo sobre a imagem: "Por que a tela MUDA sem recarregar?"
+- Título sobre a imagem: "Por que a tela MUDA sem recarregar?"
 - Setas formando um ciclo: evento -> estado -> re-render -> evento
-- Sem palavras densas; so "estado", "evento", "tela".
+- Sem palavras densas; só "estado", "evento", "tela".

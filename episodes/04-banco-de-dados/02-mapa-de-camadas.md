@@ -1,6 +1,6 @@
 # Mapa de camadas (para mostrar na tela / base do thumbnail)
 
-Este e o diagrama que Gui desenha ou mostra durante o video. Simples, sem ferramentas, so camadas e o fluxo.
+Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferramentas, só camadas e o fluxo.
 
 ## O mapa (versao texto)
 
@@ -9,9 +9,9 @@ Este e o diagrama que Gui desenha ou mostra durante o video. Simples, sem ferram
                 |
                 v
   +-------------------------------+
-  |  NAVEGADOR (front)            |  <- estado da pagina (morre ao fechar)
-  |  - variaveis locais           |
-  |  - memoria de sessao          |
+  |  NAVEGADOR (front)            |  <- estado da página (morre ao fechar)
+  |  - variáveis locais           |
+  |  - memória de sessao          |
   +-------------------------------+
                 |
                 | request com dado
@@ -40,7 +40,7 @@ Este e o diagrama que Gui desenha ou mostra durante o video. Simples, sem ferram
 
 ```
   1. USUARIO CLICA no front
-       (estado da pagina muda, ainda nao salvou)
+       (estado da página muda, ainda não salvou)
                 |
   2. FRONT manda REQUEST para o servidor
        (dado atravessa a fronteira)
@@ -68,8 +68,8 @@ Este e o diagrama que Gui desenha ou mostra durante o video. Simples, sem ferram
   SCHEMA v2 (novo)
        tabela usuarios: nome, email, telefone
 
-  SE o codigo novo espera v2 mas o banco ainda ta em v1 -> ERRO
-  SE ninguem rodou a migracao -> codigo quebra em silencio
+  SE o código novo espera v2 mas o banco ainda ta em v1 -> ERRO
+  SE ninguém rodou a migracao -> código quebra em silêncio
 ```
 
 ## Tipos de banco (no conceito)
@@ -80,15 +80,15 @@ Este e o diagrama que Gui desenha ou mostra durante o video. Simples, sem ferram
   | tabela   |        | doc JSON |        | chave    |
   | linhas   |        | solto    |        | valor    |
   | colunas  |        | sem rigi |        | dicionar |
-  | relacoes |        | flexivel |        | rapido   |
+  | relacoes |        | flexivel |        | rápido   |
   +----------+        +----------+        +----------+
-   Postgres            MongoDB             Redis
-   MySQL               CouchDB             DynamoDB
+   banco relacional            banco de documentos             banco chave-valor
+   banco relacional               banco de documentos             banco chave-valor
 ```
 
-## Como usar no video
+## Como usar no vídeo
 
-- Desenhar o mapa principal no inicio do ATO 1, sem explicar tudo.
+- Desenhar o mapa principal no início do ATO 1, sem explicar tudo.
 - Voltar ao mapa no final de cada ato, destacando as partes cobertas.
 - Mostrar o bloco de migracao quando entrar no ATO 3.
 - No fim, o mapa completo mostra o dado nascendo no front e durando no banco.
@@ -96,7 +96,7 @@ Este e o diagrama que Gui desenha ou mostra durante o video. Simples, sem ferram
 ## Versao para thumbnail
 
 Texto curto sobre o diagrama:
-- Titulo sobre a imagem: "Onde o dado SOBREVIVE entre requests?"
+- Título sobre a imagem: "Onde o dado SOBREVIVE entre requests?"
 - Setas: clique -> front -> servidor -> banco
 - Destacar a palavra "persistente" ao lado do banco
-- Sem palavras densas; so "front", "servidor", "banco", "persistente".
+- Sem palavras densas; só "front", "servidor", "banco", "persistente".

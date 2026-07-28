@@ -1,10 +1,10 @@
-# Titulos, thumbnail, SEO
+# Títulos, thumbnail, SEO
 
-## Titulos (escolher um)
+## Títulos (escolher um)
 
-1. "O que acontece entre o CODIGO e o SITE? (deploy explicado do zero)"
+1. "O que acontece entre o Código e o SITE? (deploy explicado do zero)"
 2. "Como um app chega na internet? A jornada do deploy, explicada simples"
-3. "Vibe coder precisa saber: as camadas entre seu codigo e o ar"
+3. "Vibe coder precisa saber: as camadas entre seu código e o ar"
 4. "Mapa arquitetural para quem programa com IA (sem jargao)"
 5. "Do commit ao deploy: como um site chega na internet"
 
@@ -15,11 +15,11 @@
 ### Conceito
 
 Duas pontas visuais:
-- Esquerda: notebook com codigo (cores escuras, terminal/IDE)
+- Esquerda: notebook com código (cores escuras, terminal/IDE)
 - Centro: seta grande com pontos intermediarios (servidor, banco, nuvem)
 - Direita: tela de celular ou navegador com o site no ar
 
-Texto sobre a imagem: "CODIGO -> SITE" ou "O que acontece no meio?"
+Texto sobre a imagem: "Código -> SITE" ou "O que acontece no meio?"
 
 ### Cores
 
@@ -40,17 +40,17 @@ Fundo escuro (preto/azul escuro). Setas em amarelo ou verde-limao para destacar 
 - iniciantes
 - ia aplicada
 
-## Descricao
+## Descrição
 
-"Voce escreve codigo. Aperta um botao. E de repente tem um site no ar. Mas o que acontece entre o codigo e o site? Neste video, a historia de um deploy, do zero ao ar, explicada camada por camada.
+"Você escreve código. Aperta um botao. E de repente tem um site no ar. Mas o que acontece entre o código e o site? Neste vídeo, a história de um deploy, do zero ao ar, explicada camada por camada.
 
 Para quem usa IA para programar (vibe coders) e quer entender o mapa sem se afogar em jargao.
 
 Indice (clique nos timestamps):
-0:00 O que acontece entre o codigo e o site?
-0:45 ATO 1 - No seu computador (codigo, estado, variaveis, git)
+0:00 O que acontece entre o código e o site?
+0:45 ATO 1 - No seu computador (código, estado, variáveis, git)
 5:30 ATO 2 - Saindo do computador (servidor, API, banco, auth)
-11:30 ATO 3 - Indo ao ar (build, CI/CD, deploy, dominio)
+11:30 ATO 3 - Indo ao ar (build, CI/CD, deploy, domínio)
 16:30 Como usar isso com IA
 
 Glossario completo: [link do repo]

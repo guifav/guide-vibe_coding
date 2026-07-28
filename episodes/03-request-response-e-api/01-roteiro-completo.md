@@ -2,7 +2,7 @@
 
 **Duracao alvo:** 15-20 min
 **Formato:** Gui falando para camera, alternando com diagrama simples na tela
-**Regra pedagogica:** cada termo tecnico e traduzido em 1 frase antes de continuar. Nenhum termo fica sem traducao.
+**Regra pedagogica:** cada termo técnico e traduzido em 1 frase antes de continuar. Nenhum termo fica sem tradução.
 
 ---
 
@@ -10,15 +10,15 @@
 
 ### Na camera
 
-"Voce abre um site. Clica num botao. E alguma coisa acontece. Mas o que exatamente viajou entre o seu clique e a resposta que apareceu na tela?"
+"Você abre um site. Clica num botao. E alguma coisa acontece. Mas o que exatamente viajou entre o seu clique e a resposta que apareceu na tela?"
 
-"No episodio passado eu contei a historia de um deploy, do zero ao ar. Agora quero abrir uma das camadas mais importantes: o dialogo entre o navegador e o servidor."
+"No episodio passado eu contei a história de um deploy, do zero ao ar. Agora quero abrir uma das camadas mais importantes: o dialogo entre o navegador e o servidor."
 
-"Tudo que acontece na web e uma conversa de duas partes. O navegador pede. O servidor responde. Neste video eu vou contar essa conversa do inicio ao fim. E no caminho voce vai entender por que a IA as vezes inventa coisas que nao existem."
+"Tudo que acontece na web e uma conversa de duas partes. O navegador pede. O servidor responde. Neste vídeo eu vou contar essa conversa do início ao fim. E no caminho você vai entender por que a IA as vezes inventa coisas que não existem."
 
 ### Mostrar
 
-Diagrama simples (arquivo 02): navegador de um lado, servidor do outro, uma seta indo com "request" e outra voltando com "response". So mostrar, sem explicar.
+Diagrama simples (arquivo 02): navegador de um lado, servidor do outro, uma seta indo com "request" e outra voltando com "response". Só mostrar, sem explicar.
 
 ---
 
@@ -28,11 +28,11 @@ Diagrama simples (arquivo 02): navegador de um lado, servidor do outro, uma seta
 
 ### Falar
 
-"Quando voce digita um endereco ou clica num botao, o navegador manda um pedido para o servidor. Esse pedido se chama request."
+"Quando você digita um endereço ou clica num botao, o navegador manda um pedido para o servidor. Esse pedido se chama request."
 
-"Request e so isso: um pedido. Igual voce faz num balcao. Chega, pede algo, espera a resposta."
+"Request e só isso: um pedido. Igual você faz num balcao. Chega, pede algo, espera a resposta."
 
-"Esse pedido viaja por um protocolo chamado HTTP. Nao se preocupe com o nome agora. HTTP e so o idioma que navegador e servidor combinaram para conversar. Como um telefone: ambos precisam falar o mesmo idioma para se entender."
+"Esse pedido viaja por um protocolo chamado HTTP. Não se preocupe com o nome agora. HTTP e só o idioma que navegador e servidor combinaram para conversar. Como um telefone: ambos precisam falar o mesmo idioma para se entender."
 
 ### Mostrar
 
@@ -47,13 +47,13 @@ No diagrama, animar a seta do navegador para o servidor com a palavra "REQUEST".
 
 ### Falar
 
-"Todo request tem um metodo. O metodo diz o que voce quer fazer com o pedido."
+"Todo request tem um metodo. O metodo diz o que você quer fazer com o pedido."
 
 "Dois metodos cobrem 90% do que acontece na web. GET e POST."
 
-"GET e pedir. Quando voce abre uma pagina, carrega uma lista, ve um produto, o navegador manda um GET. Ele esta dizendo: 'me da isso'. So isso. Nao muda nada no servidor. So pede."
+"GET e pedir. Quando você abre uma página, carrega uma lista, ve um produto, o navegador manda um GET. Ele esta dizendo: 'me da isso'. Só isso. Não muda nada no servidor. Só pede."
 
-"POST e enviar. Quando voce preenche um formulario, cria uma conta, adiciona um item no carrinho, o navegador manda um POST. Ele esta dizendo: 'aqui estao dados, faz algo com isso'."
+"POST e enviar. Quando você preenche um formulario, cria uma conta, adiciona um item no carrinho, o navegador manda um POST. Ele esta dizendo: 'aqui estão dados, faz algo com isso'."
 
 ### Mostrar
 
@@ -63,15 +63,15 @@ Dois exemplos lado a lado:
 
 ### Falar
 
-"A diferenca e simples: GET pede. POST envia. Se a IA falar em 'fazer um GET' ou 'mandar um POST', ela esta dizendo qual o tipo do pedido."
+"A diferença e simples: GET pede. POST envia. Se a IA falar em 'fazer um GET' ou 'mandar um POST', ela esta dizendo qual o tipo do pedido."
 
-"Existem outros metodos. PUT, PATCH, DELETE. Mas por enquanto, GET e POST sao suficientes para entender a conversa."
+"Existem outros metodos. PUT, PATCH, DELETE. Mas por enquanto, GET e POST são suficientes para entender a conversa."
 
 ### Cena 3 - Endpoint: cada URL e uma porta (5:00-7:00)
 
 ### Falar
 
-"O servidor nao tem uma unica porta de entrada. Ele tem varias. Cada uma atende um pedido diferente."
+"O servidor não tem uma única porta de entrada. Ele tem varias. Cada uma atende um pedido diferente."
 
 "Isso e o endpoint. Endpoint e uma porta especifica no balcao do servidor. Cada URL e uma porta."
 
@@ -82,7 +82,7 @@ Exemplos na tela:
 
 "Cada um desses e um endpoint diferente. O navegador sabe qual porta bater porque a URL diz."
 
-"Pense num banco. Voce nao vai no caixa eletronico pedir um sanduiche. Cada balcao atende um tipo de pedido. O servidor funciona igual."
+"Pense num banco. Você não vai no caixa eletronico pedir um sanduiche. Cada balcao atende um tipo de pedido. O servidor funciona igual."
 
 ### Mostrar
 
@@ -110,7 +110,7 @@ Mostrar o diagrama com request, metodo (GET/POST) e endpoint destacados.
 
 "Mas o que vem dentro da resposta? Dados. E esses dados viajam em um formato chamado JSON."
 
-"JSON nao e nada misterioso. E texto organizado. Com chaves para agrupar e listas para sequencias. Facil para o computador ler, facil para o humano entender."
+"JSON não e nada misterioso. E texto organizado. Com chaves para agrupar e listas para sequencias. Facil para o computador ler, facil para o humano entender."
 
 Exemplo na tela:
 
@@ -136,61 +136,61 @@ Um response JSON simples na tela. Destacar: chaves, aspas, valores.
 
 ### Falar
 
-"Aqui vem o conceito mais importante deste video. Presta atencao."
+"Aqui vem o conceito mais importante deste vídeo. Presta atencao."
 
 "Quando o front faz um pedido, ele espera algo especifico de volta. Se pediu a lista de produtos, espera produtos. Se pediu o usuario, espera um usuario."
 
 "Isso e o contrato. Contrato e o combinado entre front e servidor: o que eu peco, e o que recebo de volta."
 
-"Se o servidor devolve `nome` e o front espera `titulo`, quebra. Se o servidor devolve um numero e o front espera texto, quebra. O contrato e o que mantem os dois lados sincronizados."
+"Se o servidor devolve `nome` e o front espera `título`, quebra. Se o servidor devolve um número e o front espera texto, quebra. O contrato e o que mantem os dois lados sincronizados."
 
 ### Mostrar
 
 Dois exemplos:
 - Contrato certo: front pede produto, servidor devolve `{ nome, preco }`. Front le nome e preco. Funciona.
-- Contrato quebrado: front espera `titulo`, servidor devolve `nome`. Front procura `titulo`, nao acha. Tela em branco.
+- Contrato quebrado: front espera `título`, servidor devolve `nome`. Front procura `título`, não acha. Tela em branco.
 
 ### Falar
 
 "E aqui que a IA se confunde. A IA as vezes inventa contrato."
 
-"Voce pede para ela fazer o front consumir uma API. Ela escreve o codigo esperando que o servidor devolva `{ titulo, descricao }`. Mas o servidor nunca disse que devolve isso. A IA chutou. E quando o codigo roda, a tela fica vazia."
+"Você pede para ela fazer o front consumir uma API. Ela escreve o código esperando que o servidor devolva `{ título, descrição }`. Mas o servidor nunca disse que devolve isso. A IA chutou. E quando o código roda, a tela fica vazia."
 
-"Por isso a primeira pergunta ao trabalhar com API nao e 'como eu chamo'. E 'qual e o contrato'. O que o servidor realmente devolve?"
+"Por isso a primeira pergunta ao trabalhar com API não e 'como eu chamo'. E 'qual e o contrato'. O que o servidor realmente devolve?"
 
-"Quando a IA sugerir consumir uma API, pergunte: 'voce viu o contrato real, ou voce esta chutando os campos?'."
+"Quando a IA sugerir consumir uma API, pergunte: 'você viu o contrato real, ou você esta chutando os campos?'."
 
 ### Cena 3 - Status codes: respostas honestas (11:30-13:30)
 
 ### Falar
 
-"Alem do JSON, o servidor devolve um codigo de status. Esse codigo diz, de forma honesta, o que aconteceu com o pedido."
+"Alem do JSON, o servidor devolve um código de status. Esse código diz, de forma honesta, o que aconteceu com o pedido."
 
 "Cinco codigos cobrem 95% dos casos."
 
 ### Traduzir
 
 - **200 (OK)** - deu certo, aqui esta a resposta
-- **404 (Not Found)** - nao achei o que voce pediu
-- **401 (Unauthorized)** - voce nao esta logado, nao sei quem voce e
-- **403 (Forbidden)** - sei quem voce e, mas voce nao pode acessar isso
-- **500 (Internal Server Error)** - quebrou la dentro, nao foi culpa sua
+- **404 (Not Found)** - não achei o que você pediu
+- **401 (Unauthorized)** - você não esta logado, não sei quem você e
+- **403 (Forbidden)** - sei quem você e, mas você não pode acessar isso
+- **500 (Internal Server Error)** - quebrou la dentro, não foi culpa sua
 
 ### Falar
 
-"O status code e a forma honesta do servidor falar o que aconteceu. 200 e sucesso. 404 e 'nao achei'. 401 e 'nao te conheco'. 403 e 'te conheco, mas nao pode'. 500 e 'deu ruim no meu lado'."
+"O status code e a forma honesta do servidor falar o que aconteceu. 200 e sucesso. 404 e 'não achei'. 401 e 'não te conheco'. 403 e 'te conheco, mas não pode'. 500 e 'deu ruim no meu lado'."
 
-"O problema mais comum na web nao e o erro. E o crash silencioso. O servidor quebra, mas em vez de devolver um 500 honesto, devolve algo vazio ou uma resposta generica. O front nao sabe o que aconteceu. A tela fica parada, sem mensagem."
+"O problema mais comum na web não e o erro. E o crash silencioso. O servidor quebra, mas em vez de devolver um 500 honesto, devolve algo vazio ou uma resposta generica. O front não sabe o que aconteceu. A tela fica parada, sem mensagem."
 
 ### Mostrar
 
 Comparacao na tela:
-- Cenario honesto: request vai, servidor quebra, devolve 500, front mostra mensagem de erro
-- Cenario silencioso: request vai, servidor quebra, devolve resposta vazia, front fica parado, sem feedback
+- Cenário honesto: request vai, servidor quebra, devolve 500, front mostra mensagem de erro
+- Cenário silencioso: request vai, servidor quebra, devolve resposta vazia, front fica parado, sem feedback
 
 ### Falar
 
-"Quando a IA falar em 'tratar erro', pergunte: 'tratar que tipo de erro? 404? 401? 500?'. Cada um e uma coisa. Se ela so fala 'tratar erro' sem especificar, ela nao esta pensando no contrato."
+"Quando a IA falar em 'tratar erro', pergunte: 'tratar que tipo de erro? 404? 401? 500?'. Cada um e uma coisa. Se ela só fala 'tratar erro' sem especificar, ela não esta pensando no contrato."
 
 ### Fechamento do ATO 2
 
@@ -202,15 +202,15 @@ Mostrar o diagrama completo do dialogo: request (com metodo, endpoint) indo, ser
 
 ## ATO 3 - A fronteira (13:30-17:30)
 
-### Cena 1 - Front nao sabe do banco (13:30-15:00)
+### Cena 1 - Front não sabe do banco (13:30-15:00)
 
 ### Falar
 
-"Se o servidor e que consulta o banco, o front nao deveria saber que o banco existe."
+"Se o servidor e que consulta o banco, o front não deveria saber que o banco existe."
 
-"O front so conversa com a API. Ele manda request, recebe response. O que acontece atras da API, dentro do servidor, e caixa preta para o front."
+"O front só conversa com a API. Ele manda request, recebe response. O que acontece atras da API, dentro do servidor, e caixa preta para o front."
 
-"Pense no balcao de novo. Voce bate no balcao e pede um produto. O atendente vai no almoxarifado, pega, traz. Voce nao precisa saber onde fica o almoxarifado, como ele esta organizado, ou se o produto estava na prateleira 3 ou 7."
+"Pense no balcao de novo. Você bate no balcao e pede um produto. O atendente vai no almoxarifado, pega, traz. Você não precisa saber onde fica o almoxarifado, como ele esta organizado, ou se o produto estava na prateleira 3 ou 7."
 
 "O front e o cliente do balcao. O banco e o almoxarifado. A API e o balcao."
 
@@ -218,11 +218,11 @@ Mostrar o diagrama completo do dialogo: request (com metodo, endpoint) indo, ser
 
 Diagrama com tres blocos:
 - Front (navegador), seta "request / response" para API (balcao), seta "consulta" de API para Banco (almoxarifado)
-- A seta do front NAO cruza direto para o banco. Ela para na API.
+- A seta do front Não cruza direto para o banco. Ela para na API.
 
 ### Falar
 
-"Se o front comeca a saber detalhes do banco (nomes de tabela, tipo de coluna, como os dados estao guardados), algo esta errado. A separacao quebrou."
+"Se o front comeca a saber detalhes do banco (nomes de tabela, tipo de coluna, como os dados estão guardados), algo esta errado. A separacao quebrou."
 
 ### Cena 2 - Por que essa separacao importa (15:00-16:00)
 
@@ -230,13 +230,13 @@ Diagrama com tres blocos:
 
 "Essa separacao tem um nome: camadas. Cada camada tem um trabalho. O front mostra. A API atende e processa. O banco guarda."
 
-"Por que separar? Porque quando as camadas estao separadas, voce pode trocar uma sem quebrar a outra. Troca o banco de MySQL para PostgreSQL: o front nem percebe. Troca o front de React para Vue: o servidor nao se importa."
+"Por que separar? Porque quando as camadas estão separadas, você pode trocar uma sem quebrar a outra. Troca o banco de banco relacional para banco relacional: o front nem percebe. Troca o front de React para Vue: o servidor não se importa."
 
-"Se as camadas estao misturadas, qualquer mudanca quebra tudo. E ai que o caos comeca."
+"Se as camadas estão misturadas, qualquer mudança quebra tudo. E ai que o caos comeca."
 
 ### Falar
 
-"Para quem programa com IA: quando a IA sugerir uma mudanca, pergunte: 'isso mora no front, na API, ou no banco?'. Se ela misturar, voce ja sabe que tem risco."
+"Para quem programa com IA: quando a IA sugerir uma mudança, pergunte: 'isso mora no front, na API, ou no banco?'. Se ela misturar, você já sabe que tem risco."
 
 ### Cena 3 - Onde a IA se confunde com API (16:00-17:30)
 
@@ -244,13 +244,13 @@ Diagrama com tres blocos:
 
 "A IA tem tres armadilhas classicas quando trabalha com API."
 
-"Armadilha 1: inventar contrato. Ela escreve o front esperando campos que o servidor nunca confirmou. Solucao: pergunte 'voce viu o contrato ou chutou?'."
+"Armadilha 1: inventar contrato. Ela escreve o front esperando campos que o servidor nunca confirmou. Solucao: pergunte 'você viu o contrato ou chutou?'."
 
-"Armadilha 2: ignorar status code. Ela trata todo erro como se fosse igual. Um 404 (nao achei) e diferente de um 500 (quebrou). Solucao: pergunte 'qual status code eu devo tratar?'."
+"Armadilha 2: ignorar status code. Ela trata todo erro como se fosse igual. Um 404 (não achei) e diferente de um 500 (quebrou). Solucao: pergunte 'qual status code eu devo tratar?'."
 
-"Armadilha 3: misturar camadas. Ela poe logica de banco no front, ou logica de front no servidor. Solucao: pergunte 'isso mora em qual camada?'."
+"Armadilha 3: misturar camadas. Ela poe lógica de banco no front, ou lógica de front no servidor. Solucao: pergunte 'isso mora em qual camada?'."
 
-"Essas tres perguntas sao o seu crivo. Toda vez que a IA mexer com API, faca elas."
+"Essas tres perguntas são o seu crivo. Toda vez que a IA mexer com API, faca elas."
 
 ### Fechamento do ATO 3
 
@@ -266,18 +266,18 @@ Mostrar o diagrama completo com as tres camadas destacadas: front, API, banco.
 
 "Tudo que acontece na web e uma conversa de duas partes. Request e response. O navegador pede com um metodo (GET ou POST), bate num endpoint, e recebe de volta um JSON dentro de um contrato, com um status code honesto."
 
-"O front nao sabe do banco. So conversa com a API. Essa fronteira e o que mantem o sistema sao."
+"O front não sabe do banco. Só conversa com a API. Essa fronteira e o que mantem o sistema são."
 
 "Quando a IA trabalhar com API, faca tres perguntas: qual e o contrato real? Qual status code eu trato? Isso mora em qual camada?"
 
-"Na descricao tem o glossario com todos os termos que apareceram."
+"Na descrição tem o glossario com todos os termos que apareceram."
 
-### Ponte para o proximo episodio
+### Ponte para o próximo episodio
 
-"Mas fica uma pergunta no ar. O servidor devolve dados. De onde ele tira esses dados? A resposta e o proximo video: banco de dados. A memoria de longo prazo do servidor."
+"Mas fica uma pergunta no ar. O servidor devolve dados. De onde ele tira esses dados? A resposta e o próximo vídeo: banco de dados. A memória de longo prazo do servidor."
 
 ### Call to action
 
-- Inscreva-se para a serie
-- Comente qual conceito voce quer aprofundar
+- Inscreva-se para a série
+- Comente qual conceito você quer aprofundar
 - Repo com o glossario: [link]

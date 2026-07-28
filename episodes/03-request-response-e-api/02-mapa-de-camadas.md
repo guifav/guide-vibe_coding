@@ -1,6 +1,6 @@
 # Mapa do dialogo (para mostrar na tela / base do thumbnail)
 
-Este e o diagrama que Gui desenha ou mostra durante o video. Simples, sem ferramentas, so o fluxo do request e response.
+Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferramentas, só o fluxo do request e response.
 
 ## O dialogo (versao texto)
 
@@ -15,7 +15,7 @@ Este e o diagrama que Gui desenha ou mostra durante o video. Simples, sem ferram
   +-------------------------------+
   |  SERVIDOR                     |
   |  - recebe o request           |
-  |  - processa (logica)          |
+  |  - processa (lógica)          |
   |  - consulta o BANCO           |
   |  - monta a RESPOSTA           |
   +-------------------------------+
@@ -41,14 +41,14 @@ Este e o diagrama que Gui desenha ou mostra durante o video. Simples, sem ferram
   |                  |     |  - devolve JSON  |     |                  |
   +------------------+     +------------------+     +------------------+
         |                         |                         |
-        |  NAO SABE DO BANCO       |  SABE DO BANCO          |
-        |  so conversa com a API   |  nao sabe do front      |
+        |  Não SABE DO BANCO       |  SABE DO BANCO          |
+        |  só conversa com a API   |  não sabe do front      |
         +-------------------------+-------------------------+
 ```
 
 O front nunca fala direto com o banco. A seta do front para na API.
 
-## A conversa completa (um pedido, do inicio ao fim)
+## A conversa completa (um pedido, do início ao fim)
 
 ```
   1. USUARIO clica ou digita URL
@@ -59,7 +59,7 @@ O front nunca fala direto com o banco. A seta do front para na API.
                 |
   3. SERVIDOR recebe o request
      - identifica o endpoint
-     - executa a logica
+     - executa a lógica
      - consulta o BANCO se precisar
                 |
   4. SERVIDOR monta RESPONSE
@@ -73,16 +73,16 @@ O front nunca fala direto com o banco. A seta do front para na API.
      - renderiza na tela (ou mostra erro)
 ```
 
-## Como usar no video
+## Como usar no vídeo
 
-- Desenhar o dialogo (navegador -> servidor -> navegador) no inicio do ATO 1, sem explicar tudo.
-- Voltar ao mapa no final de cada ato, destacando o que ja foi coberto.
+- Desenhar o dialogo (navegador -> servidor -> navegador) no início do ATO 1, sem explicar tudo.
+- Voltar ao mapa no final de cada ato, destacando o que já foi coberto.
 - No ATO 3, mostrar a fronteira: tres blocos separados (front, API, banco) com a seta do front parando na API.
 
 ## Versao para thumbnail
 
 Texto curto sobre o diagrama:
-- Titulo sobre a imagem: "O que acontece quando voce CLICA?" ou "Request e Response: a conversa invisivel"
+- Título sobre a imagem: "O que acontece quando você CLICA?" ou "Request e Response: a conversa invisivel"
 - Setas: navegador -> servidor -> navegador
 - Destacar: "GET / POST", "JSON", "200 ou 404?"
-- Sem palavras densas; so o fluxo do pedido e da resposta.
+- Sem palavras densas; só o fluxo do pedido e da resposta.

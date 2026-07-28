@@ -1,12 +1,12 @@
-# Titulos, thumbnail, SEO
+# Títulos, thumbnail, SEO
 
-## Titulos (escolher um)
+## Títulos (escolher um)
 
-1. "O que acontece quando voce CLICA? (request e response explicados)"
+1. "O que acontece quando você CLICA? (request e response explicados)"
 2. "Request, Response e API: a conversa invisivel entre navegador e servidor"
 3. "GET, POST, JSON, 404: o dialogo da web explicado simples"
 4. "Vibe coder precisa saber: como o front conversa com o servidor"
-5. "Por que a IA inventa API que nao existe? (contrato e status code)"
+5. "Por que a IA inventa API que não existe? (contrato e status code)"
 
 **Recomendado:** #1 ou #2. Claros, com pergunta ou promessa, sugerem o conteudo sem jargao.
 
@@ -40,21 +40,21 @@ Fundo escuro (preto/azul escuro). Setas em cores diferentes: ida em amarelo, vol
 - iniciantes
 - ia aplicada
 
-## Descricao
+## Descrição
 
-"Voce clica num botao e alguma coisa acontece. Mas o que viajou entre o seu clique e a resposta que apareceu? Neste video, a conversa invisivel entre navegador e servidor, explicada do zero.
+"Você clica num botao e alguma coisa acontece. Mas o que viajou entre o seu clique e a resposta que apareceu? Neste vídeo, a conversa invisivel entre navegador e servidor, explicada do zero.
 
 Para quem usa IA para programar (vibe coders) e quer entender o que e request, response, API, JSON e status code, sem se afogar em jargao.
 
 Episodio 01 (o mapa geral): [link]
-Proximo episodio (banco de dados): [link em breve]
+Próximo episodio (banco de dados): [link em breve]
 
 Indice (clique nos timestamps):
-0:00 O que acontece quando voce clica?
+0:00 O que acontece quando você clica?
 1:00 ATO 1 - O pedido (request, GET/POST, endpoint)
 7:00 ATO 2 - A resposta (JSON, contrato, status codes)
-13:30 ATO 3 - A fronteira (front nao sabe do banco)
-17:30 Como usar isso com IA + ponte para o proximo video
+13:30 ATO 3 - A fronteira (front não sabe do banco)
+17:30 Como usar isso com IA + ponte para o próximo vídeo
 
 Glossario completo: [link do repo]
 
