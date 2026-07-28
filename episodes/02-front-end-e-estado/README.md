@@ -14,6 +14,7 @@
 | `03-glossario-minimo.md` | Só os termos que aparecem no roteiro, 1 linha cada |
 | `04-titulos-thumbnail-seo.md` | Títulos, thumbnail, tags |
 | `05-shorts-cortes.md` | 4 cortes curtos, cada um isola um conceito |
+| `exemplos/` | Trechos ilustrativos (markdown + código) |
 
 **Princípios do canal aplicados**
 - Didática por analogia operacional: cada conceito do front vira analogia do mundo físico

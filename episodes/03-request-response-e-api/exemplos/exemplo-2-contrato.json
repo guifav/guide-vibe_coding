@@ -1,0 +1,8 @@
+{
+  "pedido": {
+    "id": 42,
+    "status": "aberto",
+    "total": 19.9
+  },
+  "status_http_exemplo": 200
+}

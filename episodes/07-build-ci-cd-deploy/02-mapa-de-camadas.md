@@ -1,6 +1,6 @@
 # Mapa de camadas (para mostrar na tela / base do thumbnail)
 
-Este é o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episódio é o cano build/CI/CD/deploy, mas no fechamento voltamos ao mapa inteiro da temporada.
+Este é o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episódio é o cano build/CI/CD/deploy, mas no fechamento voltamos ao mapa inteiro das camadas.
 
 ## O cano (versão texto)
 
@@ -123,7 +123,7 @@ Este é o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste epis
   Corrigir à frente e fazer novo deploy.
 ```
 
-## Mapa da temporada revisitado (mostrar no fechamento)
+## Mapa das camadas revisitado (mostrar no fechamento)
 
 ```
   EPISÓDIO 01: o mapa inteiro (visão geral)
@@ -139,6 +139,8 @@ Este é o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste epis
        +-- 06: GIT E VERSIONAMENTO     (rede de segurança, voltar no tempo)
        |
        +-- 07: BUILD, CI/CD, DEPLOY    (o cano que leva ao ar) <-- você está aqui
+       |
+       (a sequência continua: 08 secrets e variáveis de ambiente)
 ```
 
 ## Como usar no vídeo
@@ -146,8 +148,8 @@ Este é o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste epis
 - Mostrar o cano no início do ATO 1, só a estrutura, sem explicar cada etapa.
 - Voltar ao cano no fim de cada cena do ATO 2, destacando a etapa que acabou de ser explicada.
 - Mostrar os ambientes e as estratégias como blocos separados, visuais, dentro do ATO 2.
-- No ATO 3, mostrar o cano completo em uma linha só, depois transicionar para o mapa da temporada revisitado.
-- O mapa da temporada é o fechamento visual: cada camada listada com o episódio que a explicou.
+- No ATO 3, mostrar o cano completo em uma linha só, depois transicionar para o mapa das camadas revisitado.
+- O mapa das camadas é o fechamento visual: cada camada listada com o episódio que a explicou; no encerramento, ponte para o ep08.
 
 ## Versão para thumbnail
 
