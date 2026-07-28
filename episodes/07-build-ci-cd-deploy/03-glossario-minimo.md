@@ -1,6 +1,6 @@
 # Glossário mínimo (aparece na descrição do YouTube)
 
-Só os termos que aparecem no roteiro. Um por linha, tradução direta. Este glossário fecha a temporada: ao final dele, listamos também os termos dos episódios anteriores, para ter o glossário completo da série.
+Só os termos que aparecem no roteiro. Um por linha, tradução direta. Este glossário consolida as camadas do mapa: ao final dele, listamos também os termos dos episódios anteriores, para ter o glossário das camadas em um só lugar.
 
 ---
 
@@ -68,7 +68,7 @@ As duas respostas juntas dizem o tamanho do risco.
 
 ---
 
-## Glossário da temporada completa (referência rápida)
+## Glossário das camadas do mapa (referência rápida)
 
 Termos dos episódios anteriores, para consulta.
 

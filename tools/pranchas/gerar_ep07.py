@@ -7,7 +7,7 @@ Design system: Midnight Grid (ver midnight_kit.py).
 
 CI/CD aprofunda a prancha 10 do ep01 (commit→lint→testes→build→deploy):
 aqui o portão, as três verificações, Delivery vs Deployment, ambientes,
-estratégias, rollback+schema e o mapa da temporada — sem repetir aquele cano.
+estratégias, rollback+schema e o mapa das camadas — sem repetir aquele cano.
 """
 
 from midnight_kit import (W, H, INK, SECONDARY, MUTED, BORDER, ACCENT,
@@ -461,10 +461,10 @@ def p13_ciclo_completo():
 
 
 # ---------------------------------------------------------------- 14
-def p14_mapa_da_temporada():
-    """Fechamento: mapa da temporada revisitado — ep07 fecha o cano."""
+def p14_mapa_das_camadas():
+    """Fechamento: mapa das camadas revisitado — ep07 fecha o cano do mapa."""
     b = header(KICKER, fig(14))
-    b += title(W / 2, 230, "O mapa da temporada, fechado")
+    b += title(W / 2, 230, "O mapa das camadas, fechado")
 
     layers = [
         ("02", "front-end e estado", "navegador · HTML · CSS · JS"),
@@ -495,7 +495,7 @@ def p14_mapa_da_temporada():
 
     b += caption(W / 2, 950,
                  "Quando a IA sugerir mudança: em qual camada isso mora?")
-    export(b, f"{OUT}/14-mapa-da-temporada", defs=glow_def("g1"))
+    export(b, f"{OUT}/14-mapa-das-camadas", defs=glow_def("g1"))
 
 
 if __name__ == "__main__":
@@ -512,4 +512,4 @@ if __name__ == "__main__":
     p11_rollback_e_schema()
     p12_incidente_post_mortem()
     p13_ciclo_completo()
-    p14_mapa_da_temporada()
+    p14_mapa_das_camadas()

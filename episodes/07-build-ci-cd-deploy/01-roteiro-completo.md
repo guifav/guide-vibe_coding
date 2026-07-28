@@ -1,7 +1,7 @@
 # Roteiro completo - Build, CI/CD e Deploy (profundo)
 
 **Duração alvo:** 20-25 min
-**Formato:** Gui falando para câmera, alternando com diagrama simples na tela (o cano build/CI/CD/deploy e o mapa da temporada)
+**Formato:** Gui falando para câmera, alternando com diagrama simples na tela (o cano build/CI/CD/deploy e o mapa das camadas)
 **Regra pedagógica:** cada termo técnico é traduzido em 1 frase antes de continuar. Nenhum termo fica sem tradução.
 
 ---
@@ -12,9 +12,9 @@
 
 "No episódio 01 desta série, eu contei a história de um deploy indo ao ar. Mostrei que entre o código e o site existe um servidor, um banco, auth, e no fim existe uma coisa chamada build, CI/CD e deploy. Mas eu só mostrei o nome."
 
-"Nos cinco episódios seguintes fomos fundo em cada camada. Front-end, API, banco, auth, git. Agora chegamos na última. O que realmente acontece quando o código vai para o ar?"
+"Nos cinco episódios seguintes fomos fundo em cada camada. Front-end, API, banco, auth, git. Agora chegamos na última camada do mapa. O que realmente acontece quando o código vai para o ar?"
 
-"Este é o último vídeo da temporada. Vou abrir a camada final, a que eu só mostrei por cima no episódio 01, e no fim vou voltar ao mapa completo. Se você assistiu à série toda, vai sair com o mapa inteiro na cabeça. Se caiu neste vídeo agora, também dá para acompanhar."
+"Este vídeo fecha o mapa que nasceu no episódio 01. Vou abrir a camada final, a que eu só mostrei por cima lá, e no fim volto ao mapa completo. Se você assistiu à série até aqui, vai sair com o mapa inteiro na cabeça. Se caiu neste vídeo agora, também dá para acompanhar. E a sequência continua depois: o próximo episódio é sobre secrets e variáveis de ambiente."
 
 ### Mostrar
 
@@ -244,11 +244,11 @@ Diagrama: versão nova no ar -> problema detectado -> seta de "rollback" -> vers
 
 O diagrama do cano completo, agora em uma linha só, com todas as etapas e setas. Destacar que o usuário só enxerga a última ponta.
 
-### Cena 4 - Fechamento da temporada: o mapa revisitado (22:00-24:00)
+### Cena 4 - Fechamento do mapa: o mapa revisitado (22:00-24:00)
 
 ### Falar
 
-"Esse vídeo fecha a temporada. No episódio 01 eu desenhei um mapa com todas as camadas entre o código e o ar. Hoje, seis episódios depois, cada uma dessas camadas já foi aberta."
+"Esse vídeo fecha o mapa. No episódio 01 eu desenhei as camadas entre o código e o ar. Hoje, seis episódios depois, cada uma dessas camadas já foi aberta."
 
 Mostrar o mapa do episódio 01 na tela, completo.
 
@@ -276,18 +276,18 @@ Apontar para cada camada à medida que fala:
 
 ### Na câmera
 
-"Essa foi a primeira temporada. Sete vídeos: o primeiro desenhou o mapa, os outros seis aprofundaram as camadas."
+"Sete vídeos até aqui: o primeiro desenhou o mapa, os outros seis aprofundaram as camadas."
 
 "Se você assistiu tudo, parabéns. Você saiu de 'a IA escreve e eu aprovo sem ler' para 'a IA escreve e eu sei em qual camada isso mora'. Isso muda tudo."
 
-"Na descrição tem o glossário completo da temporada, com todos os termos dos sete vídeos. Repo público [link] para consultar quando precisar."
+"Na descrição tem o glossário das camadas do mapa, com os termos dos sete vídeos. Repo público [link] para consultar quando precisar."
 
-"Se a série te ajudou, tem dois jeitos de ajudar de volta. Inscreva-se, e comente qual camada você quer ver na próxima temporada. O canal cresce com isso."
+"A sequência continua. O próximo episódio é sobre secrets e variáveis de ambiente: onde as chaves moram de verdade, e o que fazer quando a IA cola a senha no código. Inscreva-se, e comente o que você quer ver depois."
 
-"Obrigado por assistir até aqui. Te vejo na próxima."
+"Obrigado por assistir até aqui. Te vejo no próximo."
 
 ### Call to action
 
 - Inscreva-se
-- Comente qual camada você quer aprofundar na próxima temporada
-- Repo com o glossário completo da temporada: [link]
+- Comente qual camada ou tema você quer aprofundar a seguir
+- Repo com o glossário das camadas: [link]

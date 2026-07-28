@@ -20,5 +20,5 @@
 **Princípios do canal aplicados**
 - Didática por analogia operacional: código é a fechadura, segredo é a chave; ambiente é o prédio, o quadro de chaves da portaria é a configuração do ambiente, e cada variável é uma chave pendurada nele
 - Conceito só entra se responde "o que quebra se isso faltar"
-- Retoma conceitos da temporada 1: commit imutável (ep06), ambientes local/dev/staging/prod (ep07)
-- Abre a temporada 2, sobre operar com segurança o que a temporada 1 mapeou
+- Retoma conceitos dos episódios anteriores: commit imutável (ep06), ambientes local/dev/staging/prod (ep07)
+- Continua a sequência depois do mapa fechado: opera com segurança o que os sete primeiros episódios mapearam

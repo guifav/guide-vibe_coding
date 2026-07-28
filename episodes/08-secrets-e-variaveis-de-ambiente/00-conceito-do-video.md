@@ -9,7 +9,7 @@ Este vídeo conta a história de uma chave: o que é um segredo, por que ele nã
 ## Por que esse formato funciona
 
 - É o risco número 1 real do público-alvo: quem programa com IA conecta serviços externos o tempo todo (pagamento, e-mail, modelos de IA), e cada conexão pede uma chave.
-- Retoma e paga conceitos da temporada 1: o commit imutável do ep06 explica por que "apaguei o arquivo" não resolve; os ambientes do ep07 explicam onde os valores moram em produção.
+- Retoma e paga conceitos dos episódios anteriores: o commit imutável do ep06 explica por que "apaguei o arquivo" não resolve; os ambientes do ep07 explicam onde os valores moram em produção.
 - Tem final acionável: uma checklist de 3 perguntas e um protocolo de emergência (vazou → rotaciona).
 
 ## Público
@@ -34,7 +34,7 @@ O código pede o valor pelo nome; quem responde é o ambiente. Variável de ambi
 As três armadilhas da IA: colar a chave no código para "funcionar logo", commitar o .env, imprimir o segredo em log. Como pedir certo. E o protocolo de emergência: revogar e rotacionar a chave é o único passo que resolve; apagar o arquivo do repo não desfaz a foto.
 
 **ENCERRAMENTO**
-Checklist de 3 perguntas para toda mudança que toca segredo. Ponte para a temporada 2.
+Checklist de 3 perguntas para toda mudança que toca segredo. Ponte para temas futuros da sequência.
 
 ## O que NÃO entra neste vídeo
 

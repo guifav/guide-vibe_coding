@@ -237,10 +237,10 @@ O protocolo em três passos numerados. Embaixo, em destaque: "apagar o commit N�
 
 "Na descrição tem o glossário com todos os termos que apareceram. Repo público [link] para consultar depois."
 
-"Este vídeo abre a segunda temporada da série. Na temporada 1, a gente desenhou o mapa das camadas entre o código e o ar. Nesta, a gente aprende a operar esse mapa sem se machucar. Comente o que você quer ver: HTTPS e o cadeado do navegador? Como saber que o site quebrou antes do cliente reclamar? A fila decide."
+"Este vídeo continua a sequência. Até o episódio 07, a gente desenhou o mapa das camadas entre o código e o ar. Agora a gente aprende a operar esse mapa sem se machucar. Comente o que você quer ver a seguir: HTTPS e o cadeado do navegador? Como saber que o site quebrou antes do cliente reclamar? A fila decide."
 
 ### Call to action
 
-- Inscreva-se para a temporada 2
+- Inscreva-se para os próximos
 - Comente se você já commitou uma chave sem querer (sem vergonha, todo mundo já)
 - Repo com o glossário: [link]
