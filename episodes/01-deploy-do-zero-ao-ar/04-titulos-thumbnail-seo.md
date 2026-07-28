@@ -1,0 +1,58 @@
+# Titulos, thumbnail, SEO
+
+## Titulos (escolher um)
+
+1. "O que acontece entre o CODIGO e o SITE? (deploy explicado do zero)"
+2. "Como um app chega na internet? A jornada do deploy, explicada simples"
+3. "Vibe coder precisa saber: as camadas entre seu codigo e o ar"
+4. "Mapa arquitetural para quem programa com IA (sem jargao)"
+5. "Do commit ao deploy: como um site chega na internet"
+
+**Recomendado:** #1 ou #5. Claros, com pergunta, sugerem jornada.
+
+## Thumbnail
+
+### Conceito
+
+Duas pontas visuais:
+- Esquerda: notebook com codigo (cores escuras, terminal/IDE)
+- Centro: seta grande com pontos intermediarios (servidor, banco, nuvem)
+- Direita: tela de celular ou navegador com o site no ar
+
+Texto sobre a imagem: "CODIGO -> SITE" ou "O que acontece no meio?"
+
+### Cores
+
+Fundo escuro (preto/azul escuro). Setas em amarelo ou verde-limao para destacar a jornada. Evitar poluiçao visual.
+
+## Tags (10-12)
+
+- desenvolvimento de software
+- deploy
+- arquitetura de software
+- vibe coding
+- programacao com IA
+- front-end
+- back-end
+- CI/CD
+- git
+- API
+- iniciantes
+- ia aplicada
+
+## Descricao
+
+"Voce escreve codigo. Aperta um botao. E de repente tem um site no ar. Mas o que acontece entre o codigo e o site? Neste video, a historia de um deploy, do zero ao ar, explicada camada por camada.
+
+Para quem usa IA para programar (vibe coders) e quer entender o mapa sem se afogar em jargao.
+
+Indice (clique nos timestamps):
+0:00 O que acontece entre o codigo e o site?
+0:45 ATO 1 - No seu computador (codigo, estado, variaveis, git)
+5:30 ATO 2 - Saindo do computador (servidor, API, banco, auth)
+11:30 ATO 3 - Indo ao ar (build, CI/CD, deploy, dominio)
+16:30 Como usar isso com IA
+
+Glossario completo: [link do repo]
+
+#desenvolvimento #deploy #vibecoding #ia"
