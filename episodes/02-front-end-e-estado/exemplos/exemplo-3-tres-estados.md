@@ -24,12 +24,12 @@ function renderizar() {
 Três flags de estado:
 
 - **`carregando`** — pedido ainda não terminou; usuário precisa de feedback.
-- **`erro`** — algo falhou; mensagem clara beats tela branca.
-- **`dados` vazio** — sucesso, mas sem itens; diferente de erro e de loading.
+- **`erro`** — algo falhou; mensagem clara é melhor que tela branca.
+- **`dados` vazio** — sucesso, mas sem itens; diferente de erro e de carregamento.
 
 ## O que observar
 
-- A ordem dos `if` importa: checar loading antes de erro evita flash de mensagem errada.
+- A ordem dos `if` importa: checar carregamento antes de erro evita flash de mensagem errada.
 - `erro` e `dados` mutuamente exclusivos após a resposta — limpar um ao setar o outro.
 - "Vazio" não é erro: a chamada funcionou, só não há registros.
 - Funções `simularSucesso` e `simularErro` existem para testar os caminhos sem servidor real.
@@ -40,5 +40,5 @@ Três flags de estado:
 |---|---|
 | Carregando | Usuário vê lista vazia ou layout quebrado enquanto espera. |
 | Erro | Falha de rede vira tela branca ou dados antigos sem aviso. |
-| Vazio | Usuário acha que o app quebrou quando a lista legitimately está vazia. |
+| Vazio | Usuário acha que o app quebrou quando a lista de fato está vazia. |
 | Qualquer um dos três | IA entrega demo que "funciona no caminho feliz" e quebra em produção real. |

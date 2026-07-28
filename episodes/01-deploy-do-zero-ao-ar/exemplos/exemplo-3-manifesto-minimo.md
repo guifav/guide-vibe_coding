@@ -22,7 +22,7 @@ Ver [`exemplo-3-manifesto-minimo.json`](./exemplo-3-manifesto-minimo.json):
 
 - **`name`** — identifica o projeto no repo e nos logs do pipeline.
 - **`scripts.build`** — comando que CI/deploy invoca para gerar o artefato publicável.
-- **`scripts.start`** — comando para subir o processo em ambiente de execução (quando o deploy roda um servidor Node, por exemplo).
+- **`scripts.start`** — comando para subir o processo de servidor em ambiente de execução (quando o deploy exige um processo longo em execução, por exemplo).
 
 ## O que observar
 
