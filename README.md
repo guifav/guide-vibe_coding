@@ -6,7 +6,7 @@ Cada vídeo vira uma pasta em `episodes/` com o kit completo: conceito, roteiro,
 
 ## Temporada 1 — As camadas entre o código e o ar
 
-O episódio 01 desenha o mapa inteiro e nomeia duas jornadas: o fluxo de publicação (do código ao ar) e o fluxo de uso (do navegador ao banco). Os episódios 02 a 07 fazem o zoom em cada camada, na ordem do fluxo de uso. Cada um é autocontido, mas a ordem faz sentido se assistir na sequência.
+O episódio 01 desenha o mapa inteiro e nomeia duas jornadas: o fluxo de publicação (do código ao ar) e o fluxo de uso (do navegador ao banco). Os episódios 02 a 05 fazem o zoom nas camadas do fluxo de uso, na ordem em que um acesso as percorre; os episódios 06 e 07 voltam ao fluxo de publicação (a rede de segurança e o caminho até o ar). Cada um é autocontido, mas a ordem faz sentido se assistir na sequência.
 
 | # | Episódio | Camada | Pasta |
 |---|---|---|---|
@@ -17,6 +17,14 @@ O episódio 01 desenha o mapa inteiro e nomeia duas jornadas: o fluxo de publica
 | 05 | Auth e Sessão | Quem é você | [`05-auth-e-sessao/`](./episodes/05-auth-e-sessao/) |
 | 06 | Git e Versionamento | Rede de segurança | [`06-git-e-versionamento/`](./episodes/06-git-e-versionamento/) |
 | 07 | Build, CI/CD e Deploy | Indo ao ar (profundo) | [`07-build-ci-cd-deploy/`](./episodes/07-build-ci-cd-deploy/) |
+
+## Temporada 2 — Operando sem se machucar
+
+A temporada 1 desenhou o mapa. A temporada 2 ensina a operar esse mapa com segurança.
+
+| # | Episódio | Tema | Pasta |
+|---|---|---|---|
+| 08 | Secrets e Variáveis de Ambiente | Onde as chaves moram | [`08-secrets-e-variaveis-de-ambiente/`](./episodes/08-secrets-e-variaveis-de-ambiente/) |
 
 ## Estrutura de cada episódio
 

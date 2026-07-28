@@ -57,7 +57,7 @@ Um arquivo de código simples aberto. Sem framework. Sem dependencia. Só um arq
 
 "Git e o sistema de versionamento. Ele tira fotos do seu código em momentos especificos. Você pode voltar no tempo, criar uma linha paralela para testar algo sem estragar o original, e juntar tudo de novo."
 
-"O repositório na nuvem que você ve por ai e onde essas fotos do código ficam guardadas, na nuvem, acessiveis pelo time."
+"Essas fotos podem morar só no seu computador, mas na prática o repo também vive na nuvem: as plataformas de hospedagem de código que você ve por ai servem exatamente para isso, guardar as fotos do código num lugar que o time inteiro acessa."
 
 ### Mostrar
 

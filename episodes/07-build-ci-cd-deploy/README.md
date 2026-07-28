@@ -2,7 +2,7 @@
 
 **Eixo:** narrativa única linear. O que realmente acontece quando código sai do seu computador e vai para o ar. O episódio 01 mostrou que existe build, CI/CD e deploy; este abre cada um desses e mostra o que tem dentro, ate o ciclo completo e o fechamento da temporada.
 
-**Não e:** tutorial de ferramenta especifica (repositório na nuvem Actions, plataforma de hospedagem, automação de CI), comparativo de clouds, curso de DevOps. E o continuamento didático da jornada iniciada no episódio 01, agora na camada final, com fechamento do mapa.
+**Não e:** tutorial de ferramenta especifica (automação de CI de plataforma, serviço de hospedagem), comparativo de clouds, curso de DevOps. E o continuamento didático da jornada iniciada no episódio 01, agora na camada final, com fechamento do mapa.
 
 **Público:** quem assistiu ao episódio 01 (e ao resto da temporada) e quer entender o que acontece entre o commit e o usuario. Vibe coders que já sabem que existe um servidor, um banco e auth, mas não enxergam o cano que leva o código ate la.
 

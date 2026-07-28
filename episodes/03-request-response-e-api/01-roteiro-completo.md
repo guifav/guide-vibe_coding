@@ -12,7 +12,7 @@
 
 "Você abre um site. Clica num botao. E alguma coisa acontece. Mas o que exatamente viajou entre o seu clique e a resposta que apareceu na tela?"
 
-"No episodio passado eu contei a história de um deploy, ate ele ir ao ar. Agora quero abrir uma das camadas mais importantes: o dialogo entre o navegador e o servidor."
+"No episodio 01 eu contei a história de um deploy, ate ele ir ao ar. No episodio passado, a gente entrou na primeira camada, o navegador. Agora quero abrir uma das camadas mais importantes: o dialogo entre o navegador e o servidor."
 
 "Tudo que acontece na web e uma conversa de duas partes. O navegador pede. O servidor responde. Neste vídeo eu vou contar essa conversa inteira. E no caminho você vai entender por que a IA as vezes inventa coisas que não existem."
 
@@ -230,7 +230,7 @@ Diagrama com tres blocos:
 
 "Essa separacao tem um nome: camadas. Cada camada tem um trabalho. O front mostra. A API atende e processa. O banco guarda."
 
-"Por que separar? Porque quando as camadas estão separadas, você pode trocar uma sem quebrar a outra. Troca o banco de banco relacional para banco relacional: o front nem percebe. Troca o front de React para Vue: o servidor não se importa."
+"Por que separar? Porque quando as camadas estão separadas, você pode trocar uma sem quebrar a outra. Troca um banco por outro: o front nem percebe. Troca o framework do front por outro: o servidor não se importa."
 
 "Se as camadas estão misturadas, qualquer mudança quebra tudo. E ai que o caos comeca."
 

@@ -18,7 +18,7 @@
 
 ### Mostrar
 
-Diagrama do fluxo de auth (arquivo 02) com todas as etapas em cor clara. Só mostrar, sem explicar. Dizer: "esse mapa vai ganhando vida aos poucos. No fim você vai enxergar ele inteiro."
+Diagrama do fluxo de auth (arquivo 02) com todas as etapas em cor clara. Só mostrar, sem explicar. Dizer: "a gente vai acender uma etapa por vez, do visitante anônimo ate o logoff."
 
 ---
 
@@ -143,6 +143,8 @@ Diagrama: login -> servidor cria sessao (memória do servidor) -> devolve sessio
 "No token, depois do login o servidor não guarda sessao nenhuma. Em vez disso, ele te da um cracha. Um texto longo, codificado, que carrega dentro dele a informação de quem e você."
 
 "Esse cracha e o token. Você guarda no navegador, e cada request carrega esse token. O servidor recebe o token, le, e descobre quem e você sem precisar ir na memória dele."
+
+"E por que ninguém falsifica um cracha desses? Porque o token sai carimbado. O servidor gera ele com uma assinatura que só ele sabe fazer. Se alguém mexe no conteudo, a assinatura não bate, e o servidor rejeita. Ler, qualquer um le. Forjar, não."
 
 ### Mostrar
 

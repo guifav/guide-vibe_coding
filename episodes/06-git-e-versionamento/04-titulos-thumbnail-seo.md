@@ -30,7 +30,7 @@ Fundo escuro (preto ou azul-escuro). Main em branco. Branches em cores vivas (am
 
 - git
 - versionamento
-- repositório na nuvem
+- repositorio remoto
 - pull request
 - branch
 - commit
@@ -58,4 +58,4 @@ Indice (clique nos timestamps):
 
 Glossario completo: [link do repo]
 
-#git #versionamento #repositório na nuvem #vibecoding #ia"
+#git #versionamento #vibecoding #ia"

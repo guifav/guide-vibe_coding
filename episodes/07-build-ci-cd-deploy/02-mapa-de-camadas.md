@@ -13,7 +13,7 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episo
               |
               v  (commit + push)
   +-----------------------+
-  | REPO (nuvem)          |  <- repositório na nuvem, repositório na nuvem, etc
+  | REPO (nuvem)          |  <- plataforma de repositorio remoto
   +-----------------------+
               |
               v  (dispara o cano)
