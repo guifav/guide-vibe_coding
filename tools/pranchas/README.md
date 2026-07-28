@@ -1,18 +1,20 @@
-# Pranchas — Midnight Grid
+# Pranchas - Midnight Grid
 
 Kit e geradores das pranchas (SVG + PNG, 1920×1080) usadas na tela durante os vídeos.
 
-Design system: [Midnight Grid](https://github.com/guifav/gui-brain/blob/main/design-systems/midnight-grid/DESIGN.md) (gui-brain).
+Design system: Midnight Grid. As regras fixas estão resumidas abaixo; o kit (`midnight_kit.py`) é a implementação de referência.
 
 ## Uso
 
 ```bash
-pip install cairosvg
+brew install librsvg   # rsvg-convert, o rasterizador preferido
 cd tools/pranchas
 python3 gerar_ep01.py   # regenera episodes/01-.../pranchas/
 ```
 
 Requer a fonte Inter instalada no sistema (letter-spacing e itálico dependem dela).
+
+Sem `rsvg-convert`, o kit cai para `cairosvg` (`pip install cairosvg`), que rasteriza tudo, mas quebra as ligaduras fi/fl do itálico nas legendas ("f ica", "conf lito"). Prefira o rsvg-convert.
 
 ## Conteúdo
 
