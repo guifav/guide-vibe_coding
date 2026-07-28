@@ -16,6 +16,7 @@
 | `03-glossario-minimo.md` | Só os termos que aparecem no roteiro, 1 linha cada |
 | `04-titulos-thumbnail-seo.md` | Títulos, thumbnail, tags |
 | `05-shorts-cortes.md` | 5 cortes curtos, cada um isola uma etapa do cano (inclui rollback não-trivial) |
+| `exemplos/` | Trechos ilustrativos (markdown + código) |
 
 **Princípios do canal aplicados**
 - Didática por analogia operacional: build como cozinha, CI/CD como portão automático, ambientes como ensaio antes do show

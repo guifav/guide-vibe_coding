@@ -16,6 +16,7 @@
 | `03-glossario-minimo.md` | Só os termos que aparecem no roteiro, 1 linha cada |
 | `04-titulos-thumbnail-seo.md` | Títulos, thumbnail, tags |
 | `05-shorts-cortes.md` | 4 cortes curtos, cada um isola um conceito |
+| `exemplos/` | Trechos ilustrativos (markdown + código) |
 
 **Princípios do canal aplicados**
 - Didática por analogia operacional: código é a fechadura, segredo é a chave; ambiente é o prédio, o quadro de chaves da portaria é a configuração do ambiente, e cada variável é uma chave pendurada nele

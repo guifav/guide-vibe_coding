@@ -1,0 +1,6 @@
+# Cano genérico: cada etapa verde ou vermelho
+etapas:
+  - nome: lint
+  - nome: testes
+  - nome: build
+  - nome: publicar  # só se as anteriores passaram
