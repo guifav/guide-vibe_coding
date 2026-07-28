@@ -13,7 +13,7 @@ O objetivo é fazer o espectador enxergar o banco como uma camada com responsabi
 - Linear: cada conceito surge da necessidade do anterior. O espectador nunca é atropelado por jargão solto.
 - Arquitetural: o mapa mental que fica é o de camadas (estado da página / memória não confiável do servidor / banco / schema / migração), não uma lista de ferramentas.
 - Superficial de propósito: cada conceito entra com uma analogia e uma consequência. Aprofundamento fica para vídeos futuros.
-- Practico para IA: o vídeo termina com as perguntas certas para fazer quando a IA sugerir mexer no banco.
+- Prático para IA: o vídeo termina com as perguntas certas para fazer quando a IA sugerir mexer no banco.
 
 ## Público
 

@@ -10,11 +10,11 @@
 
 | Arquivo | O que é |
 |---|---|
-| `00-conceito-do-vídeo.md` | Tese, público, 3 atos, tom |
+| `00-conceito-do-video.md` | Tese, público, 3 atos, tom |
 | `01-roteiro-completo.md` | Roteiro falado linear com timestamps (o coração) |
 | `02-mapa-de-camadas.md` | Visual do fluxo git para mostrar na tela / base do thumbnail |
 | `03-glossario-minimo.md` | Só os termos que aparecem no roteiro, 1 linha cada |
-| `04-títulos-thumbnail-seo.md` | Títulos, thumbnail, tags |
+| `04-titulos-thumbnail-seo.md` | Títulos, thumbnail, tags |
 | `05-shorts-cortes.md` | 4 cortes curtos, cada um isola um conceito |
 
 **Princípios do canal aplicados**

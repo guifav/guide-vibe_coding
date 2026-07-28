@@ -85,7 +85,6 @@ Este é o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferr
   | relações |        | flexível |        | rápido   |
   +----------+        +----------+        +----------+
    banco relacional            banco de documentos             banco chave-valor
-   banco relacional               banco de documentos             banco chave-valor
 ```
 
 ## Como usar no vídeo

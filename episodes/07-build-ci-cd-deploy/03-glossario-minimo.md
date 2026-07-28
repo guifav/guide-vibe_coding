@@ -83,7 +83,7 @@ Termos dos episódios anteriores, para consulta.
 - **Banco de dados** - memória de longo prazo do servidor (ep04)
 - **Auth (autenticação)** - camada que responde "quem é você?" (ep05)
 - **Token** - crachá que o servidor dá depois do login (ep05)
-- **Sessão** - período em que o servidor te mantém logado (ep05)
+- **Sessão** - memória que o servidor guarda sobre você entre requests (ep05)
 - **Git** - sistema de versionamento; tira fotos do código no tempo (ep06)
 - **Commit** - o ato de tirar uma foto no git (ep06)
 - **Branch** - linha paralela para testar sem estragar o original (ep06)
