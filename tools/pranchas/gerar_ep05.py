@@ -14,7 +14,7 @@ from midnight_kit import (W, H, INK, SECONDARY, MUTED, BORDER, ACCENT,
 
 OUT = "../../episodes/05-auth-e-sessao/pranchas"
 KICKER = "EP 05 · Auth e sessão"
-N = 12
+N = 13
 
 
 def fig(n):
@@ -22,9 +22,48 @@ def fig(n):
 
 
 # ---------------------------------------------------------------- 01
-def p01_mundo_sem_auth():
-    """ATO 1: servidor sem auth — qualquer um pede, tudo responde."""
+def p01_mapa_do_fluxo():
+    """Abertura: o fluxo de auth inteiro, para acender uma etapa por vez."""
     b = header(KICKER, fig(1))
+    b += title(W / 2, 240, "A história de um login")
+    b += caps(110, 330, "O fluxo de auth", 24, ACCENT)
+
+    etapas = [("visitante", "anônimo"),
+              ("autenticação", "login"),
+              ("memória", "sessão · token"),
+              ("crachá", "em cada request"),
+              ("autorização", "permissões"),
+              ("fim", "logoff · expira")]
+    gap = 44
+    wc = (1700 - 5 * gap) / 6
+    y0, hc = 480, 130
+    b += glow(110 + wc / 2, y0 + hc / 2, 260, "g1")
+    for i, (nome, sub) in enumerate(etapas):
+        x = 110 + i * (wc + gap)
+        b += card(x, y0, wc, hc)
+        b += caps(x + wc / 2, y0 + 56, nome, 18, INK, anchor="middle")
+        b += caps(x + wc / 2, y0 + 92, sub, 14, MUTED, anchor="middle")
+        if i < 5:
+            b += arrow(x + wc + 6, y0 + hc / 2, x + wc + gap - 6,
+                       y0 + hc / 2, SECONDARY, 2.5)
+
+    # as duas perguntas do episódio, ancoradas nas etapas certas
+    xq1 = 110 + 1 * (wc + gap) + wc / 2
+    xq2 = 110 + 4 * (wc + gap) + wc / 2
+    b += txt(xq1, 680, "“quem é você?”", 26, SECONDARY, anchor="middle",
+             italic=True)
+    b += txt(xq2, 680, "“o que você pode?”", 26, SECONDARY, anchor="middle",
+             italic=True)
+
+    b += caption(W / 2, 950,
+                 "Vamos acender uma etapa por vez, do visitante ao logoff.")
+    export(b, f"{OUT}/01-mapa-do-fluxo", defs=glow_def("g1"))
+
+
+# ---------------------------------------------------------------- 02
+def p02_mundo_sem_auth():
+    """ATO 1: servidor sem auth — qualquer um pede, tudo responde."""
+    b = header(KICKER, fig(2))
     b += title(W / 2, 230, "Mundo sem auth: todo mundo é admin")
     y0, hc = 360, 400
     # visitantes anônimos
@@ -47,13 +86,13 @@ def p01_mundo_sem_auth():
              SECONDARY, anchor="middle")
     b += caption(W / 2, 950,
                  "Sem camada de controle, quem chega primeiro manda.")
-    export(b, f"{OUT}/01-mundo-sem-auth", defs=glow_def("g1"))
+    export(b, f"{OUT}/02-mundo-sem-auth", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 02
-def p02_login():
+# ---------------------------------------------------------------- 03
+def p03_login():
     """ATO 1: login transforma visitante em usuário."""
-    b = header(KICKER, fig(2))
+    b = header(KICKER, fig(3))
     b += title(W / 2, 230, "Login: de visitante a alguém específico")
     wc, hc, gap = 620, 380, 200
     x0 = (W - 2 * wc - gap) / 2
@@ -74,14 +113,14 @@ def p02_login():
                "login")
     b += caption(W / 2, 950,
                  "Login é se identificar e provar quem você é.")
-    export(b, f"{OUT}/02-login", defs=glow_def("g1"))
+    export(b, f"{OUT}/03-login", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 03
-def p03_senha_e_hash():
+# ---------------------------------------------------------------- 04
+def p04_senha_e_hash():
     """ATO 1: senha digitada vira hash e é comparada."""
-    b = header(KICKER, fig(3))
-    b += title(W / 2, 230, "Senha vira hash — e o servidor compara")
+    b = header(KICKER, fig(4))
+    b += title(W / 2, 230, "Senha vira hash. O servidor compara")
     steps = [
         ("senha digitada", "o que você digita"),
         ("hash", "embaralhamento sem volta"),
@@ -105,13 +144,13 @@ def p03_senha_e_hash():
              28, SECONDARY, anchor="middle")
     b += caption(W / 2, 950,
                  "Hash é embaralhamento que não tem volta.")
-    export(b, f"{OUT}/03-senha-e-hash", defs=glow_def("g1"))
+    export(b, f"{OUT}/04-senha-e-hash", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 04
-def p04_http_sem_memoria():
+# ---------------------------------------------------------------- 05
+def p05_http_sem_memoria():
     """ATO 2: HTTP trata cada request como o primeiro."""
-    b = header(KICKER, fig(4))
+    b = header(KICKER, fig(5))
     b += title(W / 2, 230, "HTTP não tem memória")
     y0 = 380
     # request 1
@@ -133,13 +172,13 @@ def p04_http_sem_memoria():
     b += arrow(660, y0 + 390, 900, y0 + 390, INK, 2.5)
     b += caption(W / 2, 950,
                  "Cada request é tratado como se fosse o primeiro.")
-    export(b, f"{OUT}/04-http-sem-memoria", defs=glow_def("g1"))
+    export(b, f"{OUT}/05-http-sem-memoria", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 05
-def p05_sessao():
+# ---------------------------------------------------------------- 06
+def p06_sessao():
     """ATO 2: sessão = guarda-volumes; cookie leva o bilhete."""
-    b = header(KICKER, fig(5))
+    b = header(KICKER, fig(6))
     b += title(W / 2, 230, "Sessão: o guarda-volumes do servidor")
     y0 = 380
     # navegador
@@ -164,13 +203,13 @@ def p05_sessao():
              SECONDARY, anchor="middle")
     b += caption(W / 2, 960,
                  "A memória mora no servidor. O navegador só carrega o ID.")
-    export(b, f"{OUT}/05-sessao", defs=glow_def("g1"))
+    export(b, f"{OUT}/06-sessao", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 06
-def p06_token():
+# ---------------------------------------------------------------- 07
+def p07_token():
     """ATO 2: token = crachá assinado que o cliente carrega."""
-    b = header(KICKER, fig(6))
+    b = header(KICKER, fig(7))
     b += title(W / 2, 230, "Token: o crachá que você carrega")
     y0 = 380
     # servidor gera
@@ -195,13 +234,13 @@ def p06_token():
     b += txt(1640, y0 + 260, "em cada request", 26, SECONDARY, anchor="middle")
     b += caption(W / 2, 960,
                  "Ler, qualquer um lê. Forjar a assinatura, não.")
-    export(b, f"{OUT}/06-token", defs=glow_def("g1"))
+    export(b, f"{OUT}/07-token", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 07
-def p07_sessao_vs_token():
+# ---------------------------------------------------------------- 08
+def p08_sessao_vs_token():
     """ATO 2: onde a memória mora — sessão vs token."""
-    b = header(KICKER, fig(7))
+    b = header(KICKER, fig(8))
     b += title(W / 2, 230, "Sessão vs token: onde a memória mora")
     wc, hc, gap = 720, 420, 120
     x0 = (W - 2 * wc - gap) / 2
@@ -226,13 +265,13 @@ def p07_sessao_vs_token():
         b += txt(x1 + wc / 2, y0 + dy, s, 28, SECONDARY, anchor="middle")
     b += caption(W / 2, 950,
                  "Os dois resolvem o mesmo problema: lembrar entre requests.")
-    export(b, f"{OUT}/07-sessao-vs-token", defs=glow_def("g1"))
+    export(b, f"{OUT}/08-sessao-vs-token", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 08
-def p08_autenticacao_vs_autorizacao():
+# ---------------------------------------------------------------- 09
+def p09_autenticacao_vs_autorizacao():
     """ATO 3: as duas perguntas de auth."""
-    b = header(KICKER, fig(8))
+    b = header(KICKER, fig(9))
     b += title(W / 2, 230, "Auth são duas perguntas, não uma")
     wc, hc, gap = 720, 400, 120
     x0 = (W - 2 * wc - gap) / 2
@@ -255,13 +294,13 @@ def p08_autenticacao_vs_autorizacao():
     b += arrow(x0 + wc + 14, y0 + hc / 2, x1 - 14, y0 + hc / 2, INK, 3)
     b += caption(W / 2, 950,
                  "Autenticado não é autorizado a tudo.")
-    export(b, f"{OUT}/08-autenticacao-vs-autorizacao", defs=glow_def("g1"))
+    export(b, f"{OUT}/09-autenticacao-vs-autorizacao", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 09
-def p09_permissoes_por_papel():
+# ---------------------------------------------------------------- 10
+def p10_permissoes_por_papel():
     """ATO 3: RBAC — admin / user / guest com escala ordenada."""
-    b = header(KICKER, fig(9))
+    b = header(KICKER, fig(10))
     b += title(W / 2, 230, "Permissão por papel")
     # cabeçalhos de ação
     acoes = ["ver", "editar", "apagar", "gerenciar"]
@@ -294,13 +333,13 @@ def p09_permissoes_por_papel():
              28, SECONDARY, anchor="middle")
     b += caption(W / 2, 950,
                  "Admin pode tudo. User o que é dele. Guest só o público.")
-    export(b, f"{OUT}/09-permissoes-por-papel", defs=glow_def("g1"))
+    export(b, f"{OUT}/10-permissoes-por-papel", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 10
-def p10_permissao_por_recurso():
+# ---------------------------------------------------------------- 11
+def p11_permissao_por_recurso():
     """ATO 3: ownership — esse item é seu?"""
-    b = header(KICKER, fig(10))
+    b = header(KICKER, fig(11))
     b += title(W / 2, 230, "Permissão por recurso: esse item é seu?")
     y0 = 370
     # user A
@@ -325,13 +364,13 @@ def p10_permissao_por_recurso():
               anchor="middle")
     b += caption(W / 2, 950,
                  "Mesmo papel, recurso alheio: bloqueado.")
-    export(b, f"{OUT}/10-permissao-por-recurso", defs=glow_def("g1"))
+    export(b, f"{OUT}/11-permissao-por-recurso", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 11
-def p11_remover_auth_perigoso():
+# ---------------------------------------------------------------- 12
+def p12_remover_auth_perigoso():
     """ATO 3: remover verificação de auth abre o servidor."""
-    b = header(KICKER, fig(11))
+    b = header(KICKER, fig(12))
     b += title(W / 2, 230, "Remover auth é abrir o servidor")
     y0 = 370
     # antes
@@ -354,13 +393,13 @@ def p11_remover_auth_perigoso():
     b += arrow(880, y0 + 210, 1040, y0 + 210, ST_RESTRICTED, 3, "remove")
     b += caption(W / 2, 960,
                  "Pergunte: o que para de ser verificado se eu remover isso?")
-    export(b, f"{OUT}/11-remover-auth-perigoso", defs=glow_def("g1"))
+    export(b, f"{OUT}/12-remover-auth-perigoso", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 12
-def p12_logoff_expiracao_roubo():
+# ---------------------------------------------------------------- 13
+def p13_logoff_expiracao_roubo():
     """ATO 3: o fim do crachá — logoff, expiração, roubo."""
-    b = header(KICKER, fig(12))
+    b = header(KICKER, fig(13))
     b += title(W / 2, 230, "Logoff, expiração e crachá roubado")
     cards = [
         ("logoff", "crachá destruído", "sessão apagada · token invalidado"),
@@ -389,19 +428,20 @@ def p12_logoff_expiracao_roubo():
         b += txt(x + wc / 2, y0 + 310, l2, 24, SECONDARY, anchor="middle")
     b += caption(W / 2, 950,
                  "Auth é um ciclo: login é o começo, logoff e expiração são o fim.")
-    export(b, f"{OUT}/12-logoff-expiracao-roubo", defs=glow_def("g1"))
+    export(b, f"{OUT}/13-logoff-expiracao-roubo", defs=glow_def("g1"))
 
 
 if __name__ == "__main__":
-    p01_mundo_sem_auth()
-    p02_login()
-    p03_senha_e_hash()
-    p04_http_sem_memoria()
-    p05_sessao()
-    p06_token()
-    p07_sessao_vs_token()
-    p08_autenticacao_vs_autorizacao()
-    p09_permissoes_por_papel()
-    p10_permissao_por_recurso()
-    p11_remover_auth_perigoso()
-    p12_logoff_expiracao_roubo()
+    p01_mapa_do_fluxo()
+    p02_mundo_sem_auth()
+    p03_login()
+    p04_senha_e_hash()
+    p05_http_sem_memoria()
+    p06_sessao()
+    p07_token()
+    p08_sessao_vs_token()
+    p09_autenticacao_vs_autorizacao()
+    p10_permissoes_por_papel()
+    p11_permissao_por_recurso()
+    p12_remover_auth_perigoso()
+    p13_logoff_expiracao_roubo()

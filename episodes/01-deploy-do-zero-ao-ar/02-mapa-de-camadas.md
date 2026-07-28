@@ -1,6 +1,6 @@
 # Mapa de camadas (para mostrar na tela / base do thumbnail)
 
-Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferramentas, só camadas e o fluxo.
+Este é o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferramentas, só camadas e o fluxo.
 
 O vídeo percorre duas jornadas distintas. Este mapa mostra as duas, separadas para não confundir.
 
@@ -16,7 +16,7 @@ Como o código sai do computador e chega ao ar.
        (versionamento, commit, branch)
                 |
   3. BUILD (em muitos projetos; em projetos simples pode ir direto)
-       (transforma o código em algo servivel)
+       (transforma o código em algo servível)
                 |
   4. CI/CD
        (testa antes de publicar, automatizado)
@@ -49,9 +49,10 @@ O que acontece quando alguém acessa a URL já publicada.
   |  - executa a lógica (API)     |
   |  - consulta o BANCO (dados)   |
   |  - verifica AUTH              |
-  |    (autenticação: quem e você)|
+  |    (autenticação: quem é você)|
   |    (autorização: o que pode)  |
-  |  - devolve a RESPOSTA (JSON)  |
+  |  - devolve a RESPOSTA         |
+  |    (a página, ou um JSON)     |
   +-------------------------------+
                 |
                 v
@@ -61,19 +62,19 @@ O que acontece quando alguém acessa a URL já publicada.
   +-------------------------------+
                 |
                 v
-  Você VE A Página NA TELA
-       (a página pode ter estado; isso e o ep02)
+  Você VÊ A Página NA TELA
+       (a página pode ter estado; isso é o ep02)
 ```
 
 ## Como usar no vídeo
 
 - Desenhar o mapa na tela (ou em um slide simples) no início do ATO 1, mostrando as duas jornadas em cor clara, sem explicar tudo.
-- O fluxo de publicação e percorrido nos atos 1, 2 e 3.
-- O fluxo de uso e percorrido uma única vez, no encerramento (~90s), como a "volta final".
+- O fluxo de publicação é percorrido nos atos 1, 2 e 3.
+- O fluxo de uso é percorrido uma única vez, no encerramento (~90s), como a "volta final".
 - Voltar ao mapa no final de cada ato, destacando as camadas que já foram cobertas.
-- No fim do vídeo, o mapa completo esta desenhado e o espectador ve as duas jornadas inteiras.
+- No fim do vídeo, o mapa completo está desenhado e o espectador vê as duas jornadas inteiras.
 
-## Versao para thumbnail
+## Versão para thumbnail
 
 Texto curto sobre o diagrama:
 - Título sobre a imagem: "O que acontece entre o Código e o SITE?"

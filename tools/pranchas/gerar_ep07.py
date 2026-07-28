@@ -18,7 +18,7 @@ from midnight_kit import (W, H, INK, SECONDARY, MUTED, BORDER, ACCENT,
 
 OUT = "../../episodes/07-build-ci-cd-deploy/pranchas"
 KICKER = "EP 07 · Build, CI/CD e deploy"
-N = 13
+N = 14
 
 
 def fig(n):
@@ -132,9 +132,40 @@ def p03_tres_motivos_build_quebrado():
 
 
 # ---------------------------------------------------------------- 04
-def p04_ci_o_portao():
-    """ATO 2: CI como portão — aprofunda ep01 (não repete o cano linear)."""
+def p04_cano_neutro():
+    """Fechamento do ATO 1: o cano inteiro, com o build destacado."""
     b = header(KICKER, fig(4))
+    b += title(W / 2, 240, "O cano, etapa por etapa")
+    etapas = ["push", "lint", "testes", "build", "deploy"]
+    destaque = 3
+    gap = 48
+    wc = (1700 - 4 * gap) / 5
+    y0, hc = 470, 130
+    b += glow(110 + destaque * (wc + gap) + wc / 2, y0 + hc / 2, 280, "g1")
+    for i, s in enumerate(etapas):
+        x = 110 + i * (wc + gap)
+        on = i == destaque
+        b += rrect(x, y0, wc, hc, 16, fill=SURFACE,
+                   stroke=INK if on else BORDER, sw=2.5 if on else 2)
+        b += caps(x + wc / 2, y0 + hc / 2 + 8, s, 20,
+                  INK if on else SECONDARY, anchor="middle")
+        if i < 4:
+            b += arrow(x + wc + 6, y0 + hc / 2, x + wc + gap - 6,
+                       y0 + hc / 2, SECONDARY, 2.5)
+    x_build = 110 + destaque * (wc + gap) + wc / 2
+    b += caps(x_build, y0 + hc + 56, "a primeira porta", 20, ACCENT,
+              anchor="middle")
+    b += txt(W / 2, 780, "Cada etapa é uma porta. Vermelho em qualquer uma: "
+             "nada segue adiante.", 27, SECONDARY, anchor="middle")
+    b += caption(W / 2, 950,
+                 "O build é a primeira porta. Se ele não passa, nada passa.")
+    export(b, f"{OUT}/04-cano-neutro", defs=glow_def("g1"))
+
+
+# ---------------------------------------------------------------- 05
+def p05_ci_o_portao():
+    """ATO 2: CI como portão — aprofunda ep01 (não repete o cano linear)."""
+    b = header(KICKER, fig(5))
     b += title(W / 2, 230, "CI: o portão que abre sozinho")
 
     # lado esquerdo: código chegando
@@ -165,13 +196,13 @@ def p04_ci_o_portao():
 
     b += caption(W / 2, 950,
                  "Humano não confere na mão. O cano confere sozinho.")
-    export(b, f"{OUT}/04-ci-o-portao", defs=glow_def("g1"))
+    export(b, f"{OUT}/05-ci-o-portao", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 05
-def p05_tres_verificacoes():
+# ---------------------------------------------------------------- 06
+def p06_tres_verificacoes():
     """ATO 2: lint (estilo), testes (comportamento), build (transformação)."""
-    b = header(KICKER, fig(5))
+    b = header(KICKER, fig(6))
     b += title(W / 2, 230, "Três verificações, três proteções")
     cols = [
         ("lint", "estilo", "como o time combinou escrever",
@@ -197,13 +228,13 @@ def p05_tres_verificacoes():
         b += txt(x + wc / 2, y0 + 300, detalhe, 22, MUTED, anchor="middle")
     b += caption(W / 2, 950,
                  "CI vermelho: alguém lê o erro, conserta, e o cano tenta de novo.")
-    export(b, f"{OUT}/05-tres-verificacoes", defs=glow_def("g1"))
+    export(b, f"{OUT}/06-tres-verificacoes", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 06
-def p06_delivery_vs_deployment():
+# ---------------------------------------------------------------- 07
+def p07_delivery_vs_deployment():
     """ATO 2: Continuous Delivery (botão humano) vs Continuous Deployment."""
-    b = header(KICKER, fig(6))
+    b = header(KICKER, fig(7))
     b += title(W / 2, 230, "CD: duas fronteiras de automação")
     wc, hc, gap = 760, 440, 80
     x0 = (W - 2 * wc - gap) / 2
@@ -235,13 +266,13 @@ def p06_delivery_vs_deployment():
 
     b += caption(W / 2, 950,
                  "Os dois se chamam CD. O que muda é quem decide publicar.")
-    export(b, f"{OUT}/06-delivery-vs-deployment", defs=glow_def("g1"))
+    export(b, f"{OUT}/07-delivery-vs-deployment", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 07
-def p07_quatro_ambientes():
+# ---------------------------------------------------------------- 08
+def p08_quatro_ambientes():
     """ATO 2: local → dev → staging → prod (escala ordenada de risco)."""
-    b = header(KICKER, fig(7))
+    b = header(KICKER, fig(8))
     b += title(W / 2, 230, "Quatro ambientes, um caminho")
     # escala ordenada: local (muted) → open → guided → restricted
     envs = [
@@ -266,13 +297,13 @@ def p07_quatro_ambientes():
                        SECONDARY, 2.5)
     b += caption(W / 2, 950,
                  "O código sobe de ambiente em ambiente. Prod pede mais cuidado.")
-    export(b, f"{OUT}/07-quatro-ambientes", defs=glow_def("g1"))
+    export(b, f"{OUT}/08-quatro-ambientes", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 08
-def p08_blue_green():
+# ---------------------------------------------------------------- 09
+def p09_blue_green():
     """ATO 2: blue-green — paralelo, testa, troca o tráfego."""
-    b = header(KICKER, fig(8))
+    b = header(KICKER, fig(9))
     b += title(W / 2, 230, "Blue-green: sobe ao lado e troca")
     y0, hc, wc = 380, 360, 520
 
@@ -294,13 +325,13 @@ def p08_blue_green():
 
     b += caption(W / 2, 950,
                  "A antiga fica lá. Se der problema, o tráfego volta sem reescrever.")
-    export(b, f"{OUT}/08-blue-green", defs=glow_def("g1"))
+    export(b, f"{OUT}/09-blue-green", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 09
-def p09_canary():
+# ---------------------------------------------------------------- 10
+def p10_canary():
     """ATO 2: canary — libera aos poucos (5% → 100%)."""
-    b = header(KICKER, fig(9))
+    b = header(KICKER, fig(10))
     b += title(W / 2, 230, "Canary: libera para poucos primeiro")
 
     # escala ordenada de exposição: verde → âmbar → vermelho
@@ -320,17 +351,17 @@ def p09_canary():
         if i < 3:
             b += arrow(x + wc + 6, y0 + hc / 2, x + wc + gap - 6, y0 + hc / 2,
                        SECONDARY, 2.5)
-    b += txt(W / 2, 780, "Se quebrar no começo, só poucos perceberam — e você volta rápido.",
+    b += txt(W / 2, 780, "Se quebrar no começo, só poucos perceberam. E você volta rápido.",
              28, SECONDARY, anchor="middle")
     b += caption(W / 2, 950,
                  "Estratégia existe para reduzir o risco de publicar.")
-    export(b, f"{OUT}/09-canary", defs=glow_def("g1"))
+    export(b, f"{OUT}/10-canary", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 10
-def p10_rollback_e_schema():
+# ---------------------------------------------------------------- 11
+def p11_rollback_e_schema():
     """ATO 3: rollback de código pode piorar se o schema mudou."""
-    b = header(KICKER, fig(10))
+    b = header(KICKER, fig(11))
     b += title(W / 2, 230, "Rollback + schema: voltar pode piorar")
 
     # fluxo: versão nova → problema → rollback
@@ -359,13 +390,13 @@ def p10_rollback_e_schema():
 
     b += caption(W / 2, 950,
                  "Rollback troca versão. Não desfaz mudança de dado.")
-    export(b, f"{OUT}/10-rollback-e-schema", defs=glow_def("g1"))
+    export(b, f"{OUT}/11-rollback-e-schema", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 11
-def p11_incidente_post_mortem():
+# ---------------------------------------------------------------- 12
+def p12_incidente_post_mortem():
     """ATO 3: incidente + quatro perguntas do post-mortem."""
-    b = header(KICKER, fig(11))
+    b = header(KICKER, fig(12))
     b += title(W / 2, 230, "Incidente e post-mortem")
 
     # incidente (esquerda)
@@ -394,13 +425,13 @@ def p11_incidente_post_mortem():
 
     b += caption(W / 2, 950,
                  "Controlou o problema. Depois senta e pergunta para não repetir.")
-    export(b, f"{OUT}/11-incidente-post-mortem", defs=glow_def("g1"))
+    export(b, f"{OUT}/12-incidente-post-mortem", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 12
-def p12_ciclo_completo():
+# ---------------------------------------------------------------- 13
+def p13_ciclo_completo():
     """ATO 3: o cano completo em uma linha — usuário só vê a ponta."""
-    b = header(KICKER, fig(12))
+    b = header(KICKER, fig(13))
     b += title(W / 2, 230, "O ciclo completo, até o usuário")
     steps = ["código", "commit", "CI", "CD", "ambientes", "no ar"]
     wc, gap = 250, 40
@@ -422,17 +453,17 @@ def p12_ciclo_completo():
              "Lint, testes e build moram dentro do CI. Blue-green e canary, no deploy.",
              26, SECONDARY, anchor="middle")
     b += txt(W / 2, 760,
-             "O usuário só enxerga a última ponta — e percebe se algo mudou.",
+             "O usuário só enxerga a última ponta. E percebe se algo mudou.",
              26, SECONDARY, anchor="middle")
     b += caption(W / 2, 950,
                  "Se deu ruim: rollback (quando seguro), entender, corrigir, de novo.")
-    export(b, f"{OUT}/12-ciclo-completo", defs=glow_def("g1"))
+    export(b, f"{OUT}/13-ciclo-completo", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 13
-def p13_mapa_da_temporada():
+# ---------------------------------------------------------------- 14
+def p14_mapa_da_temporada():
     """Fechamento: mapa da temporada revisitado — ep07 fecha o cano."""
-    b = header(KICKER, fig(13))
+    b = header(KICKER, fig(14))
     b += title(W / 2, 230, "O mapa da temporada, fechado")
 
     layers = [
@@ -464,20 +495,21 @@ def p13_mapa_da_temporada():
 
     b += caption(W / 2, 950,
                  "Quando a IA sugerir mudança: em qual camada isso mora?")
-    export(b, f"{OUT}/13-mapa-da-temporada", defs=glow_def("g1"))
+    export(b, f"{OUT}/14-mapa-da-temporada", defs=glow_def("g1"))
 
 
 if __name__ == "__main__":
     p01_fonte_vs_buildado()
     p02_o_que_o_build_faz()
     p03_tres_motivos_build_quebrado()
-    p04_ci_o_portao()
-    p05_tres_verificacoes()
-    p06_delivery_vs_deployment()
-    p07_quatro_ambientes()
-    p08_blue_green()
-    p09_canary()
-    p10_rollback_e_schema()
-    p11_incidente_post_mortem()
-    p12_ciclo_completo()
-    p13_mapa_da_temporada()
+    p04_cano_neutro()
+    p05_ci_o_portao()
+    p06_tres_verificacoes()
+    p07_delivery_vs_deployment()
+    p08_quatro_ambientes()
+    p09_blue_green()
+    p10_canary()
+    p11_rollback_e_schema()
+    p12_incidente_post_mortem()
+    p13_ciclo_completo()
+    p14_mapa_da_temporada()

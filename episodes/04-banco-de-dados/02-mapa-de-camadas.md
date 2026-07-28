@@ -1,17 +1,17 @@
 # Mapa de camadas (para mostrar na tela / base do thumbnail)
 
-Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferramentas, só camadas e o fluxo.
+Este é o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferramentas, só camadas e o fluxo.
 
-## O mapa (versao texto)
+## O mapa (versão texto)
 
 ```
-  USUARIO CLICA OU DIGITA
+  USUÁRIO CLICA OU DIGITA
                 |
                 v
   +-------------------------------+
   |  NAVEGADOR (front)            |  <- estado da página (morre ao fechar)
   |  - variáveis locais           |
-  |  - memória de sessao          |
+  |  - memória enquanto a aba vive|
   +-------------------------------+
                 |
                 | request com dado
@@ -29,7 +29,7 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferra
   |  BANCO DE DADOS (persistente) |  <- onde o dado sobrevive
   |  - SCHEMA (estrutura)         |
   |  - QUERY (pergunta/resultado) |
-  |  - MIGRACAO (quando muda)     |
+  |  - MIGRAÇÃO (quando muda)     |
   +-------------------------------+
                 |
                 | resultado
@@ -40,7 +40,7 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferra
 ## O caminho do dado (do clique a durar para sempre)
 
 ```
-  1. USUARIO CLICA no front
+  1. USUÁRIO CLICA no front
        (estado da página muda, ainda não salvou)
                 |
   2. FRONT manda REQUEST para o servidor
@@ -55,22 +55,22 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferra
   5. BANCO grava segundo o SCHEMA
        (coluna certa, tipo certo)
                 |
-  6. DADO DURA entre requests, sessoes, reinicios
+  6. DADO DURA entre requests, sessões, reinícios
 ```
 
-## Quando a estrutura muda (migracao)
+## Quando a estrutura muda (migração)
 
 ```
   SCHEMA v1 (antigo)
        tabela usuarios: nome, email
                 |
-        [ MIGRACAO ]
+        [ MIGRAÇÃO ]
                 |
   SCHEMA v2 (novo)
        tabela usuarios: nome, email, telefone
 
-  SE o código novo espera v2 mas o banco ainda ta em v1 -> ERRO
-  SE ninguém rodou a migracao -> o banco reclama que a coluna não existe
+  SE o código novo espera v2 mas o banco ainda tá em v1 -> ERRO
+  SE ninguém rodou a migração -> o banco reclama que a coluna não existe
   SE a aplicação ignorar o erro -> o dado some sem aviso ao usuário
 ```
 
@@ -82,20 +82,19 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferra
   | tabela   |        | doc JSON |        | chave    |
   | linhas   |        | solto    |        | valor    |
   | colunas  |        | sem rigi |        | dicionar |
-  | relacoes |        | flexivel |        | rápido   |
+  | relações |        | flexível |        | rápido   |
   +----------+        +----------+        +----------+
    banco relacional            banco de documentos             banco chave-valor
-   banco relacional               banco de documentos             banco chave-valor
 ```
 
 ## Como usar no vídeo
 
 - Desenhar o mapa principal no início do ATO 1, sem explicar tudo.
 - Voltar ao mapa no final de cada ato, destacando as partes cobertas.
-- Mostrar o bloco de migracao quando entrar no ATO 3.
+- Mostrar o bloco de migração quando entrar no ATO 3.
 - No fim, o mapa completo mostra o dado nascendo no front e durando no banco.
 
-## Versao para thumbnail
+## Versão para thumbnail
 
 Texto curto sobre o diagrama:
 - Título sobre a imagem: "Onde o dado SOBREVIVE entre requests?"

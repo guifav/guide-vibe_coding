@@ -1,17 +1,17 @@
 # Mapa de camadas (para mostrar na tela / base do thumbnail)
 
-Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferramentas, só o ciclo do front-end e os estados que a IA esquece.
+Este é o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferramentas, só o ciclo do front-end e os estados que a IA esquece.
 
-## O mapa principal: o ciclo do front-end (versao texto)
+## O mapa principal: o ciclo do front-end (versão texto)
 
 ```
-  USUARIO ABRE O SITE NO NAVEGADOR
+  USUÁRIO ABRE O SITE NO NAVEGADOR
                 |
                 v
   +-------------------------------------------+
   |  NAVEGADOR BAIXA OS ARQUIVOS              |
   |  - HTML  (estrutura)                      |
-  |  - CSS   (aparencia)                      |
+  |  - CSS   (aparência)                      |
   |  - JS    (comportamento)                  |
   +-------------------------------------------+
                 |
@@ -24,18 +24,18 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferra
                 v
   +-------------------------------------------+
   |  RENDER: o navegador pinta os pixels      |
-  |  O usuario VE a página na tela            |
+  |  O usuário VÊ a página na tela            |
   +-------------------------------------------+
                 |
                 v
   === A PARTIR DAQUI, O CICLO SE REPETE ===
 
-  USUARIO INTERAGE (clica, digita, arrasta)
+  USUÁRIO INTERAGE (clica, digita, arrasta)
                 |
                 v
   +-------------------------------------------+
   |  EVENTO dispara                           |
-  |  (o navegador percebe a acao)             |
+  |  (o navegador percebe a ação)             |
   +-------------------------------------------+
                 |
                 v
@@ -47,11 +47,12 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferra
                 v
   +-------------------------------------------+
   |  RE-RENDER: a tela atualiza               |
-  |  (o navegador re-pinta a parte que mudou) |
+  |  (o código atualiza o DOM;                |
+  |   o navegador repinta o que mudou)        |
   +-------------------------------------------+
                 |
                 v
-  VOLTA PARA O TOPO: proxima interacao
+  VOLTA PARA O TOPO: próxima interação
 ```
 
 ## Os estados que a IA esquece
@@ -95,10 +96,10 @@ Mostrar depois do ATO 3, como checklist visual:
   +-----------------------+
   |  STORE / ESTADO       |  <- compartilhado entre componentes
   |  GLOBAL               |
-  |  (ex: usuario logado) |
+  |  (ex: usuário logado) |
   +-----------------------+
   +-----------------------+
-  |  SERVIDOR (ep. 03)    |  <- sobrevive entre sessoes
+  |  SERVIDOR (ep. 03)    |  <- sobrevive entre sessões
   |  (ex: perfil salvo)   |
   +-----------------------+
 ```
@@ -109,7 +110,7 @@ Mostrar depois do ATO 3, como checklist visual:
 - Voltar ao ciclo no ATO 3, agora destacando os 5 estados que a IA esquece.
 - Mostrar "onde o estado mora" no momento em que falar de variável, hook e store.
 
-## Versao para thumbnail
+## Versão para thumbnail
 
 Texto curto sobre o diagrama:
 - Título sobre a imagem: "Por que a tela MUDA sem recarregar?"

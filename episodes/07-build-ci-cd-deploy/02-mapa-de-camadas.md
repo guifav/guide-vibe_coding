@@ -1,8 +1,8 @@
 # Mapa de camadas (para mostrar na tela / base do thumbnail)
 
-Este e o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episodio e o cano build/CI/CD/deploy, mas no fechamento voltamos ao mapa inteiro da temporada.
+Este é o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episódio é o cano build/CI/CD/deploy, mas no fechamento voltamos ao mapa inteiro da temporada.
 
-## O cano (versao texto)
+## O cano (versão texto)
 
 ```
   SEU COMPUTADOR
@@ -13,7 +13,7 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episo
               |
               v  (commit + push)
   +-----------------------+
-  | REPO (nuvem)          |  <- plataforma de repositorio remoto
+  | REPO (nuvem)          |  <- plataforma de repositório remoto
   +-----------------------+
               |
               v  (dispara o cano)
@@ -61,7 +61,7 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episo
               |
               v
   +-----------------------+
-  | NO AR                 |  <- usuario acessa e percebe
+  | NO AR                 |  <- usuário acessa e percebe
   +-----------------------+
 ```
 
@@ -79,16 +79,16 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episo
 ## Os ambientes
 
 ```
-  LOCAL (seu PC)     -> só você ve
+  LOCAL (seu PC)     -> só você vê
        |
        v
-  DEV (compartilhado) -> time joga código junto, quebra a vontade
+  DEV (compartilhado) -> time joga código junto, quebra à vontade
        |
        v
-  STAGING (ensaio)    -> copia do real, ensaia o deploy
+  STAGING (ensaio)    -> cópia do real, ensaia o deploy
        |
        v
-  PROD (o ar)         -> usuario acessa, não se mexe sem cuidado
+  PROD (o ar)         -> usuário acessa, não se mexe sem cuidado
 ```
 
 ## Estratégias de deploy
@@ -96,8 +96,8 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episo
 ```
   BLUE-GREEN
     [blue: antiga]  [green: nova]
-       trafego ----->  (paralelo, testa, depois troca)
-    (volta facil se der problema)
+       tráfego ----->  (paralelo, testa, depois troca)
+    (volta fácil se der problema)
 
   CANARY
     [nova] recebe 5% -> 10% -> 50% -> 100%
@@ -120,13 +120,13 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episo
     rollback p/ versão antiga -> idioma que ninguém espera
 
   Nesses casos: avançar, não voltar.
-  Corrigir a frente e fazer novo deploy.
+  Corrigir à frente e fazer novo deploy.
 ```
 
 ## Mapa da temporada revisitado (mostrar no fechamento)
 
 ```
-  EPISODIO 01: o mapa inteiro (visão geral)
+  EPISÓDIO 01: o mapa inteiro (visão geral)
        |
        +-- 02: FRONT-END E ESTADO      (navegador, HTML/CSS/JS, estado)
        |
@@ -134,11 +134,11 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episo
        |
        +-- 04: BANCO DE DADOS          (memória de longo prazo)
        |
-       +-- 05: AUTH E SESSAO           (quem e você, o que pode)
+       +-- 05: AUTH E SESSÃO           (quem é você, o que pode)
        |
-       +-- 06: GIT E VERSIONAMENTO     (rede de seguranca, voltar no tempo)
+       +-- 06: GIT E VERSIONAMENTO     (rede de segurança, voltar no tempo)
        |
-       +-- 07: BUILD, CI/CD, DEPLOY    (o cano que leva ao ar) <-- você esta aqui
+       +-- 07: BUILD, CI/CD, DEPLOY    (o cano que leva ao ar) <-- você está aqui
 ```
 
 ## Como usar no vídeo
@@ -147,12 +147,12 @@ Este e o diagrama que Gui desenha ou mostra durante o vídeo. O foco deste episo
 - Voltar ao cano no fim de cada cena do ATO 2, destacando a etapa que acabou de ser explicada.
 - Mostrar os ambientes e as estratégias como blocos separados, visuais, dentro do ATO 2.
 - No ATO 3, mostrar o cano completo em uma linha só, depois transicionar para o mapa da temporada revisitado.
-- O mapa da temporada e o fechamento visual: cada camada listada com o episódio que a explicou.
+- O mapa da temporada é o fechamento visual: cada camada listada com o episódio que a explicou.
 
-## Versao para thumbnail
+## Versão para thumbnail
 
 Texto curto sobre o diagrama:
 - Título sobre a imagem: "O que acontece DEPOIS do commit?"
 - Setas: commit -> cano -> ar
-- Destacar as palavras "build", "CI/CD", "deploy" como as tres portas
-- Sem ferramentas especificas, só conceitos
+- Destacar as palavras "build", "CI/CD", "deploy" como as três portas
+- Sem ferramentas específicas, só conceitos

@@ -14,7 +14,7 @@ from midnight_kit import (W, H, INK, SECONDARY, MUTED, BORDER, ACCENT,
 
 OUT = "../../episodes/06-git-e-versionamento/pranchas"
 KICKER = "EP 06 · Git e versionamento"
-N = 12
+N = 13
 
 
 def fig(n):
@@ -184,9 +184,44 @@ def p05_branch_o_ramal():
 
 
 # ---------------------------------------------------------------- 06
-def p06_merge_confluencia():
-    """ATO 2: merge como confluência de rios."""
+def p06_branches_nomeadas():
+    """ATO 2: main no centro, vários ramais com nome saindo dela."""
     b = header(KICKER, fig(6))
+    b += title(W / 2, 230, "Uma main, vários ramais")
+    yM = 560
+    b += glow(960, yM, 300, "g1")
+
+    # linha principal com fotos
+    b += line(240, yM, 1680, yM, INK, 3)
+    for x in range(360, 1561, 300):
+        b += circle(x, yM, 15, fill=SURFACE, stroke=INK, sw=3)
+    b += chip(260, yM - 44, "main", ACCENT, 18)
+
+    # três ramais nomeados, cada um partindo de uma foto
+    def ramal(x_ini, y_alvo, x_fim, nome):
+        out = path(f"M{x_ini} {yM} C {x_ini + 70} {y_alvo}, {x_ini + 70} "
+                   f"{y_alvo}, {x_ini + 150} {y_alvo} L {x_fim} {y_alvo}",
+                   stroke=SECONDARY, w=2.5)
+        for xd in (x_ini + 220, x_fim - 60):
+            out += circle(xd, y_alvo, 12, fill=SURFACE, stroke=SECONDARY, sw=2.5)
+        out += chip(x_fim + 150, y_alvo, nome, SECONDARY, 16)
+        return out
+
+    b += ramal(660, 290, 1120, "experimento-novo-layout")
+    b += ramal(960, 420, 1360, "feature-login")
+    b += ramal(660, 740, 1150, "fix-bug-123")
+
+    b += txt(W / 2, 880,
+             "Criar branch não copia o projeto: é um ponteiro para uma foto "
+             "que já existe.", 27, SECONDARY, anchor="middle")
+    b += caption(W / 2, 960, "Branch não copia nada. É um ponteiro com nome.")
+    export(b, f"{OUT}/06-branches-nomeadas", defs=glow_def("g1"))
+
+
+# ---------------------------------------------------------------- 07
+def p07_merge_confluencia():
+    """ATO 2: merge como confluência de rios."""
+    b = header(KICKER, fig(7))
     b += title(W / 2, 230, "Merge: a confluência dos rios")
     yM = 620
     # main antes do merge
@@ -214,13 +249,13 @@ def p06_merge_confluencia():
              "Depois do merge, a main tem tudo que estava na branch.",
              28, SECONDARY, anchor="middle")
     b += caption(W / 2, 955, "Dois rios se encontram e viram um só.")
-    export(b, f"{OUT}/06-merge-a-confluencia", defs=glow_def("g1"))
+    export(b, f"{OUT}/07-merge-a-confluencia", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 07
-def p07_conflito():
+# ---------------------------------------------------------------- 08
+def p08_conflito():
     """ATO 2: conflito — marcadores no arquivo e resolução manual."""
-    b = header(KICKER, fig(7))
+    b = header(KICKER, fig(8))
     b += title(W / 2, 230, "Conflito: o git não decide sozinho")
     # o arquivo marcado
     b += glow(590, 590, 320, "g1")
@@ -248,13 +283,13 @@ def p07_conflito():
     b += txt(1120, 792, "Conflito mal resolvido é bug silencioso.", 26,
              MUTED, italic=True)
     b += caption(W / 2, 950, "Conflito bem resolvido é coisa de humano.")
-    export(b, f"{OUT}/07-conflito", defs=glow_def("g1"))
+    export(b, f"{OUT}/08-conflito", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 08
-def p08_pull_request():
+# ---------------------------------------------------------------- 09
+def p09_pull_request():
     """ATO 3: o PR como sala de revisão — diff, arquivos, comentários."""
-    b = header(KICKER, fig(8))
+    b = header(KICKER, fig(9))
     b += title(W / 2, 230, "Pull request: a sala de revisão")
     # a janela do PR
     b += card(260, 320, 1400, 540)
@@ -278,13 +313,13 @@ def p08_pull_request():
              italic=True)
     b += caption(W / 2, 950,
                  "“Tenho uma branch pronta. Olha o que mudei. Posso juntar na main?”")
-    export(b, f"{OUT}/08-pull-request", defs=glow_def("g1"))
+    export(b, f"{OUT}/09-pull-request", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 09
-def p09_review_o_portao():
+# ---------------------------------------------------------------- 10
+def p10_review_o_portao():
     """ATO 3: review — o portão entre 'eu fiz' e 'está na main'."""
-    b = header(KICKER, fig(9))
+    b = header(KICKER, fig(10))
     b += title(W / 2, 230, "Review: o portão antes da main")
     y0 = 430
     # eu fiz
@@ -313,13 +348,13 @@ def p09_review_o_portao():
                "mudanças pedidas · volta e ajusta", dash="10 8")
     b += caption(W / 2, 955,
                  "Entre “eu fiz” e “está na main”, sempre um segundo par de olhos.")
-    export(b, f"{OUT}/09-review-o-portao", defs=glow_def("g1"))
+    export(b, f"{OUT}/10-review-o-portao", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 10
-def p10_fluxo_completo():
+# ---------------------------------------------------------------- 11
+def p11_fluxo_completo():
     """ATO 3: o fluxo completo — a esteira em seis passos."""
-    b = header(KICKER, fig(10))
+    b = header(KICKER, fig(11))
     b += title(W / 2, 230, "O fluxo completo, sempre nessa ordem")
     steps = [("branch nova", "a partir da main"),
              ("commit", "fotos na branch"),
@@ -343,17 +378,17 @@ def p10_fluxo_completo():
             b += arrow(x + wc + 5, y0 + 100, x + wc + gap - 5, y0 + 100,
                        SECONDARY, 2.5)
     b += txt(W / 2, 770,
-             "Dez pessoas, dez branches — todas convergem na main pelo mesmo portão.",
+             "Dez pessoas, dez branches. Todas convergem na main pelo mesmo portão.",
              28, SECONDARY, anchor="middle")
     b += caption(W / 2, 950,
                  "Esse é o coração do trabalho profissional com código.")
-    export(b, f"{OUT}/10-fluxo-completo", defs=glow_def("g1"))
+    export(b, f"{OUT}/11-fluxo-completo", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 11
-def p11_deploy_usa_o_repo():
+# ---------------------------------------------------------------- 12
+def p12_deploy_usa_o_repo():
     """ATO 3: o deploy pega a main do repo, nunca a sua máquina."""
-    b = header(KICKER, fig(11))
+    b = header(KICKER, fig(12))
     b += title(W / 2, 230, "O deploy usa o repo, não seu computador")
     # seu computador
     b += card(150, 380, 470, 340, "seu computador")
@@ -384,13 +419,13 @@ def p11_deploy_usa_o_repo():
               anchor="middle")
     b += caption(W / 2, 962,
                  "Sem push, seu código não existe para o resto do mundo.")
-    export(b, f"{OUT}/11-deploy-usa-o-repo", defs=glow_def("g1"))
+    export(b, f"{OUT}/12-deploy-usa-o-repo", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 12
-def p12_a_rede_inteira():
+# ---------------------------------------------------------------- 13
+def p13_a_rede_inteira():
     """Encerramento: o mapa completo — a rede de segurança inteira."""
-    b = header(KICKER, fig(12))
+    b = header(KICKER, fig(13))
     b += title(W / 2, 230, "A rede de segurança inteira")
     yM = 640
     # main
@@ -425,7 +460,7 @@ def p12_a_rede_inteira():
              26, SECONDARY, anchor="middle")
     b += caption(W / 2, 955,
                  "Código novo chega na main de forma controlada, revisada, sem surpresa.")
-    export(b, f"{OUT}/12-a-rede-inteira", defs=glow_def("g1"))
+    export(b, f"{OUT}/13-a-rede-inteira", defs=glow_def("g1"))
 
 
 if __name__ == "__main__":
@@ -434,10 +469,11 @@ if __name__ == "__main__":
     p03_repo_o_album()
     p04_rede_basica()
     p05_branch_o_ramal()
-    p06_merge_confluencia()
-    p07_conflito()
-    p08_pull_request()
-    p09_review_o_portao()
-    p10_fluxo_completo()
-    p11_deploy_usa_o_repo()
-    p12_a_rede_inteira()
+    p06_branches_nomeadas()
+    p07_merge_confluencia()
+    p08_conflito()
+    p09_pull_request()
+    p10_review_o_portao()
+    p11_fluxo_completo()
+    p12_deploy_usa_o_repo()
+    p13_a_rede_inteira()

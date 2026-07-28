@@ -1,22 +1,22 @@
-# Glossario minimo (aparece na descrição do YouTube)
+# Glossário mínimo (aparece na descrição do YouTube)
 
 Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 
 ---
 
-## A rede de seguranca básica
+## A rede de segurança básica
 
 - **Git** - sistema de versionamento; tira fotos do código no tempo
-- **Commit** - o ato de tirar uma foto do código em um momento especifico
+- **Commit** - o ato de tirar uma foto do código em um momento específico
 - **Mensagem do commit** - o que mudou, escrito em uma frase
-- **Imutavel** - depois de tirada, a foto não muda; fica ruim, tira outra
-- **Repo (repositorio)** - onde as fotos do código ficam guardadas (no seu computador ou na nuvem)
-- **Repo remoto** - a copia do repo hospedada na nuvem, acessivel pelo time inteiro
+- **Imutável** - depois de tirada, a foto não muda; fica ruim, tira outra
+- **Repo (repositório)** - onde as fotos do código ficam guardadas (no seu computador ou na nuvem)
+- **Repo remoto** - a cópia do repo hospedada na nuvem, acessível pelo time inteiro
 
 ## Trabalhando em paralelo
 
 - **Branch** - linha paralela para mexer sem estragar a original
-- **Main** - a linha principal, a versao oficial do projeto (antigamente: master)
+- **Main** - a linha principal, a versão oficial do projeto (antigamente: master)
 - **Master** - nome antigo da main, ainda aparece em projetos velhos
 - **Merge** - juntar a branch de volta na linha principal
 - **Conflito** - quando duas pessoas mexem no mesmo lugar; o git não decide sozinho
@@ -31,8 +31,8 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 
 ## Por que o deploy usa o repo
 
-- **Linha do tempo única** - a main do repo e o ponto de verdade do projeto
-- **Colaborativo** - varias pessoas em branches diferentes convergem no repo
+- **Linha do tempo única** - a main do repo é o ponto de verdade do projeto
+- **Colaborativo** - várias pessoas em branches diferentes convergem no repo
 - **Deploy** - pega a main do repo, não o código do seu computador
 
 ---
@@ -43,9 +43,9 @@ Quando a IA sugerir uma mudança no código, pergunte:
 
 "Essa mudança vai entrar por PR ou direto na main?"
 
-Se for direto na main, em projeto serio, pergunte por que.
+Se for direto na main, em projeto sério, pergunte por quê.
 
-As opcoes do fluxo são:
+As opções do fluxo são:
 - Branch nova a partir da main
 - Commits na branch
 - Push para o repo
@@ -53,4 +53,4 @@ As opcoes do fluxo são:
 - Review de alguém
 - Merge na main
 
-A resposta diz se a mudança vai passar pela rede de seguranca ou se vai entrar pela porta dos fundos.
+A resposta diz se a mudança vai passar pela rede de segurança ou se vai entrar pela porta dos fundos.

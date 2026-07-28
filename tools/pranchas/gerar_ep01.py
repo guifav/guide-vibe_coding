@@ -14,7 +14,7 @@ from midnight_kit import (W, H, INK, SECONDARY, MUTED, BORDER, ACCENT,
 
 OUT = "../../episodes/01-deploy-do-zero-ao-ar/pranchas"
 KICKER = "EP 01 · Deploy do zero ao ar"
-N = 13
+N = 16
 
 
 def fig(n):
@@ -107,10 +107,59 @@ def p03_git_fotos():
     export(b, f"{OUT}/03-git-fotos-no-tempo", defs=glow_def("g1"))
 
 
+# ------------------------------------------------- mapa de camadas (helper)
+PUB = ["código", "git", "build", "ci/cd", "deploy", "domínio"]
+USO = ["navegador", "domínio", "servidor", "api · banco", "resposta"]
+
+
+def _mapa_camadas(lit_pub=(), lit_uso=()):
+    """Mapa das duas jornadas com um grupo aceso por fechamento de ato.
+
+    Aceso: hairline branca e rótulo claro. Apagado: opacidade baixa.
+    O acento amarelo fica no rótulo do ato (fora daqui), nunca nos cards.
+    """
+    def fila(steps, y, lit, gap):
+        out = ""
+        wc = (1700 - (len(steps) - 1) * gap) / len(steps)
+        for i, s in enumerate(steps):
+            x = 110 + i * (wc + gap)
+            on = i in lit
+            out += rrect(x, y, wc, 110, 16, fill=SURFACE,
+                         stroke=INK if on else BORDER,
+                         sw=2.5 if on else 2, opacity=1.0 if on else 0.38)
+            out += caps(x + wc / 2, y + 64, s, 19,
+                        INK if on else MUTED, anchor="middle")
+            if i < len(steps) - 1:
+                out += arrow(x + wc + 6, y + 55, x + wc + gap - 6, y + 55,
+                             SECONDARY, 2.5,
+                             opacity=1.0 if on and (i + 1) in lit else 0.35)
+        return out
+
+    b = caps(110, 385, "Fluxo de publicação", 22,
+             SECONDARY if lit_pub else MUTED)
+    b += fila(PUB, 430, set(lit_pub), 48)
+    b += caps(110, 655, "Fluxo de uso", 22, SECONDARY if lit_uso else MUTED)
+    b += fila(USO, 700, set(lit_uso), 62)
+    return b
+
+
 # ---------------------------------------------------------------- 04
-def p04_servidor():
-    """ATO 2: por que o computador de casa não serve o site."""
+def p04_mapa_ato1():
+    """Fechamento do ATO 1: código e git acesos no mapa."""
     b = header(KICKER, fig(4))
+    b += title(W / 2, 240, "Até aqui, tudo mora no seu computador")
+    b += caps(110, 330, "Ato 1 · código e git", 24, ACCENT)
+    b += glow(360, 485, 300, "g1")
+    b += _mapa_camadas(lit_pub=(0, 1))
+    b += caption(W / 2, 975,
+                 "O resto da história vive do outro lado, no servidor.")
+    export(b, f"{OUT}/04-mapa-ato1", defs=glow_def("g1"))
+
+
+# ---------------------------------------------------------------- 05
+def p05_servidor():
+    """ATO 2: por que o computador de casa não serve o site."""
+    b = header(KICKER, fig(5))
     b += title(W / 2, 230, "Seu computador não é um servidor")
     y0, hc = 380, 420
     # casa (esquerda)
@@ -129,13 +178,13 @@ def p04_servidor():
         b += txt(1260, y0 + dy, s, 27, SECONDARY)
     b += arrow(830, y0 + hc / 2, 1090, y0 + hc / 2, INK, 3, "o código viaja")
     b += caption(W / 2, 950, "Servidor é outro computador, feito para nunca dormir.")
-    export(b, f"{OUT}/04-servidor", defs=glow_def("g1"))
+    export(b, f"{OUT}/05-servidor", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 05
-def p05_request_response():
+# ---------------------------------------------------------------- 06
+def p06_request_response():
     """ATO 2: o pedido e a resposta."""
-    b = header(KICKER, fig(5))
+    b = header(KICKER, fig(6))
     b += title(W / 2, 230, "Toda a web é uma conversa")
     y0, hc, wc = 420, 340, 480
     b += card(180, y0, wc, hc, "navegador")
@@ -148,13 +197,13 @@ def p05_request_response():
     b += arrow(1220, y0 + 250, 700, y0 + 250, SECONDARY, 3,
                "response · a resposta")
     b += caption(W / 2, 950, "Pedido vai, resposta volta. Sempre.")
-    export(b, f"{OUT}/05-request-response", defs=glow_def("g1"))
+    export(b, f"{OUT}/06-request-response", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 06
-def p06_api_balcao():
+# ---------------------------------------------------------------- 07
+def p07_api_balcao():
     """ATO 2: API como balcão de atendimento."""
-    b = header(KICKER, fig(6))
+    b = header(KICKER, fig(7))
     b += title(W / 2, 230, "API: o balcão do servidor")
     y0 = 400
     b += card(180, y0, 420, 320, "navegador")
@@ -173,13 +222,13 @@ def p06_api_balcao():
     b += arrow(620, y0 + 110, 850, y0 + 110, INK, 3, "request")
     b += arrow(850, y0 + 250, 620, y0 + 250, SECONDARY, 3, "response · JSON")
     b += caption(W / 2, 950, "JSON é só texto organizado com chaves e listas.")
-    export(b, f"{OUT}/06-api-balcao", defs=glow_def("g1"))
+    export(b, f"{OUT}/07-api-balcao", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 07
-def p07_banco():
+# ---------------------------------------------------------------- 08
+def p08_banco():
     """ATO 2: banco de dados, a memória de longo prazo."""
-    b = header(KICKER, fig(7))
+    b = header(KICKER, fig(8))
     b += title(W / 2, 230, "Banco: a memória que não some")
     y0 = 400
     b += card(240, y0, 480, 320, "servidor")
@@ -198,13 +247,13 @@ def p07_banco():
     b += arrow(1200, y0 + 250, 740, y0 + 250, SECONDARY, 3, "dado")
     b += caption(W / 2, 950,
                  "Tudo que precisa sobreviver entre um request e outro mora aqui.")
-    export(b, f"{OUT}/07-banco-de-dados", defs=glow_def("g1"))
+    export(b, f"{OUT}/08-banco-de-dados", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 08
-def p08_auth():
+# ---------------------------------------------------------------- 09
+def p09_auth():
     """ATO 2: autenticação vs autorização."""
-    b = header(KICKER, fig(8))
+    b = header(KICKER, fig(9))
     b += title(W / 2, 230, "Auth são duas perguntas, não uma")
     wc, hc, gap = 720, 400, 120
     x0 = (W - 2 * wc - gap) / 2
@@ -226,13 +275,28 @@ def p08_auth():
     b += arrow(x0 + wc + 14, y0 + hc / 2, x1 - 14, y0 + hc / 2, INK, 3)
     b += caption(W / 2, 950,
                  "Se a IA propõe remover auth: perigo. Pergunte o que deixa de ser verificado.")
-    export(b, f"{OUT}/08-auth", defs=glow_def("g1"))
+    export(b, f"{OUT}/09-auth", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 09
-def p09_build():
+# ---------------------------------------------------------------- 10
+def p10_mapa_ato2():
+    """Fechamento do ATO 2: as camadas do servidor acesas no mapa."""
+    b = header(KICKER, fig(10))
+    b += title(W / 2, 240, "O que vive do lado do servidor")
+    b += caps(110, 330, "Ato 2 · servidor · api · banco · auth", 24, ACCENT)
+    b += glow(1136, 755, 320, "g1")
+    b += _mapa_camadas(lit_uso=(2, 3))
+    b += txt(1136, 878, "auth mora aqui: quem é você, o que você pode", 22,
+             SECONDARY, anchor="middle")
+    b += caption(W / 2, 975,
+                 "O navegador manda request e recebe response. O resto acontece atrás.")
+    export(b, f"{OUT}/10-mapa-ato2", defs=glow_def("g1"))
+
+
+# ---------------------------------------------------------------- 11
+def p11_build():
     """ATO 3: build, a cozinha do restaurante."""
-    b = header(KICKER, fig(9))
+    b = header(KICKER, fig(11))
     b += title(W / 2, 230, "Build: a cozinha entre o cru e o servido")
     y0 = 420
     # ingredientes (vários arquivos)
@@ -254,13 +318,13 @@ def p09_build():
     b += arrow(560, y0 + 100, 780, y0 + 100, INK, 3)
     b += arrow(1140, y0 + 100, 1360, y0 + 100, INK, 3)
     b += caption(W / 2, 950, "Nem todo projeto precisa. Com framework, quase sempre.")
-    export(b, f"{OUT}/09-build", defs=glow_def("g1"))
+    export(b, f"{OUT}/11-build", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 10
-def p10_cicd():
+# ---------------------------------------------------------------- 12
+def p12_cicd():
     """ATO 3: CI/CD, o cano com portões verde/vermelho."""
-    b = header(KICKER, fig(10))
+    b = header(KICKER, fig(12))
     b += title(W / 2, 230, "CI/CD: o portão automático")
     steps = [("commit", None), ("lint", ST_OPEN), ("testes", ST_OPEN),
              ("build", ST_RESTRICTED), ("deploy", None)]
@@ -284,13 +348,13 @@ def p10_cicd():
     b += txt(W / 2, 760, "Vermelho em qualquer etapa: o cano para. Nada quebrado chega ao ar.",
              28, SECONDARY, anchor="middle")
     b += caption(W / 2, 950, "“CI verde” é isso: todas as conferências passaram.")
-    export(b, f"{OUT}/10-ci-cd", defs=glow_def("g1"))
+    export(b, f"{OUT}/12-ci-cd", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 11
-def p11_deploy():
+# ---------------------------------------------------------------- 13
+def p13_deploy():
     """ATO 3: deploy troca a versão que está no servidor."""
-    b = header(KICKER, fig(11))
+    b = header(KICKER, fig(13))
     b += title(W / 2, 230, "Deploy: trocar a versão que está no ar")
     y0 = 400
     b += card(320, y0, 460, 320, "servidor · antes")
@@ -300,13 +364,13 @@ def p11_deploy():
     b += chip(1370, y0 + 180, "versão 13", ACCENT)
     b += arrow(800, y0 + 160, 1120, y0 + 160, INK, 3, "deploy")
     b += caption(W / 2, 950, "O código vive no servidor. Deploy é trocar o que vive lá.")
-    export(b, f"{OUT}/11-deploy", defs=glow_def("g1"))
+    export(b, f"{OUT}/13-deploy", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 12
-def p12_dns():
+# ---------------------------------------------------------------- 14
+def p14_dns():
     """ATO 3: domínio e DNS, a lista telefônica."""
-    b = header(KICKER, fig(12))
+    b = header(KICKER, fig(14))
     b += title(W / 2, 230, "DNS: a lista telefônica da internet")
     y0 = 400
     b += card(220, y0, 460, 320, "o que você digita")
@@ -323,15 +387,28 @@ def p12_dns():
     b += arrow(1140, y0 + 160, 1220, y0 + 160, INK, 3)
     b += caption(W / 2, 950,
                  "No deploy comum, o DNS nem muda: o nome continua apontando para o mesmo lugar.")
-    export(b, f"{OUT}/12-dominio-dns", defs=glow_def("g1"))
+    export(b, f"{OUT}/14-dominio-dns", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 13
-def p13_fluxo_de_uso():
+# ---------------------------------------------------------------- 15
+def p15_mapa_ato3():
+    """Fechamento do ATO 3: o fluxo de publicação completo aceso."""
+    b = header(KICKER, fig(15))
+    b += title(W / 2, 240, "A primeira jornada, completa")
+    b += caps(110, 330, "Ato 3 · do código ao ar", 24, ACCENT)
+    b += glow(960, 485, 420, "g1")
+    b += _mapa_camadas(lit_pub=(0, 1, 2, 3, 4, 5))
+    b += caption(W / 2, 975,
+                 "Publicar é metade da história. Falta alguém acessar.")
+    export(b, f"{OUT}/15-mapa-ato3", defs=glow_def("g1"))
+
+
+# ---------------------------------------------------------------- 16
+def p16_fluxo_de_uso():
     """Encerramento: a volta final, o fluxo de uso completo."""
-    b = header(KICKER, fig(13))
+    b = header(KICKER, fig(16))
     b += title(W / 2, 230, "A volta final: alguém acessa")
-    steps = ["digita a URL", "DNS traduz", "request na API",
+    steps = ["digita a URL", "DNS traduz", "request ao servidor",
              "banco · auth", "response", "renderiza"]
     wc, gap = 272, 44
     x0 = (W - 6 * wc - 5 * gap) / 2
@@ -350,20 +427,23 @@ def p13_fluxo_de_uso():
              28, SECONDARY, anchor="middle")
     b += caption(W / 2, 950,
                  "Publicar é a metade. O uso é a outra jornada, a cada acesso.")
-    export(b, f"{OUT}/13-fluxo-de-uso", defs=glow_def("g1"))
+    export(b, f"{OUT}/16-fluxo-de-uso", defs=glow_def("g1"))
 
 
 if __name__ == "__main__":
     p01_duas_jornadas()
     p02_html_css_js()
     p03_git_fotos()
-    p04_servidor()
-    p05_request_response()
-    p06_api_balcao()
-    p07_banco()
-    p08_auth()
-    p09_build()
-    p10_cicd()
-    p11_deploy()
-    p12_dns()
-    p13_fluxo_de_uso()
+    p04_mapa_ato1()
+    p05_servidor()
+    p06_request_response()
+    p07_api_balcao()
+    p08_banco()
+    p09_auth()
+    p10_mapa_ato2()
+    p11_build()
+    p12_cicd()
+    p13_deploy()
+    p14_dns()
+    p15_mapa_ato3()
+    p16_fluxo_de_uso()

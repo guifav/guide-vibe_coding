@@ -14,7 +14,7 @@ from midnight_kit import (W, H, INK, SECONDARY, MUTED, BORDER, ACCENT,
 
 OUT = "../../episodes/04-banco-de-dados/pranchas"
 KICKER = "EP 04 · Banco de dados"
-N = 11
+N = 12
 
 
 def fig(n):
@@ -327,9 +327,52 @@ def p08_quatro_riscos():
 
 
 # ---------------------------------------------------------------- 09
-def p09_front_nao_e_banco():
-    """ATO 3: KPI guardado no navegador vs no banco."""
+def p09_corrida_de_duplicidade():
+    """ATO 3: dois requests ao mesmo tempo; checar antes não basta."""
     b = header(KICKER, fig(9))
+    b += title(W / 2, 230, "Dois ao mesmo tempo: a corrida")
+    wc, hc, gap = 780, 440, 120
+    x0 = (W - 2 * wc - gap) / 2
+    y0 = 340
+
+    # sem proteção: os dois passam
+    b += card(x0, y0, wc, hc, "só checando no código")
+    linhas = [("request A:", "já existe? não. grava."),
+              ("request B:", "já existe? não. grava.")]
+    for i, (quem, o_que) in enumerate(linhas):
+        y = y0 + 140 + i * 62
+        b += txt(x0 + 70, y, quem, 26, INK, weight="600")
+        b += txt(x0 + 250, y, o_que, 26, SECONDARY)
+    b += xmark(x0 + 90, y0 + 330, 16, ST_RESTRICTED, 3.5)
+    b += txt(x0 + 130, y0 + 340, "os dois passaram: gravou duas vezes", 26,
+             SECONDARY)
+
+    # com restrição de unicidade no banco
+    x1 = x0 + wc + gap
+    b += glow(x1 + wc / 2, y0 + hc / 2, 320, "g1")
+    b += card(x1, y0, wc, hc, "restrição de unicidade", label_fill=ACCENT)
+    linhas2 = [("request A:", "grava."),
+               ("request B:", "o banco recusa: duplicado.")]
+    for i, (quem, o_que) in enumerate(linhas2):
+        y = y0 + 140 + i * 62
+        b += txt(x1 + 70, y, quem, 26, INK, weight="600")
+        b += txt(x1 + 250, y, o_que, 26, SECONDARY)
+    b += check(x1 + 90, y0 + 330, 16, ST_OPEN, 3.5)
+    b += txt(x1 + 130, y0 + 340, "só um entra, sem depender de sorte", 26,
+             SECONDARY)
+
+    b += txt(W / 2, 860,
+             "Entre o “já existe?” e o “grava”, cabe outro request inteiro.",
+             27, SECONDARY, anchor="middle")
+    b += caption(W / 2, 950,
+                 "Checar antes não basta. A proteção de verdade mora no banco.")
+    export(b, f"{OUT}/09-corrida-de-duplicidade", defs=glow_def("g1"))
+
+
+# ---------------------------------------------------------------- 10
+def p10_front_nao_e_banco():
+    """ATO 3: KPI guardado no navegador vs no banco."""
+    b = header(KICKER, fig(10))
     b += title(W / 2, 230, "O painel de KPI não mora no navegador")
     y0, hc = 380, 420
     # só no navegador
@@ -352,13 +395,13 @@ def p09_front_nao_e_banco():
     b += arrow(830, y0 + hc / 2, 1090, y0 + hc / 2, INK, 3, "atravessa")
     b += caption(W / 2, 950,
                  "Dado de todos, que dura ou decide negócio: mora no banco.")
-    export(b, f"{OUT}/09-front-nao-e-banco", defs=glow_def("g1"))
+    export(b, f"{OUT}/10-front-nao-e-banco", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 10
-def p10_migracao():
+# ---------------------------------------------------------------- 11
+def p11_migracao():
     """ATO 3: migração leva o schema de v1 para v2."""
-    b = header(KICKER, fig(10))
+    b = header(KICKER, fig(11))
     b += title(W / 2, 230, "Migração: quando a estrutura muda")
     y0, hc = 380, 300
     b += card(280, y0, 460, hc, "schema v1")
@@ -377,13 +420,13 @@ def p10_migracao():
              "quebra na primeira gravação", 27, SECONDARY)
     b += caption(W / 2, 950,
                  "Mexeu na estrutura? Pergunte: tem migração? quem vai rodar?")
-    export(b, f"{OUT}/10-migracao", defs=glow_def("g1"))
+    export(b, f"{OUT}/11-migracao", defs=glow_def("g1"))
 
 
-# ---------------------------------------------------------------- 11
-def p11_tres_protecoes():
+# ---------------------------------------------------------------- 12
+def p12_tres_protecoes():
     """Fechamento: as três proteções que importam na prática."""
-    b = header(KICKER, fig(11))
+    b = header(KICKER, fig(12))
     b += title(W / 2, 230, "As três proteções que importam")
     itens = [("validar a entrada", "antes de gravar: o dado chega limpo ao banco"),
              ("confirmar a gravação",
@@ -405,7 +448,7 @@ def p11_tres_protecoes():
         b += txt(sx + 160, yc + 36, desc, 24, SECONDARY)
     b += caption(W / 2, 950,
                  "Valide, confirme, migre. É disciplina, não burocracia.")
-    export(b, f"{OUT}/11-tres-protecoes", defs=glow_def("g1"))
+    export(b, f"{OUT}/12-tres-protecoes", defs=glow_def("g1"))
 
 
 if __name__ == "__main__":
@@ -417,6 +460,7 @@ if __name__ == "__main__":
     p06_query()
     p07_schema()
     p08_quatro_riscos()
-    p09_front_nao_e_banco()
-    p10_migracao()
-    p11_tres_protecoes()
+    p09_corrida_de_duplicidade()
+    p10_front_nao_e_banco()
+    p11_migracao()
+    p12_tres_protecoes()

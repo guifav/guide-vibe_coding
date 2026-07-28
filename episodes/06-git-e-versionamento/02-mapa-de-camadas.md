@@ -1,12 +1,12 @@
 # Mapa de camadas (para mostrar na tela / base do thumbnail)
 
-Este e o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferramentas, só a linha do tempo com ramais e o fluxo.
+Este é o diagrama que Gui desenha ou mostra durante o vídeo. Simples, sem ferramentas, só a linha do tempo com ramais e o fluxo.
 
-## O mapa (versao texto)
+## O mapa (versão texto)
 
 ```
   A LINHA DO TEMPO DO Código
-  (cada ponto = 1 commit, foto imutavel)
+  (cada ponto = 1 commit, foto imutável)
 
   ----*--------*--------*--------*----> MAIN (linha principal)
                                   |
@@ -59,7 +59,7 @@ O fluxo que conecta o seu computador à main do repo:
                   o deploy não vê
 
   MERGE DIRETO NA MAIN: sem PR, sem review
-                        sinal de amadorismo em projeto serio
+                        em time, costuma ser sinal de alerta
                         código sem segundo par de olhos
 ```
 
@@ -68,12 +68,12 @@ O fluxo que conecta o seu computador à main do repo:
 - Desenhar a linha do tempo no início do ATO 1, com pontos (commits) e nada mais.
 - No ATO 2, adicionar as branches saindo da main e os pontos de merge voltando.
 - No ATO 3, adicionar o fluxo completo (branch -> commit -> push -> PR -> review -> merge) como uma esteira horizontal.
-- No fim do vídeo, o diagrama completo mostra a rede de seguranca inteira.
+- No fim do vídeo, o diagrama completo mostra a rede de segurança inteira.
 
-## Versao para thumbnail
+## Versão para thumbnail
 
 Texto curto sobre o diagrama:
 - Título sobre a imagem: "Por que Ninguém joga direto na MAIN?"
 - Linha principal em destaque (main), com branches coloridas saindo dela
-- Portao de PR no meio, com seta de "merge"
+- Portão de PR no meio, com seta de "merge"
 - Sem palavras densas; só "branch", "PR", "merge", "main".

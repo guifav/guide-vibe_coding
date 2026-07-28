@@ -1,21 +1,21 @@
-# Glossario minimo (aparece na descrição do YouTube)
+# Glossário mínimo (aparece na descrição do YouTube)
 
 Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 
 ---
 
-## Memória e persistencia
+## Memória e persistência
 
-- **Estado da página (state)** - memória do front enquanto a aba esta aberta; morre ao fechar
-- **Memória não confiável do servidor** - o processo até guarda em memória, mas pode reiniciar, rodar em varias cópias, e não compartilha estado entre elas
-- **Dado persistente** - dado que sobrevive entre requests, sessoes, reinicios, e aparece igual para qualquer cópia do servidor
+- **Estado da página (state)** - memória do front enquanto a aba está aberta; morre ao fechar
+- **Memória não confiável do servidor** - o processo até guarda em memória, mas pode reiniciar, rodar em várias cópias, e não compartilha estado entre elas
+- **Dado persistente** - dado que sobrevive entre requests, sessões, reinícios, e aparece igual para qualquer cópia do servidor
 - **Banco de dados** - lugar separado, com dados estruturados, que o servidor consulta
 
 ## Tipos de banco
 
-- **Relacional** - tabelas com linhas, colunas e relacoes entre elas
-- **Documento** - registros soltos em formato de texto estruturado, sem tabela rigida
-- **Chave-valor** - dicionario gigante: entra chave, sai valor
+- **Relacional** - tabelas com linhas, colunas e relações entre elas
+- **Documento** - registros soltos em formato de texto estruturado, sem tabela rígida
+- **Chave-valor** - dicionário gigante: entra chave, sai valor
 - **SQL** - linguagem usada para escrever queries em bancos relacionais
 
 ## Como o servidor fala com o banco
@@ -26,22 +26,22 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 
 ## Estrutura do dado
 
-- **Schema** - a estrutura dos dados; em bancos relacionais são tabelas e colunas; em bancos de documentos e um formato esperado de campos e tipos
+- **Schema** - a estrutura dos dados; em bancos relacionais são tabelas e colunas; em bancos de documentos é um formato esperado de campos e tipos
 - **Tabela** - estrutura de linhas e colunas no banco relacional
 - **Coluna** - campo individual dentro de uma tabela (ex: nome, email)
 - **Tipo** - o formato aceito na coluna (texto, número, data, booleano)
 
 ## Quando a estrutura muda
 
-- **Migracao** - instrucoes que atualizam o schema de uma versao para outra
-- **Schema v1 / v2** - estados da estrutura antes e depois de uma migracao
+- **Migração** - instruções que atualizam o schema de uma versão para outra
+- **Schema v1 / v2** - estados da estrutura antes e depois de uma migração
 
 ## Riscos comuns
 
 - **Duplicado** - mesmo dado gravado duas vezes; checar antes de gravar não resolve sob concorrência
 - **Inconsistente** - dado certo num lugar, errado em outro
 - **Perdido** - servidor disse que gravou mas o dado não chegou ao banco
-- **Concorrência** - dois usuarios editam o mesmo dado ao mesmo tempo e um sobrescreve o outro
+- **Concorrência** - dois usuários editam o mesmo dado ao mesmo tempo e um sobrescreve o outro
 - **Idempotente** - operação desenhada para, se repetida, não gerar efeito extra; protege contra duplicidade
 - **Restrição de unicidade** - regra no banco que impede gravar dois registros com o mesmo valor num campo (ex: email)
 
@@ -55,11 +55,11 @@ Quando a IA sugerir uma mudança que toca dados, pergunte:
 
 E em seguida:
 
-"Precisa de query? Mexe no schema? Tem migracao?"
+"Precisa de query? Mexe no schema? Tem migração?"
 
-As opcoes de camada são:
+As opções de camada são:
 - Front (estado da página, memória local)
 - Servidor (lógica, request)
-- Banco (dado persistente, schema, migracao)
+- Banco (dado persistente, schema, migração)
 
-A resposta diz o tamanho do risco. Se ela mexer no schema sem gerar migracao, pergunte antes de subir.
+A resposta diz o tamanho do risco. Se ela mexer no schema sem gerar migração, pergunte antes de subir.

@@ -126,11 +126,11 @@ Diagrama: o código com a linha "me dá CHAVE_PAGAMENTO" e setas para dois ambie
 
 "Beleza, mas na SUA máquina, no ambiente local, onde ficam esses valores? Na maioria dos projetos, num arquivo chamado .env."
 
-".env é um arquivo de texto simples, na raiz do projeto, com um par nome-valor por linha. CHAVE_PAGAMENTO igual valor, SENHA_BANCO igual valor. Quando o projeto sobe, ele lê esse arquivo e preenche as caixinhas."
+".env é um arquivo de texto simples, na raiz do projeto, com um par nome-valor por linha. CHAVE_PAGAMENTO igual valor, SENHA_BANCO igual valor. Quando o projeto sobe, ele lê esse arquivo (com uma pequena ajuda que a IA já configura) e preenche as caixinhas."
 
 "Só que esse arquivo tem os valores de verdade. Então ele NUNCA pode ir para o repo. E como o git sabe o que não levar? Com o .gitignore."
 
-".gitignore é a lista do que o git deve fingir que não existe. Arquivo listado ali não entra em foto nenhuma. O .env está nessa lista em qualquer projeto sério. Se não está, é a primeira coisa a corrigir."
+".gitignore é a lista do que o git deve fingir que não existe. Arquivo listado ali não entra em foto nenhuma. Atenção para a ordem: se o arquivo já foi commitado antes de entrar na lista, o .gitignore sozinho não tira ele das fotos antigas. Aí o nome do problema é outro: vazamento, e o protocolo do fim do vídeo se aplica. O .env está nessa lista em qualquer projeto sério. Se não está, é a primeira coisa a corrigir."
 
 "E como o resto do time sabe quais nomes o projeto precisa? Com um segundo arquivo, o .env.example: a mesma lista de nomes, mas com valores falsos ou vazios. Esse sim vai para o repo. Ele é o mapa das caixinhas, sem nenhuma chave dentro."
 
@@ -151,7 +151,7 @@ Dois arquivos lado a lado. À esquerda, `.env` com valores falsos preenchidos e 
 
 "E em prod? Não tem .env commitado, não tem você digitando chave em servidor. Quem guarda os valores de produção é a plataforma onde você faz o deploy."
 
-"Toda plataforma de deploy tem um painel de configuração: uma tela onde você cadastra as variáveis de ambiente daquele serviço. Nome e valor, uma a uma. Quando o servidor sobe, a plataforma entrega esses valores para o ambiente, e o código encontra as caixinhas preenchidas."
+"As plataformas de deploy costumam ter um painel de configuração: uma tela onde você cadastra as variáveis de ambiente daquele serviço. Nome e valor, uma a uma. Quando o servidor sobe, a plataforma entrega esses valores para o ambiente, e o código encontra as caixinhas preenchidas."
 
 "Repara na simetria: mesmo nome em todo lugar, valor diferente em cada lugar. CHAVE_PAGAMENTO existe no seu .env local com a chave de teste, e existe no painel de prod com a chave real. O código não muda uma linha."
 
@@ -207,9 +207,9 @@ As três instruções na tela, como prompts prontos para copiar.
 
 "E se a chave já foi para o repo? Protocolo de emergência, nessa ordem."
 
-"Passo 1: revogar a chave. Você vai no painel do serviço que emitiu a chave e cancela ela. A partir daí, aquela chave não abre mais nada. Isso se chama rotacionar: cancela a antiga, gera uma nova. É a versão digital de trocar a fechadura."
+"Passo 1: revogar a chave. Você vai no painel do serviço que emitiu a chave e cancela ela. A partir daí, aquela chave não abre mais nada. Isso se chama rotacionar: cancela a antiga, gera uma nova. O serviço troca a fechadura do lado dele e te entrega a chave nova."
 
-"Passo 2: colocar a chave nova no lugar certo. No .env local, no painel da plataforma em prod. Nunca no código."
+"Passo 2: colocar a chave nova no lugar certo. No .env local, no painel da plataforma em prod. Nunca no código. Entre o passo 1 e o passo 2 seu app pode ficar fora do ar; com chave vazada, esse é o preço certo."
 
 "Passo 3: verificar o estrago. O painel do serviço mostra o uso da chave: teve chamada que você não reconhece? Cobrança estranha? Se sim, o problema é maior que a chave, e aí é suporte do serviço e revisão do que foi acessado."
 

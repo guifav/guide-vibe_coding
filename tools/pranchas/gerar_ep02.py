@@ -14,7 +14,7 @@ from midnight_kit import (W, H, INK, SECONDARY, MUTED, BORDER, ACCENT,
 
 OUT = "../../episodes/02-front-end-e-estado/pranchas"
 KICKER = "EP 02 · Front-end e estado"
-N = 12
+N = 13
 
 
 def fig(n):
@@ -389,6 +389,46 @@ def p12_estado_que_viaja():
     export(b, f"{OUT}/12-estado-que-viaja", defs=glow_def("g1"))
 
 
+# ---------------------------------------------------------------- 13
+def p13_ciclo_e_os_cinco_estados():
+    """Fechamento do ATO 3: o ciclo no centro, os cinco estados em volta."""
+    b = header(KICKER, fig(13))
+    b += title(W / 2, 230, "O ciclo no centro, os estados em volta")
+
+    # ciclo compacto (evento -> estado -> re-render, com volta)
+    wc, hc, gap = 380, 150, 110
+    x0 = (W - 3 * wc - 2 * gap) / 2
+    y0 = 470
+    b += glow(W / 2, y0 + hc / 2, 340, "g1")
+    nomes = [("evento", SECONDARY), ("estado", ACCENT), ("re-render", SECONDARY)]
+    for i, (nome, cor) in enumerate(nomes):
+        x = x0 + i * (wc + gap)
+        b += card(x, y0, wc, hc)
+        b += caps(x + wc / 2, y0 + hc / 2 + 8, nome, 24, cor, anchor="middle")
+        if i < 2:
+            b += arrow(x + wc + 12, y0 + hc / 2, x + wc + gap - 12,
+                       y0 + hc / 2, INK, 2.5)
+    # volta do ciclo
+    xa, xb = x0 + wc / 2, x0 + 2 * (wc + gap) + wc / 2
+    b += path(f"M{xb} {y0 + hc} V {y0 + hc + 80} H {xa} V {y0 + hc + 14}",
+              stroke=BORDER, w=2)
+    b += arrow(xa, y0 + hc + 40, xa, y0 + hc + 12, SECONDARY, 2)
+    b += caps(W / 2, y0 + hc + 72, "a cada interação, o ciclo repete", 18,
+              MUTED, anchor="middle")
+
+    # os cinco estados em volta (acima do ciclo)
+    estados = ["loading", "empty", "error", "partial", "stale"]
+    for i, nome in enumerate(estados):
+        b += chip(360 + i * 300, 372, nome, SECONDARY, 19)
+
+    b += txt(W / 2, 830,
+             "O ciclo desenha a tela. Os cinco estados decidem o que ela mostra.",
+             28, SECONDARY, anchor="middle")
+    b += caption(W / 2, 950,
+                 "O ciclo é simples. Os cinco estados são o que a IA esquece.")
+    export(b, f"{OUT}/13-ciclo-e-os-cinco-estados", defs=glow_def("g1"))
+
+
 if __name__ == "__main__":
     p01_entrando_na_camada()
     p02_arquivos_de_texto()
@@ -402,3 +442,4 @@ if __name__ == "__main__":
     p10_cinco_estados()
     p11_checklist()
     p12_estado_que_viaja()
+    p13_ciclo_e_os_cinco_estados()
