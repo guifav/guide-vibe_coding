@@ -36,8 +36,9 @@ A temporada 1 desenhou o mapa. A temporada 2 ensina a operar esse mapa com segur
 - `04-titulos-thumbnail-seo.md` - títulos, thumbnail, tags
 - `05-shorts-cortes.md` - cortes curtos para Shorts/Reels
 - `pranchas/` - slides SVG + PNG (1920×1080) no design system Midnight Grid, uma por passagem visual do roteiro
+- `apresentacao.pdf` - as pranchas consolidadas em PDF (1 página = 1 prancha), pronto para projetar
 
-Geradores em [`tools/pranchas/`](./tools/pranchas/): `python3 gerar_epNN.py` regenera as pranchas do episódio.
+Geradores em [`tools/pranchas/`](./tools/pranchas/): `python3 gerar_epNN.py` regenera as pranchas; `python3 gerar_pdfs.py` regenera os PDFs.
 
 ## Princípios
 
