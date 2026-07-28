@@ -203,7 +203,7 @@ Interface de um PR na plataforma de repositório: título, descrição, lista de
 
 ### Falar
 
-"Por que o PR existe? Por que código sem revisão e perigoso. Mesmo que você seja excelente, um segundo par de olhos pega coisas que você não pegou."
+"Por que o PR existe? Porque código sem revisão e perigoso. Mesmo que você seja excelente, um segundo par de olhos pega coisas que você não pegou."
 
 "Review e o ato de alguém olhar seu código antes de aprovar. Essa pessoa le o diff, pergunta 'por que você fez assim?', sugere melhorias, aponta riscos."
 
