@@ -36,7 +36,7 @@ Oito episódios, na ordem. O episódio 01 desenha o mapa inteiro e nomeia duas j
 - `pranchas/` - slides SVG + PNG (1920×1080) no design system Midnight Grid, uma por passagem visual do roteiro
 - `apresentacao.pdf` - as pranchas consolidadas em PDF (1 página = 1 prancha), pronto para projetar
 
-Geradores em `[tools/pranchas/](./tools/pranchas/)`: `python3 gerar_epNN.py` regenera as pranchas; `python3 gerar_pdfs.py` regenera os PDFs.
+Geradores em [`tools/pranchas/`](./tools/pranchas/): `python3 gerar_epNN.py` regenera as pranchas; `python3 gerar_pdfs.py` regenera os PDFs.
 
 ## Princípios
 
