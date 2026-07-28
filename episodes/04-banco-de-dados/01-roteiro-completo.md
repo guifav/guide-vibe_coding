@@ -18,7 +18,7 @@
 
 ### Mostrar
 
-Diagrama do mapa (arquivo 02) com as camadas em cor clara. Só mostrar, sem explicar. Dizer: "esse mapa vai ganhando vida aos poucos. No fim você vai enxergar o banco inteiro."
+Diagrama do mapa (arquivo 02) com as camadas em cor clara. Só mostrar, sem explicar. Dizer: "no fim do vídeo, esse mapa vai estar todo preenchido, e você vai saber o que quebra em cada pedaco dele."
 
 ---
 
@@ -64,7 +64,7 @@ Uma tabela simples com duas colunas: "memória da página (morre)" e "memória d
 
 ### Falar
 
-"Tem uma confusão muito comum em quem programa com IA. A página tem estado, lembra? Aquilo do episodio 01, a memória enquanto a aba esta aberta."
+"Tem uma confusão muito comum em quem programa com IA. A página tem estado, lembra? Aquilo do episodio 02, a memória enquanto a aba esta aberta."
 
 "Pessoa clica, muda uma variável no front, a tela atualiza. Ela acha que salvou. Mas se fechar a aba, perdeu. Estado da página não e banco."
 
@@ -184,7 +184,7 @@ Duas situacoes lado a lado. Esquerda: navegador com dados locais e um X vermelho
 
 "Regra prática: dado que e de todos, ou que precisa durar, ou que alimenta decisão de negocio, não pode morar só no navegador. Tem que atravessar o servidor e chegar no banco."
 
-"Isso vale para KPI, para itens de catalogo, para configurações de comercio, para qualquer coisa que não seja preference pessoal de sessao."
+"Isso vale para KPI, para itens de catalogo, para configurações do negocio, para qualquer coisa que não seja preferencia pessoal de sessao."
 
 ### Cena 3 - Migracao: quando a estrutura muda (15:00-17:00)
 

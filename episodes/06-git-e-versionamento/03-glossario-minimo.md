@@ -10,8 +10,8 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 - **Commit** - o ato de tirar uma foto do código em um momento especifico
 - **Mensagem do commit** - o que mudou, escrito em uma frase
 - **Imutavel** - depois de tirada, a foto não muda; fica ruim, tira outra
-- **Repo (repositorio)** - onde as fotos do código ficam guardadas (ex: repositório na nuvem)
-- **repositório na nuvem** - plataforma de repo na nuvem (tem também repositório na nuvem, repositório na nuvem)
+- **Repo (repositorio)** - onde as fotos do código ficam guardadas (no seu computador ou na nuvem)
+- **Repo remoto** - a copia do repo hospedada na nuvem, acessivel pelo time inteiro
 
 ## Trabalhando em paralelo
 

@@ -272,7 +272,7 @@ Apontar para cada camada a medida que fala:
 
 ---
 
-## ENCERRAMENTO (24:00-25:30)
+## ENCERRAMENTO (24:00-25:00)
 
 ### Na camera
 

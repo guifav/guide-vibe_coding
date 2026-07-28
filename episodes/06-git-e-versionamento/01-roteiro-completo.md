@@ -52,7 +52,7 @@ Uma pasta com varios arquivos nomeados caoticamente: `app.js`, `app_v2.js`, `app
 
 "Cada commit tem quatro coisas. Mensagem: o que mudou, escrito por você. Autor: quem tirou a foto. Data: quando. E um identificador único, tipo um número de série."
 
-"E tem uma coisa importante: commit e imutavel. Depois que a foto foi tirada, ela não muda. Ficou ruim? Você tira outra foto nova, que substitui o efeito, mas a foto antiga continua la no album."
+"E tem uma coisa importante: commit e imutavel. Depois que a foto foi tirada, ela não muda. Ficou ruim? Você tira uma foto nova por cima, e a antiga continua la no album."
 
 ### Mostrar
 
@@ -72,9 +72,9 @@ Um `git log` simples na tela, mostrando commits como pontos numa linha do tempo.
 
 "O repo e o album de fotos do seu código. Ele guarda todos os commits, em ordem, formando a linha do tempo do projeto."
 
-"O repositório na nuvem que você ve por ai e um repo na nuvem. A mesma ideia: album de fotos, mas hospedado em um servidor que o time inteiro consegue acessar."
+"O repo pode morar só no seu computador. Mas na prática ele também vive na nuvem: a mesma ideia de album de fotos, hospedado em um servidor que o time inteiro consegue acessar. Essa copia na nuvem se chama repo remoto."
 
-"repositório na nuvem não e a única plataforma. Tem repositório na nuvem, repositório na nuvem, outras. Mas o conceito e o mesmo: um repo e onde as fotos do código moram."
+"Existem varias plataformas que hospedam repos na nuvem. Você já viu os nomes por ai. Não importa qual: o conceito e o mesmo, um repo e onde as fotos do código moram."
 
 ### Mostrar
 
@@ -191,7 +191,7 @@ Mostrar o mapa com branch, main, merge e conflito destacados.
 
 ### Mostrar
 
-Interface de um PR no repositório na nuvem: título, descrição, lista de arquivos modificados, diff (diferença) de cada arquivo, área de comentarios.
+Interface de um PR na plataforma de repositório: título, descrição, lista de arquivos modificados, diff (diferença) de cada arquivo, área de comentarios.
 
 ### Traduzir
 
@@ -209,7 +209,7 @@ Interface de um PR no repositório na nuvem: título, descrição, lista de arqu
 
 "Só depois que o review passa, o merge acontece. O PR e o portao entre 'eu fiz' e 'isso esta na main'."
 
-"Em projetos open source no repositório na nuvem, todo código entra por PR. Ninguém, nem o criador do projeto, joga direto na main. E cultura."
+"Em projetos open source serios, todo código entra por PR. Ninguém, nem o criador do projeto, joga direto na main. E cultura."
 
 ### Falar
 
@@ -225,7 +225,7 @@ Interface de um PR no repositório na nuvem: título, descrição, lista de arqu
 
 "Passo 2: você mexe no código, tira commits na branch. Cada commit com mensagem clara do que mudou."
 
-"Passo 3: você faz push. Push e mandar a branch da máquina para o repo na nuvem. Agora ela não só existe no seu computador, existe no repositório na nuvem."
+"Passo 3: você faz push. Push e mandar a branch da máquina para o repo remoto. Agora ela não só existe no seu computador, existe na nuvem, visivel para o time."
 
 "Passo 4: você abre um pull request. O repo monta o diff automatico, você escreve o que fez e por que."
 

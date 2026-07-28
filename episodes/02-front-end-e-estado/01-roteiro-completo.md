@@ -96,7 +96,7 @@ Tela dividida em tres colunas, ou tres blocos: HTML / CSS / JS, cada um com uma 
 
 "Você clica num botao e ele muda de cor. Digita num campo e o texto aparece em outro lugar. Marca uma opcao e outra parte da tela reage."
 
-"Tudo isso acontece sem recarregar a página. O navegador esta mudando o DOM por baixo, e repintando a tela."
+"Tudo isso acontece sem recarregar a página. O código JavaScript esta mudando o DOM por baixo, e o navegador repinta a tela."
 
 "Essa e a ponte para o segundo ato. A página muda porque ela tem memória. Essa memória tem nome: estado."
 
@@ -142,7 +142,7 @@ O diagrama "Onde o estado mora" do arquivo 02, com quatro blocos: variável loca
 
 "Primeira categoria: variável local. Uma variável e uma caixinha com um nome. Você coloca um valor dentro, e pode ler ou trocar. O contador que acabamos de ver e uma variável local. Ela mora na página, e some quando a página fecha."
 
-"Segunda categoria: hook. Em frameworks modernos como React, o estado de um pedaco da tela e organizado numa estrutura chamada hook. Hook e só um nome chique para uma forma organizada de guardar o estado de um componente. Componente, por sua vez, e um pedaco reutilizavel da tela, tipo um botao ou uma lista."
+"Segunda categoria: hook. Em frameworks modernos de front-end, o estado de um pedaco da tela e organizado numa estrutura chamada hook. Hook e só um nome chique para uma forma organizada de guardar o estado de um componente. Componente, por sua vez, e um pedaco reutilizavel da tela, tipo um botao ou uma lista."
 
 "Terceira categoria: store, ou estado global. Quando varias partes da tela precisam ler o mesmo valor, tipo quem e o usuario logado ou o que tem no carrinho, você não espalha isso em variáveis soltas. Você coloca num lugar central, chamado store. Store e a prateleira compartilhada da página."
 
@@ -166,7 +166,7 @@ O diagrama do ciclo principal do arquivo 02, com as tres etapas: evento, estado,
 
 "Segundo: estado muda. O código que trata o evento atualiza o valor na variável, no hook ou no store."
 
-"Terceiro: re-render. O navegador percebe que o estado mudou e repinta a parte da tela que depende daquele valor."
+"Terceiro: re-render. Alguém precisa atualizar o DOM para refletir o valor novo, e o navegador repinta a parte da tela que mudou. Quem atualiza o DOM depende do projeto: em JavaScript puro, e o seu código que mexe no DOM na mao. Em frameworks modernos, o framework percebe que o estado mudou e atualiza o DOM por você."
 
 ### Mostrar
 
@@ -176,7 +176,7 @@ O contador de novo. Clicar no botao e destacar as tres etapas visualmente: (1) e
 
 "Esse ciclo se repete toda vez. Evento, estado, re-render. Evento, estado, re-render."
 
-"Isso e o que chamam de reatividade. Uma página reativa e aquela em que a tela se atualiza sozinha quando o estado muda, sem você ter que mandar repintar nada manualmente."
+"Isso e o que os frameworks chamam de reatividade. Uma página reativa e aquela em que a tela se atualiza sozinha quando o estado muda, sem você ter que mexer no DOM manualmente. Detalhe importante: esse trabalho e do framework, não do navegador. O navegador só repinta o que o DOM mandar. Quem liga o estado ao DOM e o código, seu ou do framework."
 
 ### Cena 4 - Por que isso importa para quem usa IA (11:00-12:00)
 
@@ -272,7 +272,7 @@ Uma tela mostrando uma lista. Ao lado, um relogio. A lista foi carregada ha 10 m
 
 "Isso e stale. A IA trata o momento de carregar, mas raramente trata o momento de atualizar. O resultado: o usuario ve coisa que já não e verdade."
 
-### Cena 5 - A checklist para usar com IA (16:00-16:45)
+### Cena 5 - A checklist para usar com IA (16:00-16:30)
 
 ### Falar
 
@@ -292,7 +292,7 @@ A checklist dos 5 estados, uma linha por item:
 
 "Ela provavelmente tratou só o caminho feliz. Os outros ela esquece. Quem programa com IA sem saber disso entrega telas que funcionam quando tudo da certo e quebram quando algo da errado."
 
-### Cena 6 - Quando o estado precisa ir para o servidor (16:45-17:00)
+### Cena 6 - Quando o estado precisa ir para o servidor (16:30-17:00)
 
 ### Falar
 

@@ -6,7 +6,7 @@ A maioria das pessoas que programa com IA hoje não enxerga o que acontece entre
 
 Este vídeo conta duas histórias que andam juntas, mas que precisam ser nomeadas como duas, distintas uma da outra. A primeira e o fluxo de publicação: como o código chega ao ar (código -> git -> build -> deploy). A segunda e o fluxo de uso: o que acontece quando alguém acessa a URL pronta (navegador -> domínio -> servidor -> API -> banco -> resposta -> navegador). O fluxo de publicação e a linha principal do vídeo. O fluxo de uso e a volta final de ~90 segundos, no encerramento.
 
-E a narrativa de duas jornadas: você publica código para que ele viva em um servidor, e depois alguém acessa e dispara o ciclo de uso. Em cada passo uma camada nova aparece com um trabalho especifico.
+A narrativa tem duas jornadas: você publica código para que ele viva em um servidor, e depois alguém acessa e dispara o ciclo de uso. Em cada passo uma camada nova aparece com um trabalho especifico.
 
 O objetivo e fazer o espectador enxergar as camadas e saber distinguir em qual das duas jornadas uma mudança se encaixa. Quando ele enxerga, ele para de aceitar a IA cegamente e comeca a perguntar "essa mudança mora em qual camada? e afeta a publicação ou o uso?".
 

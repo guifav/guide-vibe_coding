@@ -13,7 +13,7 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 - **Commit** - o ato de tirar uma foto no git
 - **Branch** - linha paralela para testar sem estragar o original
 - **Merge** - juntar a branch de volta na linha principal
-- **Repo (repositorio)** - onde as fotos do código ficam guardadas (ex: repositório na nuvem)
+- **Repo (repositorio)** - onde as fotos do código ficam guardadas (no seu computador ou na nuvem)
 
 > Estado e variáveis não entram no ep01. São o tema do ep02 (front-end e estado).
 

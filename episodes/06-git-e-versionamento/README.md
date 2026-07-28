@@ -2,7 +2,7 @@
 
 **Eixo:** narrativa única linear. A história de como o código ganha uma rede de seguranca antes do deploy. Cada conceito (commit, repo, branch, merge, PR, conflito) explicado no momento em que aparece na jornada, do problema de voltar no tempo ate o fluxo profissional completo.
 
-**Não e:** curso exaustivo de comandos git, comparacao de plataformas (repositório na nuvem vs repositório na nuvem vs repositório na nuvem), git rebase avancado, configuração de hooks, git internals. E o mapa mental do versionamento, contado como história.
+**Não e:** curso exaustivo de comandos git, comparacao de plataformas de hospedagem de repos, git rebase avancado, configuração de hooks, git internals. E o mapa mental do versionamento, contado como história.
 
 **Público:** quem esta comecando com desenvolvimento / vibe coders / pessoas que usam IA para programar mas não fazem ideia do que e um repo ou por que o deploy não usa o código do seu computador.
 

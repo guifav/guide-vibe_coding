@@ -21,8 +21,8 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 - **Hook** - forma organizada de guardar o estado de um componente
 - **Store (estado global)** - lugar central onde estado compartilhado entre componentes mora
 - **Evento** - aviso de que o usuario fez algo (clicou, digitou, arrastou)
-- **Re-render** - o navegador repintar a parte da tela que mudou
-- **Reatividade** - a tela se atualizar sozinha quando o estado muda
+- **Re-render** - o código (ou o framework) atualizar o DOM quando o estado muda; o navegador repinta o resultado
+- **Reatividade** - a tela se atualizar sozinha quando o estado muda (trabalho do framework, não do navegador)
 
 ## Os estados que a IA esquece
 

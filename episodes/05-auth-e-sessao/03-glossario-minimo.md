@@ -18,6 +18,7 @@ Só os termos que aparecem no roteiro. Um por linha, tradução direta.
 - **Session ID** - identificador da sessao; viaja entre navegador e servidor via cookie
 - **Cookie** - pedaco de texto que o navegador guarda e envia a cada request
 - **Token** - cracha que o servidor da depois do login; carrega dentro quem e você
+- **Assinatura** - o carimbo do token; só o servidor sabe gerar, e por isso ninguém forja
 - **JWT (JSON Web Token)** - um formato especifico de token, muito comum
 
 ## As duas perguntas
