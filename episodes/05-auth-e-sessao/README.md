@@ -1,4 +1,4 @@
-# YouTube ia-aplicada — Auth e Sessao (video simples, arquitetural)
+# YouTube ia-aplicada - Auth e Sessao (video simples, arquitetural)
 
 **Eixo:** narrativa unica linear. A historia de como um servidor descobre quem e voce e decide o que voce pode fazer. Cada conceito (login, sessao, token, autenticacao, autorizacao, permissoes, expiracao) explicado no momento em que aparece na jornada.
 

@@ -4,7 +4,7 @@ Cada corte isola um conceito, com gancho para o video completo.
 
 ---
 
-## Short 1 — Sessao vs token: onde a memoria mora?
+## Short 1 - Sessao vs token: onde a memoria mora?
 
 **Gancho (0-3s):** "Sessao e token resolvem o mesmo problema. Mas a memoria mora em lugares diferentes."
 
@@ -14,7 +14,7 @@ Cada corte isola um conceito, com gancho para o video completo.
 
 ---
 
-## Short 2 — Autenticacao vs autorizacao: a diferenca crucial
+## Short 2 - Autenticacao vs autorizacao: a diferenca crucial
 
 **Gancho:** "Autenticacao e autorizacao nao sao a mesma coisa. Confundir as duas e onde os problemas comecam."
 
@@ -24,7 +24,7 @@ Cada corte isola um conceito, com gancho para o video completo.
 
 ---
 
-## Short 3 — Por que a IA sempre quer simplificar auth (e por que e perigoso)
+## Short 3 - Por que a IA sempre quer simplificar auth (e por que e perigoso)
 
 **Gancho:** "Se a IA sugerir remover ou comentar uma verificacao de auth, pare. Pergunte antes."
 
@@ -34,7 +34,7 @@ Cada corte isola um conceito, com gancho para o video completo.
 
 ---
 
-## Short 4 — Token roubado: o que acontece quando seu cracha cai na mao errada
+## Short 4 - Token roubado: o que acontece quando seu cracha cai na mao errada
 
 **Gancho:** "Se alguem roubar seu token, essa pessoa se passa por voce. E o servidor nao percebe."
 

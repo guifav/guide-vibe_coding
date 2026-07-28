@@ -4,7 +4,7 @@ Cada corte isola uma camada, com gancho para o video completo.
 
 ---
 
-## Short 1 — Estado: por que a pagina muda sem recarregar?
+## Short 1 - Estado: por que a pagina muda sem recarregar?
 
 **Gancho (0-3s):** "Voce clica num botao e a tela muda. Sem recarregar. Como?"
 
@@ -14,7 +14,7 @@ Cada corte isola uma camada, com gancho para o video completo.
 
 ---
 
-## Short 2 — Servidor: por que seu computador nao serve seu site?
+## Short 2 - Servidor: por que seu computador nao serve seu site?
 
 **Gancho:** "Seu computador nao pode ser seu servidor. Por quê?"
 
@@ -24,7 +24,7 @@ Cada corte isola uma camada, com gancho para o video completo.
 
 ---
 
-## Short 3 — API: o balcao do servidor
+## Short 3 - API: o balcao do servidor
 
 **Gancho:** "API nao e tecnologia. E um balcao."
 
@@ -34,7 +34,7 @@ Cada corte isola uma camada, com gancho para o video completo.
 
 ---
 
-## Short 4 — Deploy: o ato de publicar
+## Short 4 - Deploy: o ato de publicar
 
 **Gancho:** "Deploy nao e so apertar um botao. E a ultima camada."
 

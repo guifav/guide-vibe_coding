@@ -1,4 +1,4 @@
-# Roteiro completo — Deploy do Zero ao Ar
+# Roteiro completo - Deploy do Zero ao Ar
 
 **Duracao alvo:** 15-20 min
 **Formato:** Gui falando para camera, alternando com diagrama simples na tela
@@ -22,9 +22,9 @@ Diagrama do mapa (arquivo 02) com todas as camadas em cor clara. So mostrar, sem
 
 ---
 
-## ATO 1 — No seu computador (0:45-5:30)
+## ATO 1 - No seu computador (0:45-5:30)
 
-### Cena 1 — O codigo (0:45-2:00)
+### Cena 1 - O codigo (0:45-2:00)
 
 ### Falar
 
@@ -44,7 +44,7 @@ Um arquivo de codigo simples aberto. Sem framework. Sem dependencia. So um arqui
 - CSS: como aparece (cor, tamanho, posicao)
 - JavaScript: o que acontece (clicou, mudou, calculou)
 
-### Cena 2 — A pagina e o estado (2:00-3:30)
+### Cena 2 - A pagina e o estado (2:00-3:30)
 
 ### Falar
 
@@ -63,7 +63,7 @@ Exemplos:
 
 Um clique mudando algo na tela sem recarregar. Sem codigo denso. So o efeito visivel.
 
-### Cena 3 — Variaveis (3:30-4:30)
+### Cena 3 - Variaveis (3:30-4:30)
 
 ### Falar
 
@@ -75,7 +75,7 @@ Exemplo: `contador = 0`. Clicou: `contador = 1`. Mais um clique: `contador = 2`.
 
 "Quando a IA fala em 'variavel', ela esta dizendo: dei um nome para um valor que pode mudar."
 
-### Cena 4 — Por que git (4:30-5:30)
+### Cena 4 - Por que git (4:30-5:30)
 
 ### Falar
 
@@ -101,9 +101,9 @@ Mostrar o mapa de camadas com as partes do ATO 1 destacadas: codigo, estado, var
 
 ---
 
-## ATO 2 — Saindo do seu computador (5:30-11:30)
+## ATO 2 - Saindo do seu computador (5:30-11:30)
 
-### Cena 1 — Por que precisa de servidor (5:30-6:45)
+### Cena 1 - Por que precisa de servidor (5:30-6:45)
 
 ### Falar
 
@@ -117,7 +117,7 @@ Mostrar o mapa de camadas com as partes do ATO 1 destacadas: codigo, estado, var
 
 No diagrama, o servidor aparece como outra maquina, separada do computador de casa. Setinha: o codigo viaja do computador para o servidor.
 
-### Cena 2 — O pedido e a resposta (request e response) (6:45-7:45)
+### Cena 2 - O pedido e a resposta (request e response) (6:45-7:45)
 
 ### Falar
 
@@ -127,7 +127,7 @@ No diagrama, o servidor aparece como outra maquina, separada do computador de ca
 
 "Dois termos que aparecem juntos: request (pedido) e response (resposta). Tudo que acontece na web e uma conversa dessas."
 
-### Cena 3 — API (7:45-9:00)
+### Cena 3 - API (7:45-9:00)
 
 ### Falar
 
@@ -143,7 +143,7 @@ Um diagrama simples: navegador -> seta com "request" -> servidor -> seta com "re
 
 "Dado que viaja na resposta costuma vir em um formato chamado JSON. JSON e so texto organizado com chaves e listas, facil para o computador ler."
 
-### Cena 4 — Banco de dados (9:00-10:15)
+### Cena 4 - Banco de dados (9:00-10:15)
 
 ### Falar
 
@@ -157,7 +157,7 @@ Um diagrama simples: navegador -> seta com "request" -> servidor -> seta com "re
 
 No diagrama, o banco aparece conectado ao servidor. Seta: servidor consulta banco -> banco devolve dado.
 
-### Cena 5 — Auth (10:15-11:30)
+### Cena 5 - Auth (10:15-11:30)
 
 ### Falar
 
@@ -177,9 +177,9 @@ Mostrar o mapa com servidor, API, banco e auth destacados.
 
 ---
 
-## ATO 3 — Indo ao ar (11:30-16:30)
+## ATO 3 - Indo ao ar (11:30-16:30)
 
-### Cena 1 — Build (11:30-12:30)
+### Cena 1 - Build (11:30-12:30)
 
 ### Falar
 
@@ -191,7 +191,7 @@ Mostrar o mapa com servidor, API, banco e auth destacados.
 
 "Para a IA: quando ela fala em 'build quebrado' ou 'build passou', ela esta dizendo se a transformacao do seu codigo em algo servivel funcionou."
 
-### Cena 2 — CI/CD (12:30-13:45)
+### Cena 2 - CI/CD (12:30-13:45)
 
 ### Falar
 
@@ -207,7 +207,7 @@ Mostrar o mapa com servidor, API, banco e auth destacados.
 
 Diagrama do pipeline: commit -> lint -> testes -> build -> deploy. Cores: verde/vermelho nos passos.
 
-### Cena 3 — Deploy (13:45-14:45)
+### Cena 3 - Deploy (13:45-14:45)
 
 ### Falar
 
@@ -219,7 +219,7 @@ Diagrama do pipeline: commit -> lint -> testes -> build -> deploy. Cores: verde/
 
 "Algumas equipes fazem deploy com zero downtime (ninguem percebe a troca). Outras precisam derrubar o servidor por alguns segundos. Para o video, o que importa: deploy e a publicacao."
 
-### Cena 4 — Dominio e DNS (14:45-16:30)
+### Cena 4 - Dominio e DNS (14:45-16:30)
 
 ### Falar
 

@@ -1,4 +1,4 @@
-# Roteiro completo — Auth e Sessao
+# Roteiro completo - Auth e Sessao
 
 **Duracao alvo:** 15-20 min
 **Formato:** Gui falando para camera, alternando com diagrama simples na tela
@@ -22,9 +22,9 @@ Diagrama do fluxo de auth (arquivo 02) com todas as etapas em cor clara. So most
 
 ---
 
-## ATO 1 — O problema e o login (0:45-5:30)
+## ATO 1 - O problema e o login (0:45-5:30)
 
-### Cena 1 — O mundo sem auth (0:45-2:00)
+### Cena 1 - O mundo sem auth (0:45-2:00)
 
 ### Falar
 
@@ -44,7 +44,7 @@ No diagrama, um visitante anonimo (sem nome, sem cracha) mandando requests e o s
 
 "O primeiro problema e privacidade. O segundo, maior, e que qualquer um pode alterar ou apagar dados dos outros. Um servidor sem auth e um servidor onde todo mundo e admin sem saber."
 
-### Cena 2 — O que muda com o login (2:00-3:30)
+### Cena 2 - O que muda com o login (2:00-3:30)
 
 ### Falar
 
@@ -64,7 +64,7 @@ No diagrama, o visitante anonimo vira um usuario com nome. Aparece uma seta: log
 - Usuario (user): quem fez login e tem um nome para o servidor
 - Login: o ato de se identificar e provar quem e voce
 
-### Cena 3 — Senha e o que ela prova (3:30-4:30)
+### Cena 3 - Senha e o que ela prova (3:30-4:30)
 
 ### Falar
 
@@ -78,7 +78,7 @@ No diagrama, o visitante anonimo vira um usuario com nome. Aparece uma seta: log
 
 Diagrama simples: senha digitada -> hash -> comparada com hash guardado. Se igual, login OK.
 
-### Cena 4 — O que o servidor agora sabe sobre voce (4:30-5:30)
+### Cena 4 - O que o servidor agora sabe sobre voce (4:30-5:30)
 
 ### Falar
 
@@ -94,9 +94,9 @@ Mostrar o mapa com as partes do ATO 1 destacadas: visitante, login, usuario, per
 
 ---
 
-## ATO 2 — Como o servidor lembra de voce (5:30-11:00)
+## ATO 2 - Como o servidor lembra de voce (5:30-11:00)
 
-### Cena 1 — HTTP nao tem memoria (5:30-6:45)
+### Cena 1 - HTTP nao tem memoria (5:30-6:45)
 
 ### Falar
 
@@ -114,7 +114,7 @@ Dois requests seguidos. O servidor responde igual, sem ligar um ao outro. "Quem 
 
 "E por isso que precisamos de um mecanismo de memoria entre requests. Esse mecanismo tem dois nomes principais: sessao e token. Vamos nos dois."
 
-### Cena 2 — Sessao: a memoria no servidor (6:45-8:15)
+### Cena 2 - Sessao: a memoria no servidor (6:45-8:15)
 
 ### Falar
 
@@ -134,7 +134,7 @@ Diagrama: login -> servidor cria sessao (memoria do servidor) -> devolve session
 
 "Resumo da sessao: a memoria mora no servidor. O navegador so carrega o identificador."
 
-### Cena 3 — Token: o cracha que o cliente carrega (8:15-9:45)
+### Cena 3 - Token: o cracha que o cliente carrega (8:15-9:45)
 
 ### Falar
 
@@ -159,7 +159,7 @@ Diagrama: login -> servidor gera token (carrega dentro a identidade) -> token va
 
 "Token e como um cracha. O servidor te da o cracha na entrada, voce carrega no pescoco, e cada mesa que voce chega le o cracha e sabe quem e voce. O servidor nao guarda nada."
 
-### Cena 4 — Sessao vs token: quando usar qual (9:45-11:00)
+### Cena 4 - Sessao vs token: quando usar qual (9:45-11:00)
 
 ### Falar
 
@@ -177,9 +177,9 @@ Mostrar o mapa com login, sessao e token destacados.
 
 ---
 
-## ATO 3 — Quem pode o que (11:00-16:30)
+## ATO 3 - Quem pode o que (11:00-16:30)
 
-### Cena 1 — Autenticacao vs autorizacao (11:00-12:30)
+### Cena 1 - Autenticacao vs autorizacao (11:00-12:30)
 
 ### Falar
 
@@ -201,7 +201,7 @@ Duas setas separadas: autenticacao (quem e voce) -> autorizacao (o que pode faze
 
 "As duas juntas e o que chamamos de auth. Mas internamente sao duas perguntas, duas camadas, dois lugares diferentes do codigo."
 
-### Cena 2 — Permissoes por papel (role) (12:30-13:45)
+### Cena 2 - Permissoes por papel (role) (12:30-13:45)
 
 ### Falar
 
@@ -221,7 +221,7 @@ Tabela simples: admin | user | guest, com X e check para cada acao.
 
 "Termo que aparece aqui: RBAC, Role-Based Access Control. E so o nome chique para permissao por papel. Nao se assuste com a sigla."
 
-### Cena 3 — Permissoes por recurso (ownership) (13:45-14:45)
+### Cena 3 - Permissoes por recurso (ownership) (13:45-14:45)
 
 ### Falar
 
@@ -239,7 +239,7 @@ Dois usuarios, cada um com seus itens. User A tenta editar item do user B. Bloqu
 
 "Os dois modelos se combinam. Um admin pode editar tudo (por papel). Um user so pode editar o que e dele (por recurso). Essa combinacao e o que chamamos de autorizacao."
 
-### Cena 4 — Por que mexer em auth e perigoso (14:45-15:45)
+### Cena 4 - Por que mexer em auth e perigoso (14:45-15:45)
 
 ### Falar
 
@@ -259,7 +259,7 @@ Tela com um diff de codigo. Uma linha de verificacao de permissao sendo removida
 
 "Auth nao e lugar de simplificacao. E lugar de explicitar. Cada verificacao que existe, existe porque sem ela alguem consegue fazer algo que nao deve."
 
-### Cena 5 — Logoff, expiracao, token roubado (15:45-16:30)
+### Cena 5 - Logoff, expiracao, token roubado (15:45-16:30)
 
 ### Falar
 

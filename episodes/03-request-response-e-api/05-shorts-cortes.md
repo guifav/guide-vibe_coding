@@ -4,7 +4,7 @@ Cada corte isola um conceito do dialogo request/response, com gancho para o vide
 
 ---
 
-## Short 1 — Request e Response: a conversa invisivel
+## Short 1 - Request e Response: a conversa invisivel
 
 **Gancho (0-3s):** "Voce clica e a tela muda. Mas o que viajou entre o clique e a resposta?"
 
@@ -14,7 +14,7 @@ Cada corte isola um conceito do dialogo request/response, com gancho para o vide
 
 ---
 
-## Short 2 — GET vs POST: pedir vs enviar
+## Short 2 - GET vs POST: pedir vs enviar
 
 **Gancho:** "GET e POST. So isso ja cobre 90% da web."
 
@@ -24,7 +24,7 @@ Cada corte isola um conceito do dialogo request/response, com gancho para o vide
 
 ---
 
-## Short 3 — Status codes: 200, 404, 500 (a IA precisa ser honesta)
+## Short 3 - Status codes: 200, 404, 500 (a IA precisa ser honesta)
 
 **Gancho:** "404 nao significa 'quebrou'. Significa 'nao achei'. Sao coisas diferentes."
 
@@ -34,7 +34,7 @@ Cada corte isola um conceito do dialogo request/response, com gancho para o vide
 
 ---
 
-## Short 4 — Contrato: quando a IA inventa a API
+## Short 4 - Contrato: quando a IA inventa a API
 
 **Gancho:** "A IA escreveu o front pra consumir uma API. Mas ela inventou os campos."
 

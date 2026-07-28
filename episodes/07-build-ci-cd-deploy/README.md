@@ -1,4 +1,4 @@
-# YouTube ia-aplicada — Build, CI/CD e Deploy (profundo)
+# YouTube ia-aplicada - Build, CI/CD e Deploy (profundo)
 
 **Eixo:** narrativa unica linear. O que realmente acontece quando codigo sai do seu computador e vai para o ar. O episódio 01 mostrou que existe build, CI/CD e deploy; este abre cada um desses e mostra o que tem dentro, ate o ciclo completo e o fechamento da temporada.
 

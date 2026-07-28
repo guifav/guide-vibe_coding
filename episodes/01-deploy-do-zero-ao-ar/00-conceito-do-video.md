@@ -1,4 +1,4 @@
-# Conceito do video — Deploy do Zero ao Ar
+# Conceito do video - Deploy do Zero ao Ar
 
 ## Tese
 
@@ -26,13 +26,13 @@ Direto, sem jargao desnecessario. Cada termo tecnico que aparece e imediatamente
 
 ## Estrutura em 3 atos
 
-**ATO 1 — No seu computador (codigo + estado + git)**
+**ATO 1 - No seu computador (codigo + estado + git)**
 Onde tudo comeca. O que e codigo, o que e uma pagina, o que muda sem recarregar (estado), e por que existe versionamento (git). Sem isso, o passo seguinte nao faz sentido.
 
-**ATO 2 — Saindo do seu computador (servidor + API + banco + auth)**
+**ATO 2 - Saindo do seu computador (servidor + API + banco + auth)**
 O computador de casa nao e acessivel pelo mundo. Precisa de um servidor. O servidor recebe pedidos (API), guarda dados que nao somem (banco), e sabe quem e quem (auth). Cada camada aparece porque a historia precisa dela.
 
-**ATO 3 — Indo ao ar (build + CI/CD + deploy + dominio)**
+**ATO 3 - Indo ao ar (build + CI/CD + deploy + dominio)**
 Codigo pronto no repo vira algo vivo. Build transforma, CI/CD valida antes de publicar, deploy coloca na nuvem, e o dominio e o endereco que o usuario digita. Fecha com o ciclo completo: o que acontece quando alguem acessa a URL.
 
 ## O que NAO entra neste video

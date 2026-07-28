@@ -1,4 +1,4 @@
-# Roteiro completo — Request, Response e API
+# Roteiro completo - Request, Response e API
 
 **Duracao alvo:** 15-20 min
 **Formato:** Gui falando para camera, alternando com diagrama simples na tela
@@ -22,9 +22,9 @@ Diagrama simples (arquivo 02): navegador de um lado, servidor do outro, uma seta
 
 ---
 
-## ATO 1 — O pedido (1:00-7:00)
+## ATO 1 - O pedido (1:00-7:00)
 
-### Cena 1 — O que e um request (1:00-3:00)
+### Cena 1 - O que e um request (1:00-3:00)
 
 ### Falar
 
@@ -43,7 +43,7 @@ No diagrama, animar a seta do navegador para o servidor com a palavra "REQUEST".
 - Request: o pedido que o navegador manda
 - HTTP: o idioma da conversa entre navegador e servidor
 
-### Cena 2 — Metodo: GET e POST (3:00-5:00)
+### Cena 2 - Metodo: GET e POST (3:00-5:00)
 
 ### Falar
 
@@ -67,7 +67,7 @@ Dois exemplos lado a lado:
 
 "Existem outros metodos. PUT, PATCH, DELETE. Mas por enquanto, GET e POST sao suficientes para entender a conversa."
 
-### Cena 3 — Endpoint: cada URL e uma porta (5:00-7:00)
+### Cena 3 - Endpoint: cada URL e uma porta (5:00-7:00)
 
 ### Falar
 
@@ -100,9 +100,9 @@ Mostrar o diagrama com request, metodo (GET/POST) e endpoint destacados.
 
 ---
 
-## ATO 2 — A resposta (7:00-13:30)
+## ATO 2 - A resposta (7:00-13:30)
 
-### Cena 1 — JSON: o formato da resposta (7:00-9:00)
+### Cena 1 - JSON: o formato da resposta (7:00-9:00)
 
 ### Falar
 
@@ -132,7 +132,7 @@ Um response JSON simples na tela. Destacar: chaves, aspas, valores.
 
 "Quando a IA fala em 'retornar JSON' ou 'parsear JSON', ela esta lidando com esse formato. O front recebe esse texto, le, e monta na tela."
 
-### Cena 2 — O contrato: o que peco vs o que recebo (9:00-11:30)
+### Cena 2 - O contrato: o que peco vs o que recebo (9:00-11:30)
 
 ### Falar
 
@@ -160,7 +160,7 @@ Dois exemplos:
 
 "Quando a IA sugerir consumir uma API, pergunte: 'voce viu o contrato real, ou voce esta chutando os campos?'."
 
-### Cena 3 — Status codes: respostas honestas (11:30-13:30)
+### Cena 3 - Status codes: respostas honestas (11:30-13:30)
 
 ### Falar
 
@@ -170,11 +170,11 @@ Dois exemplos:
 
 ### Traduzir
 
-- **200 (OK)** — deu certo, aqui esta a resposta
-- **404 (Not Found)** — nao achei o que voce pediu
-- **401 (Unauthorized)** — voce nao esta logado, nao sei quem voce e
-- **403 (Forbidden)** — sei quem voce e, mas voce nao pode acessar isso
-- **500 (Internal Server Error)** — quebrou la dentro, nao foi culpa sua
+- **200 (OK)** - deu certo, aqui esta a resposta
+- **404 (Not Found)** - nao achei o que voce pediu
+- **401 (Unauthorized)** - voce nao esta logado, nao sei quem voce e
+- **403 (Forbidden)** - sei quem voce e, mas voce nao pode acessar isso
+- **500 (Internal Server Error)** - quebrou la dentro, nao foi culpa sua
 
 ### Falar
 
@@ -200,9 +200,9 @@ Mostrar o diagrama completo do dialogo: request (com metodo, endpoint) indo, ser
 
 ---
 
-## ATO 3 — A fronteira (13:30-17:30)
+## ATO 3 - A fronteira (13:30-17:30)
 
-### Cena 1 — Front nao sabe do banco (13:30-15:00)
+### Cena 1 - Front nao sabe do banco (13:30-15:00)
 
 ### Falar
 
@@ -224,7 +224,7 @@ Diagrama com tres blocos:
 
 "Se o front comeca a saber detalhes do banco (nomes de tabela, tipo de coluna, como os dados estao guardados), algo esta errado. A separacao quebrou."
 
-### Cena 2 — Por que essa separacao importa (15:00-16:00)
+### Cena 2 - Por que essa separacao importa (15:00-16:00)
 
 ### Falar
 
@@ -238,7 +238,7 @@ Diagrama com tres blocos:
 
 "Para quem programa com IA: quando a IA sugerir uma mudanca, pergunte: 'isso mora no front, na API, ou no banco?'. Se ela misturar, voce ja sabe que tem risco."
 
-### Cena 3 — Onde a IA se confunde com API (16:00-17:30)
+### Cena 3 - Onde a IA se confunde com API (16:00-17:30)
 
 ### Falar
 

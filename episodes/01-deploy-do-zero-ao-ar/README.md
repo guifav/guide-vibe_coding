@@ -1,4 +1,4 @@
-# YouTube ia-aplicada — Deploy do Zero ao Ar (video simples, arquitetural)
+# YouTube ia-aplicada - Deploy do Zero ao Ar (video simples, arquitetural)
 
 **Eixo:** narrativa unica linear. A historia de um deploy, do codigo no seu computador ate algo vivo na internet. Cada camada (front, estado, servidor, API, banco, auth, build, CI/CD, dominio) explicada no momento em que aparece na jornada.
 

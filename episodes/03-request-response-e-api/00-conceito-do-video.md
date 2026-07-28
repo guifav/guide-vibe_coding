@@ -1,4 +1,4 @@
-# Conceito do video — Request, Response e API
+# Conceito do video - Request, Response e API
 
 ## Tese
 
@@ -26,22 +26,22 @@ Direto, sem jargao desnecessario. Cada termo tecnico que aparece e imediatamente
 
 ## Estrutura em 3 atos
 
-**ATO 1 — O pedido (request, metodo, endpoint)**
+**ATO 1 - O pedido (request, metodo, endpoint)**
 O navegador pede algo ao servidor. O pedido tem um metodo (GET para pedir, POST para enviar) e bate numa porta especifica (endpoint). Cada URL e uma porta diferente no balcao do servidor.
 
-**ATO 2 — A resposta (JSON, contrato, status codes)**
+**ATO 2 - A resposta (JSON, contrato, status codes)**
 O servidor devolve algo. O formato da resposta e JSON (texto organizado). O contrato define o que eu peco vs o que recebo. E o status code diz, honestamente, o que aconteceu: 200 (ok), 404 (nao achei), 401/403 (nao pode), 500 (quebrou). Sem status code honesto, o front fica perdido.
 
-**ATO 3 — A fronteira (front nao sabe do banco)**
+**ATO 3 - A fronteira (front nao sabe do banco)**
 O front nao deveria saber nada do banco. So conversa com a API. Essa separacao e o que mantem o sistema sao. Quando a IA mistura as camadas, e ai que o problema comeca. Fecha com a ponte para o episodio 04: de onde o servidor tira os dados que devolve?
 
 ## O que NAO entra neste video
 
 - Detalhes de protocolo HTTP (versoes, headers avancados, CORS profundo)
 - PUT, PATCH, DELETE e outros metodos alem de GET e POST
-- Autenticacao profunda (token, JWT, sessao) — fica para episodio proprio
-- REST vs GraphQL vs RPC — comparacao de estilos de API
-- Documentacao de API (Swagger, OpenAPI) — ferramenta, nao conceito
-- Webhooks, Server-Sent Events, WebSocket — outros modelos de conversa
+- Autenticacao profunda (token, JWT, sessao) - fica para episodio proprio
+- REST vs GraphQL vs RPC - comparacao de estilos de API
+- Documentacao de API (Swagger, OpenAPI) - ferramenta, nao conceito
+- Webhooks, Server-Sent Events, WebSocket - outros modelos de conversa
 
 Esses viram videos da serie, um por tema. Este video e o dialogo basico.

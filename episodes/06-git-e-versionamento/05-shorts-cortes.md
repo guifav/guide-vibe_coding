@@ -4,7 +4,7 @@ Cada corte isola um conceito do versionamento, com gancho para o video completo.
 
 ---
 
-## Short 1 — Commit: a foto do codigo
+## Short 1 - Commit: a foto do codigo
 
 **Gancho (0-3s):** "Voce mudou 500 linhas e quebrou tudo. Como volta no tempo?"
 
@@ -14,7 +14,7 @@ Cada corte isola um conceito do versionamento, com gancho para o video completo.
 
 ---
 
-## Short 2 — Branch: mexer sem estragar o original
+## Short 2 - Branch: mexer sem estragar o original
 
 **Gancho:** "Voce quer testar algo arriscado. Como faz sem quebrar o que ta no ar?"
 
@@ -24,7 +24,7 @@ Cada corte isola um conceito do versionamento, com gancho para o video completo.
 
 ---
 
-## Short 3 — Pull request: por que nao joga direto na main?
+## Short 3 - Pull request: por que nao joga direto na main?
 
 **Gancho:** "Em projeto serio, ninguem joga codigo direto na main. Por quê?"
 
@@ -34,7 +34,7 @@ Cada corte isola um conceito do versionamento, com gancho para o video completo.
 
 ---
 
-## Short 4 — Por que o deploy usa o repo, nao seu computador?
+## Short 4 - Por que o deploy usa o repo, nao seu computador?
 
 **Gancho:** "O deploy nao pega o codigo do seu computador. Sabe por quê?"
 

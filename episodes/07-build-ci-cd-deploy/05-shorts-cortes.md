@@ -4,7 +4,7 @@ Cada corte isola uma etapa do cano, com gancho para o video completo.
 
 ---
 
-## Short 1 — Build: por que seu codigo vira outra coisa antes de ir ao ar?
+## Short 1 - Build: por que seu codigo vira outra coisa antes de ir ao ar?
 
 **Gancho (0-3s):** "O codigo que voce escreve nao e o codigo que vai para o servidor. Ele e transformado."
 
@@ -14,7 +14,7 @@ Cada corte isola uma etapa do cano, com gancho para o video completo.
 
 ---
 
-## Short 2 — CI: o portao que bloqueia codigo quebrado
+## Short 2 - CI: o portao que bloqueia codigo quebrado
 
 **Gancho:** "CI vermelho. O que isso significa?"
 
@@ -24,7 +24,7 @@ Cada corte isola uma etapa do cano, com gancho para o video completo.
 
 ---
 
-## Short 3 — Ambientes: por que o codigo nao vai direto para o ar?
+## Short 3 - Ambientes: por que o codigo nao vai direto para o ar?
 
 **Gancho:** "Codigo nao vai do seu PC direto pro ar. Ele passa por ambientes."
 
@@ -34,7 +34,7 @@ Cada corte isola uma etapa do cano, com gancho para o video completo.
 
 ---
 
-## Short 4 — Rollback: como voltar atras quando o deploy quebra em prod
+## Short 4 - Rollback: como voltar atras quando o deploy quebra em prod
 
 **Gancho:** "Deployou, CI deu verde, e mesmo assim quebrou em prod. O que voce faz?"
 

@@ -1,4 +1,4 @@
-# Conceito do video — Build, CI/CD e Deploy (profundo)
+# Conceito do video - Build, CI/CD e Deploy (profundo)
 
 ## Tese
 
@@ -26,13 +26,13 @@ Direto, sem jargao desnecessario. Cada termo tecnico que aparece e imediatamente
 
 ## Estrutura em 3 atos
 
-**ATO 1 — O build e por que ele quebra (transformacao do codigo)**
+**ATO 1 - O build e por que ele quebra (transformacao do codigo)**
 O que o build realmente faz: minify, tree-shake, compile, bundle. Cada um explicado no conceito, nao na ferramenta. Por que build quebra: dependencia faltando, erro de tipo, sintaxe invalida. O build e a cozinha do restaurante que vimos no episódio 01, agora com a porta aberta.
 
-**ATO 2 — O cano: CI e CD (validar e publicar automaticamente)**
+**ATO 2 - O cano: CI e CD (validar e publicar automaticamente)**
 CI como portao automatico que roda toda vez que codigo entra no repo: lint, testes, build, cada etapa verde ou vermelho. Se vermelho, bloqueia. CD como a continuacao: depois do CI verde, publica automaticamente. Ambientes: local, dev, staging, prod. Estrategias de deploy: tudo-de-uma-vez, blue-green, canary. O ciclo completo: commit, push, CI, CD, ambiente, usuario percebe.
 
-**ATO 3 — Quando algo da errado e o fechamento da temporada**
+**ATO 3 - Quando algo da errado e o fechamento da temporada**
 Rollback, incidente, post-mortem. O que acontece quando o ar cai e como se volta atras. Depois, fechamento da temporada: o mapa do episódio 01 revisitado por completo, agora com cada camada explicada pelos sete videos da serie.
 
 ## O que NAO entra neste video

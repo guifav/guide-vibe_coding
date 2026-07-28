@@ -1,4 +1,4 @@
-# Conceito do video — Auth e Sessao
+# Conceito do video - Auth e Sessao
 
 ## Tese
 
@@ -26,13 +26,13 @@ Direto, sem jargao desnecessario. Cada termo tecnico que aparece e imediatamente
 
 ## Estrutura em 3 atos
 
-**ATO 1 — O problema e o login (sem auth, qualquer um ve tudo)**
+**ATO 1 - O problema e o login (sem auth, qualquer um ve tudo)**
 O mundo sem auth: qualquer pessoa pede qualquer coisa e o servidor obedece. Por que isso nao funciona. O que muda quando voce faz login: de visitante para conhecido. O servidor agora tem um nome para voce.
 
-**ATO 2 — Como o servidor lembra de voce (sessao e token)**
+**ATO 2 - Como o servidor lembra de voce (sessao e token)**
 HTTP nao tem memoria. Cada request e um estranho batendo na porta. Sessao e como o servidor cria uma memoria entre requests. Token e o cracha que o servidor te da depois do login, e que cada request carrega para o servidor saber quem bateu.
 
-**ATO 3 — Quem pode o que (autenticacao vs autorizacao, permissoes, perigos)**
+**ATO 3 - Quem pode o que (autenticacao vs autorizacao, permissoes, perigos)**
 A diferenca crucial: autenticacao responde "quem e voce?", autorizacao responde "o que voce pode fazer?". Permissoes por papel (admin, user, guest) e por recurso (esse item e seu?). Por que remover ou mexer em auth e sempre perigoso, especialmente quando a IA sugere "simplificar". O que pode dar errado: logoff, expiracao, token roubado. Fecha com a ponte para o episodio 06: antes de mexer nisso com seguranca, precisamos de uma rede de protecao.
 
 ## O que NAO entra neste video

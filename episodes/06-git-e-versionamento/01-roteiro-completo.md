@@ -1,4 +1,4 @@
-# Roteiro completo — Git e Versionamento
+# Roteiro completo - Git e Versionamento
 
 **Duracao alvo:** 15-20 min
 **Formato:** Gui falando para camera, alternando com diagrama simples na tela
@@ -22,9 +22,9 @@ Diagrama de uma linha do tempo com pontos (commits) e um ramal (branch) saindo d
 
 ---
 
-## ATO 1 — O problema e a foto (0:45-5:30)
+## ATO 1 - O problema e a foto (0:45-5:30)
 
-### Cena 1 — O problema: como volta no tempo? (0:45-2:00)
+### Cena 1 - O problema: como volta no tempo? (0:45-2:00)
 
 ### Falar
 
@@ -42,7 +42,7 @@ Uma pasta com varios arquivos nomeados caoticamente: `app.js`, `app_v2.js`, `app
 
 "Git e o sistema de versionamento. Ele resolve esse problema de forma automatica. Em vez de copiar pastas, ele tira fotos do seu codigo em momentos especificos."
 
-### Cena 2 — O commit: a foto do codigo (2:00-3:15)
+### Cena 2 - O commit: a foto do codigo (2:00-3:15)
 
 ### Falar
 
@@ -64,7 +64,7 @@ Um `git log` simples na tela, mostrando commits como pontos numa linha do tempo.
 - Mensagem: o que mudou, escrito em uma frase
 - Imutavel: depois de tirada, a foto nao muda
 
-### Cena 3 — O repository: onde as fotos ficam (3:15-4:30)
+### Cena 3 - O repository: onde as fotos ficam (3:15-4:30)
 
 ### Falar
 
@@ -80,7 +80,7 @@ Um `git log` simples na tela, mostrando commits como pontos numa linha do tempo.
 
 No diagrama, o repo aparece como uma caixa com varios commits dentro, em ordem. Setinha: o codigo viaja do computador para o repo.
 
-### Cena 4 — Por que isso ja muda tudo (4:30-5:30)
+### Cena 4 - Por que isso ja muda tudo (4:30-5:30)
 
 ### Falar
 
@@ -94,9 +94,9 @@ Mostrar o mapa com as partes do ATO 1 destacadas: commit, repo, linha do tempo. 
 
 ---
 
-## ATO 2 — Trabalhando em paralelo (5:30-11:30)
+## ATO 2 - Trabalhando em paralelo (5:30-11:30)
 
-### Cena 1 — O medo de estragar o original (5:30-6:45)
+### Cena 1 - O medo de estragar o original (5:30-6:45)
 
 ### Falar
 
@@ -115,7 +115,7 @@ No diagrama, a linha principal (main) e uma linha secundaria (branch) saindo del
 - Branch: linha paralela para mexer sem estragar o original
 - Main: a linha principal, a versao que esta no ar
 
-### Cena 2 — Main e branches: a linha principal (6:45-7:45)
+### Cena 2 - Main e branches: a linha principal (6:45-7:45)
 
 ### Falar
 
@@ -131,7 +131,7 @@ No diagrama, a linha principal (main) e uma linha secundaria (branch) saindo del
 
 Diagrama: main no centro, com varias branches saindo dela, cada uma com seu nome (feature-login, fix-bug-123, experimento-novo-layout).
 
-### Cena 3 — Merge: juntar de volta (7:45-9:00)
+### Cena 3 - Merge: juntar de volta (7:45-9:00)
 
 ### Falar
 
@@ -147,7 +147,7 @@ Diagrama: main no centro, com varias branches saindo dela, cada uma com seu nome
 
 No diagrama, a branch encontra a main e some, virando parte dela. Setinha indicando o ponto de merge.
 
-### Cena 4 — Conflito: quando duas pessoas mexem no mesmo lugar (9:00-11:30)
+### Cena 4 - Conflito: quando duas pessoas mexem no mesmo lugar (9:00-11:30)
 
 ### Falar
 
@@ -177,9 +177,9 @@ Mostrar o mapa com branch, main, merge e conflito destacados.
 
 ---
 
-## ATO 3 — O fluxo profissional (11:30-16:30)
+## ATO 3 - O fluxo profissional (11:30-16:30)
 
-### Cena 1 — Pull request: o pedido formal (11:30-13:00)
+### Cena 1 - Pull request: o pedido formal (11:30-13:00)
 
 ### Falar
 
@@ -199,7 +199,7 @@ Interface de um PR no GitHub: titulo, descricao, lista de arquivos modificados, 
 - Review: o ato de alguem olhar o PR antes de aprovar
 - Diff: a diferenca entre a branch e a main, linha por linha
 
-### Cena 2 — Review: por que existe esse portao (13:00-14:00)
+### Cena 2 - Review: por que existe esse portao (13:00-14:00)
 
 ### Falar
 
@@ -215,7 +215,7 @@ Interface de um PR no GitHub: titulo, descricao, lista de arquivos modificados, 
 
 "Quando a IA sugerir 'faz o merge direto' ou 'commits na main', pergunte. Em projeto serio isso nao acontece. PR existe por um motivo."
 
-### Cena 3 — O fluxo completo (14:00-15:15)
+### Cena 3 - O fluxo completo (14:00-15:15)
 
 ### Falar
 
@@ -246,7 +246,7 @@ branch nova -> commit -> push -> PR -> review -> merge
 - Branch nova: linha paralela com nome descritivo
 - Merge: a branch entra oficialmente na main
 
-### Cena 4 — Por que o deploy usa o repo, nao seu computador (15:15-16:30)
+### Cena 4 - Por que o deploy usa o repo, nao seu computador (15:15-16:30)
 
 ### Falar
 

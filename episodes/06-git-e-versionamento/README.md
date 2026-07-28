@@ -1,4 +1,4 @@
-# YouTube ia-aplicada — Git e Versionamento (video simples, arquitetural)
+# YouTube ia-aplicada - Git e Versionamento (video simples, arquitetural)
 
 **Eixo:** narrativa unica linear. A historia de como o codigo ganha uma rede de seguranca antes do deploy. Cada conceito (commit, repo, branch, merge, PR, conflito) explicado no momento em que aparece na jornada, do problema de voltar no tempo ate o fluxo profissional completo.
 

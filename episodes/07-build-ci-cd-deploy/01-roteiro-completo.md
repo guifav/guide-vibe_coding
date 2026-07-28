@@ -1,4 +1,4 @@
-# Roteiro completo — Build, CI/CD e Deploy (profundo)
+# Roteiro completo - Build, CI/CD e Deploy (profundo)
 
 **Duracao alvo:** 20-25 min
 **Formato:** Gui falando para camera, alternando com diagrama simples na tela (o cano build/CI/CD/deploy e o mapa da temporada)
@@ -22,9 +22,9 @@ O mapa do episodio 01 (arquivo 02 do ep01) com todas as camadas em cor clara. Di
 
 ---
 
-## ATO 1 — O build e por que ele quebra (1:30-8:00)
+## ATO 1 - O build e por que ele quebra (1:30-8:00)
 
-### Cena 1 — Recap rapido: o que e build (1:30-3:00)
+### Cena 1 - Recap rapido: o que e build (1:30-3:00)
 
 ### Falar
 
@@ -38,7 +38,7 @@ O mapa do episodio 01 (arquivo 02 do ep01) com todas as camadas em cor clara. Di
 
 Lado a lado: o arquivo de codigo fonte (com indentacao, comentarios, nomes longos) e o mesmo arquivo depois do build (compactado, sem comentarios, nomes curtos). Nao precisa explicar linha a linha. So o efeito visual.
 
-### Cena 2 — O que o build realmente faz (3:00-5:30)
+### Cena 2 - O que o build realmente faz (3:00-5:30)
 
 ### Falar
 
@@ -56,7 +56,7 @@ Lado a lado: o arquivo de codigo fonte (com indentacao, comentarios, nomes longo
 
 Diagrama simples: varios arquivos a esquerda, uma seta com a palavra BUILD, e um arquivo so, compactado, a direita. Quatro etiquetas na seta: compile, minify, tree-shake, bundle.
 
-### Cena 3 — Por que build quebra (5:30-8:00)
+### Cena 3 - Por que build quebra (5:30-8:00)
 
 ### Falar
 
@@ -84,9 +84,9 @@ No diagrama do cano, destacar a etapa BUILD. Dizer: "o build e a primeira porta.
 
 ---
 
-## ATO 2 — O cano: CI e CD (8:00-17:30)
+## ATO 2 - O cano: CI e CD (8:00-17:30)
 
-### Cena 1 — CI: o portao automatico (8:00-10:30)
+### Cena 1 - CI: o portao automatico (8:00-10:30)
 
 ### Falar
 
@@ -100,7 +100,7 @@ No diagrama do cano, destacar a etapa BUILD. Dizer: "o build e a primeira porta.
 
 Diagrama do cano: commit -> [lint] -> [testes] -> [build] -> [pronto para deploy]. Bolinhas verdes em cada etapa. Depois mostrar uma etapa vermelha e o cano parando.
 
-### Cena 2 — As tres verificacoes principais (10:30-13:00)
+### Cena 2 - As tres verificacoes principais (10:30-13:00)
 
 ### Falar
 
@@ -120,7 +120,7 @@ O diagrama do cano de novo, agora com as tres etiquetas explicadas: lint (estilo
 
 "Quando a IA fala 'CI vermelho', 'pipeline falhou', 'teste quebrou', ela esta falando desse cano. Vermelho em qualquer etapa bloqueia o caminho. Alguem precisa ir la, ler o erro, consertar."
 
-### Cena 3 — CD: publicar automaticamente (13:00-14:30)
+### Cena 3 - CD: publicar automaticamente (13:00-14:30)
 
 ### Falar
 
@@ -136,7 +136,7 @@ O diagrama do cano de novo, agora com as tres etiquetas explicadas: lint (estilo
 
 O diagrama do cano estendido: commit -> lint -> testes -> build -> [CD: publica no servidor]. Setinha final chegando no servidor.
 
-### Cena 4 — Ambientes: onde o codigo mora em cada etapa (14:30-16:00)
+### Cena 4 - Ambientes: onde o codigo mora em cada etapa (14:30-16:00)
 
 ### Falar
 
@@ -160,7 +160,7 @@ Quatro caixas em linha: local, dev, staging, prod. Cada uma com uma cor. Local e
 
 "O cano CI/CD costuma publicar em dev e em staging automaticamente. Publicar em prod e o passo que pede mais cuidado. As vezes automatico, as vezes com botao humano."
 
-### Cena 5 — Estrategias de deploy (16:00-17:30)
+### Cena 5 - Estrategias de deploy (16:00-17:30)
 
 ### Falar
 
@@ -188,9 +188,9 @@ Mostrar o cano completo: commit -> push -> CI (lint, testes, build) -> CD -> amb
 
 ---
 
-## ATO 3 — Quando algo da errado e o fechamento (17:30-24:00)
+## ATO 3 - Quando algo da errado e o fechamento (17:30-24:00)
 
-### Cena 1 — Rollback: voltar atras (17:30-19:00)
+### Cena 1 - Rollback: voltar atras (17:30-19:00)
 
 ### Falar
 
@@ -206,7 +206,7 @@ Mostrar o cano completo: commit -> push -> CI (lint, testes, build) -> CD -> amb
 
 Diagrama: versao nova no ar -> problema detectado -> seta de "rollback" -> versao antiga volta.
 
-### Cena 2 — Incidente e post-mortem (19:00-20:30)
+### Cena 2 - Incidente e post-mortem (19:00-20:30)
 
 ### Falar
 
@@ -220,7 +220,7 @@ Diagrama: versao nova no ar -> problema detectado -> seta de "rollback" -> versa
 
 "Quando a IA sugerir um deploy grande, uma mudanca que mexe em varias camadas, pergunte: se isso der errado em prod, conseguimos voltar rapido? Tem rollback? Tem blue-green? A resposta diz o tamanho do risco."
 
-### Cena 3 — O ciclo completo, resumido (20:30-22:00)
+### Cena 3 - O ciclo completo, resumido (20:30-22:00)
 
 ### Falar
 
@@ -240,7 +240,7 @@ Diagrama: versao nova no ar -> problema detectado -> seta de "rollback" -> versa
 
 O diagrama do cano completo, agora em uma linha so, com todas as etapas e setas. Destacar que o usuario so enxerga a ultima ponta.
 
-### Cena 4 — Fechamento da temporada: o mapa revisitado (22:00-24:00)
+### Cena 4 - Fechamento da temporada: o mapa revisitado (22:00-24:00)
 
 ### Falar
 

@@ -1,4 +1,4 @@
-# Conceito do video — Git e Versionamento
+# Conceito do video - Git e Versionamento
 
 ## Tese
 
@@ -26,13 +26,13 @@ Direto, sem jargao desnecessario. Cada termo tecnico que aparece e imediatamente
 
 ## Estrutura em 3 atos
 
-**ATO 1 — O problema e a foto (commit + repo)**
+**ATO 1 - O problema e a foto (commit + repo)**
 Onde tudo comeca. O problema de voltar no tempo sem rede de seguranca. O commit como foto do codigo. A anatomia de cada foto (mensagem, autor, data, imutavel). E o repository, o lugar onde as fotos ficam guardadas, com o GitHub como o repo na nuvem.
 
-**ATO 2 — Trabalhando em paralelo (branch + merge + conflito)**
+**ATO 2 - Trabalhando em paralelo (branch + merge + conflito)**
 Ninguem quer estragar o original enquanto testa algo. A branch e a linha paralela. A main e a principal. O merge junta de volta. E o conflito, quando duas pessoas mexem no mesmo arquivo e a maquina nao decide sozinha.
 
-**ATO 3 — O fluxo profissional (PR + review + por que o deploy usa o repo)**
+**ATO 3 - O fluxo profissional (PR + review + por que o deploy usa o repo)**
 Codigo novo nao entra direto na principal. O pull request e o pedido formal de merge, com revisao. O fluxo completo: branch nova, commit, push, PR, review, merge. E por que o deploy usa o repo e nao o seu computador: linha do tempo unica, colaborativa. Fecha com a ponte para o episodio 07.
 
 ## O que NAO entra neste video

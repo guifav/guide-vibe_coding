@@ -1,4 +1,4 @@
-# YouTube ia-aplicada — Request, Response e API (o dialogo entre navegador e servidor)
+# YouTube ia-aplicada - Request, Response e API (o dialogo entre navegador e servidor)
 
 **Eixo:** narrativa unica linear. A historia de uma conversa: o navegador pede, o servidor responde. Cada conceito (request, metodo, endpoint, JSON, contrato, status code) explicado no momento em que aparece no dialogo.
 
